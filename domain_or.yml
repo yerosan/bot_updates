@@ -445,7 +445,7 @@ responses:
     buttons:
       - title: "ULAAGA WABII"
         payload: "/wabii_Requirements" 
-      - title: "GUYYAA LIMIT"
+      - title: "DAANGAA GUYYAA"
         payload: "/guyyaa_limit" 
 
   utter_wabii_Requirements:
@@ -459,16 +459,16 @@ responses:
     buttons:
       - title: "ULAAGA GUYYAA"
         payload: "/guyyaa_Requirements"
-      - title: "WABII LIMIT"
+      - title: "DAANGAA WABII"
         payload: "/wabii_limit"  
 
   utter_michu_limit:
   - text: "Oomisha filattan irratti hundaa'uun daangaan liqii Michuu jijjiiramuu danda'a. Maaloo hanga isin barbaadden qaree armaan gadii 
           keessaa filadhu:"
     buttons:
-      - title: "GUYYAA LIMIT"
+      - title: "DAANGAA GUYYAA"
         payload: "/guyyaa_limit"
-      - title: "WABII LIMIT"
+      - title: "DAANGAA WABII"
         payload: "/wabii_limit" 
 
   utter_max_limit:
@@ -482,90 +482,90 @@ responses:
           Safartuuwwan kana hojiirra oolchuudhaan bu’aa qabxii liqii kee haalaan fooyyessuu dandeessa, kunis yeroo iyyannoo jalqabaa fi irra 
           deebiin iyyannoo boodaatti dhiyeessii liqii mijataa ta’e argamsiisa."
     buttons:
-      - title: "GUYYAA LIMIT"
+      - title: "DAANGAA GUYYAA"
         payload: "/guyyaa_limit"
-      - title: "WABII LIMIT"
+      - title: "DAANGAA WABII"
         payload: "/wabii_limit" 
 
   utter_guyyaa_limit:
   - text: "Daangaan Liqii Guyyaa xiqqaan 2000ETB fi daangaa guddaan 15000ETB yoo ta’u kunis torban tokko keessatti (guyyoota 7 keessatti) kaffalamuu qaba."
     buttons:
-      - title: "WABII LIMIT"
+      - title: "DAANGAA WABII"
         payload: "/wabii_limit"
-      - title: "GUYYAA CREDIT PERIOD"
+      - title: "TURTII GUYYAA"
         payload: "/guyyaa_duration" 
 
   utter_wabii_limit:
   - text: "Daangaan liqii wabii qarshii kuma 50 (50000) hanga qarshii kuma 100 (100000) gidduutti argama."
     buttons:
-      - title: "GUYYAA LIMIT"
+      - title: "DAANGAA GUYYAA"
         payload: "/guyyaa_limit"
-      - title: "WABII CREDIT PERIOD"
+      - title: "TURTII WABII"
         payload: "/wabii_duration"
 
   utter_michu_duration:
   - text: "Yeroon turtii liqii oomisha filatte irratti hundaa’uun garaagarummaa qaba. Maaloo yeroo turtii liqii oomishaa barbaadde filadhu."
     buttons:
-      - title: "GUYYAA CREDIT PERIOD"
+      - title: "TURTII GUYYAA"
         payload: "/guyyaa_duration" 
-      - title: "WABII CREDIT PERIOD"
+      - title: "TURTII WABII"
         payload: "/wabii_duration"
 
   utter_guyyaa_duration:
   - text: "Yeroon turtii Liqii guyyaa guyyaa torba (7) dha."
     buttons:
-      - title: "WABII CREDIT PERIOD"
+      - title: "TURTII WABII"
         payload: "/wabii_duration"
-      - title: "GUYYAA FACILITY FEE"
+      - title: "KAFFALTII TAJAAJILA GUYYAA"
         payload: "/guyyaa_fee"
 
   utter_wabii_duration:
   - text: "Yeroon turtii liqii wabii guyyaa soddoma (30) ykn ji'a tokko dha."
     buttons:
-      - title: "GUYYAA CREDIT PERIOD"
+      - title: "TURTII GUYYAA"
         payload: "/guyyaa_duration"
-      - title: "WABII FACILITY FEE"
+      - title: "KAFFALTII TAJAAJILA WABII"
         payload: "/wabii_fee" 
 
   utter_michu_accessfee:
   - text: "Kaffaltiin tajaajilaa oomisha filatte irratti hundaa’uun garaagarummaa qaba. Maaloo kaffaltii tajaajilaa oomisha barbaadde filadhu"
     buttons:
-      - title: "GUYYAA FACILITY FEE"
+      - title: "KAFFALTII TAJAAJILA GUYYAA"
         payload: "/guyyaa_fee"
-      - title: "WABII FACILITY FEE"
+      - title: "KAFFALTII TAJAAJILA WABII"
         payload: "/wabii_fee" 
 
   utter_guyyaa_fee:
   - text: "Kaffaltiin tajaajilaa liqii Guyyaa maallaqa liqii liqeesse irraa %12 dha."
     buttons:
-      - title: "WABII FACILITY FEE"
+      - title: "KAFFALTII TAJAAJILA WABII"
         payload: "/wabii_fee" 
-      - title: "GUYYAA INTER-RATE"
+      - title: "DHALA GUYYAA"
         payload: "/guyyaa_interest"
 
   utter_wabii_fee:
   - text: "Michu Wabii liqeeffachuuf kaffaltiin tajaajilaa barbaachisu maallaqa mirkanaa’e keessaa %5 yoo ta’u kunis osoo hin fudhatin dura 
           kaffalamuu qaba."
     buttons:
-      - title: "GUYYAA FACILITY FEE"
+      - title: "KAFFALTII TAJAAJILA GUYYAA"
         payload: "/guyyaa_fee" 
-      - title: "WABII INTER-RATE"
+      - title: "DHALA WABII"
         payload: "/wabii_interest"
 
   utter_michu_interest:
   - text: "Oomisha liqii Michu filattu irratti hundaa'uun dhala ni jijjiirama." 
     buttons:
-      - title: "GUYYAA INTER-RATE"
+      - title: "DHALA GUYYAA"
         payload: "/guyyaa_interest"
-      - title: "WABII INTER-RATE"
+      - title: "DHALA WABII"
         payload: "/wabii_interest" 
 
   utter_guyyaa_interest:
   - text: "Liqiin Guyyaa dhala (0%) hin qabu, kaffaltii tajaajilaa qofa qaba."
     buttons:
-      - title: "WABII INTER-RATE"
+      - title: "DHALA WABII"
         payload: "/wabii_interest" 
-      - title: "GUYYAA PENALITY"
+      - title: "ADABBII GUYYAA"
         payload: "/guyyaa_penality" 
 
 #  redue it
@@ -573,18 +573,18 @@ responses:
   utter_wabii_interest:
   - text: "Dhala liqii wabii ji'aa %8 dha."
     buttons:
-      - title: "GUYYAA INTER-RATE"
+      - title: "DHALA GUYYAA"
         payload: "/guyyaa_interest"
-      - title: "WABII PENALITY"
+      - title: "ADABBII WABII"
         payload: "/wabii_penality" 
 
   utter_michu_penality:
   - text: "Liqiin guyyaa itti kaffalamutti erga hin kaffalamne booda adabbiin shallagamuu ni jalqaba. Adabbiin akkaataa paakeejii liqii 
           Michu filatteen garaagarummaa qabata. Maaloo tarree armaan gadii keessaa sanduuqa tokko filadhu, adabbii oomishaa barbaadde."  
     buttons:
-      - title: "GUYYAA PENALITY"
+      - title: "ADABBII GUYYAA"
         payload: "/guyyaa_penality"
-      - title: "WABII PENALITY"
+      - title: "ADABBII WABII"
         payload: "/wabii_penality" 
 
   utter_late_payment:
@@ -593,9 +593,9 @@ responses:
           haala waliigaltee keessanii wajjin walsimuun walitti qabama. Deebiin kaffalamuu kan hammatu  maallaqa hin kaffalamiin, kaffaltii 
           kuufamaa adabbii yoo ta'u, yeroo barbaachisutti dirqama."
     buttons:
-      - title: "GUYYAA PENALITY"
+      - title: "ADABBII GUYYAA"
         payload: "/guyyaa_penality"
-      - title: "WABII PENALITY"
+      - title: "ADABBII WABII"
         payload: "/wabii_penality" 
   utter_refuse_payment:
   - text: "Dirqama kaffaltii liqii yoo raawwachuu dadhabde, bu’aawwan  hedduun akka armaan gadiitti dhufa:\n
@@ -613,18 +613,18 @@ responses:
           maallaqa liqii ijoo qofa osoo hin taane adabbii fi dhala kuufamaa hanga guyyaa kaffaltii sanaatti, akkaataa waliigaltee mallattaa'e 
           keessatti tumameen kaffaluun si irraa eegama."
     buttons:
-      - title: "GUYYAA PENALITY"
+      - title: "ADABBII GUYYAA"
         payload: "/guyyaa_penality"
-      - title: "WABII PENALITY"
+      - title: "ADABBII WABII"
         payload: "/wabii_penality" 
   utter_early_payment:
   - text: "Baankiin maammiltonni isaa  dafanii akka kaffalan cimsee kan jajjabeessu yoo ta’u, sirnichi liqii gara fuula duraatiif akka waan 
           gaariitti ilaala.Gama biraatiin liqii Michu Wabiif, bakka dhala guyyaa guyyaan itti kuufamutti, kaffaltii dursanii raawwachuun hamma 
           maallaqa deebi’uu hir’isuu ykn kaffaltii dhalaa gadi buusu danada,a."
     buttons:
-      - title: "GUYYAA PENALITY"
+      - title: "ADABBII GUYYAA"
         payload: "/guyyaa_penality"
-      - title: "WABII PENALITY"
+      - title: "ADABBII WABII"
         payload: "/wabii_penality" 
 
 
@@ -632,7 +632,7 @@ responses:
   utter_guyyaa_penality:
   - text: "Yeroon kaffaltii liqii guyyaa deebisuu yoo darbe, Kaffaltiin Adabbii guyyaatti maallaqa hin kaffalamiin hafe keessaa %0.5 ta’a."
     buttons:
-      - title: "WABII PENALITY"
+      - title: "ADABBII WABII"
         payload: "/wabii_penality"
       - title: "ULAAGA GUYYAA"
         payload: "/guyyaa_Requirements" 
@@ -641,7 +641,7 @@ responses:
   - text: "Adabbiin akkuma liqiin yeroo ji’a tokkoo ykn guyyoota 30 keessatti osoo kaffalamin hafeen shallagamuu ni jalqaba.  Yeroon 
           kaffaltii liqii wabii deebisuu yoo darbe adabbiin guyyaatti %0.5 ta’a."
     buttons:
-      - title: "GUYYAA PENALITY"
+      - title: "ADABBII GUYYAA"
         payload: "/guyyaa_penality"
       - title: "ULAAGA WABII"
         payload: "/wabii_Requirements" 
@@ -713,7 +713,7 @@ responses:
           keessan irratti kuufama gahaa ta'uu dhabuu irraa kan ka'e ta'uu danda'a.\n ta'uu danda'a.\n n Appicha cufuu qofaan storage keessan 
           bilisa baasuuf yaalaa. \n network connection keessan, yoo jiraate VPN keessan cufuu hin dagatinaa"
     buttons:
-      - title: "LATE DISBURSMENT"
+      - title: "SAB. TURUMAATA LIQII"
         payload: "/late_disbursment"
       - title: "REVERSAL"
         payload: "/reversal"
@@ -725,7 +725,7 @@ responses:
           gahaa dhabuu irraa kan ka'e ta'uu danda'a. Salphaatti appicha cufiitii bakka muraasa bilisa baasuuf yaali.\n - Hidhamiinsa networkii 
           kee ilaali, VPN qabaachuu dandeessu kamiyyuu cufuu hin dagatin."
     buttons:
-      - title: "LATE DISBURSMENT"
+      - title: "SAB. TURUMAATA LIQII"
         payload: "/late_disbursment"
       - title: "REVERSAL"
         payload: "/reversal"
@@ -737,7 +737,7 @@ responses:
           baay’ee hin xumuramne qabaachuu danda’a, kunis yeroon booda akka kaffalamu taasisa; akkasumas gama fuulduraa fi gama sarvarii 
           irraas dhimmi teeknikaa jiraachuu mala."
     buttons:
-      - title: "WHY MICHU NOT WORK"
+      - title: "DIDDAA MICHU"
         payload: "/why_michu_notwork"
       - title: "REVERSAL"
         payload: "/reversal"
@@ -747,7 +747,7 @@ responses:
           kaffaltii dhaabbatichaa uwwisuuf maallaqa gahaa qabaachuu dhabuu; qondaalli iyyannoowwan dhiyaatan baay’ee qabaachuu isaanii, 
           kunis yeroon booda akka kaffalamu kan taasisu yoo ta’u; fi dhimmoota teeknikaa gama fuulduraa fi gama sarvariitiin."
     buttons:
-      - title: "WHY MICHU NOT WORK"
+      - title: "DIDDAA MICHU"
         payload: "/why_michu_notwork"
       - title: "REVERSAL"
         payload: "/reversal"
@@ -755,35 +755,35 @@ responses:
   utter_reversal:
   - text: "Duubatti deebi’uun kan raawwatamu yoo dogongorri sirnichaan daldalli uumame waan ta’eef odeeffannoo dabalataaf damee isinitti dhihoo jiru daawwadhaa."
     buttons:
-      - title: "HOW CAN I KNOW DEADLINE"
+      - title: "XUMUURA KAFFALTI"
         payload: "/know_deadline"
-      - title: "WHO DEBIT FROM MY ACCOUNT"
+      - title: "CITIINSA MALLAQA"
         payload: "/who_debit"
 
   utter_NPL:
   - text: "Baankichi namoota yeroon booda kaffalan jajjabeessuuf yaada hin qabu."
     buttons:
-      - title: "HOW CAN I KNOW DEADLINE"
+      - title: "XUMUURA KAFFALTI"
         payload: "/know_deadline"
-      - title: "REPAYMENT OPTION"
+      - title: "MALA KAFFALTI"
         payload: "/repayment_option"
 
   utter_know_deadline:
   - text: "Appiin Michu daangaa liqii, yeroo kaffaltii deebisuu, dhala, fi kaffaltii adabbii irratti ibsa bal'aa kenna. Odeeffannoo 
           barbaachisaa ta'e hunda argachuuf appicha banuun seenuu qofa."
     buttons:
-      - title: "HOW CAN I KNOW DEADLINE"
+      - title: "XUMUURA KAFFALTI"
         payload: "/know_deadline"
-      - title: "REPAYMENT METHOD"
+      - title: "GOOSA KAFFALTI"
         payload: "/payment_type"
 
   utter_repayment_option:
   - text: "Dept collectors yeroo kaffaltii yeroon booda deebifamu herrega keessan irraa deebisuuf carraa qaba. Damee isinitti dhihoo 
           jiru qunnamaa, namoota liqaa sassaaban maallaqa deebi’uu herrega keessan irraa akka hir’isan beeksisuu."
     buttons:
-      - title: "WHO DEBIT FROM MY ACCOUNT"
+      - title: "CITIINSA MALLAQA"
         payload: "/who_debit"
-      - title: "REPAYMENT METHOD"
+      - title: "GOOSA KAFFALTI"
         payload: "/payment_type"
 
 
@@ -795,9 +795,9 @@ responses:
           irraa ni hir’isa. Haa ta’u malee, haalawwan kanaan ala hir’inni herregaa kamiyyuu yoo uumame, dhimma isin mudate gabaasuuf wiirtuu 
           bilbilaa keenya 609 irratti gaarummaadhaan qunnamaa."
     buttons:
-      - title: "REPAYMENT OPTION"
+      - title: "MALA KAFFALTI"
         payload: "/repayment_option"
-      - title: "REPAYMENT METHOD"
+      - title: "GOOSA KAFFALTI"
         payload: "/payment_type"
   utter_payment_type:
   - text: "Liqii keessan xumuruuf, iyyata Michu argachuun gara kutaa kaffaltii deebisuutti qajeela. Achitti, hanga kaffaltii deebi'uu, 
@@ -806,9 +806,9 @@ responses:
           galchi, button 'Pay Now' jedhuun mirkaneessi, daldalli sun milkaa'inaan ni adeemsifama. Rakkoon yoo isin mudate, bilisaan gargaarsa 
           na irraa barbaaduu ykn wiirtuu bilbilaa keenyaa 609 irratti bilbilaa."
     buttons:
-      - title: "REMINDER"
+      - title: "YAADACHIIFTUU"
         payload: "/reminder"
-      - title: "REPAYMENT METHOD"
+      - title: "GOOSA KAFFALTI"
         payload: "/payment_type"
 
   utter_reminder:
@@ -817,7 +817,7 @@ responses:
           kaffalamu irraa eegalee si’a sadii, shanii fi guyyaa tokko isin beeksifna. for more app michu keessan banadhaa, bal'ina isaa 
           achirraa argachuu dandeessu"
     buttons:
-      - title: "REPAYMENT METHOD"
+      - title: "GOOSA KAFFALTI"
         payload: "/payment_type"
       - title: "REJECTION"
         payload: "/rejection"
@@ -828,7 +828,7 @@ responses:
           irraa eegalee si’a sadii, shanii fi guyyaa tokko isin beeksifna. for more app michu keessan banadhaa, bal'ina isaa achirraa argachuu 
           dandeessu"
     buttons:
-      - title: "DOCUMENT REJECTION"
+      - title: "FUDHATAMA DHABU RAGAALE"
         payload: "/document_rejection"
       - title: "REJECTION"
         payload: "/rejection"
@@ -840,7 +840,7 @@ responses:
           keessanii wajjin walqabatu gidduutti garaagarummaa qabaachuu danda’u jiraachuu danda’a. Gama kanaan odeeffannoon yeroo adeemsa 
           mirkaneessuutti dhiyaatu sirrii ta’uu fi walitti hidhamiinsa isaa mirkaneessuuf xiyyeeffannoo of eeggannoo qabu."
     buttons:
-      - title: "INCORRECT INFORMATION"
+      - title: "ODEEFFANNO DOGOGGORAA"
         payload: "/incorect"
       - title: "REJECTION"
         payload: "/rejection"
@@ -850,7 +850,7 @@ responses:
           tokko ta’uu danda’a, maqaan iyyannoo kee fi maqaan herrega qusannaa kee adda ta’uu danda’a, lakkoofsa TIN dogoggoraa dirree 
           irratti kaa’uu dandeessa fi kkf."
     buttons:
-      - title: "DOCUMENT REJECTION"
+      - title: "FUDHATAMA DHABU RAGAALE"
         payload: "/document_rejection"
       - title: "REJECTION"
         payload: "/rejection"
@@ -871,48 +871,48 @@ responses:
   - text: "Yeroo ammaa afaanota sadii (Ingiliffaa, Amaaraa, fi Afaan Oromoo) nan deeggara. Yoo afaan jijjiiruu barbaadde, maaloo mallattoo 
           qaree kiiboordii cuqaasi, kunis golee mirgaa qaree irratti argama."
     buttons:
-      - title: "MICHU LANGUAGE"
+      - title: "QOOQA MICHU"
         payload: "/michu_language"
-      - title: "HOW TO INSTALL"
+      - title: "FE'UUMSA APPILIKEESHINI"
         payload: "/install_michu"
 
   utter_michu_language:
   - text: "Michu amma afaanota sadii: Afaan Ingilizii, Amaaraa, fi Afaan Oromootiin ni argama."
     buttons:
-      - title: "BOT LANGUAGE"
+      - title: "QOOQA BOOTI"
         payload: "/language"
-      - title: "HOW TO INSTALL"
+      - title: "FE'UUMSA APPILIKEESHINI"
         payload: "/install_michu"
   - text: "Afaan Ingilizii, Amaaraa, fi Afaan Oromo afaanota sadan Michu amma deeggarudha."
     buttons:
-      - title: "BOT LANGUAGE"
+      - title: "QOOQA BOOTI"
         payload: "/language"
-      - title: "HOW TO INSTALL"
+      - title: "FE'UUMSA APPILIKEESHINI"
         payload: "/install_michu"
 
   utter_install_michu:
   - text: "Michu argachuu fi install gochuuf Play Store irratti search gochuun appicha download gochuun mobile device keessan irratti install 
           gochuu dandeessu. kunoo linkiin [yeroo dhiyootti dhufa!]" 
     buttons:
-      - title: "MICHU AVAILABLITY"
+      - title: "ARGAMA MICHU"
         payload: "/michu_availablity"
-      - title: "APPLICATION PROCCESS"
+      - title: "ADEEMSA IYYANNOO"
         payload: "/application"
 
   utter_michu_availablity:
   - text: "Ammaaf application Michu Play Store qofa irratti kan argamu yoo ta'u bilbiloota Android qofa irratti kan hojjetudha. Akkasumas, 
           adeemsi liqii kun bilbiloota Andirooyidii qofa irratti kan hojjetudha"
     buttons:
-      - title: "HOW TO INSTALL"
+      - title: "FE'UUMSA APPILIKEESHINI"
         payload: "/install_michu"
-      - title: "APPLICATION PROCCESS"
+      - title: "ADEEMSA IYYANNOO"
         payload: "/application"
   - text: "Appiin Michu amma karaa Play Store qofa kan argamu yoo ta'u, bilbiloota ismaartii Andirooyidii qofa waliin hojjeta. Dabalataanis 
           adeemsa liqii kanaaf ulaagaa guutuu kan qaban bilbiloota Andirooyidii qofa."
     buttons:
-      - title: "HOW TO INSTALL"
+      - title: "FE'UUMSA APPILIKEESHINI"
         payload: "/install_michu"
-      - title: "APPLICATION PROCCESS"
+      - title: "ADEEMSA IYYANNOO"
         payload: "/application"
 
   utter_application:
@@ -924,9 +924,9 @@ responses:
           4. application Michu banachuu \n
           Dabalataaf Adeemsa iyyannoo liqii barbaadde beekuuf button armaan gadii irraa oomisha filadhu"
     buttons:
-      - title: "GUYYAA APP-PROCCESS"
+      - title: "ADEEMSA IYYANNOO GUYYAA"
         payload: "/guyyaa_application"
-      - title: "WABII APP-PROCCESS"
+      - title: "ADEEMSA IYYANNOO WABII"
         payload: "/wabii_application"
 
   utter_guyyaa_application:
@@ -946,9 +946,9 @@ responses:
           13. Maallaqni liqii gara herrega keessanitti ni ba'a.\n
           Tarkaanfiiwwan kun yeroo iyyannoo jalqabaa akka raawwataman hubadhaa."
     buttons:
-      - title: "REAPPLICATION PROCCESS"
+      - title: "ADEEMSA IRRA DEEBIN IYYACHUU"
         payload: "/reapplication"
-      - title: "WABII APP-PROCCESS"
+      - title: "ADEEMSA IYYANNOO WABII"
         payload: "/wabii_application"
   utter_wabii_application:
   - text: "Adeemsi iyyannoo liqii liqii Wabii salphaa fi salphaadha. Adeemsi guutuun isaa kunooti:\n Yeroo jalqabaaf Liqii Michu Wabbii Iyyachuu :\n
@@ -970,9 +970,9 @@ responses:
           16. Maallaqni liqii gara herrega keessanitti ni ba'a.\n
           Tarkaanfiiwwan kun yeroo iyyannoo jalqabaa akka raawwataman hubadhaa."
     buttons:
-      - title: "REAPPLICATION PROCCESS"
+      - title: "ADEEMSA IRRA DEEBIN IYYACHUU"
         payload: "/reapplication"
-      - title: "GUYYAA APP-PROCCESS"
+      - title: "ADEEMSA IYYANNOO GUYYAA"
         payload: "/guyyaa_application"
 
   utter_reapplication:
@@ -991,16 +991,16 @@ responses:
           4. Dhiyeessicha yoo fudhatte, waliigaltee liqii sirriitti dubbisiitii walii galuu.\n
           5. Maallaqni liqii gara herrega keessanitti ni baafama."
     buttons:
-      - title: "GUYYAA APP-PROCCESS"
+      - title: "ADEEMSA IYYANNOO GUYYAA"
         payload: "/guyyaa_application"
-      - title: "WABII APP-PROCCESS"
+      - title: "ADEEMSA IYYANNOO WABII"
         payload: "/wabii_application"
   utter_reaplication_times:
   - text: "Hanga liqaa duraan qabdu deebifteetti hamma barbaadde irra deebitee liqeefachuu dandeessa."
     buttons:
-      - title: "REAPPLICATION PROCCESS"
+      - title: "ADEEMSA IRRA DEEBIN IYYACHUU"
         payload: "/reapplication"
-      - title: "RENEWING DOCUMENT"
+      - title: "HAAROMFAMA RAGAALE"
         payload: "/renewingd"
 
   utter_renewingd:
@@ -1011,9 +1011,9 @@ responses:
           4. Sanadni kee baankiidhaan mirkanaa'a.\n
           Amalli kun namoota dhuunfaa Liqii Michuu wabii qaban qofa irratti kan hojjetu ta'uu hubadhaa."
     buttons:
-      - title: "REAPPLICATION PROCCESS"
+      - title: "ADEEMSA IRRA DEEBIN IYYACHUU"
         payload: "/reapplication"
-      - title: "REAPPLICATION TIMES"
+      - title: "IYYANNOO IRRA DEDEEBII"
         payload: "/reaplication_times"
 
 
@@ -1021,9 +1021,9 @@ responses:
   - text: "Yoo haalli herrega keessanii active( si'aawaa ykn socho'aa) ta'e SMS baga gammaddan ykn salphaatti haftee herrega keessanii 
           ilaaluu dandeessu. Sababni diduu karaa ergaa gabaabaa (SMS) akkasumas isin beeksifama."
     buttons:
-      - title: "REAPPLICATION PROCCESS"
+      - title: "ADEEMSA IRRA DEEBIN IYYACHUU"
         payload: "/reapplication"
-      - title: "PAYMENT DOUBT"
+      - title: "DOGOGGORA KAFFALTII"
         payload: "/payment_doubt"
   
 

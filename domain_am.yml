@@ -198,7 +198,7 @@ responses:
       buttons:
         - title: "ዲጂታል ብድር"
           payload: "/digital_Loan"
-        - title: "MICHU"
+        - title: "ሚቹ"
           payload: "/michu"
 
   utter_provider:
@@ -402,7 +402,7 @@ responses:
       buttons:
         - title: "የዋቢ መስፈርቶች"
           payload: "/wabii_Requirements"
-        - title: "GUYYAA LIMIT"
+        - title: "የጉያ ገደብ"
           payload: "/guyyaa_limit"
 
   utter_wabii_Requirements:
@@ -417,7 +417,7 @@ responses:
       buttons:
         - title: "የጉያ መስፈርቶች"
           payload: "/guyyaa_Requirements"
-        - title: "WABII LIMIT"
+        - title: "የዋቢ ገደብ"
           payload: "/wabii_limit"
 
   utter_michu_limit:
@@ -425,9 +425,9 @@ responses:
         "እርስዎ በሚመርጡት አገልግሎት ዓይነት ላይ በመመርኮዝ ምቹ የሚያቀርብልዎት የብድር መጠን ገደብ የተለያየ ሊሆን ይችላል። ከሚከተሉት አዝራሮች መካከል እባክዎ 
         የሚፈልጉትን ዓይነት ገደብ ይምረጡ፦"
       buttons:
-        - title: "GUYYAA LIMIT"
+        - title: "የጉያ ገደብ"
           payload: "/guyyaa_limit"
-        - title: "WABII LIMIT"
+        - title: "የዋቢ ገደብ"
           payload: "/wabii_limit"
 
   utter_max_limit:
@@ -441,98 +441,98 @@ responses:
         እነዚህን እርምጃዎች በመውሰድ፣ የእርስዎን የብድር ብቁነት ምዘና ውጤት በማሻሻል ብድር ለመጀመሪያ ጊዜ ሲጠይቁና በቀጣይነት በሚያቀርቧቸው ማመልከቻዎች ወቅት የተሻለ 
         ብድር የማግኘት ዕድል እንዲኖርዎት ማድረግ ይችላሉ።"
       buttons:
-        - title: "GUYYAA LIMIT"
+        - title: "የጉያ ገደብ"
           payload: "/guyyaa_limit"
-        - title: "WABII LIMIT"
+        - title: "የዋቢ ገደብ"
           payload: "/wabii_limit"
 
   utter_guyyaa_limit:
     - text: "የጉያ ብድር ዝቅተኛው ገደብ 2000 ብር ሲሆን ከፍተኛው ጣሪያ 15000 ብር ሲሆን ሁለቱም ብድሮች በአንድ ሳምንት (በ 7 ቀናት) ጊዜ ውስጥ መከፈል ይኖርባቸዋል።"
       buttons:
-        - title: "WABII LIMIT"
+        - title: "የዋቢ ገደብ"
           payload: "/wabii_limit"
-        - title: "GUYYAA CREDIT PERIOD"
+        - title: "የጉያ ቆይታ ጊዜ"
           payload: "/guyyaa_duration"
 
   utter_wabii_limit:
     - text: "የዋቢ ብድር ገደቡ ከ 50,000 ብር እስከ 100,000 ብር ይደርሳል።"
       buttons:
-        - title: "GUYYAA LIMIT"
+        - title: "የጉያ ገደብ"
           payload: "/guyyaa_limit"
-        - title: "WABII CREDIT PERIOD"
+        - title: "የዋቢ ቆይታ ጊዜ"
           payload: "/wabii_duration"
 
   utter_michu_duration:
     - text: "ብድሩ የሚከፈልበት የጊዜ ገደብ እርስዎ በመረጡት አገልግሎት ዓይነት የሚመረኮዝ ይሆናል። እባክዎ የሚፈልጉትን የብድር መክፈያ ጊዜ ገደብ ይምረጡ።"
       buttons:
-        - title: "GUYYAA CREDIT PERIOD"
+        - title: "የጉያ ቆይታ ጊዜ"
           payload: "/guyyaa_duration"
-        - title: "WABII CREDIT PERIOD"
+        - title: "የዋቢ ቆይታ ጊዜ"
           payload: "/wabii_duration"
 
   utter_guyyaa_duration:
     - text: "የምቹ ጉያ የብድር አገልግሎት በ 7 ቀናት ውስጥ መከፈል አለበት።"
       buttons:
-        - title: "WABII CREDIT PERIOD"
+        - title: "የዋቢ ቆይታ ጊዜ"
           payload: "/wabii_duration"
-        - title: "GUYYAA FACILITY FEE"
+        - title: "የጉያ አገልግሎት ክፍያ"
           payload: "/guyyaa_fee"
 
   utter_wabii_duration:
     - text: "የምቹ ዋቢ የብድር አገልግሎት በ 30 ቀናት ውስጥ መከፈል አለበት።"
       buttons:
-        - title: "GUYYAA CREDIT PERIOD"
+        - title: "የጉያ ቆይታ ጊዜ"
           payload: "/guyyaa_duration"
-        - title: "WABII FACILITY FEE"
+        - title: "የዋቢ አገልግሎት ክፍያ"
           payload: "/wabii_fee"
 
   utter_michu_accessfee:
     - text: "የብድሩ አገልግሎት ክፍያ እርስዎ በመረጡት አገልግሎት ዓይነት የሚመረኮዝ ይሆናል። እባክዎ የሚፈልጉትን የብድር አገልግሎት ክፍያ ዓይነት ይምረጡ።"
       buttons:
-        - title: "GUYYAA FACILITY FEE"
+        - title: "የጉያ አገልግሎት ክፍያ"
           payload: "/guyyaa_fee"
-        - title: "WABII FACILITY FEE"
+        - title: "የዋቢ አገልግሎት ክፍያ"
           payload: "/wabii_fee"
 
   utter_guyyaa_fee:
     - text: "የጉያ ብድር የአገልግሎት ክፍያ ከወሰዱት የብድር መጠን 12% በመቶ ነው።"
       buttons:
-        - title: "WABII FACILITY FEE"
+        - title: "የዋቢ አገልግሎት ክፍያ"
           payload: "/wabii_fee"
-        - title: "GUYYAA INTER-RATE"
+        - title: "የጉያ ወለድ ተመን"
           payload: "/guyyaa_interest"
 
   utter_wabii_fee:
     - text: "የምቹ ዋቢ ብድር አገልግሎትን ለማግኘት መከፈል ያለበት የአገልግሎት ክፍያ ከተፈቀደው ብድር መጠን 5% በመቶ ሲሆን ይህም ገንዘብ ብድሩ ከመሰጠቱ በፊት 
             ለባንኩ መከፈል አለበት።"
       buttons:
-        - title: "GUYYAA FACILITY FEE"
+        - title: "የጉያ አገልግሎት ክፍያ"
           payload: "/guyyaa_fee"
-        - title: "WABII INTER-RATE"
+        - title: "የዋቢ ወለድ ተመን"
           payload: "/wabii_interest"
 
   utter_michu_interest:
     - text: "በመረጡት የምቹ ብድር ዓይነት ላይ በመመርኮዝ የወለዱ መጠን የተለያየ ነው።"
       buttons:
-        - title: "GUYYAA INTER-RATE"
+        - title: "የጉያ ወለድ ተመን"
           payload: "/guyyaa_interest"
-        - title: "WABII INTER-RATE"
+        - title: "የዋቢ ወለድ ተመን"
           payload: "/wabii_interest"
 
   utter_guyyaa_interest:
     - text: "ለጉያ ብድር የሚከፈለው የወለድ መጠን ባዶ (0%) ነው፣ የሚከፈለው የአገልግሎት ክፍያ ብቻ ነው።"
       buttons:
-        - title: "WABII INTER-RATE"
+        - title: "የዋቢ ወለድ ተመን"
           payload: "/wabii_interest"
-        - title: "GUYYAA PENALITY"
+        - title: "የጉያ ቅጣት"
           payload: "/guyyaa_penality"
 
   utter_wabii_interest:
     - text: "የዋቢ ብድር ወርኃዊ ወለድ ስሌት 8% በመቶ ነው።"
       buttons:
-        - title: "GUYYAA INTER-RATE"
+        - title: "የጉያ ወለድ ተመን"
           payload: "/guyyaa_interest"
-        - title: "WABII PENALITY"
+        - title: "የዋቢ ቅጣት"
           payload: "/wabii_penality"
 
   utter_michu_penality:
@@ -540,9 +540,9 @@ responses:
         "ብድሩ በቀነ ገደቡ ካልተከፈለ ቅጣት መታሰብ ይጀምራል። ቅጣቱ እርስዎ በመረጡት የምቹ የብድር አገልግሎት ዓይነት መሠረት የተለያየ ነው። እባክዎ ከዚህ በታች ካለው 
         ዝርዝር አንዱን አዝራር ይምረጡ፦ ለአገልግሎቱ ቅጣት መክፈል ይፈልጋሉ።"
       buttons:
-        - title: "GUYYAA PENALITY"
+        - title: "የጉያ ቅጣት"
           payload: "/guyyaa_penality"
-        - title: "WABII PENALITY"
+        - title: "የዋቢ ቅጣት"
           payload: "/wabii_penality"
 
   utter_late_payment:
@@ -552,9 +552,9 @@ responses:
         ስምምነት ውሉ ላይ በተጠቀሰው መሠረት ይታሰባሉ። ብድር ክፍያ ዋናውን ዕዳ፣ ውዝፍ ቅጣቶችንና አገልግሎት ክፍያዎችን የሚያካትት ሲሆን አስፈላጊ ሲሆን በግዳጅ የሚከፈል 
         ይሆናል።"
       buttons:
-        - title: "GUYYAA PENALITY"
+        - title: "የጉያ ቅጣት"
           payload: "/guyyaa_penality"
-        - title: "WABII PENALITY"
+        - title: "የዋቢ ቅጣት"
           payload: "/wabii_penality"
   utter_refuse_payment:
     - text:
@@ -570,9 +570,9 @@ responses:
         ክፍያዎች ክፍያው ሙሉ በሙሉ እስከሚከፈልበት ቀን ድረስ መጠራቀማቸውን ይቀጥላሉ። በፈረሙት የብድር ስምምነት ውል ላይ እንደተቀመጠው ያለብዎትን ውዝፍ ዕዳ 
         እንዲከፍሉ በሚደረጉበት ጊዜ ፍሬ ብድሩን ብቻ ሳይሆን አብሮ የተጠራቀመውን ማናቸውም የቅጣትና የወለድ ውዝፍ ክፍያ አንድ ላይ እንዲከፍሉ ይገደዳሉ።"
       buttons:
-        - title: "GUYYAA PENALITY"
+        - title: "የጉያ ቅጣት"
           payload: "/guyyaa_penality"
-        - title: "WABII PENALITY"
+        - title: "የዋቢ ቅጣት"
           payload: "/wabii_penality"
   utter_early_payment:
     - text:
@@ -580,15 +580,15 @@ responses:
         በኩል፣ በየቀኑ ወለድ በሚታሰብበት የምቹ ዋቢ ብድር ላይ አስቀድሞ ክፍያን መፈጸም መከፈል ያለበትን የገንዘብ መጠን ይቀንሳል ወይም የሚሰላውን የወለድ ተመን ዝቅተኛ 
         እንዲሆን ያደርጋል።"
       buttons:
-        - title: "GUYYAA PENALITY"
+        - title: "የጉያ ቅጣት"
           payload: "/guyyaa_penality"
-        - title: "WABII PENALITY"
+        - title: "የዋቢ ቅጣት"
           payload: "/wabii_penality"
 
   utter_guyyaa_penality:
     - text: "የብድር መክፈያ ቀነ ገደቡ ካለፈ የቅጣት ክፍያው በቀን ያልተከፈለው ቀሪ ገንዘብ 0.5% በመቶ ነው።"
       buttons:
-        - title: "WABII PENALITY"
+        - title: "የዋቢ ቅጣት"
           payload: "/wabii_penality"
         - title: "የጉያ መስፈርቶች"
           payload: "/guyyaa_Requirements"
@@ -597,7 +597,7 @@ responses:
     - text:
         "ብድሩን በአንድ ወር ጊዜ ውስጥ ወይም በ 30 ቀናት ውስጥ መክፈል ካልተቻለ ቅጣቱ መታሰብ የሚጀመር ሲሆን የሚታሰበው የቅጣት መጠን በቀን የቀሪው ሒሳብ 0.5% በመቶ ነው።"
       buttons:
-        - title: "GUYYAA PENALITY"
+        - title: "የጉያ ቅጣት"
           payload: "/guyyaa_penality"
         - title: "የዋቢ መስፈርቶች"
           payload: "/wabii_Requirements"
@@ -710,17 +710,17 @@ responses:
     - text:
         "በሲስተሙ ስሕተት ምክንያት የተሳሳተ ገንዘብ ዝውውር ከተደረገ ገንዘቡ ተመላሽ ይሆናል ስለዚህ ተጨማሪ መረጃ ለማግኘት በአቅራቢያዎ ወደሚገኝ ቅርንጫፍ ባንክ ይሂዱ።"
       buttons:
-        - title: "HOW CAN I KNOW DEADLINE"
+        - title: "የማለቂያ ግዝ እንዴት ማወቅ እችላለሁ"
           payload: "/know_deadline"
-        - title: "WHO DEBIT FROM MY ACCOUNT"
+        - title: "ከአካውንቴ ማነው የቅነስው"
           payload: "/who_debit"
 
   utter_NPL:
     - text: "ዘግይተው የሚከፍሉ ሰዎችን ለማበረታታት ባንኩ ምንም ፍላጎት የለውም።"
       buttons:
-        - title: "HOW CAN I KNOW DEADLINE"
+        - title: "የማለቂያ ግዝ እንዴት ማወቅ እችላለሁ"
           payload: "/know_deadline"
-        - title: "REPAYMENT OPTION"
+        - title: "የመክፈያ አማራጭ"
           payload: "/repayment_option"
 
   utter_know_deadline:
@@ -728,9 +728,9 @@ responses:
         "የምቹ መተግበሪያውን ስለ ብድር ገደብ፣ ብድሩ ስለሚከፈልባቸው ጊዜያት፣ የወለድ ተመኖች እና የቅጣት ክፍያዎች በተመለከተ ዝርዝር መረጃን ይሰጣል። መተግበሪያውን 
         ይክፈቱና ሁሉንም ተዛማጅነት ያላቸውን መረጃዎችን ለማግኘት በመለያዎት ይግቡ።"
       buttons:
-        - title: "HOW CAN I KNOW DEADLINE"
+        - title: "የማለቂያ ግዝ እንዴት ማወቅ እችላለሁ"
           payload: "/know_deadline"
-        - title: "REPAYMENT METHOD"
+        - title: "የመክፈያ ዘዴ"
           payload: "/payment_type"
 
   utter_repayment_option:
@@ -738,9 +738,9 @@ responses:
         "ዘግይተው በሚከፍሉበት ጊዜ ዕዳ ሰብሳቢዎቹ ከሒሳብዎ ላይ ዕዳዎን መቀነስ ይችላሉ። ከባንክ ሒሳብዎ ላይ ተገቢውን ክፍያ ተቀናሽ እንዲያደርጉ ለብድር ዕዳ ሰብሳቢዎች እንዲያሳውቁልዎት 
         በአቅራቢያዎ የሚገኝ ቅርንጫፍ ባንክን ያነጋግሩ።"
       buttons:
-        - title: "WHO DEBIT FROM MY ACCOUNT"
+        - title: "ከአካውንቴ ማነው የቅነስው"
           payload: "/who_debit"
-        - title: "REPAYMENT METHOD"
+        - title: "የመክፈያ ዘዴ"
           payload: "/payment_type"
 
   utter_who_debit:
@@ -750,9 +750,9 @@ responses:
         በመመርኮዝ ምቹ መተግበሪያ የአገልግሎት ክፍያዎችን ተቀናሽ ያደርጋል። ይሁን እንጂ ከነዚህ ሁኔታዎች ውጪ በማናቸውም ሁኔታ ገንዘብ ተቀናሽ ከተደረገብዎት፣ ያጋጠምዎትን 
         ችግር ሪፖርት ለማድረግ ወደ ጥሪ ማዕከላችን 609 እባክዎ ይደውሉ።"
       buttons:
-        - title: "REPAYMENT OPTION"
+        - title: "የመክፈያ አማራጭ"
           payload: "/repayment_option"
-        - title: "REPAYMENT METHOD"
+        - title: "የመክፈያ ዘዴ"
           payload: "/payment_type"
   utter_payment_type:
     - text:
@@ -761,9 +761,9 @@ responses:
         የብድር ገንዘብ ጋር አንድ ላይ ያሳያል። በቀላሉ መክፈል የሚፈልጉትን የገንዘብ መጠን ያስገቡ፣ ትክክል መሆኑን “አሁን ይክፈሉ” የሚለውን አዝራር በመጫን ያረጋግጡ እና 
         የገንዘብ ዝውውሩ በተሳካ ሁኔታ ይከናወናል። ምንም ዓይነት ችግር ካጋጠመዎት ከእኔ እገዛ ለማግኘት ጥያቄ ከማቅረብ ወይም ወደ ጥሪ ማዕከሉ 609 ከመደወል ወደ ኋላ አይበሉ።"
       buttons:
-        - title: "REMINDER"
+        - title: "አስታዋሽ"
           payload: "/reminder"
-        - title: "REPAYMENT METHOD"
+        - title: "የመክፈያ ዘዴ"
           payload: "/payment_type"
 
   utter_reminder:
@@ -772,9 +772,9 @@ responses:
         እየተጠቀሙ ያሉ ከሆነ፣ ሦስት ጊዜ ማስታወሻ ይደርስዎታል፦ ብድሩ መከፈል ካለበት 5 ቀን ቀደም ብሎ፣ አንድ ቀን ሲቀረውና በመክፈያው ቀን። ተጨማሪ መረጃ ለማግኘት 
         የእርስዎን ምቹ መተግበሪያ ይክፈቱ፣ ዝርዝሩን በዚያ ላይ ያገኙታል።"
       buttons:
-        - title: "REPAYMENT METHOD"
+        - title: "የመክፈያ ዘዴ"
           payload: "/payment_type"
-        - title: "REJECTION"
+        - title: "ውድቅ ማድረግ"
           payload: "/rejection"
 
   utter_rejection:
@@ -783,9 +783,9 @@ responses:
         ሥራዎች መካከል ካልሆነ፣ ዓባሪ ያያዟቸው ሰነዶች ተቀባይነት ከሌላቸው ወይም ያልታደሱ ከሆነ ወዘተ የብድር ማመልከቻዎ ውድቅ ሊደረግ ይችል ይሆናል።   ተጨማሪ መረጃ 
         የሚፈልጉ ከሆነ"
       buttons:
-        - title: "DOCUMENT REJECTION"
+        - title: "ሰነድ አለመቀበል"
           payload: "/document_rejection"
-        - title: "REJECTION"
+        - title: "ውድቅ ማድረግ"
           payload: "/rejection"
 
   utter_document_rejection:
@@ -795,9 +795,9 @@ responses:
         አለመጣጣም ሊያጋጥም ይችላል። እንደዚህ ዓይነት ሁኔታዎች ሲያጋጥሙ በማረጋገጥ ሂደቱ ላይ የቀረበው መረጃ ትክክለኛና ወጥነት ያለው መሆኑን ለማረጋገጥ ጥንቃቄ ማድረግ 
         ግድ ይላል።"
       buttons:
-        - title: "INCORRECT INFORMATION"
+        - title: "ትክክል ያልሆነ መረጃ"
           payload: "/incorect"
-        - title: "REJECTION"
+        - title: "ውድቅ ማድረግ"
           payload: "/rejection"
 
   utter_incorect:
@@ -805,9 +805,9 @@ responses:
         "ስለራስዎ ሆነ ስለ ንግድ ድርጅትዎ ያቀረቡት መረጃ ተቀባይነት የሌለው መሆን የለበትም፣ የስልክ ቁጥርዎ እና የአደጋ ጊዜ ተጠሪዎ ስልክ ቁጥር አንድ ዓይነት መሆን የለበትም፣ 
         የእርስዎ የአመልካች ስምና የቁጠባ ሒሳብ ባለቤት ስም የተለያየ መሆን የለበትም፣ እንዲሁም የተሳሳተ የግብር ከፋይ መለያ ቁጥር (ቲን) ማስገባት አይችሉም።"
       buttons:
-        - title: "DOCUMENT REJECTION"
+        - title: "ሰነድ አለመቀበል"
           payload: "/document_rejection"
-        - title: "REJECTION"
+        - title: "ውድቅ ማድረግ"
           payload: "/rejection"
 
   utter_Features:
@@ -826,32 +826,32 @@ responses:
     - text:
         "በአሁኑ ጊዜ ሶስት ቋንቋዎችን እደግፋለሁ (እንግሊዝኛ፣ አማርኛ እና አፋን ኦሮሞ)። ቋንቋውን ለመቀየር ከፈለጉ፣ እባክዎን በአዝራሩ በቀኝ ጥግ ላይ የሚገኘውን የቁልፍ ሰሌዳ አዝራሩን ጠቅ ያድርጉ።"
       buttons:
-        - title: "MICHU LANGUAGE"
+        - title: "የሚቹ ቋንቋ"
           payload: "/michu_language"
-        - title: "HOW TO INSTALL"
+        - title: "እንዴት እንደሚጫን"
           payload: "/install_michu"
 
   utter_michu_language:
     - text: "ምቹን አሁን ላይ በሦስት ቋንቋዎች መጠቀም ይቻላል፦ እንግሊዝኛ፣ አማርኛ እና ኦሮምኛ።"
       buttons:
-        - title: "BOT LANGUAGE"
+        - title: "የቦት ቋንቋ"
           payload: "/language"
-        - title: "HOW TO INSTALL"
+        - title: "እንዴት እንደሚጫን"
           payload: "/install_michu"
     - text: "እንግሊዝኛ፣ አማርኛ እና ኦሮምኛ አሁን ምቹ ላይ መጠቀም የሚችሏቸው ቋንቋዎች ናቸው።"
       buttons:
-        - title: "BOT LANGUAGE"
+        - title: "የቦት ቋንቋ"
           payload: "/language"
-        - title: "HOW TO INSTALL"
+        - title: "እንዴት እንደሚጫን"
           payload: "/install_michu"
 
   utter_install_michu:
     - text:
         "ምቹ መተግበሪያን ለማግኘትና አውርዶ ለመጫን በቀላሉ ፕሌይ ስቶር ላይ ይፈልጉትና መተግበሪያውን አውርደው በሞባይል ስልክዎ ላይ ይጫኑት። አገናኙ ይኸውልህ [በቅርቡ ይመጣል!]"
       buttons:
-        - title: "MICHU AVAILABLITY"
+        - title: "የሚቹ ተገኝነት"
           payload: "/michu_availablity"
-        - title: "APPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/application"
 
   utter_michu_availablity:
@@ -859,26 +859,26 @@ responses:
         "አሁን ላይ ምቹ መተግበሪያን ከፕሌይ ስቶር ብቻ ማግኘት የሚቻል ሲሆን የሚሠራውም በአንድሮይድ ስልኮች ላይ ብቻ ነው።  ከዚህ በተጨማሪ የብድር አሰጣጥ ሂደቱ ተፈጻሚነት የሚኖረው 
         በአንድሮይድ ስልኮች ላይ ብቻ ነው።"
       buttons:
-        - title: "HOW TO INSTALL"
+        - title: "እንዴት እንደሚጫን"
           payload: "/install_michu"
-        - title: "APPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/application"
     - text:
         "የምቹ መተግበሪያ አሁን ላይ በፕሌይ ስቶር በኩል ብቻ ማግኘት የሚቻል ሲሆን የሚሠራውም በአንድሮይድ ስልኮች ላይ ብቻ ነው። ከዚህ በተጨማሪ፣ የአንድሮይድ ስልኮች ብቻ በብድር 
         ሂደቱ እንዲሳተፉ ይፈቀድላቸዋል።"
       buttons:
-        - title: "HOW TO INSTALL"
+        - title: "እንዴት እንደሚጫን"
           payload: "/install_michu"
-        - title: "APPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/application"
 
   utter_application:
     - text:
         "የብድር አሰጣጥ ሂደቱ በጣም ቀላልና ግልጽ ነው። መጀመሪያ መተግበሪያውን ከፕሌይ ስቶር ያውርዱትና ከዛ ሁሉንም የግል እና የንግድ ሥራ መረጃዎችዎን መተግበሪያው ውስጥ ይሙሉ።"
       buttons:
-        - title: "GUYYAA APP-PROCCESS"
+        - title: "የጉያ ማመልከቻ ሂደት"
           payload: "/guyyaa_application"
-        - title: "WABII APP-PROCCESS"
+        - title: "የዋቢ ማመልከቻ ሂደት"
           payload: "/wabii_application"
 
 # not translate data
@@ -891,9 +891,9 @@ responses:
         ቃልዎን ያስገቡ።\n 8. የግል መረጃዎን ያቅርቡ።\n 9. የእርስዎን የኦ.ኅ.ሥ.ባ መለያ ቁጥር ያስገቡ። n 12. ቅናሹን ከተቀበሉ, በደንብ አንብበው የብድር ውሉን ይስማሙ.\n
         13. የብድሩ መጠን ወደ ሒሳብዎ ይከፈላል::\n እባክዎ እነዚህ እርምጃዎች በመጀመርያ ማመልከቻ ወቅት እንደሚከሰቱ ልብ ይበሉ."
       buttons:
-        - title: "REAPPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/reapplication"
-        - title: "WABII APP-PROCCESS"
+        - title: "የዋቢ ማመልከቻ ሂደት"
           payload: "/wabii_application"
   utter_wabii_application:
     - text:
@@ -904,9 +904,9 @@ responses:
         የብድር አቅርቦትን ለመቀበል ወይም ላለመቀበል ይወስኑ።\n
         14. የሰነድ ማረጋገጫ ከባንክ በኩል ይጠብቁ።\n 15. ቅናሹን ከተቀበሉ በደንብ አንብበው የብድር ውሉን ይስማሙ። በመጀመርያው ትግበራ ወቅት ደረጃዎች ይከናወናሉ."
       buttons:
-        - title: "REAPPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/reapplication"
-        - title: "GUYYAA APP-PROCCESS"
+        - title: "የጉያ ማመልከቻ ሂደት"
           payload: "/guyyaa_application"
 
 # translate
@@ -916,16 +916,16 @@ responses:
         ከከፈሉ፣ የብድር አከፋፈል ታሪክዎን ከግምት በማስገባት ሲስተሙ የሚፈቀድልዎትን የብድር ጣሪያ በተወሰነ መቶኛ ያሳድግልዎታል። በተቃራኒው፣ ዘግይተው የሚከፈሉ ብድሮች 
         ቅጣት ያስከትላሉ። አዲስ ማመልከቻ ለማስገባት፣ በቀላሉ ወደ መተግበሪያው ይግቡና ደንብና ግዴታዎቹን እንዲሁም በምቹ የቀረቡልዎትን አማራጮች ይቀበሉ።"
       buttons:
-        - title: "GUYYAA APP-PROCCESS"
+        - title: "የጉያ ማመልከቻ ሂደት"
           payload: "/guyyaa_application"
-        - title: "WABII APP-PROCCESS"
+        - title: "የዋቢ ማመልከቻ ሂደት"
           payload: "/wabii_application"
   utter_reaplication_times:
     - text: "የቀደመውን ዕዳ መልሰው እስካገኙ ድረስ የፈለጉትን ያህል እንደገና መጫወት ይችላሉ።"
       buttons:
-        - title: "REAPPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/reapplication"
-        - title: "RENEWING DOCUMENT"
+        - title: "ሰነድ በማደስ ላይ"
           payload: "/renewingd"
 
   utter_renewingd:
@@ -933,9 +933,9 @@ responses:
         "ሰነድዎ ጊዜው ያለፈበት ከሆነ, ማደስ አለብዎት. ሰነድን እንዴት ማደስ እንደሚቻል ይህ ነው፡\n ሰነድዎን ማደስ፡\n 1. ወደ ሚቹ መተግበሪያ ይግቡ።\n 2. ዳታዎ ካልታደሰ መተግበሪያው የሰነድ 
         መስቀያ ቅጽ ያሳያል።\n 3. የተሻሻለውን ሰነድ ይስቀሉ።\n 4. ሰነድዎ በባንክ የተረጋገጠ ይሆናል።\n እባክዎ ይህ ባህሪ የሚቺ ጉያ ብድር ላላቸው ግለሰቦች ብቻ የሚተገበር መሆኑን ልብ ይበሉ።"
       buttons:
-        - title: "REAPPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/reapplication"
-        - title: "REAPPLICATION TIMES"
+        - title: "የድጋሚ ማመልከቻ ብዛት"
           payload: "/reaplication_times"
 # untill this
 
@@ -944,9 +944,9 @@ responses:
         "በመተግበሪያው ላይ የተሰጥዎት መለያ ሥራ ከጀመረ፣ በአጭር የጽሑፍ መልእክት እንኳን ደስ ያልዎት የሚል መልእክት ይደርስዎታል ወይም በቀላሉ ያልዎትን ቀሪ ሒሳብ 
         ማረጋገጥ ይችላሉ። ጥያቄው ውድቅ የተደረገበት ምክንያት በአጭር የጽሑፍ መልእክት ይገለጽልዎታል።"
       buttons:
-        - title: "REAPPLICATION PROCCESS"
+        - title: "የማመልከቻ ሂደት"
           payload: "/reapplication"
-        - title: "PAYMENT DOUBT"
+        - title: "የክፍያ ጥርጣሬ"
           payload: "/payment_doubt"
 
   utter_app_version:
