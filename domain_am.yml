@@ -1,0 +1,1129 @@
+version: "3.0"
+
+intents:
+  - start
+  - affirm
+  - bot_challenge
+  - deny
+  - mood_great
+  - mood_unhappy
+  - give_time
+  - goodbye
+  - greet
+  - support
+  - thanks
+  - fallback
+  - cbo
+  - digital_Loan
+  - digital_product
+  - michu
+  - guyya_loan
+  - wabbii_loan
+  - eligibility
+  - foreigner
+  - age_limit
+  - guyyaa_Requirements
+  - wabii_Requirements
+  - michu_limit
+  - max_limit
+  - guyyaa_limit
+  - wabii_limit
+  - michu_duration
+  - guyyaa_duration
+  - wabii_duration
+  - michu_accessfee
+  - wabii_fee
+  - guyyaa_fee
+  - michu_interest
+  - wabii_interest
+  - guyyaa_interest
+  - michu_penality
+  - late_payment
+  - refuse_payment
+  - early_payment
+  - wabii_penality
+  - guyyaa_penality
+
+  - ID_Type
+  - gender
+  - norms
+  - w_vs_g
+  - uploaddoccument
+  - phone_number
+  - why_michu_notwork
+  - late_disbursment
+  # - disbursal_time
+  - reversal
+  - NPL
+  - know_deadline
+  - repayment_option
+  - who_debit
+  - payment_type
+  - reminder
+  - rejection
+  - document_rejection
+  - incorect
+  - Features
+
+  - why_michu
+  - app_version
+  - kyc
+  - branch_support
+  - loan_complain
+  - get_support
+  - double_taken
+  - forbedin
+  - work_time
+  - provider
+  - reapplication
+  - credit_score
+  - otp
+  - payment_doubt
+  - double_loan
+  - password
+  - FAQ
+  - wabii_application
+  - guyyaa_application
+  - renewingd
+  - reaplication_times
+
+  - install_michu
+  - michu_availablity
+  - language
+  - michu_language
+  - application
+  - approval_status
+  - change_language
+
+responses:
+  utter_start:
+    - text: "ምቹ የኦሮሚያ ኅብረት ሥራ ባንክ ቻትቦት ሰላምታዋን ለእርስዎ ታቀርባለች!  ምን ልርዳዎት? ስለ ምቹ ዲጂታል የብድር አገልግሎት ምን ዓይነት መረጃ ይፈልጋሉ? 
+            ስለ የምቹ የብድር አገልግሎት ማመልከቻ አቀራረብ ጥያቄዎች አልዎት? ጥያቄዎን ይጻፉልኝና አግዝዎታለሁ። "
+      buttons:
+        - title: "የኦ.ኅ.ሥ.ባ"
+          payload: "/cbo"
+        - title: "ሚቹ"
+          payload: "/michu"
+        - title: "FAQ"
+          payload: "/FAQ"
+    - text:
+        "ወደ ምቹ የኦሮሚያ ኅብረት ሥራ ባንክ ቻትቦት እንኳን ደኅና መጡ! ምን ልርዳዎት? ስለ ምቹ ዲጂታል የብድር አገልግሎት ምን ማወቅ ይፈልጋሉ? ስለ የምቹ የብድር 
+        አገልግሎት ማመልከቻ አቀራረብ ጥያቄ አልዎት? ጥያቄዎን ይጻፉልኝና አግዝዎታለሁ።"
+      buttons:
+        - title: "የኦ.ኅ.ሥ.ባ"
+          payload: "/cbo"
+        - title: "ሚቹ"
+          payload: "/michu"
+        - title: "FAQ"
+          payload: "/FAQ"
+
+  utter_greet:
+    - text:
+        "ሰላም! እንደምን አሉ? ምቹ የኦሮሚያ ኅብረት ሥራ ባንክ ቻትቦት ሰላምታዋን ለእርስዎ ታቀርባለች! ምን ልርዳዎት? ስለ ምቹ ዲጂታል የብድር አገልግሎት ምን ዓይነት 
+        መረጃ ይፈልጋሉ? ስለ የምቹ የብድር አገልግሎት ማመልከቻ አቀራረብ ጥያቄዎች አልዎት? ጥያቄዎን ይጻፉልኝና አግዝዎታለሁ።"
+      buttons:
+        - title: "የኦ.ኅ.ሥ.ባ"
+          payload: "/cbo"
+        - title: "ሚቹ"
+          payload: "/michu"
+        - title: "FAQ"
+          payload: "/FAQ"
+    - text:
+        "ሰላም! እንደምን አሉ? ወደ ምቹ የኦሮሚያ ኅብረት ሥራ ባንክ ቻትቦት እንኳን ደኅና መጡ! ምን ልርዳዎት? ስለ ምቹ ዲጂታል የብድር አገልግሎት ምን ማወቅ ይፈልጋሉ? 
+        ስለ የምቹ የብድር አገልግሎት ማመልከቻ አቀራረብ ጥያቄ አልዎት? ጥያቄዎን ይጻፉልኝና አግዝዎታለሁ።"
+      buttons:
+        - title: "የኦ.ኅ.ሥ.ባ"
+          payload: "/cbo"
+        - title: "ሚቹ"
+          payload: "/michu"
+        - title: "FAQ"
+          payload: "/FAQ"
+
+  utter_goodbye:
+    - text: "እንኳን ደኅና መጡ! ወደፊት ተጨማሪ ጥያቄዎች ካልዎት፣ ከመጠየቅ ወደኋላ አይበሉ! ደኅና ይሁኑ!"
+      buttons:
+        - title: "ቸው"
+          payload: "/goodbye"
+        - title: "አመሰግናለሁ"
+          payload: "/thanks"
+    - text: "ማገዝ በመቻሌ ደስ ብሎኛል። ወደፊት እገዛ ከፈለጉ፣ ተመልሰው ወደዚህ ከመምጣት ወደኋላ አይበሉ። ለአሁኑ ደኅና ይሁኑ!"
+      buttons:
+        - title: "ቸው"
+          payload: "/goodbye"
+        - title: "አመሰግናለሁ"
+          payload: "/thanks"
+
+  utter_happy:
+    - text: "አሪፍ ነው፣ ይቀጥሉ!"
+      buttons:
+        - title: "ቸው"
+          payload: "/goodbye"
+        - title: "አመሰግናለሁ"
+          payload: "/thanks"
+
+  utter_cheer_up:
+    - text: "ዘና የሚያደርግዎት ነገር እነሆ፦"
+      # image: https://i.imgur.com/nGF1K8f.jpg
+
+  utter_did_that_help:
+    - text: "ጠቃሚ ሆኖ አገኙት?"
+
+  utter_support:
+    - text: "ያለጥርጥር፣ በዚህ ጉዳይ ላይ እርስዎን ለማገዝ በመቻሌ ደስተኛ ነኝ። እያጋጠምዎት ስላለው ችግር ተጨማሪ ዝርዝር መረጃ ሊሰጡኝ ይችላሉ?"
+      buttons:
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+    # - text: "በእርግጥ በችግርዎ ላይ እርስዎን ለመርዳት ደስተኛ ነኝ። እባክህ እያጋጠመህ ስላለው ችግር ተጨማሪ መረጃ መስጠት ትችላለህ?"
+    #   buttons:
+    #     - title: "ጉያ ብድር"
+    #       payload: "/guyya_loan"
+    #     - title: "ዋቢ ብድር"
+    #       payload: "/wabbii_loan"
+
+  utter_cbo:
+    - text: "ወደ የኦሮሚያ ኅብረት ሥራ ባንክ እንኳን ደኅና መጡ።\n የኦሮሚያ ኅብረት ሥራ ባንክ የተለያዩ አገልግሎቶችን በመስጠት ከ10 ሚሊዮን በላይ ለሚሆኑ በዓለም 
+            ዙሪያ የሚገኙ ደንበኞቹ አገልግሎት መስጠት በመቻሉ ኩራት ይሰማዋል ተጨማሪ ለማወቅ  [እዚህ] (https://coopbankoromia.com.et/) ላይ ይጫኑ "
+      buttons:
+        - title: "ዲጂታል ብድር"
+          payload: "/digital_Loan"
+        - title: "ሚቹ"
+          payload: "/michu"
+    - text:
+        "ጤና ይስጥልኝ! ወደ የኦሮሚያ ኅብረት ሥራ ባንክ እንኳን በደኅና መጡ! የኦሮሚያ ኅብረት ሥራ ባንክ የተለያዩ አገልግሎቶችን በመስጠት ከ10 ሚሊዮን በላይ ለሚሆኑ 
+        በዓለም ዙሪያ የሚገኙ ደንበኞች አገልግሎት መስጠት በመቻሉ ኩራት ይሰማዋል። ተጨማሪ መረጃ ለማግኘት እባክዎ [እዚህ] (https://coopbankoromia.com.et/)
+         ላይ ይጫኑ።"
+      buttons:
+        - title: "ዲጂታል ብድር"
+          payload: "/digital_Loan"
+        - title: "MICHU"
+          payload: "/michu"
+
+  utter_provider:
+    - text: "ምቹ በቀና ቴክኖሎጂ ተዘጋጅቶ በኦሮሚያ ኅብረት ሥራ ባንክ የቀረበ ዲጂታል የብድር አገልግሎት ሲሆን በዓይነቱ የመጀመሪያ የሆነ ዲጂታል የብድር አገልግሎትን 
+            የሚያቀርብ ግንባር ቀደም የሆነ ዘመናዊ ፕላትፎርም ነው።  በምቹ መተግበሪያ ውስጥ ማግኘት የሚቻለው ልዩ አገልግሎት ተጠቃሚው አገልግሎትን እንዲያገኝ ባንኩም 
+            የፋይናንስ ሥራዎቹን እንዲሠራ ያደርጋል። "
+      buttons:
+        - title: "ዲጂታል ብድር"
+          payload: "/digital_Loan"
+        - title: "ዲጂታል ምርት"
+          payload: "/digital_product"
+    # - text:
+    #     "የኢትዮጵያ የመጀመሪያው የዲጂታል ብድር መፍትሄ እና ዋና ዲጂታል መድረክ እንደመሆኑ መጠን ሚቹ ዲጂታል የብድር ምርት ነው።
+    #     ጥንካሬውን ከቄና ቴክኖሎጂ ከሚስበው ከኦሮሚያ ህብረት ስራ ባንክ። Michu መተግበሪያ ይቆማል
+    #     እንደ ብቸኛ መግቢያ መውጫ ምክንያቱም ልዩ መዳረሻ ስላለው ባንኩ አገልግሎቶችን ለመስጠት ቀላል ያደርገዋል
+    #     እና የፋይናንስ ግብይቶች."
+    #   buttons:
+    #     - title: "ዲጂታል ብድር"
+    #       payload: "/digital_Loan"
+    #     - title: "ዲጂታል ምርት"
+    #       payload: "/digital_product"
+
+  utter_digital_loan:
+    - text:
+        "ዲጂታል ብድር የኦንላይን ፕላትፎርሞች ወይም የሞባይል መተግበሪያዎች በመሳሰሉ ዲጂታል መንገዶች የሚሰጥ የብድር ዓይነት ነው።  ባላቸው ምቹነት፣ ፍጥነት እና 
+        ተዳራሽነት የተነሣ ዲጂታል ብድሮች ተፈላጊነታቸው ከጊዜ ወደ ጊዜ ይበልጥ ተወዳጅነትን እየጨመረ በመሄድ ላይ ነው"
+      buttons:
+        - title: "የኦ.ኅ.ሥ.ባ"
+          payload: "/cbo"
+        - title: "MICHU"
+          payload: "/michu"
+    - text: "ዲጂታል ብድር በድረገጾች ወይም በሞባይል መተግበሪያዎ በመሳሰሉ ዲጂታል ፕላትፎርሞች በኩል ማግኘት የሚቻል ለየት ያለ ብድር ነው። ዲጂታል ብድሮች ፈጣን፣ 
+            ቀላል እና ተደራሽ ስለሆኑ ይበልጥ ተወዳጅነትን ከጊዜ ወደ ጊዜ በማግኘት ላይ ይገኛሉ።"
+      buttons:
+        - title: "የኦ.ኅ.ሥ.ባ"
+          payload: "/cbo"
+        - title: "ሚቹ"
+          payload: "/michu"
+
+  utter_digital_product:
+    - text: "ዲጂታል አገልግሎቱ የኦንላይን አገልግሎቶችን እና መፍትሔዎች ለደንበኞች በሚያቀርበው የኦሮሚያ ኅብረት ሥራ ባንክ የቴክኖሎጂና ዲጂታል ባንኪንግ ክፍል ሥር 
+            የተቋቋመና የሚመራ አገልግሎት ነው። በባንኩ ዲጂታል ስትራቴጂ መሠረት ክፍሉ ለተጠቃሚ ተስማሚ የሆነ በይነገጽ ማዘጋጀት፣ አዳዲስ ዲጂታል አገልግሎቶችን 
+            ማስጀመርና ማጎልበት፣ ደህንነትን ማስጠበቅ ኃላፊነት አለበት። ከዚህ በተጨማሪ መረጃን የመተንተን፣ ከተለያዩ ቡድኖች ጋር ተባብሮ መሥራትና ተለዋዋጭ ከሆነው 
+            የቴክኖሎጂ ዕድገትና ከደንበኛ ፍላጎት አንጻር ብቁ ሆኖ ለመገኘት የሚያስችሉ ሥራዎችን የመሥራት ኃላፊነት አለበት። ክፍሉ በአሁኑ ሰዓት 3 ተቀዳሚ አገልግሎቶችና 
+            ፕላትፎርሞች አሉት፦\n
+            1. የምቹ ፕላትፎርም\n
+            2. ፋርቱ የግብርና ፕላትፎርም\n
+            3. ሳኮ ሊንክ ፕላትፎርም\n
+            በቅርቡ የክፍሉ ትኩረት አቅጣጫ ተጨማሪ አዳዲስ አገልግሎቶችን ማቀናጀትና አገልግሎቱን ማስፋፋት ይሆናል። የክፍሉ ዋንኛ ዓላማ አዳዲስ አገልግሎቶችን በተከታታይ 
+            እየጨመሩ በመሄድ ላይ ያተኩራል።"
+      buttons:
+        - title: "የኦ.ኅ.ሥ.ባ"
+          payload: "/cbo"
+        - title: "ሚቹ"
+          payload: "/michu"
+
+  utter_michu:
+    - text:
+        "ምቹ ፈር ቀዳጅ ዲጂታል የብድር አገልግሎት አቅራቢዎች መካከል አንዱ የሆነ ጥቃቅን አነስተኛና መካከለኛ ኢንተርፕራይዞችን እንዲሁም አብዛኛውን ማኅበረሰብ ዒላማ በማድረግ 
+        በኦሮሚያ ኅብረት ሥራ ባንክ የቀረበ አገልግሎት ነው።\n
+        - ኦንላይን የብድር መተግበሪያን በውስጡ ያለው እንዲሁም በሰው ሠራሽ አስተውሎት የተደገፈ የሞባይል መተግበሪያ ነው\n
+        - ከአስተማማኝ የብድር ብቁነት ምዘና ሞዴልና ኦንላይን የብድር ማሰባሰቢያ ዘዴዎች በተጨማሪ ዲጂታል መተግበሪያው ትንታኔ ይሰጣል\n
+        - ምቹ ተጠቅመው ደንበኞች የብድር ዋስትና ማስያዣ ማቅረብ ሳይኖባቸው ለንግድ እንቅስቃሴያቸው በብድሩ ተጠቃሚ መሆን ይችላሉ።\n
+        ተጨማሪ መረጃ ለማግኘት እዚህ ላይ ይመልከቱ፦ (https://coopbankoromia.com.et/michu/)"
+      buttons:
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+    - text:
+        "ምቹ ፈር ቀዳጅ ዲጂታል የፋይናንስ አገልግሎት አቅራቢዎች መካከል አንዱ የሆነ ጥቃቅን አነስተኛና መካከለኛ ኢንተርፕራይዞችን እንዲሁም አብዛኛውን ማኅበረሰብ ዒላማ 
+        በማድረግ በኦሮሚያ ኅብረት ሥራ ባንክ የቀረበ አገልግሎት ነው።\n
+        - ኦንላይን የብድር መተግበሪያን በውስጡ ያለው እንዲሁም በሰው ሠራሽ አስተውሎት የተደገፈ የሞባይል መተግበሪያ ነው\n
+        - ከአስተማማኝ የብድር ምዘና አሊጎሪዝምና ኦንላይን የብድር ማሰባሰቢያ ዘዴዎች በተጨማሪ ዲጂታል መተግበሪያው ትንታኔ ይሰጣል\n
+        - ምቹ ተጠቅመው ደንበኞች የብድር ዋስትና ማስያዣ ማቅረብ ሳይኖርባቸው ለንግድ እንቅስቃሴያቸው በብድሩ ተጠቃሚ መሆን ይችላሉ። \nተጨማሪ መረጃ ለማግኘት እዚህ 
+        ላይ ይመልከቱ፦ (https://coopbankoromia.com.et/michu/)"
+      buttons:
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+  utter_why_michu:
+    - text:
+        "ምቹ በዲጂታላይዜሽን፣ በተደራሽነትና በአገልግሎት ልህቀት በመታገዝ ለደንበኞች፣ ለባንኮችና ለአገር አቀፍ ኦፕሬሽኖች መጠነ ሰፊ አገልግሎት ያቀርብላቸዋል። እየተስፋፋ በመሄድ 
+        ላይ ባለው የኢኮኖሚ ሥነ-ምህዳር ውስጥ ተሳትፎ ማድረግን ያመቻቻል፣ ገቢን ያሳድጋል፣ ወጪን በመቀነስ እንደ ተጨማሪ የገቢ ማስገኛ ምንጭ ሆኖ ያገለግላል። ፕላትፎርሙ 
+        በመረጃ ላይ የተመረኮዘ ውሳኔ አሰጣጥን ያጠናክራል፣ ስጋቶችን ይቀንሳል፣ የአመልካችን መረጃ አሰባሰብ ወጥ ቅርጽ እንዲይዝ ያደርጋል፣ በፋይናንሱ ዘርፍ አካታችንነት ያበረታታል፣ 
+        እንዲሁም የባንክ አገልግሎት የማያገኙና የብድር ዋስትና ማስያዣ ማቅረብ ለሚቸገሩ ሰዎች የብድር አገልግሎቶችን ያመቻቻል። ምቹ መተግበሪያ ዝቅተኛ ገቢ ያላቸውን ግለሰቦች 
+        ያላቸውን የፋይናንስ ፍላጎት ከማሟላት ባሻገር የደንበኞችን ተሳትፎ ወደ ላቀ ደረጃ እንዲደርስ ያደርጋል፣ የዋሌት ሒሳብ ተመዝጋቢዎችንና የደንበኞችን ቁጥር በከፍተኛ ደረጃ ያሳድጋል።"
+      buttons:
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+    # - text:
+    #     "ሚቹ በዲጂታላይዜሽን፣ በተደራሽነት እና በአገልግሎት ጥራት ከፍተኛ ጥቅሞችን በመስጠት ለደንበኞች፣ ለባንኮች እና ለሀገራዊ ስራዎች ሰፊ አፕሊኬሽኖች አሉት። በማደግ ላይ ባለው ሥነ-ምህዳር ውስጥ 
+    #     ተሳትፎን ይፈቅዳል፣ ገቢን ይጨምራል፣ እና ወጪን ይቀንሳል፣ ስለዚህ እንደ የገቢ ምንጭ ያቀርባል። ቴክኖሎጂው የአመልካቾችን መረጃ መሰብሰብን ያመቻቻል፣ የፋይናንሺያል ማካተትን ያበረታታል፣ እና የባንክ 
+    #     የሌላቸውን እና በዋስትና የተገደቡ ማህበረሰቦችን ያገለግላል። ሚቹ ዝቅተኛ ገቢ ካላቸው ሰዎች የፋይናንስ አመለካከት ጋር በማዛመድ የኪስ ቦርሳ ተመዝጋቢዎችን እና የደንበኞችን መሰረት በመጨመር የሸማቾችን 
+    #     ተሳትፎ ይለውጣል።"
+    #   buttons:
+    #     - title: "ጉያ ብድር"
+    #       payload: "/guyya_loan"
+    #     - title: "ዋቢ ብድር"
+    #       payload: "/wabbii_loan"
+
+  utter_guyya_loan:
+    - text:
+        "ጉያ በምቹ ፕላትፎርም ውስጥ ከሚገኙት የብድር አገልግሎቶች መካከል አንዱ ሲሆን ጥቃቅን ቢዝነሶች ያላቸውን ፈጣን የሥራ ካፒታል የማግኘት ፍላጎቶቻቸውን ያሟላላቸዋል። 
+        የጉያ ብድሮች በብድር ዋስትና ንብረትና አስፈላጊ ሰነዶች ለማቅረብ ባለመቻላቸው ምክንያት የፋይናንስ ዘርፉ ሲያገላቸው የቆዩትን የንግድ ማኅበረሰቦች ለማገልገል እንዲቻል ታስቦ 
+        የተዘጋጀ ነው።\n\n
+        'ጉያ' የሚለው ቃል ሁለት ትርጉሞችን የያዘ ነው። በኦሮምኛ ቃሉ “ቀን ወይም ዕለታዊ” የሚል አንደምታ ያለው እንደመሆኑ እንደ የጉሊት ነጋዴዎች፣ ኢመደበኛ የጀበና 
+        ቡና ነጋዴዎች፣ የቀን ሥራ ሠራተኞች፣ የጎዳና ንግድ ተዳዳሪዎች፣ አዟሪዎች ወዘተ የመሳሰሉ ዕለታዊ የመሥሪያ ካፒታል ፍላጎት ላላቸው የሚሰጥ ብድር መሆኑን ያመላክታል። 
+        በአማርኛ ደግሞ ሴት አያቶች በቀደመው ዘመን ነግደው የሚያገኙትን የዕለት ገቢያቸውን በጭናቸው መካከል ባለው ቦታ ላይ በልብሳቸው ላይ ሰፍተው የሚያዘጋጁትን ስውር 
+        ኪስ የሚያመላክት ነው።"
+      buttons:
+        - title: "የሚቹ ባህሪያት"
+          payload: "/Features"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+    - text:
+        "ጉያ በምቹ ፕላትፎርም ውስጥ ከሚገኙት የብድር አገልግሎቶች መካከል አንዱ ሲሆን ጥቃቅን ቢዝነሶች ያላቸውን ፈጣን የሥራ ካፒታል የማግኘት ፍላጎቶቻቸውን ያሟላላቸዋል። 
+        የጉያ ብድሮች በብድር ዋስትና ንብረትና አስፈላጊ ሰነዶች ለማቅረብ ባለመቻላቸው ምክንያት የፋይናንስ አገልግሎት ማግኘት ሳይችሉ የኖሩ የንግድ ማኅበረሰቦችን ለማገልገል እንዲቻል 
+        ታስቦ የተዘጋጀ ነው። \n\n
+        'ጉያ' የሚለው ቃል ሁለት ትርጒሞች አሉት። በኦሮምኛ ቃሉ “ቀን ወይም ዕለታዊ” የሚል አንደምታ ያለው እንደመሆኑ እንደ የጉሊት ነጋዴዎች፣ ኢመደበኛ የጀበና ቡና ነጋዴዎች፣ 
+        የቀን ሥራ ሠራተኞች፣ የጎዳና ንግድ ተዳዳሪዎች፣ አዟሪዎች ወዘተ የመሳሰሉ ዕለታዊ የመሥሪያ ካፒታል ፍላጎት ላላቸው የሚሰጥ ብድር መሆኑን ያመላክታል። በአማርኛ ደግሞ ሴት 
+        አያቶች በቀደመው ዘመን ነግደው የሚያገኙትን የዕለት ገቢያቸውን በጭናቸው መካከል ባለው ቦታ ላይ በልብሳቸው ላይ ሰፍተው የሚያዘጋጁትን ስውር ኪስ የሚያመላክት ነው።"
+      buttons:
+        - title: "ሚቹ ባህሪያት"
+          payload: "/Features"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+  utter_wabbii_loan:
+    - text:
+        "ዋቢ ብድር በምቹ ፕላትፎርም ውስጥ ከሚገኙት የብድር አገልግሎቶች መካከል አንዱ ሲሆን አነስተኛ ቢዝነሶች ያላቸውን ፈጣን የሥራ ካፒታል የማግኘት ፍላጎቶቻቸውን 
+        ያሟላላቸዋል። እና የዚህ ዲጂታል ብድር ዓላማ ጥቃቅን፣ አነስተኛና መካከለኛ ኢንተርፕራይዝ ደንበኞች ወደኛ የሚደርሱበትን መንገድ ማሻሻል፣ የብድር ዋስትና ንብረት ማቅረብ 
+        ለማይችሉ ደንበኞች አገልግሎት መስጠት እና የፋይናንስ አካታችነትን ማጠናከር ነው። \n\n
+        ‘ዋቢ’ የሚለው ቃል ሁለት ትርጉሞች አሉት። በኦሮምኛ ዋቢ የሚለው ቃል 'አስተማማኝነት' የሚል ፍቺ የሚሰጥ ሲሆን በዚህ ዓውድ ቃሉ የጋራ ተጠቃሚነትና ዕድገት 
+        መኖሩን በማረጋገጥ የሚሰጥ አማራጭ አገልግሎት መሆኑን አፅዕኖት ይሰጣል።  እንደ ችርቻሮ ነጋዴዎች (ባለሱቆች)፣ የጀበና ቡና መሸጫዎች፣ አነስተኛ ምግብ ቤቶች 
+        (ሽሮ ቤቶች)፣ ጭማቂና ፍራፍሬ መሸጫ ሱቆች፣ የጫት መሸጫ ሱቆች፣ ፋስት ፉድ መደብሮች፣ ባለ ሦስት እግር ታክሲዎች (ባጃጆች) ለመሳሰሉ ንግዶች የቀረበ አገልግሎት 
+        ነው። በአማርኛ ዋቢ የሚለው ቃል “ምንጭ” የሚል ፍቺ ያለው ሲሆን የምቹ ዋቢ ብድር አገልግሎት ለጥቃቅን፣ አነስተኛና መካከለኛ ኢንተርፕራይዞች የገንዘብ ምንጭ እንደሚሆናቸው 
+        ያመላክታል።"
+      buttons:
+        - title: "ሚቹ ባህሪያት"
+          payload: "/Features"
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+    - text:
+        "ዋቢ በምቹ ፕላትፎርም ውስጥ ከሚገኙት የብድር አገልግሎቶች መካከል አንዱ ሲሆን አነስተኛ ቢዝነሶች ያላቸውን ፈጣን የሥራ ካፒታል የማግኘት ፍላጎቶቻቸውን ያሟላላቸዋል። 
+        እና የዚህ ዲጂታል ብድር ዓላማ ጥቃቅን፣ አነስተኛና መካከለኛ ኢንተርፕራይዝ ደንበኞች ወደኛ የሚደርሱበትን መንገድ ማሻሻል፣ የብድር ዋስትና ንብረት ማቅረብ ለማይችሉ 
+        ደንበኞች አገልግሎት መስጠት እና የፋይናንስ አካታችነትን ማጠናከር ነው። \n\n
+        ‘ዋቢ’ የሚለው ቃል ሁለት ትርጉሞች አሉት። በኦሮምኛ ዋቢ የሚለው ቃል 'አስተማማኝነት' የሚል ፍቺ የሚሰጥ ሲሆን በዚህ ዓውድ ቃሉ የጋራ ተጠቃሚነትና ዕድገት 
+        መኖሩን በማረጋገጥ የሚሰጥ አማራጭ አገልግሎት መሆኑን አፅዕኖት ይሰጣል። እንደ ችርቻሮ ነጋዴዎች (ባለሱቆች)፣ የጀበና ቡና መሸጫዎች፣ አነስተኛ ምግብ ቤቶች 
+        (ሽሮ ቤቶች)፣ ጭማቂና ፍራፍሬ መሸጫ ሱቆች፣ የጫት መሸጫ ሱቆች፣ ፋስት ፉድ መደብሮች፣ ባለ ሦስት እግር ታክሲዎች (ባጃጆች) ለመሳሰሉ ንግዶች የቀረበ 
+        አገልግሎት ነው። በአማርኛ ዋቢ የሚለው ቃል “ምንጭ” የሚል ፍቺ ያለው ሲሆን የምቹ ዋቢ ብድር አገልግሎት ለጥቃቅን፣ አነስተኛና መካከለኛ ኢንተርፕራይዞች የገንዘብ 
+        ምንጭ እንደሚሆናቸው ያመላክታል።"
+      buttons:
+        - title: "ሚቹ ባህሪያት"
+          payload: "/Features"
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+
+  utter_eligibility:
+    - text:
+        "ወደ ምቹ ራስን በራስ ለማስመዝገብ መሟላት ያለባቸው ጥቂት መስፈርቶች አሉ። ከሁሉም በፊት ደንበኛው ኢትዮጵያዊ ዜጋ የሆነና በንግድ እንቅስቃሴ ውስጥ እየተሳተፈ ያለ 
+        መሆን፣ የኦሮሚያ ኅብረት ሥራ ባንክ ደንበኛ በመሆኑ የባንኩን አንድ ወይም ከዚያ በላይ አገልግሎቶች ተጠቃሚ የሆነ እንዲሁም ለብድሩ ማመልከቻ መከፈል ያለበትን የአገልግሎት 
+        ክፍያ ለመክፈል በቂ ገንዘብ ያለው መሆን፣ የስማርት ስልክ ያለው እንዲሁም በባንኩ የሚጠየቃቸውን የተለያዩ አስፈላጊ ሰነዶች ለማቅረብ ፈቃደኛ የሆነ መሆን አለበት። ስለ ምቹ 
+        አገልግሎት እያንዳንዱ መስፈርት ተጨማሪ መረጃ ለማግኘት ከሚከተሉት አዝራሮች የሚፈልጉትን አንዱን አገልግሎት ይምረጡ፦"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_foreigner:
+    - text:
+        "የምቹ ብድሮች የሚሰጡት የኢትዮጵያ ዜግነት ላላቸው ወይም የመኖሪያ ፈቃድ ላላቸው ግለሰቦች ብቻ ነው። እርስዎ በእነዚህ ምድቦች ውስጥ የማይካተቱ ከሆኑ ምቹ መተግበሪያን 
+        ለመጠቀም ብቁ አይደሉም።"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_age_limit:
+    - text: "አዎ፣ በመተግበሪያው ላይ ለመመዝገብ የሚፈቀደው ዝቅተኛ ዕድሜ 18 ዓመት ነው።"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_guyyaa_Requirements:
+    - text:
+        "ጉያ የብድር አገልግሎት የሚከተሉትን ሰነዶች እስካሟሉ ድረስ መደበኛ የንግድ ሥራ ላይ ያልተሰማሩ ሁሉንም ዓይነት ነጋዴዎች አገልግሎት ለመስጠት ያለመ ነው፦ \n
+        - የኦሮሚያ ኅብረት ሥራ ባንክ ሒሳብ\n
+        - በንግድ ሥራ ላይ የተሰማሩ መሆን ይኖርብዎታል (የገቢ ምንጭ)\n
+        - ስማርት ስልክ ሊኖርዎት ይገባል (አንድሮይድ)"
+      buttons:
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+        - title: "GUYYAA LIMIT"
+          payload: "/guyyaa_limit"
+
+  utter_wabii_Requirements:
+    - text:
+        "ዋቢ ብድር ከሚከተሉት ጋር መደበኛ ንግዶች ያላቸውን ነጋዴዎች ዒላማ ያደረገ ነው፦\n
+        - የኦሮሚያ ኅብረት ሥራ ባንክ ሒሳብ\n
+        - ሕጋዊ የቀበሌ መታወቂያ\n
+        - የንግድ ፈቃድ እና የግብር ከፋይ መለያ ቁጥር (ቲን)\n
+        - የመመሥረቻ ጽሑፍና መተዳደሪያ ደንብ (ኃላፊነቱ ለተወሰነ የግል ማኅበር)\n
+        - በንግድ እንቅስቃሴ ላይ የተሰማራ መሆን አለበት (የገቢ ምንጭ)\n
+        - ስማርት ስልክ (አንድሮይድ) ባለቤት መሆን አለበት"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "WABII LIMIT"
+          payload: "/wabii_limit"
+
+  utter_michu_limit:
+    - text:
+        "እርስዎ በሚመርጡት አገልግሎት ዓይነት ላይ በመመርኮዝ ምቹ የሚያቀርብልዎት የብድር መጠን ገደብ የተለያየ ሊሆን ይችላል። ከሚከተሉት አዝራሮች መካከል እባክዎ 
+        የሚፈልጉትን ዓይነት ገደብ ይምረጡ፦"
+      buttons:
+        - title: "GUYYAA LIMIT"
+          payload: "/guyyaa_limit"
+        - title: "WABII LIMIT"
+          payload: "/wabii_limit"
+
+  utter_max_limit:
+    - text:
+        "በምቹ ውስጥ ያለው የብድር ገደብ እንደተመረጠው አገልግሎት ዓይነት የተለያየ ነው። ይሁን እንጂ የብድር ገደቡን ከዝቅተኛ ወደ ከፍተኛ እያሳደጉ መሄድ የሚፈልጉ ከሆነ 
+        የሚከተሉትን ቁልፍ ስትራቴጂዎች ከግምት ማስገባት ይኖርብዎታል፦\n
+        1. **የገንዘብ ዝውውርን ታሪክ ማዳበር፦** ወጥነት ያለው ዕለታዊ፣ ሳምንታዊና ወርኃዊ የገንንዘብ እንቅስቃሴ እንዲኖር በማድረግ በባንክ ሒሳብዎ ላይ ያለውን የገንዘብ 
+        ዝውውር ታሪክዎን ያዳብሩ።\n
+        2. **ትክክለኛ የንግድዎን መረጃ መያዝና ማቅረብ፦** ትክክለኛና ወቅታዊ የንግድዎን መረጃ የሚያሳይ መዝገብ በመያዝ የገንዘብ አቋምዎ ምን እንደሚመስል በትክክል ያሳዩ።\n
+        3. **በሰዓቱ ወይም አስቀድሞ ብድርን መክፈል፦** የወሰዱትን ብድር በሰዓቱ ወይም አስቀድሞ መክፈል ላይ ትኩረት ይስጡ።\n
+        እነዚህን እርምጃዎች በመውሰድ፣ የእርስዎን የብድር ብቁነት ምዘና ውጤት በማሻሻል ብድር ለመጀመሪያ ጊዜ ሲጠይቁና በቀጣይነት በሚያቀርቧቸው ማመልከቻዎች ወቅት የተሻለ 
+        ብድር የማግኘት ዕድል እንዲኖርዎት ማድረግ ይችላሉ።"
+      buttons:
+        - title: "GUYYAA LIMIT"
+          payload: "/guyyaa_limit"
+        - title: "WABII LIMIT"
+          payload: "/wabii_limit"
+
+  utter_guyyaa_limit:
+    - text: "የጉያ ብድር ዝቅተኛው ገደብ 2000 ብር ሲሆን ከፍተኛው ጣሪያ 15000 ብር ሲሆን ሁለቱም ብድሮች በአንድ ሳምንት (በ 7 ቀናት) ጊዜ ውስጥ መከፈል ይኖርባቸዋል።"
+      buttons:
+        - title: "WABII LIMIT"
+          payload: "/wabii_limit"
+        - title: "GUYYAA CREDIT PERIOD"
+          payload: "/guyyaa_duration"
+
+  utter_wabii_limit:
+    - text: "የዋቢ ብድር ገደቡ ከ 50,000 ብር እስከ 100,000 ብር ይደርሳል።"
+      buttons:
+        - title: "GUYYAA LIMIT"
+          payload: "/guyyaa_limit"
+        - title: "WABII CREDIT PERIOD"
+          payload: "/wabii_duration"
+
+  utter_michu_duration:
+    - text: "ብድሩ የሚከፈልበት የጊዜ ገደብ እርስዎ በመረጡት አገልግሎት ዓይነት የሚመረኮዝ ይሆናል። እባክዎ የሚፈልጉትን የብድር መክፈያ ጊዜ ገደብ ይምረጡ።"
+      buttons:
+        - title: "GUYYAA CREDIT PERIOD"
+          payload: "/guyyaa_duration"
+        - title: "WABII CREDIT PERIOD"
+          payload: "/wabii_duration"
+
+  utter_guyyaa_duration:
+    - text: "የምቹ ጉያ የብድር አገልግሎት በ 7 ቀናት ውስጥ መከፈል አለበት።"
+      buttons:
+        - title: "WABII CREDIT PERIOD"
+          payload: "/wabii_duration"
+        - title: "GUYYAA FACILITY FEE"
+          payload: "/guyyaa_fee"
+
+  utter_wabii_duration:
+    - text: "የምቹ ዋቢ የብድር አገልግሎት በ 30 ቀናት ውስጥ መከፈል አለበት።"
+      buttons:
+        - title: "GUYYAA CREDIT PERIOD"
+          payload: "/guyyaa_duration"
+        - title: "WABII FACILITY FEE"
+          payload: "/wabii_fee"
+
+  utter_michu_accessfee:
+    - text: "የብድሩ አገልግሎት ክፍያ እርስዎ በመረጡት አገልግሎት ዓይነት የሚመረኮዝ ይሆናል። እባክዎ የሚፈልጉትን የብድር አገልግሎት ክፍያ ዓይነት ይምረጡ።"
+      buttons:
+        - title: "GUYYAA FACILITY FEE"
+          payload: "/guyyaa_fee"
+        - title: "WABII FACILITY FEE"
+          payload: "/wabii_fee"
+
+  utter_guyyaa_fee:
+    - text: "የጉያ ብድር የአገልግሎት ክፍያ ከወሰዱት የብድር መጠን 12% በመቶ ነው።"
+      buttons:
+        - title: "WABII FACILITY FEE"
+          payload: "/wabii_fee"
+        - title: "GUYYAA INTER-RATE"
+          payload: "/guyyaa_interest"
+
+  utter_wabii_fee:
+    - text: "የምቹ ዋቢ ብድር አገልግሎትን ለማግኘት መከፈል ያለበት የአገልግሎት ክፍያ ከተፈቀደው ብድር መጠን 5% በመቶ ሲሆን ይህም ገንዘብ ብድሩ ከመሰጠቱ በፊት 
+            ለባንኩ መከፈል አለበት።"
+      buttons:
+        - title: "GUYYAA FACILITY FEE"
+          payload: "/guyyaa_fee"
+        - title: "WABII INTER-RATE"
+          payload: "/wabii_interest"
+
+  utter_michu_interest:
+    - text: "በመረጡት የምቹ ብድር ዓይነት ላይ በመመርኮዝ የወለዱ መጠን የተለያየ ነው።"
+      buttons:
+        - title: "GUYYAA INTER-RATE"
+          payload: "/guyyaa_interest"
+        - title: "WABII INTER-RATE"
+          payload: "/wabii_interest"
+
+  utter_guyyaa_interest:
+    - text: "ለጉያ ብድር የሚከፈለው የወለድ መጠን ባዶ (0%) ነው፣ የሚከፈለው የአገልግሎት ክፍያ ብቻ ነው።"
+      buttons:
+        - title: "WABII INTER-RATE"
+          payload: "/wabii_interest"
+        - title: "GUYYAA PENALITY"
+          payload: "/guyyaa_penality"
+
+  utter_wabii_interest:
+    - text: "የዋቢ ብድር ወርኃዊ ወለድ ስሌት 8% በመቶ ነው።"
+      buttons:
+        - title: "GUYYAA INTER-RATE"
+          payload: "/guyyaa_interest"
+        - title: "WABII PENALITY"
+          payload: "/wabii_penality"
+
+  utter_michu_penality:
+    - text:
+        "ብድሩ በቀነ ገደቡ ካልተከፈለ ቅጣት መታሰብ ይጀምራል። ቅጣቱ እርስዎ በመረጡት የምቹ የብድር አገልግሎት ዓይነት መሠረት የተለያየ ነው። እባክዎ ከዚህ በታች ካለው 
+        ዝርዝር አንዱን አዝራር ይምረጡ፦ ለአገልግሎቱ ቅጣት መክፈል ይፈልጋሉ።"
+      buttons:
+        - title: "GUYYAA PENALITY"
+          payload: "/guyyaa_penality"
+        - title: "WABII PENALITY"
+          payload: "/wabii_penality"
+
+  utter_late_payment:
+    - text:
+        "ብድርን በሰዓቱ አለመክፈል የምቹ የብድር ታሪክዎ ውስጥ የሚመዘገበውን የብድር ብቁነት ምዘና ነጥብዎ ላይ አሉታዊ ተፅዕኖ በማሳደር ወደፊት የብድር አገልግሎት እንዳያገኙ 
+        ዕድልዎን ያጠባል ብሎም ሙሉ በሙሉ አገልግሎት እንዳያገኙ ሊያሳግድዎት ይችላል። በተጨማሪም፣ ብድር በሰዓቱ ባለመከፈሉ የሚጣሉ ቅጣቶችና ወለድ ክፍያዎች በብድር 
+        ስምምነት ውሉ ላይ በተጠቀሰው መሠረት ይታሰባሉ። ብድር ክፍያ ዋናውን ዕዳ፣ ውዝፍ ቅጣቶችንና አገልግሎት ክፍያዎችን የሚያካትት ሲሆን አስፈላጊ ሲሆን በግዳጅ የሚከፈል 
+        ይሆናል።"
+      buttons:
+        - title: "GUYYAA PENALITY"
+          payload: "/guyyaa_penality"
+        - title: "WABII PENALITY"
+          payload: "/wabii_penality"
+  utter_refuse_payment:
+    - text:
+        "የብድር ክፍያ ግዴታዎን መወጣት ካልቻሉ የሚከተሉትን ዓይነት በርካታ ቅጣቶችን ሊቀጡ ይችላሉ፦\n
+        1. በመጀመሪያ፣ በምቹ ዲጂታል የብድር ታሪክ ላይ አሉታዊ ተፅዕኖ በማሳርፍ የብድር ብቁነት ምዘና ነጥብዎ እንዲበላሽ ያደርጋል። ወደፊት የብድር አገልግሎት እንዳያገኙ 
+        ዕድልዎን ያጠባል ብሎም ሙሉ በሙሉ አገልግሎት እንዳያገኙ ሊያሳግድዎት ይችላል።\n
+        2. ባንኩ የርስዎን ጉዳይ ለብሔራዊ ባንክ ባልተሳካ (የተበላሸ) ብድር ዝርዝር ውስጥ አካቶ ይልካል። በዚህ ዝርዝር ውስጥ የእርስዎ ስም ከተካተተ በምቹ ያለብዎትን ዕዳ 
+        ከፍለው እስኪጨርሱ ድረስ ከማንኛውም የፋይናንስ ተቋም ምንም ዓይነት ብድር እንዳያገኙ ያሳግድዎታል።\n
+        3. የተፈጠረውን ችግር መፍትሔ ካልሰጡበት፣ ጉዳዩን ወደ ፍርድ ቤት በመውሰድ በእርስዎ ላይ ክስ በመመሥረት ሕጋዊ እርምጃ እንዲወሰድብዎት ያደርጋል። ይህ ሕጋዊ እርምጃ 
+        የሚወሰደው ማመልከቻ ሲያስገቡ በፈረሙት የብድር ስምምነት ውል ላይ በመመርኮዝ ሲሆን ይህ ውል የሚዘጋጀው በዲጂታል መንገድ ነው። ባንኩ በሕጋዊ መንገድ በፍርድ ቤት 
+        ትዕዛዝ ብድሩ እንዲከፈለው ያስደርጋል።\n
+        ብድሩ ሳይከፈል ከቆየበት ቀን ጀምሮ ተጨማሪ ቅጣት ክፍያዎችና ወለድ ጨምሮ አንድ ላይ ይጠራቀማል። በብድር ስምምነት ውሉ ላይ በተቀመጡት ድንጋጌዎች መሠረትእነዚህ 
+        ክፍያዎች ክፍያው ሙሉ በሙሉ እስከሚከፈልበት ቀን ድረስ መጠራቀማቸውን ይቀጥላሉ። በፈረሙት የብድር ስምምነት ውል ላይ እንደተቀመጠው ያለብዎትን ውዝፍ ዕዳ 
+        እንዲከፍሉ በሚደረጉበት ጊዜ ፍሬ ብድሩን ብቻ ሳይሆን አብሮ የተጠራቀመውን ማናቸውም የቅጣትና የወለድ ውዝፍ ክፍያ አንድ ላይ እንዲከፍሉ ይገደዳሉ።"
+      buttons:
+        - title: "GUYYAA PENALITY"
+          payload: "/guyyaa_penality"
+        - title: "WABII PENALITY"
+          payload: "/wabii_penality"
+  utter_early_payment:
+    - text:
+        "ባንኩ ብድር ቀደም ተብሎ እንዲከፈል ያበረታታል እንዲሁም የተዘረጋው ሲስተም በቅድሚያ መክፈልን ወደፊት ለሚሰጡ ብድሮች እንደ አዎንታዊ ግብዓት ይጠቀምበታል። በሌላ 
+        በኩል፣ በየቀኑ ወለድ በሚታሰብበት የምቹ ዋቢ ብድር ላይ አስቀድሞ ክፍያን መፈጸም መከፈል ያለበትን የገንዘብ መጠን ይቀንሳል ወይም የሚሰላውን የወለድ ተመን ዝቅተኛ 
+        እንዲሆን ያደርጋል።"
+      buttons:
+        - title: "GUYYAA PENALITY"
+          payload: "/guyyaa_penality"
+        - title: "WABII PENALITY"
+          payload: "/wabii_penality"
+
+  utter_guyyaa_penality:
+    - text: "የብድር መክፈያ ቀነ ገደቡ ካለፈ የቅጣት ክፍያው በቀን ያልተከፈለው ቀሪ ገንዘብ 0.5% በመቶ ነው።"
+      buttons:
+        - title: "WABII PENALITY"
+          payload: "/wabii_penality"
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+
+  utter_wabii_penality:
+    - text:
+        "ብድሩን በአንድ ወር ጊዜ ውስጥ ወይም በ 30 ቀናት ውስጥ መክፈል ካልተቻለ ቅጣቱ መታሰብ የሚጀመር ሲሆን የሚታሰበው የቅጣት መጠን በቀን የቀሪው ሒሳብ 0.5% በመቶ ነው።"
+      buttons:
+        - title: "GUYYAA PENALITY"
+          payload: "/guyyaa_penality"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_ID_Type:
+    - text:
+        "ማንነትን ለማረጋገጥ የሚያስችሉ የተለያዩ የሰነድ አማራጮች አሉ፦ እነዚህም የቀበሌ መታወቂያ፣ መንጃ ፈቃድና ፓስፖርት ናቸው። ከነዚህ መካከል አንዱን መጠቀም ይችላሉ"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_gender:
+    - text:
+        "የብድር ብቁነት ምዘና ነጥብ መስጫ ሲስተሙ የጾታ ልዩነትን ከግምት የሚያስገባ ስላልሆነ በጾታ ልዩነት ምክንያት ሊገኙ ስለሚችሉ ጥቅሞች የሚያሳስብ ነገር ስለሌለ ለዚህ ተብሎ 
+        የተቀመጠ የተለየ ደንብ የለም።"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_norms:
+    - text:
+        "እውነት ነው፣ የማኅበረሰቡ ሥርዓቶችና ደንቦች በራሱ በማኅበረሰቡ ይጠበቃሉ ተብሎ ይታመናል። ከዚህ ጎን ለጎን፣ መንግሥት ራሱ የሕዝቡን ሥርዓቶችና ደንቦች ማስጠበቅ 
+        መቻል አለበት። ምቹ እንደ አንድ አገልግሎት በመንግሥት ደንቦች፣ መመሪያዎችና አዋጆች መሠረት የሚንቀሳቀሱ የማኅበረሰቡን ንግዶች ተጠቃሚ እንዲሆኑ ለማስቻል የቆመ ነው።"
+      buttons:
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+  utter_w_vs_g:
+    - text:
+        "በደንበኞች ንግድ ዓይነት፣ በሚያቀርቧቸው ሰነዶች እንዲሁም በተቀመጡት መቅረብ ያለባቸው መረጃዎች መስፈርት፣ እንደ የብድር ወሰንና የክፍያ ጊዜ፣ የአገልግሎት ክፍያ እና 
+        የመሳሰሉ ባሕሪያት አንጻር ሲታይ ዋቢ ብድር ከጉያ ብድር የተለየ ነው።"
+      buttons:
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+  utter_uploaddoccument:
+    - text:
+        "እያንዳንዱ ግለሰብ እንዲያቀርብ የሚጠየቃቸው ሰነዶች የየራሳቸው መስቀያ ቦታ ያላቸው እንደመሆናቸው በአንድ ቦታ ላይ በርካታ ሰነዶችን መስቀል አስፈላጊ አይደለም።"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_phone_number:
+    - text:
+        "በአሁኑ ሰዓት ምቹ መተግበሪያ የሚሠራው በኢትዮጵያ ውስጥ ብቻ ስለሆነ የአገር ኮድ (+251) ፊት ማስገባት አያስፈልግም፣ በቀላሉ በቀጥታ 09 ብለው መጀመር ይችላሉ።።"
+      buttons:
+        - title: "የጉያ መስፈርቶች"
+          payload: "/guyyaa_Requirements"
+        - title: "የዋቢ መስፈርቶች"
+          payload: "/wabii_Requirements"
+
+  utter_why_michu_notwork:
+    - text:
+        "ምቹ መተግበሪያ በሁለት ምክንያቶች አገልግሎት መስጠት አቁሞ ሊሆን ይችላል፦ መተግበሪያውን ያለ ኢንተርኔት ለመጠቀም ከሞከሩ ወይም በአንዱ ሒሳብዎ ላይ በመለያ 
+        ገብተው እያሉ በተመሳሳይ መሣሪያ ላይ እንደገና በሌላ መለያ ለመግባት ከሞከሩ እንደ ሳንካ ወይም ከሲስተሙ ጋር ተኳዃኝ ያልሆኑ ነገሮችን ለመግታት  ሲባል መተግበሪያው 
+        ለጊዜው ሊቋረጥብዎት ይችላል።\n
+        ከዚህ ውጭ በመሣሪያዎ ላይ በቂ ማከማቻ ቦታ ከሌለ ሲስተሙ በከፍተኛ አቅሙ መሥራት እንዳይችል ሊያደርገው ይችላል። \n
+        - መተግበሪያውን ይዝጉትና በማከማቻዎ ላይ ባዶ ቦታ ለማዘጋጀት ይሞክሩ።\n
+        - የኔትዎርክ ግንኙነትዎን ሁኔታ ያጣሩና ቪፒኤን አብርተው ከሆኑ ማጥፋት እንዳለብዎት አይርሱ"
+      buttons:
+        - title: "LATE DISBURSMENT"
+          payload: "/late_disbursment"
+        - title: "REVERSAL"
+          payload: "/reversal"
+
+    # - text:
+    #     "የሚቹ መተግበሪያ በብዙ ምክንያቶች ሊታገድ ይችላል፡\n - መተግበሪያውን ከመስመር ውጭ ሁነታ ለመጠቀም እየሞከሩ ወይም VPNን ለማብራት እየሞከሩ ሊሆን ይችላል\n - ሌላ ገብተህ ሳለ በአንድ 
+    #     መሳሪያ ላይ የተለያዩ መለያዎችን ለመግባት እየሞከርክ ሊሆን ይችላል። አካውንት መተግበሪያው ለጊዜው እንዳይገኝ በሚያደርጉ ስህተቶች ወይም የስርዓት አለመጣጣም ምክንያት በአገልግሎት ማዕከሉ በኩል 
+    #     ሊሰናከል ይችላል\n - ሂደቱን በሙሉ አቅም ለማጠናቀቅ በመሳሪያዎ ላይ በቂ ማከማቻ ባለመኖሩ ሊሆን ይችላል። በቀላሉ መተግበሪያውን ዝጋ እና ትንሽ ቦታ ለማስለቀቅ ሞክር።\n - የአውታረ መረብ 
+    #     ግንኙነትህን ፈትሽ እና ሊኖርህ የሚችለውን ቪፒኤን ማጥፋትን አትርሳ።"
+    #   buttons:
+    #     - title: "LATE DISBURSMENT"
+    #       payload: "/late_disbursment"
+    #     - title: "REVERSAL"
+    #       payload: "/reversal"
+
+  utter_late_disbursment:
+    - text:
+        "ክፍያ ዘግይቶ የሚደርስዎት በሁለት ምክንያቶች ሊሆን ይችላል፤ ይኸውም  የአመልካች ሒሳብ ቁጥር እየሠራ ላይሆን ይችላል ወይም ደንበኛን የማወቅ (ኬዋይሲ) እና 
+        የማይሠራ የግብር ከፋይ ቁጥር (ቲን) ችግር ሊኖርበት ይችል ይሆናል፤ እንዲህ ሲሆን መተግበሪያው መልሶ ሥራውን እንዲጀምር ትንሽ ጊዜ ስለሚያስፈልገው፣ አመልካቹ በሒሳቡ 
+        ላይ ያለው ገንዘብ አገልግሎት ክፍያውን ለመሸፈን በቂ ያልሆነ ስላልሆነ፣ የባንኩ ሠራተኛ በርካታ ማመልከቻዎችን እያስተናገደ ስለሆነ ክፍያው ዘግይቶ ሊሆን ይችላል። ከዚህ 
+        ውጭ በመተግበሪያው ላይ እና በሰርቨሩ ላይ ቴክኒክ ችግር ስላጋጠመም ሊሆን ይችላል።"
+      buttons:
+        - title: "WHY MICHU NOT WORK"
+          payload: "/why_michu_notwork"
+        - title: "REVERSAL"
+          payload: "/reversal"
+
+    # - text:
+    #     "ዘግይቶ የሚወጣው ወጪ በተለያዩ ምክንያቶች ሊከሰት ይችላል፡ ከእነዚህም ውስጥ፡ የአመልካቹ መለያ ቁጥር እንቅስቃሴ-አልባ ወይም የ KYC (ደንበኛዎን ይወቁ) ችግር እና የቦዘነ TIN ያለው ሲሆን 
+    #     ይህም ለማንቃት ጥቂት ቀናትን የሚጠይቅ; አመልካቹ የተቋሙን ክፍያ ለመሸፈን በቂ ገንዘብ ስለሌለው; ባለስልጣኑ ብዙ ቁጥር ያላቸው በመጠባበቅ ላይ ያሉ ማመልከቻዎች ያሉት ሲሆን ይህም ወደ ዘግይቶ 
+    #     ክፍያ ይመራዋል; እና በሁለቱም የፊት እና የአገልጋይ ጎኖች ላይ ቴክኒካዊ ጉዳዮች."
+    #   buttons:
+    #     - title: "WHY MICHU NOT WORK"
+    #       payload: "/why_michu_notwork"
+    #     - title: "REVERSAL"
+    #       payload: "/reversal"
+
+  utter_reversal:
+    - text:
+        "በሲስተሙ ስሕተት ምክንያት የተሳሳተ ገንዘብ ዝውውር ከተደረገ ገንዘቡ ተመላሽ ይሆናል ስለዚህ ተጨማሪ መረጃ ለማግኘት በአቅራቢያዎ ወደሚገኝ ቅርንጫፍ ባንክ ይሂዱ።"
+      buttons:
+        - title: "HOW CAN I KNOW DEADLINE"
+          payload: "/know_deadline"
+        - title: "WHO DEBIT FROM MY ACCOUNT"
+          payload: "/who_debit"
+
+  utter_NPL:
+    - text: "ዘግይተው የሚከፍሉ ሰዎችን ለማበረታታት ባንኩ ምንም ፍላጎት የለውም።"
+      buttons:
+        - title: "HOW CAN I KNOW DEADLINE"
+          payload: "/know_deadline"
+        - title: "REPAYMENT OPTION"
+          payload: "/repayment_option"
+
+  utter_know_deadline:
+    - text:
+        "የምቹ መተግበሪያውን ስለ ብድር ገደብ፣ ብድሩ ስለሚከፈልባቸው ጊዜያት፣ የወለድ ተመኖች እና የቅጣት ክፍያዎች በተመለከተ ዝርዝር መረጃን ይሰጣል። መተግበሪያውን 
+        ይክፈቱና ሁሉንም ተዛማጅነት ያላቸውን መረጃዎችን ለማግኘት በመለያዎት ይግቡ።"
+      buttons:
+        - title: "HOW CAN I KNOW DEADLINE"
+          payload: "/know_deadline"
+        - title: "REPAYMENT METHOD"
+          payload: "/payment_type"
+
+  utter_repayment_option:
+    - text:
+        "ዘግይተው በሚከፍሉበት ጊዜ ዕዳ ሰብሳቢዎቹ ከሒሳብዎ ላይ ዕዳዎን መቀነስ ይችላሉ። ከባንክ ሒሳብዎ ላይ ተገቢውን ክፍያ ተቀናሽ እንዲያደርጉ ለብድር ዕዳ ሰብሳቢዎች እንዲያሳውቁልዎት 
+        በአቅራቢያዎ የሚገኝ ቅርንጫፍ ባንክን ያነጋግሩ።"
+      buttons:
+        - title: "WHO DEBIT FROM MY ACCOUNT"
+          payload: "/who_debit"
+        - title: "REPAYMENT METHOD"
+          payload: "/payment_type"
+
+  utter_who_debit:
+    - text:
+        "የብድር ክፍያ መክፈያ ጊዜዎ ከደረሰ እና መከፈል ያለበት ጊዜ ካለፈ ሲስተሙ በአውቶማቲክ መከፈል ያለበትን የብድር መጠን ከእርስዎ የቁጠባ ሒሳብ ላይ በቀጥታ ተቀናሽ 
+        ያደርጋል። በተጨማሪም የብድር ማመልከቻ አቀራረብ ሂደቱ ላይ በተቀመጡት የአገልግሎት ደንቦች መሠረት መተግበሪያው በሚደርሰው መመሪያ ወይም በደንብና ግዴታዎች ላይ 
+        በመመርኮዝ ምቹ መተግበሪያ የአገልግሎት ክፍያዎችን ተቀናሽ ያደርጋል። ይሁን እንጂ ከነዚህ ሁኔታዎች ውጪ በማናቸውም ሁኔታ ገንዘብ ተቀናሽ ከተደረገብዎት፣ ያጋጠምዎትን 
+        ችግር ሪፖርት ለማድረግ ወደ ጥሪ ማዕከላችን 609 እባክዎ ይደውሉ።"
+      buttons:
+        - title: "REPAYMENT OPTION"
+          payload: "/repayment_option"
+        - title: "REPAYMENT METHOD"
+          payload: "/payment_type"
+  utter_payment_type:
+    - text:
+        "የብድር ዕዳን ለመክፈል፣ የምቹ መተግበሪያ ላይ ይግቡና ወደ ክፍያ መፈጸሚያ ክፍል ይሂዱ። እዚህ ላይ፣ መከፈል ያለበትን የገንዘብ መጠን፣ የእርስዎን ጠቅላላ የብድር መጠን 
+        እና አጠቃላይ የብድሩ ዝርዝር መረጃን ያገኛሉ። “ክፍያ ፈጽም” የሚለውን አዝራር በመጫን ወደፊት መቀጠል ይችላሉ። መተግበሪያው ያልዎትን ቀሪ ሒሳብ ተከፋይ ከሚሆነው 
+        የብድር ገንዘብ ጋር አንድ ላይ ያሳያል። በቀላሉ መክፈል የሚፈልጉትን የገንዘብ መጠን ያስገቡ፣ ትክክል መሆኑን “አሁን ይክፈሉ” የሚለውን አዝራር በመጫን ያረጋግጡ እና 
+        የገንዘብ ዝውውሩ በተሳካ ሁኔታ ይከናወናል። ምንም ዓይነት ችግር ካጋጠመዎት ከእኔ እገዛ ለማግኘት ጥያቄ ከማቅረብ ወይም ወደ ጥሪ ማዕከሉ 609 ከመደወል ወደ ኋላ አይበሉ።"
+      buttons:
+        - title: "REMINDER"
+          payload: "/reminder"
+        - title: "REPAYMENT METHOD"
+          payload: "/payment_type"
+
+  utter_reminder:
+    - text:
+        "የጉያ ብድርን እየተጠቀሙ ያሉ ከሆነ ክፍያው መፈጸም ካለበት ሁለት ቀን ቀደም ብሎ እና ክፍያው በሚከፈልበት ቀን ላይ ማስታወሻ መልእክት ይደርስዎታል። የዋቢ ብድርን 
+        እየተጠቀሙ ያሉ ከሆነ፣ ሦስት ጊዜ ማስታወሻ ይደርስዎታል፦ ብድሩ መከፈል ካለበት 5 ቀን ቀደም ብሎ፣ አንድ ቀን ሲቀረውና በመክፈያው ቀን። ተጨማሪ መረጃ ለማግኘት 
+        የእርስዎን ምቹ መተግበሪያ ይክፈቱ፣ ዝርዝሩን በዚያ ላይ ያገኙታል።"
+      buttons:
+        - title: "REPAYMENT METHOD"
+          payload: "/payment_type"
+        - title: "REJECTION"
+          payload: "/rejection"
+
+  utter_rejection:
+    - text:
+        "የብድር ጥያቄን ውድቅ ሊያስደርጉ የሚችሉ ምክንያቶችን በጥልቀት እንመልከታቸው። በአጠቃላይ ያቀረቡት መረጃ ስሕተት ያለበት ከሆነ፣ የንግድ ሥራዎ ከተመረጡት የንግድ 
+        ሥራዎች መካከል ካልሆነ፣ ዓባሪ ያያዟቸው ሰነዶች ተቀባይነት ከሌላቸው ወይም ያልታደሱ ከሆነ ወዘተ የብድር ማመልከቻዎ ውድቅ ሊደረግ ይችል ይሆናል።   ተጨማሪ መረጃ 
+        የሚፈልጉ ከሆነ"
+      buttons:
+        - title: "DOCUMENT REJECTION"
+          payload: "/document_rejection"
+        - title: "REJECTION"
+          payload: "/rejection"
+
+  utter_document_rejection:
+    - text:
+        "እንደ ማረጋገጫ  ያቀረቧቸው ሰነዶች ያልታደሱ፣ ያልተሟሉ ወይም በማረጋገጫ ሂደቱ ተቀባይነት የሌላቸው ሊሆኑ እንደሚችሉ ልብ ማለት ያስፈልጋል። በአንዳንድ ሁኔታዎች 
+        በንግድ ፈቃዱ ላይ ባለው ስምና በመታወቂያዎ ላይ ያለው ስም ላይዛመዱ ይችላሉ፣ በባንክ ሒሳቡ ባለቤት ስምና በእርስዎ የግብር ከፋይ መለያ ቁጥር (ቲን) መካከል 
+        አለመጣጣም ሊያጋጥም ይችላል። እንደዚህ ዓይነት ሁኔታዎች ሲያጋጥሙ በማረጋገጥ ሂደቱ ላይ የቀረበው መረጃ ትክክለኛና ወጥነት ያለው መሆኑን ለማረጋገጥ ጥንቃቄ ማድረግ 
+        ግድ ይላል።"
+      buttons:
+        - title: "INCORRECT INFORMATION"
+          payload: "/incorect"
+        - title: "REJECTION"
+          payload: "/rejection"
+
+  utter_incorect:
+    - text:
+        "ስለራስዎ ሆነ ስለ ንግድ ድርጅትዎ ያቀረቡት መረጃ ተቀባይነት የሌለው መሆን የለበትም፣ የስልክ ቁጥርዎ እና የአደጋ ጊዜ ተጠሪዎ ስልክ ቁጥር አንድ ዓይነት መሆን የለበትም፣ 
+        የእርስዎ የአመልካች ስምና የቁጠባ ሒሳብ ባለቤት ስም የተለያየ መሆን የለበትም፣ እንዲሁም የተሳሳተ የግብር ከፋይ መለያ ቁጥር (ቲን) ማስገባት አይችሉም።"
+      buttons:
+        - title: "DOCUMENT REJECTION"
+          payload: "/document_rejection"
+        - title: "REJECTION"
+          payload: "/rejection"
+
+  utter_Features:
+    - text:
+        "የምቹ አገልግሎት ገጽታዎች/ባህሪያት የሚከተሉት ናቸው፦ ቀላል የማመልከቻ አቀራረብ ሂደት፣ ፈጣን የብድር ጥያቄ ግምገማ፣ አጭር የብድር ፈቃዳ ጊዜ፣ ዝቅተኛ መጠን ያለው 
+        ብድር ማግኘት መቻል፣ በኮምፒውተር የተደገፈ ውሳኔ አሰጣጥ፣ በተደጋጋሚ ብድር ማግኘት፣ ዲጂታል የብድር ስርጭትና ስብሰባ፣ ለደንበኛ ከርቀት አገልግሎት መስጠት 
+        (ሲአርኤም)፣ ኦንላይን ሰነድ ማስገባት መቻል፣ የብድር ብቁነት ምዘና ነጥብ፣ ጥሩ የተጠቃሚ ተሞክሮና ግልጽ የሆነ የብድር ውሳኔ አሰጣጥ። በጣም ቀላል ነው፤ ለአጠቃቀም 
+        ቀላል መሆኑ ከምቹ መተግበሪያ ገጽታዎች መካከል አንዱ ባህሪ ነው።"
+      buttons:
+        - title: "ጉያ ብድር"
+          payload: "/guyya_loan"
+        - title: "ዋቢ ብድር"
+          payload: "/wabbii_loan"
+
+  utter_language:
+    - text:
+        "በአሁኑ ጊዜ ሶስት ቋንቋዎችን እደግፋለሁ (እንግሊዝኛ፣ አማርኛ እና አፋን ኦሮሞ)። ቋንቋውን ለመቀየር ከፈለጉ፣ እባክዎን በአዝራሩ በቀኝ ጥግ ላይ የሚገኘውን የቁልፍ ሰሌዳ አዝራሩን ጠቅ ያድርጉ።"
+      buttons:
+        - title: "MICHU LANGUAGE"
+          payload: "/michu_language"
+        - title: "HOW TO INSTALL"
+          payload: "/install_michu"
+
+  utter_michu_language:
+    - text: "ምቹን አሁን ላይ በሦስት ቋንቋዎች መጠቀም ይቻላል፦ እንግሊዝኛ፣ አማርኛ እና ኦሮምኛ።"
+      buttons:
+        - title: "BOT LANGUAGE"
+          payload: "/language"
+        - title: "HOW TO INSTALL"
+          payload: "/install_michu"
+    - text: "እንግሊዝኛ፣ አማርኛ እና ኦሮምኛ አሁን ምቹ ላይ መጠቀም የሚችሏቸው ቋንቋዎች ናቸው።"
+      buttons:
+        - title: "BOT LANGUAGE"
+          payload: "/language"
+        - title: "HOW TO INSTALL"
+          payload: "/install_michu"
+
+  utter_install_michu:
+    - text:
+        "ምቹ መተግበሪያን ለማግኘትና አውርዶ ለመጫን በቀላሉ ፕሌይ ስቶር ላይ ይፈልጉትና መተግበሪያውን አውርደው በሞባይል ስልክዎ ላይ ይጫኑት። አገናኙ ይኸውልህ [በቅርቡ ይመጣል!]"
+      buttons:
+        - title: "MICHU AVAILABLITY"
+          payload: "/michu_availablity"
+        - title: "APPLICATION PROCCESS"
+          payload: "/application"
+
+  utter_michu_availablity:
+    - text:
+        "አሁን ላይ ምቹ መተግበሪያን ከፕሌይ ስቶር ብቻ ማግኘት የሚቻል ሲሆን የሚሠራውም በአንድሮይድ ስልኮች ላይ ብቻ ነው።  ከዚህ በተጨማሪ የብድር አሰጣጥ ሂደቱ ተፈጻሚነት የሚኖረው 
+        በአንድሮይድ ስልኮች ላይ ብቻ ነው።"
+      buttons:
+        - title: "HOW TO INSTALL"
+          payload: "/install_michu"
+        - title: "APPLICATION PROCCESS"
+          payload: "/application"
+    - text:
+        "የምቹ መተግበሪያ አሁን ላይ በፕሌይ ስቶር በኩል ብቻ ማግኘት የሚቻል ሲሆን የሚሠራውም በአንድሮይድ ስልኮች ላይ ብቻ ነው። ከዚህ በተጨማሪ፣ የአንድሮይድ ስልኮች ብቻ በብድር 
+        ሂደቱ እንዲሳተፉ ይፈቀድላቸዋል።"
+      buttons:
+        - title: "HOW TO INSTALL"
+          payload: "/install_michu"
+        - title: "APPLICATION PROCCESS"
+          payload: "/application"
+
+  utter_application:
+    - text:
+        "የብድር አሰጣጥ ሂደቱ በጣም ቀላልና ግልጽ ነው። መጀመሪያ መተግበሪያውን ከፕሌይ ስቶር ያውርዱትና ከዛ ሁሉንም የግል እና የንግድ ሥራ መረጃዎችዎን መተግበሪያው ውስጥ ይሙሉ።"
+      buttons:
+        - title: "GUYYAA APP-PROCCESS"
+          payload: "/guyyaa_application"
+        - title: "WABII APP-PROCCESS"
+          payload: "/wabii_application"
+
+# not translate data
+
+  utter_guyyaa_application:
+    - text:
+        "ለ ጉያ ብድር የብድር ማመልከቻ ሂደት ቀላል እና ቀላል ነው። ሙሉ ሂደቱ እነሆ፡\n
+        ለሚቹ ጉያ ብድር ለመጀመሪያ ጊዜ ማመልከት፡\n 1.የሚቹ አፕን ይክፈቱ እና የጋይ ብድር አማራጭን ይምረጡ።\n 2.ስልክ ቁጥርዎን ያስገቡ። n 4. በስምምነቱ ሳጥን ላይ ምልክት በማድረግ ውሎችን 
+        እና ሁኔታዎችን ያንብቡ እና እውቅና ይስጡ።\n 5. ወደ ስልክ ቁጥርዎ የተላከውን OTP (የአንድ ጊዜ የይለፍ ቃል) ያስገቡ።\n 6. የሚፈልጉትን የይለፍ ቃል ያዘጋጁ።\n 7. እንደገና- ለማረጋገጫ የይለፍ 
+        ቃልዎን ያስገቡ።\n 8. የግል መረጃዎን ያቅርቡ።\n 9. የእርስዎን የኦ.ኅ.ሥ.ባ መለያ ቁጥር ያስገቡ። n 12. ቅናሹን ከተቀበሉ, በደንብ አንብበው የብድር ውሉን ይስማሙ.\n
+        13. የብድሩ መጠን ወደ ሒሳብዎ ይከፈላል::\n እባክዎ እነዚህ እርምጃዎች በመጀመርያ ማመልከቻ ወቅት እንደሚከሰቱ ልብ ይበሉ."
+      buttons:
+        - title: "REAPPLICATION PROCCESS"
+          payload: "/reapplication"
+        - title: "WABII APP-PROCCESS"
+          payload: "/wabii_application"
+  utter_wabii_application:
+    - text:
+        "ለዋቢ ብድር የብድር ማመልከቻ ሂደት ቀላል እና ቀላል ነው። ሙሉ ሂደቱ ይህ ነው፡\n ለሚቹ ዋቢ ብድር ለመጀመሪያ ጊዜ ማመልከት፡\n 1.የሚቹ መተግበሪያን ይክፈቱ እና የዋቢ ብድር አማራጭን 
+        ይምረጡ።\n 2.ስልክ ቁጥርዎን ያስገቡ።\n 3. ውሎችን ያግኙ ሁኔታዎች በተሰጠው ሊንክ በመጠቀም።\n 4. በስምምነቱ ሳጥን ላይ ምልክት በማድረግ ውሎችን እና ሁኔታዎችን ያንብቡ እና እውቅና 
+        ይስጡ።\n 5. ወደ ስልክ ቁጥርዎ የተላከውን OTP (የአንድ ጊዜ የይለፍ ቃል) ያስገቡ።\n 6. የሚፈልጉትን ያዘጋጁ። password.\n 7. ለማረጋገጫ የይለፍ ቃልዎን እንደገና ያስገቡ።\n 8. 
+        የግል መረጃዎን ያቅርቡ።\n 9. የንግድዎን መረጃ ያቅርቡ።\n 10. የየኦ.ኅ.ሥ.ባ መለያ ቁጥርዎን ያስገቡ።\n 11. የሚፈለጉ ሰነዶችን ያስገቡ \n n 12. የቀረቡትን የብድር ዝርዝሮች ይከልሱ።\n 13. 
+        የብድር አቅርቦትን ለመቀበል ወይም ላለመቀበል ይወስኑ።\n
+        14. የሰነድ ማረጋገጫ ከባንክ በኩል ይጠብቁ።\n 15. ቅናሹን ከተቀበሉ በደንብ አንብበው የብድር ውሉን ይስማሙ። በመጀመርያው ትግበራ ወቅት ደረጃዎች ይከናወናሉ."
+      buttons:
+        - title: "REAPPLICATION PROCCESS"
+          payload: "/reapplication"
+        - title: "GUYYAA APP-PROCCESS"
+          payload: "/guyyaa_application"
+
+# translate
+  utter_reapplication:
+    - text:
+        "ከዚህ ቀደም የነበረብዎትን ብድር በተሳካ ሁኔታ ከከፈሉ በኋላ፣ ወዲያውኑ ሌላ ብድር እንዲፈቀድልዎት መጠየቅ ይችላሉ። ብድርዎትን በሰዓቱ ወይም አስቀድመው ሙሉ በሙሉ 
+        ከከፈሉ፣ የብድር አከፋፈል ታሪክዎን ከግምት በማስገባት ሲስተሙ የሚፈቀድልዎትን የብድር ጣሪያ በተወሰነ መቶኛ ያሳድግልዎታል። በተቃራኒው፣ ዘግይተው የሚከፈሉ ብድሮች 
+        ቅጣት ያስከትላሉ። አዲስ ማመልከቻ ለማስገባት፣ በቀላሉ ወደ መተግበሪያው ይግቡና ደንብና ግዴታዎቹን እንዲሁም በምቹ የቀረቡልዎትን አማራጮች ይቀበሉ።"
+      buttons:
+        - title: "GUYYAA APP-PROCCESS"
+          payload: "/guyyaa_application"
+        - title: "WABII APP-PROCCESS"
+          payload: "/wabii_application"
+  utter_reaplication_times:
+    - text: "የቀደመውን ዕዳ መልሰው እስካገኙ ድረስ የፈለጉትን ያህል እንደገና መጫወት ይችላሉ።"
+      buttons:
+        - title: "REAPPLICATION PROCCESS"
+          payload: "/reapplication"
+        - title: "RENEWING DOCUMENT"
+          payload: "/renewingd"
+
+  utter_renewingd:
+    - text:
+        "ሰነድዎ ጊዜው ያለፈበት ከሆነ, ማደስ አለብዎት. ሰነድን እንዴት ማደስ እንደሚቻል ይህ ነው፡\n ሰነድዎን ማደስ፡\n 1. ወደ ሚቹ መተግበሪያ ይግቡ።\n 2. ዳታዎ ካልታደሰ መተግበሪያው የሰነድ 
+        መስቀያ ቅጽ ያሳያል።\n 3. የተሻሻለውን ሰነድ ይስቀሉ።\n 4. ሰነድዎ በባንክ የተረጋገጠ ይሆናል።\n እባክዎ ይህ ባህሪ የሚቺ ጉያ ብድር ላላቸው ግለሰቦች ብቻ የሚተገበር መሆኑን ልብ ይበሉ።"
+      buttons:
+        - title: "REAPPLICATION PROCCESS"
+          payload: "/reapplication"
+        - title: "REAPPLICATION TIMES"
+          payload: "/reaplication_times"
+# untill this
+
+  utter_approval_status:
+    - text:
+        "በመተግበሪያው ላይ የተሰጥዎት መለያ ሥራ ከጀመረ፣ በአጭር የጽሑፍ መልእክት እንኳን ደስ ያልዎት የሚል መልእክት ይደርስዎታል ወይም በቀላሉ ያልዎትን ቀሪ ሒሳብ 
+        ማረጋገጥ ይችላሉ። ጥያቄው ውድቅ የተደረገበት ምክንያት በአጭር የጽሑፍ መልእክት ይገለጽልዎታል።"
+      buttons:
+        - title: "REAPPLICATION PROCCESS"
+          payload: "/reapplication"
+        - title: "PAYMENT DOUBT"
+          payload: "/payment_doubt"
+
+  utter_app_version:
+    - text:
+        "ሲስተሙ መከፈል ያለበትን የብድር መጠን የሳውቆታል። ይሁን እንጂ በሆነ ተዓምር ከልክ በላይ የሆነ ገንዘብ ተቀናሽ ከተደረገብዎት፣ የተፈጠረውን ችግር ወዲያውኑ 
+        ለማሳወቅ እባክዎ ወደ ጥሪ ማዕከላችን 609 ይደውሉ።"
+  utter_payment_doubt:
+    - text:
+        "የተለያዩ የቢሆንስ መላ ምቶችን ከግምት በማስገባት ሲስተሙ ትክክለኛውን የገንዘብ መጠን በመተግበሪያው ላይ ማሳየት መቻል አለበት፦\n
+        1. ብድሩ መከፈል ያለበት ጊዜ ገደብ ካለፈ፣ ባንኩ መከፈል ያለበትን የገንዘብ መጠን ከዋናው ሒሳብዎ ላይ ቀንሶ ይወስዳል።\n
+        2. ብድር በመተግበሪያው በኩል አግኝተው ምን ያህል/ያክል ገንዘብ እንደነበረ ግን ማስታወስ ካልቻሉ፣ ለማረጋገጥ እባክዎ የእርስዎን ሒሳብ የገንዘብ ዝውውር ታሪክ የሚያሳያውን ገጽ ይመልከቱ።\n
+        3. በገጹ ላይ የሚታየው ገንዘብ መጠን እርስዎ ካወጡት ገንዘብ በላይ ሆኖ ካገኙት ወለድ ተሰልቶ አንድ ላይ ሲታሰብ የሚሰጠው ሒሳብ ሊሆን ይችላል። የብድር 
+        አገልግሎቶች ብዙውን ጊዜ ከብድር አገልግሎቱ ጋር የተገናኙ የወለድ ሒሳቦችን የሚያካትቱ ስለሆኑ በጊዜ ሂደት በዋናው ብድር ላይ ጭማሪ ያሳያሉ።\n
+        4. ከላይ ከተጠቀሱት ምክንያቶች አንዳቸውም ተገቢነት የሌላቸው ከሆኑ፣ ተጨማሪ ድጋፍ ለማግኘት በጥሪ ማዕከላችን 609 በኩል የኛን የቴክኒክ ቡድን እባክዎ ያነጋግሩ።"
+
+  utter_credit_score:
+    - text:
+        "የብድር ብቃት ምዘና ነጥብ አሰጣጥ ሞዴል የብድር አመልካቹን ለብድር ብቁነት ያለውን ታሪክ በማጥናት ብድር መመለስ የመቻል ዕድሉን የሚገምት የብድር መበላሸት ስጋትን 
+        ለመቆጣጠር የሚያስችል መሣሪያ ነው። መረጃዎችን ተጠቅሞ የስጋት ደረጃን ሲገምት የቀረቡለትን ማመልከቻዎች በቅደም ተከተል አበላልጦ ለማስቀመጥ እንዲችል አኃዛዊ መረጃን 
+        ይጠቀማል። ይህ በቁጥር ላይ የተመረኮዘ ሞዴል ብድር ላይከፈል የሚችልበትን ዕድል ደረጃ ግምት ይሰጣል፤ በዚህም ኪሳራን፣ የብድር ብልሽትን እና ደንበኛው ላይከፍል የመቻሉን 
+        ዕድል ምን ያክል እንደሆነ ያመላክታል። በብድር ብቁነት ምዘና ነጥብ አሰጣጥ ሂደት ላይ የተለያዩ መጠነ ሰፊ መረጃዎችን፣ ለመመዘን፣ የብድር አለመከፈልን ስጋት ለመተንበይ እና 
+        ሂደቱን በአውቶማቲክ ለማከናወን ሰው ሠራሽ አስተውሎቱ የረቀቁ አሊጎሪዝሞችን ይጠቀማል። የአመልካቹን ለብድር ብቁነት ለመገምገም እንደ የብድር ክፍያ ቅድመ ታሪክ፣ የገቢ 
+        ሁኔታንና ሌሎች ነገሮችንም ከግምት ያስገባል። ሰው ሠራሽ አስተውሎት የሥራ ቅልጥፍናን፣ እንደ ተፈላጊነቱ ሁኔታዎችን ማመቻቸትና ትክክለኛነትን ከማሻሻል ባለፈ እንደ መድልዎና 
+        ግልጽነት አለመኖር የመሳስሉ ችግሮችንም ይቀርፋል። በምቹ ብድሮች ዓውድ ውስጥ ሲታይ የአንድን ኩባንያ ዕድገት ለመተንበይ የሚያስችሉትን የደንበኛ የግብይት ባህሪ ምዘና 
+        ሞዴልን እና እንዲሁም የንግድ ዕድገት መመዘኛ ሞዴልን መተግበሪያው በውስጡ አካቷል። ከዚህ በተጨማሪ የደንበኛውን በጣም የቅርብ ጊዜውን ባሕሪ በመመርመር ከደንበኛው 
+        ጋር የተያያዙ ሊፈጠሩ የሚችሉ አደጋዎችን የስጋት ደረጃ ለመመዘን የአፈጻጸምና የባሕሪ ሞዴልን መተግበሪያው በውስጡ አካቷል።"
+
+  utter_work_time:
+    - text:
+        "መተግበሪያውን በቀን ውስጥ ለ 24 ሰዓት መጠቀም ይችላሉ በዚህም በማናቸውም ሰዓት ማመልከቻዎትን ማስገባትና ብድርዎን መክፈል ይችላሉ። እገዛ የሚያስፈልግዎት 
+        ከሆነ የጥሪ ማዕከላችን ከጠዋቱ 2 ሰዓት እስከ ምሽቱ 4 ሰዓት ድረስ እርስዎን ሙሉ በሙሉ ለማገልገል ዝግጁ ነው።"
+
+  utter_otp:
+    - text:
+        "ለማረጋገጥ ሥራ ሲባል ሲስተሙ ኦቲፒ ይልካል። ሆኖም ግን አልፎ፣ አልፎ የሚፈጠሩ የኔትዎርክ ችግሮች በስልክዎ ላይ መልእክት ዘግይቶ እንዲደርስዎት ሊያደርጉ ይችላሉ። 
+        እንዲህ ዓይነት ሁኔታ ሲፈጠር የተፈቀደው ጊዜ ሲያበቃ ብቻ እባክዎ “ኦቲፒ እንደገና ላክ” የሚለውን አማራጭ ይጠቀሙ።"
+
+  utter_forbedin:
+    - text: "ምቹን ለመጠቀም መሟላት ያለባቸው ቅድመ ሁኔታዎች አሉ፦\n
+            1. **ልዩ መረጃ፦** አንድ ብቻ ስልክ ቁጥር፣ የግብር ከፋይ መለያ ቁጥር እና የባንክ ሒሳብ ቁጥር ይፈቀዳሉ።\n
+            2. **ሕጋዊ ተቀባይነት ያላቸው ሰነዶች፦** የአገልግሎት ጊዜያቸው ያበቃ እንደ ንግድ ፈቃድ ያሉ ሰነዶች ተቀባይነት የላቸውም።\n
+            3. **ሕጋዊ ሰነዶች፦** ፎርጅድ የንግድ ፈቃዶችን ጨምሮ ሐሰተኛ ሰነዶችን ማስገባት የተከለከለ ነው።\n
+            እነዚህ መመሪያዎች ሥነ ምግባር፣ እሴት እና ሕጋዊ ግዴታዎች መከበራቸውን ለማረጋገጥ የታለሙ ናቸው። ከዚህ አሠራር ወይም ከሕግ ውጪ የሆነ ድርጊት የተከለከለ ነው።"
+
+  utter_password:
+    - text:
+        "የይለፍ ቃልዎን ማስታወስ ካልቻሉ፣ አይጨነቁ! ምቹ መተግበሪያ የይለፍ ቃልዎን እንደገና ማዘጋጀት የሚችሉበትን አማራጭ ያቀርብልዎታል። በቀላሉ ወደ በመለያ መግቢያው 
+        ገጽ ይሂዱና “የይለፍ ቃልዎን ረሱ?” የሚለውን ሊንክ ያለበትን ቦታ ያግኙ። ከዚህ በኋላ፣ ኦቲፒ (ለአንድ ጊዜ የሚያገለግል የይለፍ ቃል) ወደ የእርስዎ የተመዘገበ ስልክ ቁጥር 
+        ይላካል። የይለፍ ቃል እንደገና ማቀናበር ሂደቱን ለማስጀመር ይህንን ኦቲፒ ወደ መተግበሪያው ያስገቡ። ልክ እንደጨረሱ የሚፈልጉትን አዲስ የይለፍ ቃል ማቀናበር ይችላሉ። 
+        ወደፊት ለመግባት እንዲያገለግልዎት ይህን የይለፍ ቃል ማስታወስ አስፈላጊ ነው።"
+
+  utter_double_taken:
+    - text:
+        "ሲስተሙ መከፈል ያለበትን የብድር መጠን የሳውቆታል። ይሁን እንጂ በሆነ ተዓምር ከልክ በላይ የሆነ ገንዘብ ተቀናሽ ከተደረገብዎት፣ የተፈጠረውን 
+        ችግር ወዲያውኑ ለማሳወቅ እባክዎ ወደ ጥሪ ማዕከላችን 609 ይደውሉ።"
+
+  utter_get_support:
+    - text:
+        "የቴክኒክና አጠቃላይ ድጋፍ ጨምሮ አጠቃላይ እገዛ ለማግኘት በቀጥታ ወደ ጥሪ ማዕከላችን 609 ከጠዋቱ 2፡00  ሰዓት እስከ ምሽቱ 4 ሰዓት ድረስ 
+        ይደውሉ። ከዚህ በተጨማሪ የምቹ ቻትቦት ሌት ተቀን ለጥያቄዎችዎ ምላሽ ለመስጠት ዝግጁ ነች። በአካል ተገኝተው መረጃውን ማግኘት ከፈለጉ፣ በአቅራቢያዎ 
+        የሚገኝ ቅርንጫፍ ባንካችን በሥራ ሰዓት አስፈላጊውን ድጋፍ ሊሰጥዎት ዝግጁ ነው።"
+
+  utter_double_loan:
+    - text:
+        "አንድ ነጠላ ደንበኛ በአንድ ጊዜ አንድ ብድር በአንድ የብድር አገልግሎት ዓይነት ብቻ ይፈቀድለታል። ይሁን እንጂ ብድሩን ከፍሎ ከጨረሰ የሚያስፈልጉትን ቅድመ 
+        ሁኔታዎች እስካሟላ ድረስ ከምቹ የብድር አገልግሎቶች መካከል የፈለገውን ሌላ የብድር ዓይነት እንዲሰጠው ለመጠየቅ መብት አለው።"
+
+  utter_kyc:
+    - text:
+        "ከዚህ በተጨማሪ፣ የምቹ ዋቢ ብድር ይበልጥ ጠቅለል ያለ መረጃዎችን ማቅረብ ይጠይቃል፣ ከነዚህ መረጃዎች መካከል እነዚህ ይገኙባቸዋል፦\n
+        2.1 የግል መረጃ፦\n
+        - ስም \n
+        - የአባት ስም\n
+        - የአያት ስም\n
+        - ጾታ\n
+        - የልደት ቀን (በአውሮፓ አቆጣጠር)\n
+        - የጋብቻ ሁኔታ\n
+        - የትምህርት ደረጃ\n
+        - የትዳር አጋር/የአደጋ ጊዜ ተጠሪ ስም\n
+        - የትዳር አጋር/የአደጋ ጊዜ ተጠሪ ስልክ ቁጥር\n
+
+        2.2 የግል አድራሻ፦\n
+        - ክልል\n
+        - ከተማ\n
+        - ዞን/ክፍለ ከተማ\n
+        - ወረዳ\n
+        - የቤት ቁጥር\n
+        - የመታወቂያ ዓይነት\n
+        - የመታወቂያ ቁጥር።\n
+
+        2.3 የንግድ ድርጅት መረጃ፦\n
+        - የግብር ከፋይ መለያ ቁጥር (ቲን)\n
+        - የባንክ ሒሳብ ቁጥር\n
+        - የንግድ ዘርፍ\n
+        - የንግድ ዓይነት\n
+        - ድርጅቱ የተቋቋመበት ዓመተምህረት\n
+        - በመጀመሪያ የነበሩ ሠራተኞች ብዛት\n
+        - አሁን ያሉ ሠራተኞች ብዛት\n
+        - መነሻ ካፒታል\n
+        - የመነሻ ካፒታሉ ምንጭ\n
+        - ዓመታዊ ሽያጭ\n
+        - አሁን ያለው ካፒታል\n
+        - ዓመታዊ ትርፍ\n
+        - ክልል\n
+        - ከተማ\n
+        - ዞን/ክፍለ ከተማ\n
+        - ወረዳ\n
+        - የቤት ቁጥር\n
+        - የንግድ ድርጅቱ ሕጋዊ ሰውነት ዓይነት\n
+        - መታወቂያ\n
+        - የንግድ ፈቃድ\n
+        - ሌሎች (ግዴታ ያልሆነ)።\n
+
+        እነዚህ የተዘረዘሩት መረጃዎች የምቹ ብድርን ለማግኘት ጥያቄ ሲቀርብ መሟላት ያለባቸው ናቸው።"
+
+  utter_branch_support:
+    - text:
+        "የብድር ማመልከቻን ለማስገባት፣ ብድርን ለመክፈል፣ ለመመዝገብ ወይም ማረጋገጫ ሂደቱን ለማለፍ በአካል ቅርንጫፍ ባንኮች ዘንድ መሄድ አያስፈልግም። አገልግሎቶቹን 
+        ለማግኘት በቀላሉ መተግበሪያውን ከፕሌይ ስቶር ያውርዱና በመተግበሪያው ላይ የሚሰጡትን መመሪያዎች ይከተሉ። ይሁን እንጂ የቴክኒክ ድጋፍ የሚያስፈልግዎት ሁኔታ ከተፈጠረ 
+        ለጥያቄዎችዎ መልስ ለመስጠት የጥሪ ማዕከላችን 609 ዝግጁ ነው ወይም በግልዎ የተለየ መረጃና ምክር ለማግኘት ከፈለጉ በአቅራቢያዎ ወደሚገኝ ቅርንጫፍ ባንክ መሄድ ይችላሉ።"
+
+  utter_loan_complain:
+    - text:
+        "አንድ ጊዜ የእርስዎ የማረጋገጫ ሂደት ሲስተሙ ውስጥ ከተጠናቀቀ በኋላ የይለፍ ቃልን ከመለወጥ ውጪ በመተግበሪያው ውስጥ ያሉ ሌሎች መረጃዎች ሊለወጡ እንደማይችሉ 
+        ልብ ማለት ያስፈልጋል። ይሁን እንጂ በአንዳንድ የተለዩ ሁኔታዎች፦\n
+        1. በመጀመሪያው የማረጋገጥ ሂደት ላይ ያስገቡት መረጃ ትክክል ስላልሆነ ጥያቄዎ ውድቅ ሆኖ ከነበረ መተግበሪያው አዲሱን ትክክለኛ መረጃ እንዲያስገቡ ዕድሉን ይሰጥዎታል።\n
+        2. ያስገቧቸው ሰነዶች አገልግሎት ጊዜያቸው ካለፈባቸው፣ መተግበሪያው ለዚሁ ዓላማ የተዘጋጀ ቅጽ በማቅረብ የታደሱትን ሰነዶች እንዲያስገቡ ያስችልዎታል።\n
+        3. ለማንኛውም ተጨማሪ ጥያቄ ወይም የሚያሳስብዎት ጉዳይ ተጨማሪ ድጋፍ ለማግኘት የጥሪ ማዕከላችንን 609 ደውለው ከማነጋገር ወደኋላ አይበሉ።"
+
+  utter_iamabot:
+    - text: "እኔ በምቹ ቡድን የቀረብኩ በሰው ሠራሽ አስተውሎት የምሠራ ቻትቦት ነኝ፣ እርስዎን እዚህ ለማገዝ ዝግጁ ነኝ! ማንኛውንም ያልዎትን ጥያቄ ለመጠየቅ ነጻ ይሁኑ"
+
+  utter_thanks:
+    - text: "እንኳን ደኅና መጡ! ማገዝ በመቻሌ ደስ ብሎኛል።"
+    - text: "ምንም አይደለም! በፈለጉኝ ጊዜ ሁሉ እርስዎን ለማገዝ ዝግጁ ነኝ።"
+    - text: "ምንም ችግር የለውም! ሁልጊዜ አስፈላጊውን ምክር ለመስጠት ዝግጁ ነኝ።"
+    - text: "ማገዝ በመቻሌ ደስታ ይሰማኛል። ሌላ የሚፈልጉት ነገር ካለ ተመልሰው መጥተው ከመጠየቅ ወደኋላ አይበሉ።"
+    - text: "ስለ መልካም ቃላትዎ አመሰግናለሁ!  እዚህ ያለኹት እርስዎን ለማገዝ ዓላማ ነው።"
+
+  utter_change_language:
+    - text: "ቋንቋውን ለመቀየር ከታች በስተቀኝ ጥግ ላይ ያለውን የቁልፍ ሰሌዳ አዝራሩን ጠቅ ያድርጉ እና የቋንቋ አዝራሩን ይከተሉ."
+
+
+  utter_FAQ:
+    - buttons:
+        - title: "ሚቹ ብድር ምንድን ነው?"
+          payload: "/michu"
+        - title: "ዋቢ ላኦን ምንድን ነው?"
+          payload: "/wabbii_loan"
+        - title: "ጉያ ብድር ምንድን ነው?"
+          payload: "/guyya_loan"
+        - title: "ሚቹ መስፈርቶች?"
+          payload: "/eligibility"
+        - title: "የሚቹ መዳረሻ ክፍያ?"
+          payload: "/michu_accessfee"
+        - title: "ሚቹ ገደብ?"
+          payload: "/michu_limit"
+        - title: "ሚቹ ቅጣት?"
+          payload: "/michu_penality"
+        - title: "የሚቹ ብድር ቆይታ ስንት ነው?"
+          payload: "/michu_duration"
+        - title: "የሚቹ ብድር ወለድ ምን ያህል ነው?"
+          payload: "/michu_interest"
+      button_type: vertical
+      text: "በጣም በተደጋጋሚ የሚጠየቀው ጥያቄ ይህ ነው።"
+
+# entities:
+# - michu
+# - guyya
+# - wabii
+
+actions:
+  - action_show_time
+  - actionam_default_fallback
+# - action_show_image
+# - action_show_keyboard
+# - action_show_buttons
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

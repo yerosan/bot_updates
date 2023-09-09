@@ -1,0 +1,1191 @@
+version: "3.0"
+
+intents:
+- start
+- affirm
+- bot_challenge
+- deny
+- mood_great
+- mood_unhappy
+- give_time
+- goodbye
+- greet
+- support
+- thanks
+- fallback
+- cbo
+- digital_Loan
+- digital_product 
+- michu
+- guyya_loan
+- wabbii_loan
+- eligibility
+- foreigner
+- age_limit
+- guyyaa_Requirements
+- wabii_Requirements
+- michu_limit
+- max_limit
+- guyyaa_limit
+- wabii_limit
+- michu_duration
+- guyyaa_duration
+- wabii_duration
+- michu_accessfee
+- wabii_fee
+- guyyaa_fee
+- michu_interest
+- wabii_interest
+- guyyaa_interest
+- michu_penality
+- late_payment
+- refuse_payment
+- early_payment
+- wabii_penality
+- guyyaa_penality
+
+- ID_Type
+- gender
+- norms
+- w_vs_g
+- uploaddoccument
+- phone_number
+- why_michu_notwork
+- late_disbursment
+# - disbursal_time
+- reversal
+- NPL
+- know_deadline
+- repayment_option
+- who_debit
+- payment_type
+- reminder
+- rejection
+- document_rejection
+- incorect
+- Features
+
+
+
+- why_michu
+- app_version
+- kyc
+- branch_support
+- loan_complain
+- get_support
+- double_taken
+- forbedin
+- work_time
+- provider
+- reapplication
+- credit_score
+- otp
+- payment_doubt
+- double_loan
+- password
+- FAQ
+- wabii_application
+- guyyaa_application
+- renewingd
+- reaplication_times
+
+- install_michu
+- michu_availablity
+- language
+- michu_language
+- application
+- approval_status
+- change_language
+
+responses:
+  utter_start:
+  - text: "Michu's CoopBank chatbot greets you! How can I help you? What information do you need about the Michu digital 
+          lending product? Do you have any questions concerning the Michu loan application process? Just write down your 
+          question and I'll help you."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+  - text: "Welcome to Michu's CoopBank chatbot! How can I assist you? What do you want to know about the Michu digital 
+          lending product? Do you have a question about the Michu loan process? Just jot down your question, and I'll 
+          assist you."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+
+  utter_greet:
+  - text: "Hey! How are you? Michu's CoopBank chatbot greets you! How can I help you? What information do you need about the Michu digital 
+          lending product? Do you have any questions concerning the Michu loan application process? Just write down your 
+          question and I'll help you."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+  - text: "Hey! How are you? Welcome to Michu's CoopBank chatbot! How can I assist you? What do you want to know about the Michu digital 
+          lending product? Do you have a question about the Michu loan process? Just jot down your question, and I'll 
+          assist you."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+
+  utter_goodbye:
+  - text: You're welcome! If you have more questions in the future, don't hesitate to reach out. Goodbye!
+    buttons:
+      - title: "GOOD BYE"
+        payload: "/goodbye"
+      - title: "THANK YOU"
+        payload: "/thanks"
+  - text:  I'm glad I could help. If you need assistance in the future, feel free to come back. Bye for now!
+    buttons:
+      - title: "GOOD BYE"
+        payload: "/goodbye"
+      - title: "THANK YOU"
+        payload: "/thanks"
+
+  utter_happy:
+  - text: Great, carry on!
+    buttons:
+      - title: "GOOD BYE"
+        payload: "/goodbye"
+      - title: "THANK YOU"
+        payload: "/thanks"
+
+      
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    # image: https://i.imgur.com/nGF1K8f.jpg
+
+
+  utter_did_that_help:
+  - text: Did that help you?
+
+
+  utter_support:
+  - text: "Of course, I'd be happy to help you with your issue. Can you please provide more details about the problem you're facing?"
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+  
+  - text: "Of course, I'd be delighted to assist you with your problem. Could you please provide additional information about the issue you're having?"
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+
+
+  utter_cbo:
+  - text: "Welcome To Coopbank\n
+          Cooperative Bank of Oromia is proud to be a home to more than 10 million customers worldwide by offering 
+          different service\n
+          for more click [here](https://coopbankoromia.com.et/)"
+    buttons:
+      - title: "DIGITAL LOAN"
+        payload: "/digital_Loan"
+      - title: "MICHU"
+        payload: "/michu"
+  - text: "Hello and welcome to Coopbank! Cooperative Bank of Oromia is pleased to provide a variety of services to over 10 million people 
+          globally. Please see [this link](https://coopbankoromia.com.et/) for further information."
+    buttons:
+      - title: "DIGITAL LOAN"
+        payload: "/digital_Loan"
+      - title: "MICHU"
+        payload: "/michu"
+
+
+  utter_provider:
+  - text: "Michu is a Digital Lending Product from the Cooperative Bank of Oromia, which derives its power from Qena 
+          technology, marking Ethiopia's inaugural digital lending solution and serving as the primary digital platform. 
+          Exclusive access through the Michu Application sets it apart as the sole gateway, facilitating both service 
+          provision and financing by the bank."
+    buttons:
+      - title: "DIGITAL LOAN"
+        payload: "/digital_Loan"
+      - title: "DIGITAL PRODUCT"
+        payload: "/digital_product"
+  - text: "As Ethiopia's first digital lending solution and main digital platform, Michu is a digital lending product 
+          from the Cooperative Bank of Oromia that draws its strength from Qena technology. The Michu Application stands 
+          out as the only gateway because to its exclusive access, which makes it easier for the bank to provide services 
+          and finance transactions."
+    buttons:
+      - title: "DIGITAL LOAN"
+        payload: "/digital_Loan"
+      - title: "DIGITAL PRODUCT"
+        payload: "/digital_product"
+
+  utter_digital_loan:
+  - text: "A digital loan is a type of loan that is facilitated through digital channels such as online platforms or 
+          mobile applications. Digital loans are becoming increasingly popular due to their convenience, speed, and 
+          accessibility"
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU" 
+        payload: "/michu"
+  - text: "A digital loan is a specific kind of loan that may be obtained through digital platforms like websites or 
+          mobile apps. Digital loans are getting more and more well-liked because they are quick, easy, and accessible."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU" 
+        payload: "/michu"
+
+  utter_digital_product:
+  - text: "The Digital Product is a department founded under the Technologies and Digital Banking wing of Coopbank that 
+          will engage in creating and managing online services and solutions for customers. This includes designing 
+          user-friendly interfaces, developing new digital products, ensuring security, and aligning with the 
+          institution's digital strategy. They also analyze data, collaborate with various teams, and adapt offerings to 
+          changing technology and customer needs. The department currently oversees 3 primary products and platforms:\n
+          1. Michu Platform\n
+          2. Furtuu Agricultural Platform\n
+          3. Sacco Link Platform \n
+          In the near future, the department's focus will expand to include the integration of additional new products. 
+          The primary objective of the department centers around the continual addition of new products."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU" 
+        payload: "/michu"
+
+  utter_michu:
+  - text: "Michu is an innovative digital financing platform offered by Cooperative Bank of Oromia in Ethiopia.\nIt is an 
+          AI-powered smartphone application designed to support Micro, Small, and Medium Enterprises (MSMEs) and the 
+          general public.\nMichu provides a convenient way to apply for online loans, offers a sophisticated credit 
+          assessment algorithm, and facilitates online debt collection procedures. With its two products, Wabii and 
+          Guyyaa, Michu caters to both formal line business traders such as micro retailers, coffee houses, and fast 
+          food corners, as well as informal line business traders like roadside traders and informal coffee houses.\n
+          Experience hassle-free access to non-collateralized loans by engaging in trading operations through Michu\n 
+          look here for more: (https://coopbankoromia.com.et/michu/)"
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan" 
+
+  - text: "Michu is one of the Cooperative Bank of Oromia's pioneering digital financing platforms in Ethiopia, aimed towards MSMEs and mass 
+          populations.\n- It is an AI-powered smartphone application that provides an online loan application\n- digital offer analysis using a 
+          credit assessment algorithm that goes beyond belief, and online debt collection procedures\n- Customers can use non-collateralized loans 
+          through Michu with the sole requirement of engaging in trading operations. look here for more: (https://coopbankoromia.com.et/michu/)"
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+  
+  utter_why_michu:
+  - text: "Michu holds extensive utility for customers, banks, and nationwide operations, yielding substantial benefits 
+          through digitalization, accessibility, and service excellence. It facilitates involvement in an expanding 
+          ecosystem, amplifies revenues, and curtails expenses, serving as a source of income. The platform expedites 
+          informed decision-making, minimizes risk concentration, streamlines applicant data collection, fosters financial 
+          inclusion, and reaches unbanked and collateral-limited populations. Michu revolutionizes customer engagement, 
+          expanding wallet account subscribers and customer base, while aligning with the financial perspectives of 
+          individuals with modest incomes."
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+  - text: "Michu has a wide range of applications for clients, banks, and national operations, providing significant 
+          benefits through digitalization, accessibility, and service quality. It allows participation in a developing 
+          ecosystem, increases revenues, and reduces expenses, so providing as a source of income. The technology 
+          streamlines applicant data gathering, promotes financial inclusion, and serves unbanked and collateral-limited 
+          communities. Michu transforms consumer engagement by increasing wallet account subscribers and customer base 
+          while matching with the financial viewpoints of people with low incomes."
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+
+  utter_guyya_loan:
+  - text: "Guyyaa is one of the segmented loan products inside the Michu platform that is provided to cover quick working capital needs for 
+          nanobusinesses. Guyyaa loans were earmarked for business societies that were excluded from being financed by the financial sector due 
+          to collateral and document requirements.\n\n The keyword 'Guyyaa' has a couple of meanings. In Afaan Oromo, Guyyaa has the meaning of 
+          'Day or Daily 'to emphasise that the loan tends to be provided for businesses that have daily working capital needs, such as gulit 
+          traders, Informal Coffee Houses, Informal Workers, Roadside Traders, Petty Traders, and so on. In From an Amharic perspective, guyyaa 
+          has the meaning of 'lap' which is a dialect or a particular form of language that emphasises the traditional unrevealed pocket for 
+          grandmothers, where they put down their instant income in trading."
+    buttons:
+      - title: "MICHU FEATURES"
+        payload: "/Features"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+
+  - text: "Guyyaa is one of the segmented loan products available on the Michu platform to meet the short-term working capital needs of 
+          nanobusinesses. Guyyaa loans were designed for business societies that were unable to obtain financing from the financial sector 
+          due to collateral and documentation restrictions. \n\nThe keyword 'Guyyaa' has two meanings. Guyyaa means 'Day or Daily' in Afaan 
+          Oromo, emphasising that the loan is typically offered to enterprises with daily working capital needs, such as gulit traders, informal 
+          coffee houses, informal workers, roadside traders, petty shopkeepers, and so on. In From an Amharic perspective, guyyaa 
+          has the meaning of 'lap' which is a dialect or a particular form of language that emphasises the traditional unrevealed pocket for 
+          grandmothers, where they put down their instant income in trading."
+    buttons:
+      - title: "MICHU FEATURES"
+        payload: "/Features"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+
+  utter_wabbii_loan:
+  - text: "Wabii Loan is one of the segmented loan products inside the Michu platform that is provided to cover quick working capital needs for 
+          microbusinesses. And the purpose of this gigital loan is to transform how MSME customers reach us, serve collateral-deficient 
+          customers, and derive financial inclusion. \n\n keyword 'Wabii' has a couple of meanings. In Afaan Oromo, wabii has a meaning of 
+          'Surety' to emphasize that the product be of the option that provides the state of being sure or certain of mutual benefit and growth. 
+          Provided for bussinesses such as Micro Retailers (Suk), Coffee Houses, Mini Restaurants (Shiro Bet), Juice and Fruit shops, Fast Food 
+          Corners, Chat Shops, three-wheel taxi drivers, and so on. In Amharic perspective, wabii has a meaning of 'Source' to emphasize that 
+          Michu Wabii is the financial source for MSMEs."
+    buttons:
+      - title: "MICHU FEATURES"
+        payload: "/Features"
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+  - text: "Wabii Loan is one of the segmented loan products available on the Michu platform to meet the short-term working capital needs of 
+          microbusinesses. And the goal of this gigital loan is to change how MSME consumers find us, service customers who lack collateral, 
+          and achieve financial inclusion. \n\n keyword 'Wabii' has a couple of meanings. In Afaan Oromo, wabii has a meaning of 'Surety' to 
+          emphasize that the product be of the option that provides the state of being sure or certain of mutual benefit and growth. Provided 
+          for bussinesses such as Micro Retailers (Suk), Coffee Houses, Mini Restaurants (Shiro Bet), Juice and Fruit shops, Fast Food Corners, 
+          Chat Shops, three-wheel taxi drivers, and so on. In Amharic perspective, wabii has a meaning of 'Source' to emphasize that Michu 
+          Wabii is the financial source for MSMEs."
+    buttons:
+      - title: "MICHU FEATURES"
+        payload: "/Features"
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+
+  utter_eligibility:
+  - text: "There are a few criterias to enroll one's own self into michu. First of, the user should have to be 
+          Ethiopian citizen and involve in trading activity, need to be a customer of Cooperative Bank of Oromia 
+          consequently should have one or more  account products of the bank and would want to have a sufficient 
+          amount to cover fees for application process, should be smartphone owner and ought to provide relevant 
+          documents required by the bank. More for each requirement of a Michu product. Select your desired product 
+          from the following button:"
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements" 
+
+  utter_foreigner:
+  - text: "Michu loans are exclusively available to individuals holding Ethiopian citizenship or possessing resident 
+          permission within Ethiopia. If you do not fall under these categories, you are ineligible to apply or use the 
+          Michu application."
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements"
+
+  utter_age_limit:
+  - text: "Yes, the minimum age to get enrolled on the app is 18."
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements"
+
+  utter_guyyaa_Requirements:
+  - text: "Guyyaa Loan targets all types of traders, which might not be formal businesses, with The following 
+          required documents: \n - Coop bank Account\n - Should be engaged in trading activity(Source of Income)\n 
+          - Should Own a smart phone (Android)"
+    buttons:
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements" 
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit" 
+
+  utter_wabii_Requirements:
+  - text: "Wabii loan targets traders who has only formal businesses with:\n - Coop bank Account\n - Formal Kebele ID\n
+          - Trade License and TIN\n - MoU and AOA(in case of PLC)\n
+          - Should be engaged in trading activity(Source of Income)\n - Should Own a smart phone (Android)"
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit"  
+
+  utter_michu_limit:
+  - text: "Depending on the product you select, the Michu loan's credit limit may change. Please choose the limit you 
+          want from the following buttons:"
+    buttons:
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit"
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit" 
+
+  utter_max_limit:
+  - text: "The loan limit within Michu varies according to the chosen product. However, to raise your loan amount from 
+          the minimum to the maximum, consider these key strategies:\n
+          1. **Enhance Transaction History:** Amplify your account's transaction history by conducting consistent daily, 
+          weekly, and monthly transactions.\n
+          2. **Accurate Business Details:** Furnish precise and up-to-date business information to reflect your financial 
+          standing accurately.\n
+          3. **Timely or Advanced Repayment:** Focus on repaying your loans punctually or even before the due date, showcasing 
+          your responsible repayment behavior.\n 
+          By implementing these measures, you can significantly improve your credit 
+          scoring outcome, leading to more favorable loan offers during both the initial application and subsequent 
+          reapplications"
+    buttons:
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit"
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit" 
+
+  utter_guyyaa_limit:
+  - text: "The Guyyaa Loan minimum limit is 2000ETB and maximum limit is 15000ETB which should be paid within a week (in 7 days)."
+    buttons:
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit"
+      - title: "GUYYAA CREDIT PERIOD"
+        payload: "/guyyaa_duration" 
+
+  utter_wabii_limit:
+  - text: "The credit limit of a wabii loan is between 50,000 ETB and 100,000 ETB."
+    buttons:
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit"
+      - title: "WABII CREDIT PERIOD"
+        payload: "/wabii_duration"
+
+  utter_michu_duration:
+  - text: "The credit time varies based on the product you choose. Please select the desired product credit duration."
+    buttons:
+      - title: "GUYYAA CREDIT PERIOD"
+        payload: "/guyyaa_duration" 
+      - title: "WABII CREDIT PERIOD"
+        payload: "/wabii_duration"
+
+  utter_guyyaa_duration:
+  - text: "The Michu guyyaa loan has a credit period of 7 days."
+    buttons:
+      - title: "WABII CREDIT PERIOD"
+        payload: "/wabii_duration"
+      - title: "GUYYAA FACILITY FEE"
+        payload: "/guyyaa_fee"
+
+  utter_wabii_duration:
+  - text: "The Michu wabii loan has a credit period of 30 days."
+    buttons:
+      - title: "GUYYAA CREDIT PERIOD"
+        payload: "/guyyaa_duration"
+      - title: "WABII FACILITY FEE"
+        payload: "/wabii_fee" 
+
+  utter_michu_accessfee:
+  - text: "The access fee varies based on the product you choose. Please select the desired product for access fee"
+    buttons:
+      - title: "GUYYAA FACILITY FEE"
+        payload: "/guyyaa_fee"
+      - title: "WABII FACILITY FEE"
+        payload: "/wabii_fee" 
+
+  utter_guyyaa_fee:
+  - text: "The access charge for the Guyyaa loan is 12% of the loan amount you borrowed."
+    buttons:
+      - title: "WABII FACILITY FEE"
+        payload: "/wabii_fee" 
+      - title: "GUYYAA INTER-RATE"
+        payload: "/guyyaa_interest"
+
+  utter_wabii_fee:
+  - text: "Access fee required for processing Michu Wabii is 5% of approved amount which should be paid before disbursment."
+    buttons:
+      - title: "GUYYAA FACILITY FEE"
+        payload: "/guyyaa_fee" 
+      - title: "WABII INTER-RATE"
+        payload: "/wabii_interest"
+
+  utter_michu_interest:
+  - text: "Depending on the Michu loan product you select, the interest rate changes." 
+    buttons:
+      - title: "GUYYAA INTER-RATE"
+        payload: "/guyyaa_interest"
+      - title: "WABII INTER-RATE"
+        payload: "/wabii_interest" 
+
+  utter_guyyaa_interest:
+  - text: "Guyyaa loan doesn't have interest rate (0%), it only has facility fee."
+    buttons:
+      - title: "WABII INTER-RATE"
+        payload: "/wabii_interest" 
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality" 
+
+  utter_wabii_interest:
+  - text: "The monthly interest rate for a wabii loan is 8%."
+    buttons:
+      - title: "GUYYAA INTER-RATE"
+        payload: "/guyyaa_interest"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+
+  utter_michu_penality:
+  - text: "Once the loan is not repaid by the due date, the penalty will begin to be calculated. The penalty varies 
+          according on the Mchu loan package you choose. Please select a button from the list below: You want a product penalty."  
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+
+  utter_late_payment:
+  - text: "Delaying payments significantly damages your credit score in Michu's loan history, diminishing future high 
+          loan offers and risking service suspension. Moreover, penalties and interest will gather from the missed 
+          payment's due date until settlement, aligned with your agreement's terms. Repayment includes the outstanding 
+          amount, accrued charges, and is mandatory when required."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+  utter_refuse_payment:
+  - text: "If you fail to fulfill your loan payment obligations, several consequences will follow:\n
+          1. Initially, your credit score will be adversely affected and marked as negative in Michu's digital loan 
+          history. This will result in a reduced likelihood of receiving high loan offers in the future, and you may 
+          even face suspension from using the loan service.\n
+          2. The bank will proceed to report your case to the National Bank of Ethiopia for Non-Performing Loan (NPL) 
+          registration. This registration will effectively bar you from obtaining any loans from any financial institution 
+          in Ethiopia until you settle your outstanding debt with Michu.\n
+          3. if the situation remains unresolved, the bank will take legal action by pursuing a court case. This action 
+          is based on the agreement you initially signed during the application process, which serves as a digital 
+          contract. The bank will seek legal enforcement through the court system.\n
+          Starting from the due date of the missed payment, additional penalties and interest will accumulate over time. 
+          These charges will continue to accrue until the point of payment, in accordance with the terms specified in the 
+          agreement you agreed upon. When you are compelled to settle the outstanding amount, you will be required to pay 
+          not only the principal loan amount but also the accumulated penalties and interest up until the payment date, 
+          as stipulated in the signed agreement."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+  utter_early_payment:
+  - text: "The bank strongly encourages early repayment, and the system views it as a positive factor for future loan 
+          offers. On the other hand, for Michu Wabbi loans, where interest accrues on a daily basis, making early payments
+           results in reduced repayment amounts or lower interest charges."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+
+
+
+  utter_guyyaa_penality:
+  - text: "If the repayment deadline is missed, Penalty fee is 0.5% of remaining unpaid amount per day."
+    buttons:
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality"
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements" 
+
+  utter_wabii_penality:
+  - text: "Penalty will start to calculate as soon as the loan failed to be paid within one month period of time or 30 days.
+          and If the repayment deadline is missed, the penalty is 0.5% per day."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements" 
+
+
+  utter_ID_Type:
+  - text: "There are couple of personal identity document alternatives to choose, Kebele ID, Driving License and Passport.
+          You can use one of this"
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements"
+
+  utter_gender:
+  - text: "There is no elucidated rules regarding uncommon advantages owing to gender differences, since credit scoring 
+          engine doesn't consider gender difference as a material."
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements"
+  
+  utter_norms:
+  - text: "Yes, it is believed that societal norms and values are guarded by the society itself. Beside that, the 
+          government should protect norms and values of its population. Michu as a product is stands for the benefit 
+          of the society's businesses which are legally being administered by government's rules, regulations and 
+          proclamations."
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+
+  utter_w_vs_g:
+  - text: "Wabii loan is different in comparison with Guyyaa loan by attributes such as customer's targeted line of 
+          business, documents and information requirement and properties such as credit limit and period, facility fee 
+          and so on."
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+
+  utter_uploaddoccument:
+  - text: "No need to upload multiple documents on a single field due to the fact that each individual required documents 
+          has their own unique fields to be uploaded."
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements"
+
+  utter_phone_number:
+  - text: "Considering that michu for now on is functional in Ethiopia only, no need of inputting country code(+251) infront, 
+          you can simply use 09."
+    buttons:
+      - title: "GUYYAA REQ."
+        payload: "/guyyaa_Requirements"
+      - title: "WABII REQ."
+        payload: "/wabii_Requirements"
+
+  utter_why_michu_notwork:
+  - text: "The Michu app might be stagnated for a couple of reasons:\n you may be trying to use the app in offline mode 
+          or you may be turning on a VPN\n you may be trying to log different accounts on a single device while you have 
+          already logged another account\n the app might be disabled via the service centre due to bugs or system 
+          incompatibilities that make the application temporarily unavailable.\n It might be due to insufficient storage 
+          on your device to carry out the process at optimal capacity.\n Just close the app and try to free your storage.
+          \n your network connection, and don't forget to turn off your VPN if any"
+    buttons:
+      - title: "LATE DISBURSMENT"
+        payload: "/late_disbursment"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  - text: "The Michu app may be frozen for several reasons:\n - you may be attempting to use the app in offline mode or 
+          turning on a VPN\n - you may be attempting to log different accounts on a single device while you have already 
+          logged another accountn the app may be disabled via the service centre due to bugs or system incompatibilities 
+          that make the application temporarily unavailable\n - It could be due to insufficient storage on your device to 
+          complete the process at full capacity. Simply close the app and try to free up some space.\n - Check your 
+          network connection, and don't forget to turn off any VPNs you may have."
+    buttons:
+      - title: "LATE DISBURSMENT"
+        payload: "/late_disbursment"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  utter_late_disbursment:
+  - text: "Late disbursement may result for a couple of reasons: the applicant's account number might be inactive or may 
+          have a KYC (Know Your Customer) issue and an inactive TIN, so it needs a few days to be activated; the applicant
+           might not have enough money to cover the facility fee; the officer might have a lot of pending applications, 
+           which leads to late disbursement; and there might be technical issues from the front side and server side as 
+           well."
+    buttons:
+      - title: "WHY MICHU NOT WORK"
+        payload: "/why_michu_notwork"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  - text: "Late disbursement can occur for a variety of reasons, including: the applicant's account number being inactive 
+          or having a KYC (Know Your Customer) issue and an inactive TIN, which requires a few days to be activated; the 
+          applicant not having enough money to cover the facility fee; the officer having a large number of pending 
+          applications, which leads to late disbursement; and technical issues on both the front and server sides."
+    buttons:
+      - title: "WHY MICHU NOT WORK"
+        payload: "/why_michu_notwork"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  utter_reversal:
+  - text: "Reversal will be made if there is an error transactions by the system so visit your nearest branch for further 
+          information."
+    buttons:
+      - title: "HOW CAN I KNOW DEADLINE"
+        payload: "/know_deadline"
+      - title: "WHO DEBIT FROM MY ACCOUNT"
+        payload: "/who_debit"
+
+  utter_NPL:
+  - text: "The bank has no intention to encourage late payers."
+    buttons:
+      - title: "HOW CAN I KNOW DEADLINE"
+        payload: "/know_deadline"
+      - title: "REPAYMENT OPTION"
+        payload: "/repayment_option"
+
+  utter_know_deadline:
+  - text: "The Michu app provides comprehensive details on loan limits, repayment periods, interest rates, and penalty fees. Simply open 
+          the app and log in to access all the relevant information."
+    buttons:
+      - title: "HOW CAN I KNOW DEADLINE"
+        payload: "/know_deadline"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+
+  utter_repayment_option:
+  - text: "Dept collectors has an access to debit your account during late repayment. Contact your nearest branch to notify debt collectors 
+          to deduct repayment amount from your account."
+    buttons:
+      - title: "WHO DEBIT FROM MY ACCOUNT"
+        payload: "/who_debit"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+
+  utter_who_debit:
+  - text: "If your loan repayment is due and surpasses the repayment time, the system will automatically debit the repayment 
+          amount from your savings account. Furthermore, during the loan application process, Michu will deduct access or 
+          facility fees from your account according to the specified product rules, as communicated by the app or detailed 
+          in the terms and conditions. However, if any account deductions occur outside of these situations, kindly contact 
+          our call center at 609 to report the issue you've encountered."
+    buttons:
+      - title: "REPAYMENT OPTION"
+        payload: "/repayment_option"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+  utter_payment_type:
+  - text: "To settle your loan, access the Michu application and navigate to the repayment section. There, you'll find the 
+          repayment amount, your total borrowed sum, and comprehensive details. By clicking the 'Make Payment' button, you 
+          can proceed. The app will display your account balance alongside the repayment amount. Simply input your desired 
+          payment sum, verify it with the 'Pay Now' button, and the transaction will be successfully processed. Should you 
+          encounter any difficulties, feel free to seek assistance from me or call our call center at 609."
+    buttons:
+      - title: "REMINDER"
+        payload: "/reminder"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+
+  utter_reminder:
+  - text: "if you are using guyyaa loan, you will get warning notification of repayment date two days before due date and
+           on due date as well. If you are using wabii loan, you will be notified thrice, five and one day from due date 
+           and on due date. for more open your michu app, you can get the details from there"
+    buttons:
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+  utter_rejection:
+  - text: "Here is a closer look at the factors that may lead to loan rejection. Your loan application might be rejected if your overall 
+          information is erronneous, your business is not among selected line of business, your attached documents are dispensable or not 
+          updated and so on.   yab it need more information"
+    buttons:
+      - title: "DOCUMENT REJECTION"
+        payload: "/document_rejection"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+  utter_document_rejection:
+  - text: "It is important to be mindful that the documents you have uploaded for verification may not be updated, complete, or essential 
+          for the validation process. In some instances, there might be discrepancies such as a mismatch between the name on your trade 
+          license and the name on your identification document, as well as potential disparities between the account name and the name 
+          associated with your Tax Identification Number (TIN). These aspects warrant careful attention to ensure the accuracy and coherence 
+          of the information presented during the verification procedures."
+    buttons:
+      - title: "INCORRECT INFORMATION"
+        payload: "/incorect"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+  utter_incorect:
+  - text: "You may put unacceptable information about you or your business, your phone number and emergency contact might be the same, 
+          your application name and saving account name might be different, you may put erroneous TIN number on the field and so on."
+    buttons:
+      - title: "DOCUMENT REJECTION"
+        payload: "/document_rejection"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+  utter_Features:
+  - text: "Michu features are the following:\n ~ easy application process\n ~ speedy loan analysis\n ~ short loan processing period\n
+           ~ availability of low amounts of money\n ~ automated loan decision\n ~ loans are often digital\n ~ loan disbursement and 
+           collection\n ~ remote CRM (customer relationship management)\n ~ online document upload\n ~ credit scoring\n ~ user 
+           experience and objective loan decision\n ~ It is extremely easy, and ease of application is some of the features 
+           of Michu"
+    buttons:
+      - title: "GUYYAA LOAN"
+        payload: "/guyya_loan"
+      - title: "WABII LOAN"
+        payload: "/wabbii_loan"
+
+  utter_language:
+  - text: "Currently, I support three languages (English, Amharic, and Afaan Oromo). If you want to change the language, 
+          please click the keyboard button icon, which is found at the right corner of the button."
+    buttons:
+      - title: "MICHU LANGUAGE"
+        payload: "/michu_language"
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+
+  utter_michu_language:
+  - text: "Michu is now available in three languages: English, Amharic, and Afaan Oromo."
+    buttons:
+      - title: "BOT LANGUAGE"
+        payload: "/language"
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+  - text: "English, Amharic, and Afaan Oromo are the three languages that Michu now supports."
+    buttons:
+      - title: "BOT LANGUAGE"
+        payload: "/language"
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+
+  utter_install_michu:
+  - text: "To get and install Michu you can simply search it on the Play Store and download the app and install it on your mobile 
+          device. here is the link [comming soon!]" 
+    buttons:
+      - title: "MICHU AVAILABLITY"
+        payload: "/michu_availablity"
+      - title: "APPLICATION PROCCESS"
+        payload: "/application"
+
+  utter_michu_availablity:
+  - text: "For now, Michu's application is available only on the Play Store and is only functional on Android phones. 
+          And also, the loan process is only applicable to Android phones."
+    buttons:
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+      - title: "APPLICATION PROCCESS"
+        payload: "/application"
+  - text: "The Michu app is now only accessible through the Play Store and only works with Android smartphones. 
+          Additionally, only Android phones are eligible for the borrowing process."
+    buttons:
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+      - title: "APPLICATION PROCCESS"
+        payload: "/application"
+
+  utter_application:
+  - text: "The loan application proccess is simple and easy. First download the app from the playstore then provide all 
+          personal information and business information as needed on the application. Here the proccess:\n Installation Steps:\n
+          1. Retrieve the app from the Play Store.\n
+          2. Complete the application installation on your mobile device.\n
+          3. Select your preferred language for usage.\n
+          4. open Michu application \n
+          For more Select the product from the folowing button to know the application proccess of your desired loan"
+    buttons:
+      - title: "GUYYAA APP-PROCCESS"
+        payload: "/guyyaa_application"
+      - title: "WABII APP-PROCCESS"
+        payload: "/wabii_application"
+
+  utter_guyyaa_application:
+  - text: "The loan application proccess for Guyyaa loan is simple and easy. Here is the full proccess:\n
+          Applying for Michu Guyya's Loan for the first time:\n
+          1. Open the Michu app and select the Guyya loan option.\n
+          2. Enter your phone number.\n
+          3. Access the terms and conditions by using the provided link.\n
+          4. Read and acknowledge the terms and conditions by checking the agreement box.\n
+          5. Input the OTP (One-Time Password) sent to your phone number.\n
+          6. Set your desired password.\n
+          7. Re-enter your password for confirmation.\n
+          8. Provide your personal information.\n
+          9. Enter your CBO account number.\n
+          10. Review the offered loan details.\n
+          11. Decide to either accept or reject the loan offer.\n
+          12. If you accept the offer, thoroughly read and agree to the loan contract.\n
+          13. The loan amount will be disbursed into your account.\n
+          Please note that these steps will occur during the initial application."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "WABII APP-PROCCESS"
+        payload: "/wabii_application"
+  utter_wabii_application:
+  - text: "The loan application proccess for Wabii loan is simple and easy. Here is the full proccess:\n
+          Applying for Michu Wabbi's Loan for the first time :\n
+          1. Open the Michu app and select the Wabbi loan option.\n
+          2. Enter your phone number.\n
+          3. Access the terms and conditions by using the provided link.\n
+          4. Read and acknowledge the terms and conditions by checking the agreement box.\n
+          5. Input the OTP (One-Time Password) sent to your phone number.\n
+          6. Set your desired password.\n
+          7. Re-enter your password for confirmation.\n
+          8. Provide your personal information.\n
+          10. 8. Provide your Business information.\n
+          10. Enter your CBO account number.\n
+          11. insert Required documents \n
+          12. Review the offered loan details.\n
+          13. Decide to either accept or reject the loan offer.\n
+          14. Wait for document verification from the Bank side.\n
+          15. If you accept the offer, thoroughly read and agree to the loan contract.\n
+          16. The loan amount will be disbursed into your account.\n
+          Please note that these steps will occur during the initial application."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "GUYYAA APP-PROCCESS"
+        payload: "/guyyaa_application"
+
+  utter_reapplication:
+  - text: "Upon successfully repaying your previous loan, you're eligible to reapply without delay. If you've adhered to 
+          timely or early payments, the system will enhance your loan offer by a certain percentage, taking your credit 
+          history into account. Conversely, delayed payments will incur penalties. To initiate a new application, simply 
+          log in to the app, review and accept the terms and the offer extended by Michu. Here is the step for reapplication:\n\n
+          Reapply for Wabii Loan:\n 
+          1. Login in to michu app \n 
+          2. Review the offered loan details\n 
+          3. Decide to either accept or reject the loan offer\n 
+          4. If you accept the offer, thoroughly read and agree to the loan contract\n 
+          5. The loan amount will be disbursed into your account.\n 
+          Please note that these steps will work if your document is still renewed document on Michu  Wabbi Loan\n\n
+          Reapply for Guyyaa Loan:\n 
+          1. Login in to michu app \n
+          2. Review the offered loan details.\n
+          3. Decide to either accept or reject the loan offer.\n
+          4. If you accept the offer, thoroughly read and agree to the loan contract.\n
+          5. The loan amount will be disbursed into your account."
+    buttons:
+      - title: "GUYYAA APP-PROCCESS"
+        payload: "/guyyaa_application"
+      - title: "WABII APP-PROCCESS"
+        payload: "/wabii_application"
+  utter_reaplication_times:
+  - text: "You can re-play as much as you want as long as you refund the previous debt."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "RENEWING DOCUMENT"
+        payload: "/renewingd"
+
+  utter_renewingd:
+  - text: "If your document is out of date, you should have to renew it. Here is how to renew a document:\n
+          Renewing Your Document:\n
+          1. Log in to the Michu application.\n
+          2. If your data has not been renewed, the app will display a document upload form.\n
+          3. Upload the updated document.\n
+          4. Your document will undergo verification by the bank.\n
+          Please note that this feature is applicable exclusively to individuals with Michu Guyya's Loan."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "REAPPLICATION TIMES"
+        payload: "/reaplication_times"
+
+
+  utter_approval_status:
+  - text: "If your account status is ACTIVE, SMS will congratulate you or you can simply check your account balance. 
+          Rejection reason will be notified to you via SMS as well."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "PAYMENT DOUBT"
+        payload: "/payment_doubt"
+  
+
+  utter_app_version:
+  - text: "The system exclusively deducts the loan repayment amount. However, in the unlikely event of a technical error 
+          causing an excessive deduction, kindly reach out to our call center at 609 to promptly notify and rectify the 
+          issue."
+  utter_payment_doubt:
+  - text: "The system needs to accurately display the appropriate money amount within the application, considering 
+          potential scenarios:\n
+          1. In cases where the loan repayment time has lapsed, the bank may debit the repayment amount from your account.\n
+          2. If you've received payment via the app but can't recall the specific amount, kindly refer to your account's 
+          transaction history for verification.\n
+          3. Should the displayed amount exceeds your withdrawal, it could be attributed to interest calculations. Loan 
+          products often incorporate interest rates linked to product types, resulting in increased amounts over time.\n
+          4. If none of the aforementioned reasons apply, please reach out to our technical support through our call 
+          center at 609 for further assistance."
+  
+  utter_credit_score:
+  - text: "A Credit Scoring Model is a risk management tool that evaluates a loan applicant's creditworthiness by 
+          predicting the likelihood of default using historical data. It employs numerical methods to rank cases, 
+          condensing integrated data into a single value to gauge risk. This mathematical model estimates the probability 
+          of default, indicating the chance of credit events such as bankruptcy, defaults, and non-payment by customers.
+          In credit scoring, AI uses advanced algorithms to analyze a wide range of data, predict credit risk, and automate 
+          the process. It considers factors like payment history, income, and more to assess an applicant's creditworthiness.
+          AI improves efficiency, customization, and accuracy but must also address issues of bias and transparency in 
+          decision-making. In the context of Michu loans, the application incorporates the Transaction Activity Using RFM 
+          Model and the Business Growth Model to forecast company growth. Moreover, it employs the Performance & 
+          Behavioral Model to evaluate potential risks linked to current customers by examining their most recent 
+          behavioral trends."
+  
+  utter_work_time:
+  - text: "Indeed, the application is accessible around the clock, 24/7, enabling you to apply and make repayments at 
+          your convenience. Should you require assistance, our dedicated call center at 609 is at your service from 8:00 
+          AM to 10:00 PM, providing comprehensive support."
+
+  utter_otp:
+  - text: "The system will dispatch an OTP for confirmation purposes. However, occasional network issues could lead to 
+          delays in receiving the message on your phone. In such cases, please consider utilizing the 'Resend OTP' option 
+          once the designated time has elapsed."
+
+  utter_forbedin:
+  - text: "Michu has specific criteria for acceptance:\n
+          1. **Unique Information:** Only one phone number, TIN number, and account number are allowed.\n
+          2. **Valid Documents:** Expired documents, such as business licenses, are not accepted among the required 
+          documents.\n
+          3. **Legitimate Documentation:** Falsified documents, including counterfeit business licenses, are not permissible.\n
+          These guidelines aim to ensure adherence to ethical norms, values, and legal regulations. Any actions contrary to 
+          these norms or against the law are not accepted"
+
+  utter_password:
+  - text: "If you find yourself unable to recall your password, worry not! The Michu app offers a password reset feature. 
+          Simply navigate to the app's login page and locate the 'Forgot Password' link. Following this, an OTP (One-Time 
+          Password) will be dispatched to your registered phone number. Enter this OTP within the app to initiate the 
+          password reset process. Once completed, you can establish a new password of your choice. It's essential to 
+          commit this new password to memory for your future access needs."
+
+  utter_double_taken:
+  - text: "The system exclusively deducts the loan repayment amount. However, in the unlikely event of a technical error 
+          causing an excessive deduction, kindly reach out to our call center at 609 to promptly notify and rectify the 
+          issue."
+
+  utter_get_support:
+  - text: "For comprehensive assistance, including technical and general support, simply dial our call center at 609 
+          between 2:00 AM and 10:00 PM. Additionally, the Michu chatbot is available around the clock to address your 
+          queries. If you prefer in-person guidance, our nearby branches are open during working hours to provide you 
+          with the advice you seek." 
+  
+  utter_double_loan:
+  - text: "A single customer can have only one active loan and engage with one product simultaneously. However, once a 
+          loan is settled, customers are permitted to transition to different Michu loan products, provided they meet the 
+          eligibility criteria for the new product."
+
+  utter_kyc:
+  - text: "Michu loans streamline the collection of essential information specific to the product type in use. For 
+          instance, the Michu Guyyaa loan necessitates the following personal details:\n
+          - First Name \n
+          - Middle Name\n
+          - Last Name\n
+          - Gender\n
+          - Birth Date (Gregorian calendar)\n
+          - Marital Status\n
+          - Education Level\n
+          - Spouse/Emergency Contact Name\n
+          - Spouse/Emergency Contact Phone Number.\n\n
+
+          Furthermore, the Michu Wabii loan encompasses a more comprehensive set of data, including:\n
+          2.1 Personal Information:\n
+          - First Name\n
+          - Middle Name\n
+          - Last Name\n
+          - Gender\n
+          - Birth Date (Gregorian calendar)\n
+          - Marital Status\n
+          - Education Level\n
+          - Spouse/Emergency Contact Name\n
+          - Spouse/Emergency Contact Phone Number\n
+          - Spouse/Emergency Contact Name\n
+          - Spouse/Emergency Contact Phone Number.\n
+
+          2.2 Personal Address:\n
+          - Region\n
+          - City\n
+          - Zone/Sub-City\n
+          - Woreda\n
+          - House Number\n
+          - Type of ID\n
+          - ID Number.\n
+
+          2.3 Business Information:\n
+          - Tax Identification Number (TIN)\n
+          - Account Number\n
+          - Business Sector\n
+          - Line of Business\n
+          - Year of Establishment\n
+          - Starting Number of Employees\n
+          - Current Number of Employees\n
+          - Starting Capital\n
+          - Source of Initial Capital\n
+          - Annual Sales\n
+          - Current Capital\n
+          - Annual Profit\n
+          - Region\n
+          - City\n
+          - Zone/Sub-City\n
+          - Woreda\n
+          - House Number\n
+          - Business Association Type\n
+          - ID\n
+          - Trade Licence\n
+          - Others (optional).\n
+
+          These specified pieces of information are essential when applying for a Michu loan."
+
+  utter_branch_support:
+  - text: "Physical branch visits are not obligatory for loan applications, repayments, registration, or verification 
+          processes. Simply download the app from the Play Store and follow the app's instructions to access the services. 
+          However, in the event that you require technical assistance, our call center at 609 is available for inquiries, 
+          or you can choose to visit a nearby branch for personalized information and guidance."
+  
+  utter_loan_complain:
+  - text: "Once your verification process is successfully completed within the system, it's important to note that fields 
+          within the app cannot be edited except for password changes. However, in specific scenarios:\n
+          1. If, during the initial verification step, your submission is rejected due to inaccuracies, the app will 
+          furnish a form for updating the information.\n
+          2. Should your documents expire, the application offers a dedicated form for document uploads, allowing you to 
+          refresh your documentation.\n
+          3. For any supplementary concerns or queries, please don't hesitate to reach out to our call center at 609 for 
+          further assistance."
+
+  utter_iamabot:
+  - text: I'm an AI chatbot powered by Michu team, here to assist you! Feel free to ask any questions you have
+
+  utter_thanks:
+  - text: "You're welcome! I'm glad I could assist you."
+  - text: "You're very welcome! I'm here to help whenever you need."
+  - text: "No problem at all! I'm always here to provide guidance."
+  - text: "It's my pleasure to help. Don't hesitate to reach out again if you need anything else."
+  - text: "Thank you for your kind words! Helping you is what I'm here for."
+
+  utter_change_language:
+  - text: "To change the language, click the keyboard button in the bottom right corner, followed by the language button."
+
+  utter_FAQ:
+    - buttons:
+      - title: "What is a michu loan?"
+        payload: "/michu"
+      - title: "What is Wabii Laon?"
+        payload: "/wabbii_loan"
+      - title: "What is a Guyyaa loan?"
+        payload: "/guyya_loan"
+      - title: "Michu requirements?"
+        payload: "/eligibility"
+      - title: "Michu access fee?"
+        payload: "/michu_accessfee"
+      - title: "Michu Limit?"
+        payload: "/michu_limit"
+      - title: "Michu penalty?"
+        payload: "/michu_penality"
+      - title: "what is the duration of michu loan?"
+        payload: "/michu_duration"
+      - title: "what is the interest rate of michu loan"
+        payload: "/michu_interest"
+      button_type: vertical
+      text: "Here is the most frequently asked question:"
+    
+
+
+
+
+
+
+
+
+
+# entities:
+# - michu
+# - guyya
+# - wabii
+
+actions:
+- action_show_time
+- action_default_fallback
+# - action_show_image
+# - action_show_keyboard
+# - action_show_buttons
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

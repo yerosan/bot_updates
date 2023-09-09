@@ -1,0 +1,272 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  # - action: action_show_buttons
+  - intent: mood_great
+  - action: utter_happy
+  - intent: support
+  - action: utter_support
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  # - action: action_show_buttons
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: thanks
+  - action: utter_thanks
+
+- story: sad path 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- story: about cbo and digital products
+  steps:
+  - intent: cbo
+  - action: utter_cbo
+  - intent: digital_Loan
+  - action: utter_digital_loan
+  - intent: digital_product
+  - action: utter_digital_product
+  - intent: provider
+  - action: utter_provider
+
+- story: about michu products
+  steps:
+  - intent: michu
+  - action: utter_michu
+  - intent: guyya_loan
+  - action: utter_guyya_loan
+  - intent: wabbii_loan
+  - action: utter_wabbii_loan
+  - intent: why_michu
+  - action: utter_why_michu
+  - intent: Features
+  - action: utter_Features
+
+- story: about Requirments
+  steps:
+  - intent: eligibility
+  - action: utter_eligibility
+  - intent: foreigner
+  - action: utter_foreigner
+  - intent: age_limit
+  - action: utter_age_limit
+  - intent: guyyaa_Requirements
+  - action: utter_guyyaa_Requirements
+  - intent: wabii_Requirements
+  - action: utter_wabii_Requirements
+  - intent: ID_Type
+  - action: utter_ID_Type
+
+- story: about limit
+  steps:
+  - intent: michu_limit
+  - action: utter_michu_limit
+  - intent: max_limit
+  - action: utter_max_limit
+  - intent: guyyaa_limit
+  - action: utter_guyyaa_limit
+  - intent: wabii_limit
+  - action: utter_wabii_limit
+
+- story: about duration
+  steps:
+  - intent: michu_duration
+  - action: utter_michu_duration
+  - intent: guyyaa_duration
+  - action: utter_guyyaa_duration
+  - intent: wabii_duration
+  - action: utter_wabii_duration
+
+- story: about access fee
+  steps:
+  - intent: michu_accessfee
+  - action: utter_michu_accessfee
+  - intent: wabii_fee
+  - action: utter_wabii_fee
+  - intent: guyyaa_fee
+  - action: utter_guyyaa_fee
+
+- story: about interest rate 
+  steps:
+  - intent: michu_interest
+  - action: utter_michu_interest
+  - intent: wabii_interest
+  - action: utter_wabii_interest
+  - intent: guyyaa_interest
+  - action: utter_guyyaa_interest
+
+- story: about penality
+  steps:
+  - intent: michu_penality
+  - action: utter_michu_penality
+  - intent: late_payment
+  - action: utter_late_payment
+  - intent: refuse_payment
+  - action: utter_refuse_payment
+  - intent: early_payment
+  - action: utter_early_payment
+
+  - intent: wabii_penality
+  - action: utter_wabii_penality
+  - intent: guyyaa_penality
+  - action: utter_guyyaa_penality
+
+- story: about doccument upload
+  steps:
+  - intent: uploaddoccument
+  - action: utter_uploaddoccument
+  - intent: phone_number
+  - action: utter_phone_number
+  - intent: why_michu_notwork
+  - action: utter_why_michu_notwork
+
+
+
+- story: about language
+  steps:
+  - intent: language
+  - action: utter_language
+  - intent: michu_language
+  - action: utter_michu_language
+  - intent: change_language
+  - action: utter_change_language
+
+- story: about instalation
+  steps:
+  - intent: install_michu
+  - action: utter_install_michu
+  - intent: michu_availablity
+  - action: utter_michu_availablity
+
+- story: about application
+  steps:
+  - intent: application
+  - action: utter_application
+  - intent: guyyaa_application
+  - action: utter_guyyaa_application
+  - intent: wabii_application
+  - action: utter_wabii_application
+  - intent: reapplication
+  - action: utter_reapplication
+  - intent: renewingd
+  - action: utter_renewingd
+  - intent: reaplication_times
+  - action: utter_reaplication_times
+
+
+- story: about approval of loan 
+  steps:
+  - intent: approval_status
+  - action: utter_approval_status
+  - intent: late_disbursment
+  - action: utter_late_disbursment
+  - intent: reversal
+  - action: utter_reversal
+  - intent: NPL
+  - action: utter_NPL
+  - intent: know_deadline
+  - action: utter_know_deadline
+  - intent: repayment_option
+  - action: utter_repayment_option
+  - intent: who_debit
+  - action: utter_who_debit
+  - intent: payment_type
+  - action: utter_payment_type
+  - action: utter_repayment_option
+  - intent: reminder
+  - action: utter_reminder
+  - intent: incorect
+  - action: utter_incorect
+  
+
+- story: about rejaction of loan 
+  steps:
+  - intent: rejection
+  - action: utter_rejection
+  - intent: document_rejection
+  - action: utter_document_rejection
+
+
+
+- story: about FAQ
+  steps:
+  - intent: app_version
+  - action: utter_app_version
+  - intent: kyc
+  - action: utter_kyc
+  - intent: branch_support
+  - action: utter_branch_support
+  - intent: loan_complain
+  - action: utter_loan_complain
+  - intent: get_support
+  - action: utter_get_support
+  - intent: double_taken
+  - action: utter_double_taken
+  - intent: forbedin
+  - action: utter_forbedin
+  - intent: work_time
+  - action: utter_work_time
+  - intent: credit_score
+  - action: utter_credit_score
+  - intent: otp
+  - action: utter_otp
+  - intent: payment_doubt
+  - action: utter_payment_doubt
+  - intent: double_loan
+  - action: utter_double_loan
+  - intent: password
+  - action: utter_password
+
+
+
+
+
+- story: about gender and norms
+  steps:
+  - intent: gender
+  - action: utter_gender
+  - intent: norms
+  - action: utter_norms
+
+- story:  wabii vs Guyyaa
+  steps:
+  - intent: w_vs_g
+  - action: utter_w_vs_g
+  - intent: FAQ
+  - action: utter_FAQ
+
+
+
+
+- story: about time
+  steps:
+  - intent: give_time
+  - action: action_show_time
+  
+
+
+- story: fallback
+  steps:
+  - intent: fallback
+  - action: actionor_default_fallback

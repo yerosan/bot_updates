@@ -1,0 +1,1234 @@
+version: "3.0"
+
+intents:
+- start
+- affirm
+- bot_challenge
+- deny
+- mood_great
+- mood_unhappy
+- give_time
+- goodbye
+- greet
+- support
+- thanks
+- fallback
+- cbo
+- digital_Loan
+- digital_product 
+- michu
+- guyya_loan
+- wabbii_loan
+- eligibility
+- foreigner
+- age_limit
+- guyyaa_Requirements
+- wabii_Requirements
+- michu_limit
+- max_limit
+- guyyaa_limit
+- wabii_limit
+- michu_duration
+- guyyaa_duration
+- wabii_duration
+- michu_accessfee
+- wabii_fee
+- guyyaa_fee
+- michu_interest
+- wabii_interest
+- guyyaa_interest
+- michu_penality
+- late_payment
+- refuse_payment
+- early_payment
+- wabii_penality
+- guyyaa_penality
+
+- ID_Type
+- gender
+- norms
+- w_vs_g
+- uploaddoccument
+- phone_number
+- why_michu_notwork
+- late_disbursment
+# - disbursal_time
+- reversal
+- NPL
+- know_deadline
+- repayment_option
+- who_debit
+- payment_type
+- reminder
+- rejection
+- document_rejection
+- incorect
+- Features
+
+
+
+- why_michu
+- app_version
+- kyc
+- branch_support
+- loan_complain
+- get_support
+- double_taken
+- forbedin
+- work_time
+- provider
+- reapplication
+- credit_score
+- otp
+- payment_doubt
+- double_loan
+- password
+- FAQ
+- wabii_application
+- guyyaa_application
+- renewingd
+- reaplication_times
+
+- install_michu
+- michu_availablity
+- language
+- michu_language
+- application
+- approval_status
+- change_language
+
+responses:
+  utter_start:
+  - text: "Chaatbootiin Michuu Baankii Hojii Gamtaa Oromiyaa nagaa isiniin jedha! Akkamittan isin gargaaruu danda’a? 
+          Waa’ee tajaajila liqii Michuu odeeffannoo maal barbaaddu? Akkamittan isin gargaaruu danda’a? Adeemsa iyyannoo 
+          liqii michuu ilaalchisee gaaffii ni qabduu? Ani isinan gargaaraatii gaaffii barreessaa."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+  - text: "Gara Chaatbootii CoopBank MIchuu baga nagaadhaan dhuftan! Akkamittan isin gargaaruu danda’a? Waa’ee tajaajila 
+          liqii  Michuu maal beekuu barbaaddu? Waa’ee adeemsa liqii Michuu gaaffii qabduu? Ani isinan gargaaraatii 
+          gaaffii ana gaafadhaa."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+
+  utter_greet:
+  - text: "Harka fuune ykn Ashamaa akkam fayyaa keessanii?Chaatbootiin Michuu Baankii Hojii Gamtaa Oromiyaa nagaa 
+          isiniin  jedha Akkamittan isin gargaaruu danda’a? Waa’ee tajaajila liqii dijitaalawaa michuu odeeffannoo 
+          maal barbaadduAkkamittan isin gargaaruu danda’a? Adeemsa iyyannoo liqii michuu ilaalchisee gaaffii ni qabduu? 
+          Ani isinan gargaaraatii gaaffii barreessaa."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+  - text: "Akkam fayyaa keessanii? Gara Chaatbootii MIchuu baga nagaadhaan dhuftan! Akkamittan isin gargaaruu danda’a? 
+          Waa’ee Michuu maal beekuu barbaaddu? Waa’ee adeemsa liqii Michuu gaaffii qabduu? Ani isinan gargaaraatii 
+          gaaffii ana gaafadhaa."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU"
+        payload: "/michu"
+      - title: "FAQ"
+        payload: "/FAQ"
+
+  utter_goodbye:
+  - text: "Gara fuula duraatti yoo gaaffii qabaattan nu quunnamuuf duubatti hin jedhinaa/dandeessuu/Isin simanna Nagaatti!"
+    buttons:
+      - title: "NAGAATTI"
+        payload: "/goodbye"
+      - title: "GALATOOMA"
+        payload: "/thanks"
+  - text:  "Ani isin gargaaruu danda’uu kootiif Gammachuutu natti dhagaa’ama. Gara fuula duraatti yoo gaaffii qabaattan, 
+            deebitanii dhufuuf of hin qabinaa. Ammaaf nagaatti!"
+    buttons:
+      - title: "NAGAATTI"
+        payload: "/goodbye"
+      - title: "GALATOOMA"
+        payload: "/thanks"
+
+  utter_happy:
+  - text: "Kun waan guddaadha, itti fufaa!"
+    buttons:
+      - title: "NAGAATTI"
+        payload: "/goodbye"
+      - title: "GALATOOMA"
+        payload: "/thanks"
+
+      
+  utter_cheer_up:
+  - text: 'Asi wanti isin gammachiisu tokko ni jira:'
+    # image: https://i.imgur.com/nGF1K8f.jpg
+
+
+  utter_did_that_help:
+  - text: "Inni isi gargaareeraa?"
+
+
+  utter_support:
+  - text: "Eyyee, dhimma keessan irratti isin gargaaruu koof gammachuutu anatti dhagaa’ama. Ilaalcisuun ibsa dabalataa 
+          gadi fageenyaan dhiheessuu ni dandeessuu maaloo?"
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+  
+  - text: "Rakkoo kee irratti si gargaaruun koo akkan gammadu beekamaadha. Mee waa'ee dhimma isin mudachaa jiruu odeeffannoo dabalataa kennuu dandeessu?"
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+
+
+  utter_cbo:
+  - text: "Baga gara Baankii Hojii Gamtaa Oromiyaa nagaan dhuftan Baankiin Hojii Gamtaa Oromiyaa guutummaa addunyaati 
+          maamiloota miliyoona 10 olii ta’aniif dawoo ta'uun tajaajila adda addaa kennuufii isaaf gammachuu qaba 
+          odeeffannoo dabalataaf [liinkii kana](https://coopbankoromia.com.et/) cuqaasaa."
+    buttons:
+      - title: "LIQII DIGITAALA"
+        payload: "/digital_Loan"
+      - title: "MICHU"
+        payload: "/michu"
+  - text: " Nooraa baga gara Baankii Hojii Gamtaa Oromiyaa nagaadhaan dhuftan! Baankiin Hojii Gamtaa Oromiyaa maamiloota 
+          miloyoona 10  caalan guutummaa addunyaatti argamaniif tajaajila adda addaa dhiheessuu isaaf gammachuutu itti 
+          dhagaa’ama. Maaloo odeeffannoo dabalataaf [liinkii kana ilaalaa](https://coopbankoromia.com.et/)."
+    buttons:
+      - title: "LIQII DIGITAALA"
+        payload: "/digital_Loan"
+      - title: "MICHU"
+        payload: "/michu"
+
+
+  utter_provider:
+  - text: "Tajaajilli liqii dijiitaalawaa Michuu Baankii Hojii Gamtaa Oromiyaan kan dhiyaate yommuu ta’u, innis gama 
+          dhiyeessa Teknoloojiin Qennaa duukaa jiru. Itoophiyaatti kena liqii dijitaalawaa hojiirra 
+          oolchuun adda duree dha. Akka waliigalaatti gama appilikeeshinii michuutiin tajaajilli dhiyaate carraa addaa 
+          dhiyeessa tajaajila baankii fi faaynaansii lamaanuu /lachuu/ kan mijeessu taasisa"
+    buttons:
+      - title: "LIQII DIGITAALA"
+        payload: "/digital_Loan"
+      - title: "OMISHAALE DIGITAALA"
+        payload: "/digital_product"
+  - text: "Tajaajilli liqii dijiitaalawaa Michuu Baankii Hojii Gamtaa Oromiyaan kan dhiyaate yommuu ta’u, innis gama 
+          dhiyeessa Teknoloojiin Qennaa duukaa jiru. Itoophiyaatti kena liqii dijitaalawaa hojiirra 
+          oolchuun adda duree dha. Akka waliigalaatti gama appilikeeshinii michuutiin tajaajilli dhiyaate carraa addaa 
+          dhiyeessa tajaajila baankii fi faaynaansii lamaanuu /lachuu/ kan mijeessu taasisa"
+    buttons:
+      - title: "LIQII DIGITAALA"
+        payload: "/digital_Loan"
+      - title: "OMISHAALE DIGITAALA"
+        payload: "/digital_product"
+
+  utter_digital_loan:
+  - text: "Liqiin dijitaalawaa gosa liqii karaa chaanalii dijitaalawaa kanneen akka pilaatifoormiwwan toora intarneetaan 
+          ykn appilikeeshinii mobaayiliitiin kennamuudha. Liqiiwwan dijitaalaa sababa mijawaa ta’uu, saffisaa fi 
+          qaqqabamaa ta’uu isaaniitiin beekamummaan isaanii guddachaa jira."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU" 
+        payload: "/michu"
+  - text: " Liqiin dijitaalaa liqii gosa addaa karaa pilaatifoormiiwwan dijitaalaa kanneen akka toora intarnaataa fi 
+          appilikeeshinii mobaayiliitiin argamuudha. Liqiiwwan dijitaalawaa sabasba saffisoo, salphaa, fi qaqqabamaa 
+          ta’uu isaaniitiin baay’ee jaallatamummaan isaa dabalaa jira."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU" 
+        payload: "/michu"
+
+  utter_digital_product:
+  - text: "Tajaajilli dijitaalawaa kutaan teekinoloojiiwwanii fi tajaajila baankii dijitaalawaa Baankii Hojii Gamtaa 
+          Oromiyaa jalatti maamiltootaaf tajaajilawwanii fi furmaataalee toora intarneetaa kallattiin kennamu kan 
+          hoogganuu keessatti kan hirmaannaa taasisuudha. Kunis interfeesii fayyadamtootaa saxaxuu, homishaalii 
+          dijitaalaa haaraa qopheessuu, nageenya dhugoomsuu, fi tarsiimoo dijitaalaa dhaabbataa waliin wal simsiisuu 
+          ofi keessatti hammatuudha. Dabalataanis isaan ni xiinxalu, gareewwan kanneen biroo waliin ta’uudhaan kan 
+          hojjatanii, fi kernniinsa jijjiirama teekinoloojii fi fedhiiwwan maamilaa ni madaqsu. Kutaan kun yeroo ammaa 
+          kana tajaajilawwan jalqabaa 3 fi pilaatifoormiiwwan bulchaa jira:\n
+          1. Pilaatfoormii Michuu \n
+          2. Pilaatfoormii Furtuu Qonnaa \n
+          3. Pilaatfoormii Saakkoo Liinkii dha.\n
+          Yeroo dhihoo keessatti, homishaaleen haaraa dabalataa keessatti hammachiisuudhaaf xiyyeeffannoon kutaa hojii 
+          kanaa kan bal’atu ta’a."
+    buttons:
+      - title: "CBO"
+        payload: "/cbo"
+      - title: "MICHU" 
+        payload: "/michu"
+
+  utter_michu:
+  - text: "Michuun Itoophiyaa keessatti pilaatfoormiiwwan liqii dijitaalawaa jalqabaa keessaa tokko Baankii Hojii Gamtaa 
+          Oromiyaatiin dhiyaate Intarpirayzota maaykiroo, xixiqqaa fi Giddugaleessaa fi hawaasa bal'aaf kan akeekameedha.\n
+          - Michun appilikeeshinii mobaayilii/Artafishaal Intilejansiin deeggaramuun  toora intarneetaa iyyannoo 
+          dhiyeeffachuun kan itti danda'amuudha.\n
+          - Kenni liqii dijitaalawaa moodeela madaallii ga'umsa liqii irratti hundaa'e fi tooftaa kaffaltii liqii 
+          kallattiin raawwatamu hojiirra - oolcheera.\n
+          - Karaa Michuutiin, maamiloonni hojiilee daldaala keessa jiran liqii isaaniif barbaachisaa ta'e wabummaa 
+          malee akka fayyadaman kan gargaaruudha. Odeeffannoo dabalataaf  asi ilaalaa.  (https://coopbankoromia.com.et/michu/)"
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan" 
+
+  - text: "Michuun Ityoophiyaa keessatti pilaatfoormiiwwan faaynaansii dijitaalawaa jalqabaa keessaa tokko Baankii Hojii 
+          Gamtaa Oromiyaan dhiyaata Intarpiraayzota Maaykiroo, xixiqqaa fi Giddugaleessaa fi hawaasa bal'aa irratti 
+          xiyyeeffatee dha.\n
+          - Innis Artafishaal Intilejansiin/deeggaramee appilikeeshinii ismaartfoonii iyyannoo liqii toora intarneetarraa
+           kan dhiheessuudha. \n
+          - xiinxalli kenniinsa dijitaalaa madaallii inii algorizimii tilmaama namaa irraa ala ta'e fi sirnaalee 
+          kaffaltii liqii  toora kallattiin intarneeta irraa taasifamuuf haala mijeessa.\n
+          - maamiloonni karaa michuudhaa liqii wabummaa malee ulaagaa hojii daldalaa of harkaa qabaachuu qofaan 
+          fayyadamuu dandaa’aniidha. odeeffannoo dabalataaf asi ilaalaa: (https://coopbankoromia.com.et/michu/)"
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+  
+  utter_why_michu:
+  - text: "Michuun maamiltoota, baankota, fi hojiiwwan guutuu biyyattiif faayidaa bal’aa kan qabu yoo ta’u, karaa 
+          dijiitaalawaa taasisuu, dhaqqabummaa, fi tajaajila caalmaa qabuutiin bu’aa guddaa argamsiisa. Sirna ikoo 
+          babal’achaa jiru keessatti hirmaachuuf haala mijeessa, galii ni guddisa, baasii ni hir’isa, akka madda galii 
+          ta’ee tajaajila. Waltajjichi murtee odeeffannoo irratti hundaa’e ni saffisiisa, qindoomina balaa xiqqeessa, 
+          walitti qabama odeeffannoo iyyattootaa ni sirreessa, babal'ina argama tajaajila faayinaansii ni guddisa, 
+          akkasumas ummata tajaajila baankii hin arganne qaqqabuuni fi hawaasa qabeenya wabummaa liqii hin qabnebira 
+          ga’a. Michuun hirmaannaa maamiltootaa irratti jijjiirama guddaa kan fidu yoo ta’u, maamiloota herreega 
+          waalefii bananii fi bu’uura maamiltootaa babal’isuun, ilaalcha faayinaansii namoota dhuunfaa galii xiqqaa 
+          qaban waliin walsimsiisa."
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+
+  # - text: "Michu maamiltoota, baankota, fi hojiiwwan biyyaalessaaf iyyannoo bal’aa kan qabu yoo ta’u, karaa dijitaalaayizeeshinii, 
+  #         dhaqqabummaa, fi qulqullina tajaajilaatiin faayidaa guddaa argamsiisa. Sirna ikoo guddachaa jiru keessatti hirmaachuu ni hayyama, 
+  #         galii ni dabala, baasii ni hir’isa, kanaaf akka madda galiitti dhiyeessuu. Teeknooloojiin kun odeeffannoo iyyattootaa walitti qabuu 
+  #         ni sirreessa, hammatamuu faayinaansii ni jajjabeessa, hawaasa baankii hin qabnee fi wabii daangeffame tajaajila. Michu ilaalcha 
+  #         faayinaansii namoota galii xiqqaa qaban waliin walsimsiisuun maamiltoota herrega boorsaa fi maamiltoota dabaluudhaan hirmaannaa 
+  #         fayyadamtootaa jijjiira."
+  #   buttons:
+  #     - title: "LIQII GUYYAA"
+  #       payload: "/guyya_loan"
+  #     - title: "LIQII WABII"
+  #       payload: "/wabbii_loan"
+
+  utter_guyya_loan:
+  - text: "Guyyaan akaakuu tajaajila liqii pilatfoormii Michuu keessaa tokko yoo ta’u, fedhii kaappitaala hojii daldala 
+          xixiqqaaf barbaachisu guutuuf kan kennamudha. Liqiin Guyyaa waldaalee daldalaa sababa wabii fi sanadoota 
+          barbaachisuun damee faayinaansiitiin maallaqaan ala ta’aniif ramadameera. \n\n
+          Jecha ijoon  'Guyyaa' jedhu hiika lama qaba.  Afaan Oromoo keessatti Guyyaan hiika 'Guyyaa ykn Guyyuu 'jedhu 
+          qaba, liqiin kun hojiilee daldalaa fedhii kaappitaala hojii guyyuu  qabaniif, kanneen akka daldaltoota 
+          gulliitii, Mana Bunaa xixiqqaa, Hojjetoota al-idilee, Daldaltoota Daandii cinaa, Daldaltoota Xixiqqaa, . 
+          fi kkf. Ilaalcha Amaariffaatiin guyyaan hiika uka/qama jedhu qaba innis ykn barmaataan iddoo guduunfaan 
+          maallaqaa haadholee daldaltoota ta'aan "
+    buttons:
+      - title: "AMALOOTA MICHU"
+        payload: "/Features"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+
+  - text: "Guyyaan fedhii kaappitaala hojii yeroo gabaabaa dhaabbilee daldalaa daran xixiqqoo guutuuf tajaajila liqii 
+          pilatfoormii Michuu irratti argaman keessaa isa tokkodha. Liqiin Guyyaa hojiiwwan daldalaa sababa dhabiisa 
+          wabii fi sanadootaatiin dhaabbilee faayinaansii irraa faayinaansii argachuu hin dandeenyeef kan qophaa’e ture.\n\n
+          Jechi ijoo 'Guyyaa' jedhu hiika lama qaba. Guyyaa jechuun Afaan Oromootiin 'Guyyaa ykn Guyyuu' jechuudha, liqiin 
+          kun akkaataa idileetti dhaabbilee kaappitaala hojii guyyuu barbaadaniif, kan akka daldaloota gulliitii, mana bunaa 
+          xixiqqoo hojjettoota al-idilee daldaltoota daandii cinaa, abbootii suuqii xixiqqaa fi kkf ta'uu cimsee ibsa. In 
+          Ilaalcha Amaariffaatiin guyyaan hiika uka/qoma jedhu qaba innis logo ykn barmaataan iddoo guduunfaan maallaqaa 
+          haadholee daldaltoota ta'aan taa'u ."
+    buttons:
+      - title: "AMALOOTA MICHU"
+        payload: "/Features"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+
+  utter_wabbii_loan:
+  - text: "Liqiin Wabii gosa tajaajilawwan liqii pilatfoormii Michuu keessaa tokko yoo ta’u, fedhii kaappitaala battalaa 
+          hojii daldala maayikirootiif barbaachisu guutuuf kan kennamudha. Akkasumas kaayyoon liqii dijitaalaa kanaa 
+          akkaataa maamiltoonni Intarpiraayzota maaykiroo xixiqqaa fi giddugaleessaa tajaajila keenya argachuu dana'an 
+          jijjiiruu, maamiltoota wabii dhiyeeffachuu hin dandeeny tajaajila  faayinaansiin qaqabamuu mirkanaassuu dha.\n\n
+          Jechi ijoo 'Wabii' hiika lama qaba. Afaan Oromo keessatti wabii hiika 'Wabii' jedhu qaba, tajaajilli filannoo 
+          haala mirkaneeffannaa ykn mirkanaa'aa ta'uu fayyadama waloon fi guddina waliinii kan fidu ta'uu cimsee ibsuuf. 
+          Dhaabbilee daldalaa kanneen akka maykiroo riteelii kan akka Mana buna dhugaa, Restoraantii xiiqqaa 
+          (Mana Shiroo), Cuunfaa fi Dukkaanota Muduraa, Goleewwan Nyaata saffisa, Mana jimaa, konkolaachiftoota taaksii 
+          gommaa sadii, fi kkff kan kennamu.  Afaan Amaaraatiin, wabiin hiika 'Madda' jedhu qaba, Michuu Wabii madda 
+          maallaqaa Intarpiraayzota maaykiroo xixiqqaa fi giddugaleessaaf  ta'uu cimsee ibsuuf!"
+    buttons:
+      - title: "AMALOOTA MICHU"
+        payload: "/Features"
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+
+  # - text: "Liqiin Wabii fedhii kaappitaala hojii yeroo gabaabaa daldala maayikiroo guutuuf oomishaalee liqii qoqqoodamanii waltajjii Michuu 
+  #         irratti argaman keessaa isa tokkodha. Akkasumas galmi liqii guddaa kanaa akkaataa fayyadamtoonni MSME nu argatan jijjiiruu, 
+  #         maamiltoota wabii hin qabne tajaajiluu, fi hammatamuu faayinaansii galmaan ga’uudha. \n\n keyword 'Wabii' hiika tokko lama qaba. 
+  #         Afaan Afaan Oromo keessatti wabii hiika 'Wabii' jedhu kan qabu yoo ta'u, oomishni filannoo haala mirkaneeffannaa ykn mirkanaa'aa 
+  #         ta'uu fi wal-faaydaa fi guddina waliinii kennu ta'uu isaa cimsee ibsa. Bussinesses kanneen akka Micro Retailers (Suk), Coffee 
+  #         Houses, Mini Restaurants (Shiro Bet), Juice fi Fruit shops, Fast Food Corners, Chat Shops, konkolaachiftoota taaksii miila sadii, 
+  #         fi kkf ni kennama. Ilaalcha Amaariffaatiin wabii hiika 'Madda' jedhu qaba, Michuu Wabii madda maallaqaa MSME'f ta'uu isaa cimsee 
+  #         ibsuuf."
+  #   buttons:
+  #     - title: "AMALOOTA MICHU"
+  #       payload: "/Features"
+  #     - title: "LIQII GUYYAA"
+  #       payload: "/guyya_loan"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  utter_eligibility:
+  - text: "Ofii  michutti galmeessuuf ulaagaaleen muraasni jiru. Tokkoffaa, fayyadamaan lammii Itoophiyaa ta’uu fi sochii daldalaa 
+          keessatti hirmaachuu qaba, maamila Baankii Hojii Gamtaa Oromiyaa ta’uu qaba kana irraa kan ka’e oomisha herregaa baankii tokkoo 
+          fi isaa ol qabaachuu fi maallaqa gahaa kaffaltii uwwisu qabaachuu barbaada adeemsa iyyannoo, abbaa bilbila ismaartii ta’uu kan 
+          qabuu fi sanadoota barbaachisoo baankichi barbaadu dhiyeessuu qaba. Tokkoon tokkoon barbaachisummaa oomisha Michu tokkoof 
+          dabalataan. Qabduu armaan gadii irraa oomisha barbaadde filadhu:"
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements" 
+
+
+
+
+
+
+
+  utter_foreigner:
+  - text: "Liqiin Michuu kan kennamu namoota dhuunfaa lammummaa Itoophiyaa qabaniif ykn hayyama jiraataa Itoophiyaa 
+          keessaa qabaniif qofa. Yoo gosoota kanneen jalatti hin kufne ta’e iyyachuuf ykn iyyata Michuu fayyadamuuf 
+          ulaagaa guutuu hin qabdu."
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements"
+
+  utter_age_limit:
+  - text: "Eeyyee, appilikeeshinii kana irratti galmaa'uuf waggaa 18 dha."
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements"
+
+  utter_guyyaa_Requirements:
+  - text: "Liqiin Guyyaa daldaltoota gosa hunda, kanneen daldala idilee hin ta'inis dabalachuun barbaachisan armaan gadii qaban Sanadoota 
+          irratti xiyyeeffata, \n
+          - Herreega Baankii Hojii Gamtaa\n
+          - Hojii daldalaa irratti hirmaachuu qaba (Madda Galii).\n
+          - Bilbila ismaartii (Andirooyidii) qabaachuu qaba."
+    buttons:
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements" 
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit" 
+
+  utter_wabii_Requirements:
+  - text: "Liqiin Wabii daldaltoota daldala idilee qofa qaban irratti kan xiyyeeffate yoo ta’u:\n
+          - Herrega Baankii  Hojii Gamtaa\n
+          - Waraqaa eenyummaa Gandaa\n
+          - Hayyama Daldalaa fi lakkoofsa Addaa Kaffalaa Gibiraa (TIN)\n
+          - Sanada waliigaltee fi Barreeffama Hundeeffamaa (W/DH/I/G/I/Murtaa’e yoo ta'e) .\n
+          - Hojii daldalaa irratti qooda fudhachuu qaba(Madda Galii) .\n
+          - Bilbila ismaartii (Andirooyidii) qabaachuu qaba."
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit"  
+
+  utter_michu_limit:
+  - text: "Oomisha filattan irratti hundaa'uun daangaan liqii Michuu jijjiiramuu danda'a. Maaloo hanga isin barbaadden qaree armaan gadii 
+          keessaa filadhu:"
+    buttons:
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit"
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit" 
+
+  utter_max_limit:
+  - text: "Daangaan liqii Michu keessa jiru akkaataa gosa liqaa filatameetti garaagarummaa qaba. Haa ta’u malee, maallaqa liqii keessanii isa 
+          xiqqaa irraa gara isa guddaatti ol guddisuuf, tooftaalee ijoo kana ilaalaa:\n
+          1.Baasii fi galii lakkoofsa herreegaa  Fooyyessi:** Baasii fi galii  guyyaa, torbanii fi ji'aa walfakkaatu gaggeessuun seenaa 
+          lakkoofsa  herrega keetii guddisuu.\n
+          2.Odeeffannoo daldalaa sirrii ** Haala maallaqaa kee sirritti calaqqisiisuuf,odeeffannoo daldalaa sirrii fi kan yeroo ammaa  kennuu.\n
+          3.Yeroodhaan ykn Dursanii kaffaluu:** Liqii kee yeroon ykn guyyaa itti kaffalamu dura  deebisuu irratti xiyyeeffadhu, amala itti 
+          gaafatamummaa liqii deebisuu kee agarsiisi.\n
+          Safartuuwwan kana hojiirra oolchuudhaan bu’aa qabxii liqii kee haalaan fooyyessuu dandeessa, kunis yeroo iyyannoo jalqabaa fi irra 
+          deebiin iyyannoo boodaatti dhiyeessii liqii mijataa ta’e argamsiisa."
+    buttons:
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit"
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit" 
+
+  utter_guyyaa_limit:
+  - text: "Daangaan Liqii Guyyaa xiqqaan 2000ETB fi daangaa guddaan 15000ETB yoo ta’u kunis torban tokko keessatti (guyyoota 7 keessatti) kaffalamuu qaba."
+    buttons:
+      - title: "WABII LIMIT"
+        payload: "/wabii_limit"
+      - title: "GUYYAA CREDIT PERIOD"
+        payload: "/guyyaa_duration" 
+
+  utter_wabii_limit:
+  - text: "Daangaan liqii wabii qarshii kuma 50 (50000) hanga qarshii kuma 100 (100000) gidduutti argama."
+    buttons:
+      - title: "GUYYAA LIMIT"
+        payload: "/guyyaa_limit"
+      - title: "WABII CREDIT PERIOD"
+        payload: "/wabii_duration"
+
+  utter_michu_duration:
+  - text: "Yeroon turtii liqii oomisha filatte irratti hundaa’uun garaagarummaa qaba. Maaloo yeroo turtii liqii oomishaa barbaadde filadhu."
+    buttons:
+      - title: "GUYYAA CREDIT PERIOD"
+        payload: "/guyyaa_duration" 
+      - title: "WABII CREDIT PERIOD"
+        payload: "/wabii_duration"
+
+  utter_guyyaa_duration:
+  - text: "Yeroon turtii Liqii guyyaa guyyaa torba (7) dha."
+    buttons:
+      - title: "WABII CREDIT PERIOD"
+        payload: "/wabii_duration"
+      - title: "GUYYAA FACILITY FEE"
+        payload: "/guyyaa_fee"
+
+  utter_wabii_duration:
+  - text: "Yeroon turtii liqii wabii guyyaa soddoma (30) ykn ji'a tokko dha."
+    buttons:
+      - title: "GUYYAA CREDIT PERIOD"
+        payload: "/guyyaa_duration"
+      - title: "WABII FACILITY FEE"
+        payload: "/wabii_fee" 
+
+  utter_michu_accessfee:
+  - text: "Kaffaltiin tajaajilaa oomisha filatte irratti hundaa’uun garaagarummaa qaba. Maaloo kaffaltii tajaajilaa oomisha barbaadde filadhu"
+    buttons:
+      - title: "GUYYAA FACILITY FEE"
+        payload: "/guyyaa_fee"
+      - title: "WABII FACILITY FEE"
+        payload: "/wabii_fee" 
+
+  utter_guyyaa_fee:
+  - text: "Kaffaltiin tajaajilaa liqii Guyyaa maallaqa liqii liqeesse irraa %12 dha."
+    buttons:
+      - title: "WABII FACILITY FEE"
+        payload: "/wabii_fee" 
+      - title: "GUYYAA INTER-RATE"
+        payload: "/guyyaa_interest"
+
+  utter_wabii_fee:
+  - text: "Michu Wabii liqeeffachuuf kaffaltiin tajaajilaa barbaachisu maallaqa mirkanaa’e keessaa %5 yoo ta’u kunis osoo hin fudhatin dura 
+          kaffalamuu qaba."
+    buttons:
+      - title: "GUYYAA FACILITY FEE"
+        payload: "/guyyaa_fee" 
+      - title: "WABII INTER-RATE"
+        payload: "/wabii_interest"
+
+  utter_michu_interest:
+  - text: "Oomisha liqii Michu filattu irratti hundaa'uun dhala ni jijjiirama." 
+    buttons:
+      - title: "GUYYAA INTER-RATE"
+        payload: "/guyyaa_interest"
+      - title: "WABII INTER-RATE"
+        payload: "/wabii_interest" 
+
+  utter_guyyaa_interest:
+  - text: "Liqiin Guyyaa dhala (0%) hin qabu, kaffaltii tajaajilaa qofa qaba."
+    buttons:
+      - title: "WABII INTER-RATE"
+        payload: "/wabii_interest" 
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality" 
+
+#  redue it
+
+  utter_wabii_interest:
+  - text: "Dhala liqii wabii ji'aa %8 dha."
+    buttons:
+      - title: "GUYYAA INTER-RATE"
+        payload: "/guyyaa_interest"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+
+  utter_michu_penality:
+  - text: "Liqiin guyyaa itti kaffalamutti erga hin kaffalamne booda adabbiin shallagamuu ni jalqaba. Adabbiin akkaataa paakeejii liqii 
+          Michu filatteen garaagarummaa qabata. Maaloo tarree armaan gadii keessaa sanduuqa tokko filadhu, adabbii oomishaa barbaadde."  
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+
+  utter_late_payment:
+  - text: "Kaffaltii harkifachuun seenaa liqii Michu keessatti qabxii liqii keessan haalaan miidha, dhiyeessii liqii olaanaa gara fuulduraatti 
+          hir’isuu fi tajaajila addaan cituuf saaxila. Kana malees, adabbii fi dhala guyyaa kaffaltiin darbe irraa kaasee hanga qubsumaatti, 
+          haala waliigaltee keessanii wajjin walsimuun walitti qabama. Deebiin kaffalamuu kan hammatu  maallaqa hin kaffalamiin, kaffaltii 
+          kuufamaa adabbii yoo ta'u, yeroo barbaachisutti dirqama."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+  utter_refuse_payment:
+  - text: "Dirqama kaffaltii liqii yoo raawwachuu dadhabde, bu’aawwan  hedduun akka armaan gadiitti dhufa:\n
+          1. Jalqaba irratti qabxiin liqii keessan dhiibbaa hamaa kan qabuu fi seenaa liqii dijitaalaa Michu keessatti akka negaatiiviitti 
+          mallatteeffama. Kunis gara fuulduraatti carraan liqii olaanaa argachuu kee ni hir’isa, dabaalatan tajaajila liqii fayyadamuu irraa 
+          illee addaan cituu si mudachuu danda’a.\n
+          2. Baankin galmee Liqii Raawwii Hin Qabne (NPL)f dhimma keessan Baankii Biyyaalessaa Itiyoophiyaatti gabaasuu itti fufa. Galmeen kun 
+          hanga liqaa kee Michuu hin kaffalamiin kaffaltee xumurtutti dhaabbata faayinaansii Itoophiyaa kamirraayyuu liqii kamiyyuu akka hin 
+          arganne bu’a qabeessa ta’ee si dhorka.\n
+          3. haalli sun furmaata hin argatin yoo hafe baankiin dhimma mana murtii hordofuun tarkaanfii seeraa ni fudhata. Tarkaanfiin kun 
+          waliigaltee jalqaba adeemsa iyyannoo irratti mallatteessite irratti kan hundaa’u yoo ta’u, kunis akka waliigaltee dijitaalaati 
+          tajaajila. Baankin sirna mana murtiitiin raawwachiisummaa seera ni barbaada.\n
+          Guyyaa kaffaltiin darbe irraa eegalee adabbii fi dhala dabalataa itti fufiinsan ni kuufama. Kaffaltiin kun hanga kaffaltiin 
+          kaffalamutti, akkaataa waliigaltee keessatti ibsameen walitti qabamuu itti fufa. Maallaqa hin kaffalamiin xumuruuf yeroo dirqamtu, 
+          maallaqa liqii ijoo qofa osoo hin taane adabbii fi dhala kuufamaa hanga guyyaa kaffaltii sanaatti, akkaataa waliigaltee mallattaa'e 
+          keessatti tumameen kaffaluun si irraa eegama."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+  utter_early_payment:
+  - text: "Baankiin maammiltonni isaa  dafanii akka kaffalan cimsee kan jajjabeessu yoo ta’u, sirnichi liqii gara fuula duraatiif akka waan 
+          gaariitti ilaala.Gama biraatiin liqii Michu Wabiif, bakka dhala guyyaa guyyaan itti kuufamutti, kaffaltii dursanii raawwachuun hamma 
+          maallaqa deebi’uu hir’isuu ykn kaffaltii dhalaa gadi buusu danada,a."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality" 
+
+
+
+  utter_guyyaa_penality:
+  - text: "Yeroon kaffaltii liqii guyyaa deebisuu yoo darbe, Kaffaltiin Adabbii guyyaatti maallaqa hin kaffalamiin hafe keessaa %0.5 ta’a."
+    buttons:
+      - title: "WABII PENALITY"
+        payload: "/wabii_penality"
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements" 
+
+  utter_wabii_penality:
+  - text: "Adabbiin akkuma liqiin yeroo ji’a tokkoo ykn guyyoota 30 keessatti osoo kaffalamin hafeen shallagamuu ni jalqaba.  Yeroon 
+          kaffaltii liqii wabii deebisuu yoo darbe adabbiin guyyaatti %0.5 ta’a."
+    buttons:
+      - title: "GUYYAA PENALITY"
+        payload: "/guyyaa_penality"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements" 
+
+
+  utter_ID_Type:
+  - text: "Filannoon sanada eenyummaa nama dhuunfaa tokkoo waraqaa eenyummaa gandaa, Hayyama Konkolaachisummaa fi Paaspoortii ta,uu danda,a. 
+          innis kanneen keessaa tokko fayyadamuu danda,a."
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements"
+
+  utter_gender:
+  - text: "moodelli qabxii liqii kennuu garaagarummaa saalaa akka meeshaatti waan hin ilaalleef, garaagarummaa saalaa irraa kan ka’e 
+          faayidaa hin baratamne ilaalchisee seerri ifa ta’e hin jiru."
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements"
+  
+  utter_norms:
+  - text: "Eeyyee, adaa fi dudhan hawaasaa tokko hawaasummaa sanan kan egadhamuudha.kan cinaatii  immoo mootummaan adaa fi dudhaa saba 
+          eguuf itti gaafatamummaa fudhaachuu qaba. Michu akka moosajitii  hawaasaa  akkataa heeraa fi seeraa biyyaatii daladalla irrattii 
+          boba'aan gargaruuf kan dhabbateedha"
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+
+  utter_w_vs_g:
+  - text: "Liqiin Wabii liqii Guyyaa wajjin wal bira qabamee yoom ilaalamu amaloota akka sarara hojii maamilaa irratti xiyyeeffate, 
+          sanadootaa fi odeeffannoo barbaachisuu fi qabeenya akka daangaa liqii fi yeroo, kaffaltii mijaa’inaafi kkfn addadha."
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+
+  utter_uploaddoccument:
+  - text: "Sanadootni barbaachisan tokkoon tokkoon isaanii bakka adda adda itti galfaman   waan qabaniif Sanadoota hunda bakka tokkotti 
+          fe'uun (galchuun) hin barbaachisu."
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements"
+
+  utter_phone_number:
+  - text: "Michu ammaaf Itoophiyaa qofa keessatti kan waan hojjettuf, koodii biyyaa(+251)  galchuun hin barbaachisu, salphaatti 09 
+          fayyadamuu dandeenyaa."
+    buttons:
+      - title: "ULAAGA GUYYAA"
+        payload: "/guyyaa_Requirements"
+      - title: "ULAAGA WABII"
+        payload: "/wabii_Requirements"
+
+
+# come latter
+
+  utter_why_michu_notwork:
+  - text: "Appiin Michu sababoota addaddaattin dhaabbachuu danda'a:\n appicha haala sarara ala ta'een fayyadamuuf yaalaa jirta ta'a ykn 
+          VPN ibsuu dandeessa\n osoo qabduu akkaawuntii adda addaa meeshaa tokko irratti galmeessuuf yaalaa jirta ta'a duraan akkaawuntii 
+          biraa galmeesse\n appichi karaa wiirtuu tajaajilaa sababa dogoggora ykn walsimsiisuun dhabuu sirnichaa kan aplikeeshiniin yeroodhaaf 
+          akka hin argamne taasisu irraa kan ka'e hojiirraa oolfamuu danda'a.\n Adeemsa dandeettii barbaachisaa ta'een raawwachuuf meeshaa 
+          keessan irratti kuufama gahaa ta'uu dhabuu irraa kan ka'e ta'uu danda'a.\n ta'uu danda'a.\n n Appicha cufuu qofaan storage keessan 
+          bilisa baasuuf yaalaa. \n network connection keessan, yoo jiraate VPN keessan cufuu hin dagatinaa"
+    buttons:
+      - title: "LATE DISBURSMENT"
+        payload: "/late_disbursment"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  - text: "Appiin Michu sababoota hedduudhaan dhorkamuu danda'a:\n - appicha haala sarara ala ta'een fayyadamuuf yaalaa jirta ta'a ykn 
+          VPN ibsuu dandeessa\n - osoo duraan kan biraa galchitee jirtuu meeshaa tokko irratti herrega adda addaa galmeessuuf yaalaa jirta 
+          ta'a accountn appichi karaa wiirtuu tajaajilaatiin sababa dogongora ykn walsimsiisuun dhabuu sirnichaa kan aplikeeshiniin yeroodhaaf 
+          akka hin argamne taasisuun hojii irraa ooluu danda'a\n - Adeemsa dandeettii guutuudhaan xumuruuf meeshaa keessan irratti kuufama 
+          gahaa dhabuu irraa kan ka'e ta'uu danda'a. Salphaatti appicha cufiitii bakka muraasa bilisa baasuuf yaali.\n - Hidhamiinsa networkii 
+          kee ilaali, VPN qabaachuu dandeessu kamiyyuu cufuu hin dagatin."
+    buttons:
+      - title: "LATE DISBURSMENT"
+        payload: "/late_disbursment"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  utter_late_disbursment:
+  - text: "Kaffaltiin yeroon booda kaffalamuun sababoota lama lamaaf ta’uu danda’a: lakkoofsi herrega iyyataa sochii kan hin qabne ta’uu 
+          danda’a ykn dhimma KYC (Maamila Keessan Beekuu) fi TIN sochii hin qabne qabaachuu danda’a, kanaaf hojii irra oolchuuf guyyoota 
+          muraasa barbaachisa; iyyataan kaffaltii dhaabbatichaa uwwisuuf maallaqa gahaa qabaachuu dhiisuu danda’a; qondaalli sun iyyannoowwan 
+          baay’ee hin xumuramne qabaachuu danda’a, kunis yeroon booda akka kaffalamu taasisa; akkasumas gama fuulduraa fi gama sarvarii 
+          irraas dhimmi teeknikaa jiraachuu mala."
+    buttons:
+      - title: "WHY MICHU NOT WORK"
+        payload: "/why_michu_notwork"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  - text: "Kaffaltiin yeroon booda kaffalamu sababoota adda addaatiin uumamuu danda’a, isaanis: lakkoofsi herrega iyyataa sochii dhabuu ykn 
+          dhimma KYC (Maamila Keessan Beekuu) qabaachuu fi TIN sochii hin qabne, kan hojiirra ooluuf guyyoota muraasa barbaadu; iyyataan 
+          kaffaltii dhaabbatichaa uwwisuuf maallaqa gahaa qabaachuu dhabuu; qondaalli iyyannoowwan dhiyaatan baay’ee qabaachuu isaanii, 
+          kunis yeroon booda akka kaffalamu kan taasisu yoo ta’u; fi dhimmoota teeknikaa gama fuulduraa fi gama sarvariitiin."
+    buttons:
+      - title: "WHY MICHU NOT WORK"
+        payload: "/why_michu_notwork"
+      - title: "REVERSAL"
+        payload: "/reversal"
+
+  utter_reversal:
+  - text: "Duubatti deebi’uun kan raawwatamu yoo dogongorri sirnichaan daldalli uumame waan ta’eef odeeffannoo dabalataaf damee isinitti dhihoo jiru daawwadhaa."
+    buttons:
+      - title: "HOW CAN I KNOW DEADLINE"
+        payload: "/know_deadline"
+      - title: "WHO DEBIT FROM MY ACCOUNT"
+        payload: "/who_debit"
+
+  utter_NPL:
+  - text: "Baankichi namoota yeroon booda kaffalan jajjabeessuuf yaada hin qabu."
+    buttons:
+      - title: "HOW CAN I KNOW DEADLINE"
+        payload: "/know_deadline"
+      - title: "REPAYMENT OPTION"
+        payload: "/repayment_option"
+
+  utter_know_deadline:
+  - text: "Appiin Michu daangaa liqii, yeroo kaffaltii deebisuu, dhala, fi kaffaltii adabbii irratti ibsa bal'aa kenna. Odeeffannoo 
+          barbaachisaa ta'e hunda argachuuf appicha banuun seenuu qofa."
+    buttons:
+      - title: "HOW CAN I KNOW DEADLINE"
+        payload: "/know_deadline"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+
+  utter_repayment_option:
+  - text: "Dept collectors yeroo kaffaltii yeroon booda deebifamu herrega keessan irraa deebisuuf carraa qaba. Damee isinitti dhihoo 
+          jiru qunnamaa, namoota liqaa sassaaban maallaqa deebi’uu herrega keessan irraa akka hir’isan beeksisuu."
+    buttons:
+      - title: "WHO DEBIT FROM MY ACCOUNT"
+        payload: "/who_debit"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+
+
+
+  utter_who_debit:
+  - text: "Yoo kaffaltiin liqii kee yeroon isaa ga’ee fi yeroo kaffaltii deebi’uu caale, sirnichi ofumaan maallaqa deebi’ee herrega 
+          qusannaa kee irraa ni deebisa. Kana malees, adeemsa iyyannoo liqii keessatti, Michu akkaataa seera oomishaa ibsametti, akkaataa 
+          appii kanaan ibsametti ykn haalawwanii fi tumaalee keessatti bal’inaan ibsameen kaffaltii qaqqabummaa ykn mijaa’ina herrega keessan 
+          irraa ni hir’isa. Haa ta’u malee, haalawwan kanaan ala hir’inni herregaa kamiyyuu yoo uumame, dhimma isin mudate gabaasuuf wiirtuu 
+          bilbilaa keenya 609 irratti gaarummaadhaan qunnamaa."
+    buttons:
+      - title: "REPAYMENT OPTION"
+        payload: "/repayment_option"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+  utter_payment_type:
+  - text: "Liqii keessan xumuruuf, iyyata Michu argachuun gara kutaa kaffaltii deebisuutti qajeela. Achitti, hanga kaffaltii deebi'uu, 
+          maallaqa waliigalaa liqii fudhatte, fi ibsa bal'aa ni argatta. Qabduu 'Make Payment' jedhu cuqaasuun itti fufuu dandeessu. 
+          Appichi maallaqa deebi'ee kaffalamu cinatti hafnaan herrega keessanii ni agarsiisa. Salphaatti walitti qabama kaffaltii barbaadde 
+          galchi, button 'Pay Now' jedhuun mirkaneessi, daldalli sun milkaa'inaan ni adeemsifama. Rakkoon yoo isin mudate, bilisaan gargaarsa 
+          na irraa barbaaduu ykn wiirtuu bilbilaa keenyaa 609 irratti bilbilaa."
+    buttons:
+      - title: "REMINDER"
+        payload: "/reminder"
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+
+  utter_reminder:
+  - text: "yoo liqii guyyaa fayyadamaa jirtan ta’e, guyyaa kaffaltii guyyaa lama dura fi guyyaa itti kaffalamu irrattis beeksisa 
+          akeekkachiisaa guyyaa kaffaltii ni argattu. Yoo liqii wabii fayyadamaa jirtan ta’e guyyaa itti kaffalamuu fi guyyaa itti 
+          kaffalamu irraa eegalee si’a sadii, shanii fi guyyaa tokko isin beeksifna. for more app michu keessan banadhaa, bal'ina isaa 
+          achirraa argachuu dandeessu"
+    buttons:
+      - title: "REPAYMENT METHOD"
+        payload: "/payment_type"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+  utter_rejection:
+  - text: "yoo liqii guyyaa fayyadamaa jirtan ta’e, guyyaa kaffaltii guyyaa lama dura fi guyyaa itti kaffalamu irrattis beeksisa 
+          akeekkachiisaa guyyaa kaffaltii ni argattu. Yoo liqii wabii fayyadamaa jirtan ta’e guyyaa itti kaffalamuu fi guyyaa itti kaffalamu 
+          irraa eegalee si’a sadii, shanii fi guyyaa tokko isin beeksifna. for more app michu keessan banadhaa, bal'ina isaa achirraa argachuu 
+          dandeessu"
+    buttons:
+      - title: "DOCUMENT REJECTION"
+        payload: "/document_rejection"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+  utter_document_rejection:
+  - text: "Sanadoonni mirkaneessuuf olkaa'an haaromfamuu, guutuu, ykn adeemsa mirkaneessuuf barbaachisoo ta'uu dhiisuu akka danda'an yaada 
+          keessa galchuun barbaachisaadha. Yeroo tokko tokko, garaagarummaa kan akka maqaa hayyama daldalaa keessanii fi maqaa sanada 
+          eenyummaa keessan irratti argamu gidduutti wal hin simne, akkasumas maqaa herregaa fi maqaa Lakkoofsa Eenyummaa Gibiraa (TIN) 
+          keessanii wajjin walqabatu gidduutti garaagarummaa qabaachuu danda’u jiraachuu danda’a. Gama kanaan odeeffannoon yeroo adeemsa 
+          mirkaneessuutti dhiyaatu sirrii ta’uu fi walitti hidhamiinsa isaa mirkaneessuuf xiyyeeffannoo of eeggannoo qabu."
+    buttons:
+      - title: "INCORRECT INFORMATION"
+        payload: "/incorect"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+  utter_incorect:
+  - text: "Waa’ee kee ykn daldala keetii odeeffannoo fudhatama hin qabne kaa’uu dandeessa, lakkoofsi bilbilaa fi quunnamtiin hatattamaa 
+          tokko ta’uu danda’a, maqaan iyyannoo kee fi maqaan herrega qusannaa kee adda ta’uu danda’a, lakkoofsa TIN dogoggoraa dirree 
+          irratti kaa’uu dandeessa fi kkf."
+    buttons:
+      - title: "DOCUMENT REJECTION"
+        payload: "/document_rejection"
+      - title: "REJECTION"
+        payload: "/rejection"
+
+# till this
+  utter_Features:
+  - text: "Amalooni michuu akka armaan gadiitti:\n Adeemsa iyyannoo salphaa \nxiinxala liqii saffisaa\n yeroo adeemsa liqii gabaabaa\n argamuun 
+          maallaqa xiqqaa\n murtii liqii ofumaan\n liqiin yeroo baayyee\n liqii dijitaalaa kaffaluu fi walitti qabuu\n CRM fagoo(Customer 
+          Relation Managment)\n online sanada olkaa’uu\n qabxii liqii\n muuxannoo fayyadamaa fi murtii liqii kaayyoo qabu.\n Garmalee salphaa 
+          yoo ta'u, salphaatti hojiirra oolchuun isaas amaloota michu keessaa isa tokkodha."
+    buttons:
+      - title: "LIQII GUYYAA"
+        payload: "/guyya_loan"
+      - title: "LIQII WABII"
+        payload: "/wabbii_loan"
+
+  utter_language:
+  - text: "Yeroo ammaa afaanota sadii (Ingiliffaa, Amaaraa, fi Afaan Oromoo) nan deeggara. Yoo afaan jijjiiruu barbaadde, maaloo mallattoo 
+          qaree kiiboordii cuqaasi, kunis golee mirgaa qaree irratti argama."
+    buttons:
+      - title: "MICHU LANGUAGE"
+        payload: "/michu_language"
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+
+  utter_michu_language:
+  - text: "Michu amma afaanota sadii: Afaan Ingilizii, Amaaraa, fi Afaan Oromootiin ni argama."
+    buttons:
+      - title: "BOT LANGUAGE"
+        payload: "/language"
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+  - text: "Afaan Ingilizii, Amaaraa, fi Afaan Oromo afaanota sadan Michu amma deeggarudha."
+    buttons:
+      - title: "BOT LANGUAGE"
+        payload: "/language"
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+
+  utter_install_michu:
+  - text: "Michu argachuu fi install gochuuf Play Store irratti search gochuun appicha download gochuun mobile device keessan irratti install 
+          gochuu dandeessu. kunoo linkiin [yeroo dhiyootti dhufa!]" 
+    buttons:
+      - title: "MICHU AVAILABLITY"
+        payload: "/michu_availablity"
+      - title: "APPLICATION PROCCESS"
+        payload: "/application"
+
+  utter_michu_availablity:
+  - text: "Ammaaf application Michu Play Store qofa irratti kan argamu yoo ta'u bilbiloota Android qofa irratti kan hojjetudha. Akkasumas, 
+          adeemsi liqii kun bilbiloota Andirooyidii qofa irratti kan hojjetudha"
+    buttons:
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+      - title: "APPLICATION PROCCESS"
+        payload: "/application"
+  - text: "Appiin Michu amma karaa Play Store qofa kan argamu yoo ta'u, bilbiloota ismaartii Andirooyidii qofa waliin hojjeta. Dabalataanis 
+          adeemsa liqii kanaaf ulaagaa guutuu kan qaban bilbiloota Andirooyidii qofa."
+    buttons:
+      - title: "HOW TO INSTALL"
+        payload: "/install_michu"
+      - title: "APPLICATION PROCCESS"
+        payload: "/application"
+
+  utter_application:
+  - text: "Adeemsi iyyannoo liqii salphaa fi salphaadha. Jalqaba appicha playstore irraa buufadhaa sana booda odeeffannoo dhuunfaa fi 
+          odeeffannoo daldalaa hunda akka barbaachisummaa isaatti application irratti kenni. Asitti adeemsi:\n Tarkaanfiiwwan Dhaabbii:\n
+          1. Appicha Play Store irraa fudhachuu.\n
+          2. Appilikeeshinii meeshaa moobaayilaa keessan irratti fe'uu xumuruu.\n
+          3. Fayyadamaaf afaan filatte filadhu.\n
+          4. application Michu banachuu \n
+          Dabalataaf Adeemsa iyyannoo liqii barbaadde beekuuf button armaan gadii irraa oomisha filadhu"
+    buttons:
+      - title: "GUYYAA APP-PROCCESS"
+        payload: "/guyyaa_application"
+      - title: "WABII APP-PROCCESS"
+        payload: "/wabii_application"
+
+  utter_guyyaa_application:
+  - text: "Adeemsi iyyannoo liqii Guyyaa salphaa fi salphaadha. Adeemsi guutuun isaa kunooti:\n Yeroo jalqabaaf Liqii Michuu Guyyaa iyyachuu:\n
+          1. Appii Michuu banuun filannoo liqii Guyya filadhaa.\n
+          2. Lakkoofsa bilbilaa keessan galchaa.\n
+          3. Hidhaa kenname fayyadamuun haalawwanii fi dambiiwwan argachuu.\n
+          4. Sanduuqa waliigaltee irratti mallattoo kaa'uudhaan haalawwanii fi dambiiwwan dubbisuu fi beekamtii kennuu.\n
+          5. OTP (One-Time Password) gara lakkoofsa bilbilaa keessaniitti ergame galchaa.\n
+          6. Jecha icciitii barbaadde saagi.\n
+          7. Mirkaneessuuf jecha icciitii kee irra deebi'ii galchi.\n
+          8. Odeeffannoo dhuunfaa kee kenni.\n
+          9. Lakkoofsa herrega CBO kee galchi.\n
+          10. Bal'ina liqii dhiyaate irra deebi'ii ilaali.\n
+          11. Dhiyeessii liqii fudhachuu ykn diduu murteessuu.\n
+          12. Dhiyeessicha yoo fudhatte, waliigaltee liqii sirriitti dubbisiitii walii galuu.\n
+          13. Maallaqni liqii gara herrega keessanitti ni ba'a.\n
+          Tarkaanfiiwwan kun yeroo iyyannoo jalqabaa akka raawwataman hubadhaa."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "WABII APP-PROCCESS"
+        payload: "/wabii_application"
+  utter_wabii_application:
+  - text: "Adeemsi iyyannoo liqii liqii Wabii salphaa fi salphaadha. Adeemsi guutuun isaa kunooti:\n Yeroo jalqabaaf Liqii Michu Wabbii Iyyachuu :\n
+          1. Appii Michuu banuun filannoo liqii Wabbi filadhaa.\n
+          2. Lakkoofsa bilbilaa keessan galchaa.\n
+          3. Hidhaa kenname fayyadamuun haalawwanii fi dambiiwwan argachuu.\n
+          4. Sanduuqa waliigaltee irratti mallattoo kaa'uudhaan haalawwanii fi dambiiwwan dubbisuu fi beekamtii kennuu.\n
+          5. OTP (One-Time Password) gara lakkoofsa bilbilaa keessaniitti ergame galchaa.\n
+          6. Jecha icciitii barbaadde saagi.\n
+          7. Mirkaneessuuf jecha icciitii kee irra deebi'ii galchi.\n
+          8. Odeeffannoo dhuunfaa kee kenni.\n
+          10. 8. Odeeffannoo Daldalaa kee kenni.\n
+          10. Lakkoofsa herrega CBO kee galchi.\n
+          11. galchuu Sanadoota barbaachisoo \n
+          12. Bal'ina liqii dhiyaate irra deebi'ii ilaali.\n
+          13. Dhiyeessii liqii fudhachuu ykn diduu murteessuu.\n
+          14. Mirkaneessi sanadaa gama Baankii irraa eegaa.\n
+          15. Dhiyeessicha yoo fudhatte, waliigaltee liqii sirriitti dubbisiitii walii galuu.\n
+          16. Maallaqni liqii gara herrega keessanitti ni ba'a.\n
+          Tarkaanfiiwwan kun yeroo iyyannoo jalqabaa akka raawwataman hubadhaa."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "GUYYAA APP-PROCCESS"
+        payload: "/guyyaa_application"
+
+  utter_reapplication:
+  - text: "Liqii duraanii milkaa’inaan erga deebiftee booda, osoo hin tursiisin irra deebitee iyyachuuf ulaagaa guutuu qabda. Yoo kaffaltii yeroon ykn dursitee raawwatte hordofte, sirnichi seenaa liqii kee tilmaama keessa galchuun dhiyeessii liqii kee dhibbeentaa murtaa’een ni guddisa. Faallaa kanaatiin kaffaltiin harkifate adabbii ni fida. Appilikeeshinii haaraa jalqabuuf, salphaatti appicha seenuun, haalawwanii fi dhiyeessii Michu dheeresse ilaaluu fi fudhachuu qofa. Tarkaanfiin irra deebi'amee iyyachuuf kunooti:\n\n
+          Liqii Wabii Irra Deebiin Iyyachuu:\n
+          1. App michu tti seena \n
+          2. Bal'ina liqii dhiyaate ilaaluu\n
+          3. Dhiyeessii liqii fudhachuu ykn diduu murteessuu\n
+          4. Dhiyeessicha yoo fudhatte, waliigaltee liqii sirriitti dubbisiitii walii galuu\n
+          5. Maallaqni liqii gara herrega keessanitti ni ba'a.\n
+          Hubadhaa tarkaanfiiwwan kun kan hojjetan yoo sanadni keessan ammallee Liqii Michu Wabbi irratti sanada haaromfame\n\n
+          Guyyaa Liqii Irra Deebiin Iyyachuu:\n
+          1. App michu tti seena \n
+          2. Bal'ina liqii dhiyaate irra deebi'ii ilaali.\n
+          3. Dhiyeessii liqii fudhachuu ykn diduu murteessuu.\n
+          4. Dhiyeessicha yoo fudhatte, waliigaltee liqii sirriitti dubbisiitii walii galuu.\n
+          5. Maallaqni liqii gara herrega keessanitti ni baafama."
+    buttons:
+      - title: "GUYYAA APP-PROCCESS"
+        payload: "/guyyaa_application"
+      - title: "WABII APP-PROCCESS"
+        payload: "/wabii_application"
+  utter_reaplication_times:
+  - text: "Hanga liqaa duraan qabdu deebifteetti hamma barbaadde irra deebitee liqeefachuu dandeessa."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "RENEWING DOCUMENT"
+        payload: "/renewingd"
+
+  utter_renewingd:
+  - text: "Yoo sanadni kee yeroon isaa darbe, haaromsuu qabda. Akkaataa galmee haaromsuu dandeessan kunooti:\n Galmee Kee Haaromsuu:\n
+          1. Appilikeeshinii Michu seena.\n
+          2. Yoo deetaan kee hin haaromfamne ta'e, appichi unka galmee olkaa'uu agarsiisa.\n
+          3. Galmee haaromfame olkaa'i.\n
+          4. Sanadni kee baankiidhaan mirkanaa'a.\n
+          Amalli kun namoota dhuunfaa Liqii Michuu wabii qaban qofa irratti kan hojjetu ta'uu hubadhaa."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "REAPPLICATION TIMES"
+        payload: "/reaplication_times"
+
+
+  utter_approval_status:
+  - text: "Yoo haalli herrega keessanii active( si'aawaa ykn socho'aa) ta'e SMS baga gammaddan ykn salphaatti haftee herrega keessanii 
+          ilaaluu dandeessu. Sababni diduu karaa ergaa gabaabaa (SMS) akkasumas isin beeksifama."
+    buttons:
+      - title: "REAPPLICATION PROCCESS"
+        payload: "/reapplication"
+      - title: "PAYMENT DOUBT"
+        payload: "/payment_doubt"
+  
+
+  utter_app_version:
+  - text: "Siisteemni  hanga liqii deebifamuu qofa hir’isa. Haa ta’u malee, dogongorri teeknikaan hirifamuu kan  uumamuu yoo ta'ee giddugala 
+          bilbilaa keenyaa 609 irratti bilbilaan hatattamaan dhimmicha beeksisuu fi sirreessuu ni danda'ama."
+  utter_payment_doubt:
+  - text: "Siisteemni haalawwan mudachuu danda’an ilaalcha keessa galchuun, yeroon liiqiin gaafatamuu sirritti agarsiisuu qaba.\n
+          1.yeroon liqiin  deebifamuu yoo  darbe,  Baankiin  lakkoofsaa herregaa nama mallaqaa deebisuu  sanaa   irraa hiri'suu ni danda’a.\n
+          2.Yoo kaffaltii karaa moosaajiitiin  kanfalamee , garuu maallaqa murtaa'e sana agarsiisuu didee, mirkaneeffachuuf  daddabarsaa 
+          mallaqaa karaa lakoofsaa  herrega isaanii  ilaaluu danda'uu.\n
+          3.Yoo maallaqni sitti agarsiisuu  baasii kee caalu yoo ta’e, shallaggii dhala irraa kan ka’e ta’uu danda’a. Oomishaaleen liqii yeroo 
+          baayyee dhala gosoota oomishaa waliin walqabatee kan hammatan yoo ta’u, yeroon darbaa deemuun maallaqni akka dabalu taasisa.\n
+          4.Sababoonni armaan olitti ibsaman keessaa tokkollee yoo hin raawwanne ta'ee , gargaarsa dabalataaf karaa wiirtuu bilbilaa keenyaa 
+          609 irratti deeggarsa teeknikaaf nuu  qunnamuu dandeesssu."
+  
+  utter_credit_score:
+  - text: "Moodeelli mirkannessa Liqii : mala /tooftaa dijiitaalaa fayyadamuun, daataa namootaa liqqeeffattoota   karaa  liqqeeffatootaaf 
+          liiqiin kennamuu fi hin kennamnee  ittin adda kan baasuu fi dandeettii namootaa  liqii  gaafatanii  tooftaa ittin madaalaniidha. 
+          Mala lakkoofsaa /TIN fayyadamuun dhimmoota sadarkaa kaa’uuf, daataa namootaa karaa salphaa ta'een argachuuf  dandaandeessisuudha . 
+          Moodeelli herregaa kun carraa kaffaltii liqii hin kaffallamnee  beekuu fi akkasumaas  carraa taateewwan liqii kanneen akka kanfaltti 
+          rawwwachuu , fi maamiltootaan kaffaltii  liiqii isaanii seeraan hin kanfalee adda ittin bassuuf oola. Qabxii liqii keessatti 
+          AI/sammuu namtolchee  algoorizimootaa sadarkaa olaanaa qaban fayyadamuun daataa bal’aa xiinxala, balaa liqii tilmaamuun adeemsa 
+          isaa ofumaan hojjeta. Dandeettii liqii gaafata tokkoo madaaluuf wantoota akka waa'ee  kaffaltii, galii fi kanneen biroo ilaala. 
+          AI / sammuu namtocheen gahumsa, haala barbaadamuun fi sirrii ta’uu fooyyessuu, dhimmoota loogii fi iftoomina murtii kennuu 
+          keessattis ga'ee oolaana qaba. Haala liqii Michu keessatti, iyyanni kun guddina dhaabbatichaa tilmaamuuf Gocha Dabarsaa Moodeela 
+          RFM Fayyadamaa fi Moodeela Guddina Bizinesii of keessatti hammateera. Kana malees, haala amala isaanii isa dhiyoo qorachuun  
+          miidha karaa  maamiltootan amma jiran waliin walqabatee dhufuu danda’u madaaluuf Moodeela Raawwii fi Amala  saanii adda baasuuf 
+          gargaaruudha."
+  
+  utter_work_time:
+  - text: "Dhugumatti, application kun sa’aatii guutuu, 24/7 kan dhaqqabamu yoo ta’u, iyyachuu fi yeroo mijatutti kaffaltii deebisuu akka 
+          dandeessan isin dandeessisa. Yoo gargaarsa barbaaddan, wiirtuun bilbilaa keenya kan 609 irratti argamu sa'aatii 8:00 AM hanga 
+          10:00 PMtti tajaajila keessan irratti argama, deeggarsa bal'aa kenna."
+
+  utter_otp:
+  - text: "Sirnichi OTP mirkaneessuuf ni erga. Haa ta'u malee, dhimmoonni networkii darbee darbee mul'atan ergaa bilbila keessan irratti 
+          argachuu irratti harkifannaa fiduu danda'a. Haala akkasii keessatti, maaloo yeroon murtaa'e erga darbee booda filannoo 'Resend OTP' 
+          fayyadamuu yaadaa."
+
+  utter_forbedin:
+  - text: "Michu fudhatama argachuuf ulaagaa addaa qaba:\n
+          1. **Odeeffannoo Adda:** Lakkoofsi bilbilaa, lakkoofsi TIN, fi lakkoofsi herregaa tokko qofatu hayyamama.\n
+          2. **Dokumantoota Sirrii:** Sanadoonni yeroon isaanii darbe, kan akka hayyama daldalaa, sanadoota barbaachisoo ta'an keessaa 
+          fudhatama hin argatan.\n
+          3. **Dookumantii seera qabeessa:** Hayyama daldalaa sobaa dabalatee sanadoonni sobaa hin hayyamamu.\n Qajeelfamni kun seera 
+          naamusaa, gatiiwwanii fi dambiiwwan seeraa kabajuu mirkaneessuuf kan akeekedha. Gochi seera kanaan faallaa ta’e ykn seeraan ala 
+          ta’e kamiyyuu fudhatama hin qabu"
+
+  utter_password:
+  - text: "Yoo jecha icciitii kee yaadachuu dadhabde of argatte, hin yaadda'iin! Appiin Michu kun jecha icciitii deebisuuf kan gargaarudha. 
+          Fuula seensaa appii kanaa deemuun 'Forgot Password' jedhu argachuu qofa. Kana hordofuun OTP (One-Time Password) gara lakkoofsa 
+          bilbilaa galmaa'etti ni ergama. Adeemsa jecha icciitii deebisanii dhaabuu jalqabuuf OTP kana appii keessa galchi. Erga xumuramee 
+          booda jecha icciitii haaraa filannoo keessanii hundeessuun ni danda'ama. Jecha icciitii haaraa kana fedhii qaqqabummaa gara fuula 
+          duraa keessaniif yaadannootti galchuun barbaachisaa dha."
+
+  utter_double_taken:
+  - text: "Sirnichi maallaqa liqii deebisuu qofa irraa hir’isa. Haa ta’u malee, dogongorri teeknikaa garmalee hir’isuu kan fide yoo ta’e, 
+          giddugala bilbilaa keenyaa 609 irratti bilbilaan hatattamaan dhimmicha beeksisuu fi sirreessuuf gaarummaadhaan."
+
+  utter_get_support:
+  - text: "Gargaarsa bal’aa, deeggarsa teeknikaa fi waliigalaa dabalatee, salphaatti wiirtuu bilbilaa keenya 609 irratti sa’aatii 2:00 AM fi 
+          10:00 PM gidduutti bilbiluu qofa. Dabalataanis, chatbot Michu gaaffii keessaniif deebii kennuuf sa'aatii guutuu ni argama. 
+          Qajeelfama qaamaan kennamu yoo barbaaddan, dameewwan keenya naannoo sana jiran sa’aatii hojiitti banaa ta’anii gorsa barbaaddan 
+          isiniif kennu." 
+  
+  utter_double_loan:
+  - text: "Maamiltoonni tokko liqii sochii qabu tokko qofa qabaachuu fi yeroo tokkotti oomisha tokko waliin bobba’uu danda’a. Haa ta’u malee, 
+          liqiin tokko erga xumuramee booda maamiltoonni ulaagaalee ulaagaa oomisha haaraa sanaaf barbaachisan yoo guutan gara oomishaalee 
+          liqii Michuu adda addaatti akka ce’an ni hayyamamaaf."
+
+  utter_kyc:
+  - text: "Liqiin Michu odeeffannoo barbaachisaa gosa oomishaa itti fayyadama keessa jiruuf adda ta’e walitti qabuu ni sirreessa. Fakkeenyaaf, liqiin Michu Guyyaa odeeffannoo dhuunfaa armaan gadii barbaachisa:\n
+          - Maqaa Duraa \n
+          - Maqaa Giddugaleessaa\n
+          - Maqaa Dhumaa\n
+          - Saala\n
+          - Guyyaa Dhalootaa (Kaalaandarii Giriigooriyaan)\n
+          - Haala Gaa'elaa\n
+          - Sadarkaa Barnootaa\n
+          - Maqaa Quunnamtii Haadha warraa/Haadha warraa/Atattamaa\n
+          - Lakkoofsa Bilbilaa Quunnamtii Haadha warraa/Haa manaa.\n\n
+
+          Kana malees, liqiin Michuu Wabii tuuta daataa bal’aa ta’e kan hammate yoo ta’u, kanneen keessaa:\n
+          2.1 Odeeffannoo Dhuunfaa:\n
+          - Maqaa Duraa\n
+          - Maqaa Giddugaleessaa\n
+          - Maqaa Dhumaa\n
+          - Saala\n
+          - Guyyaa Dhalootaa (Kaalaandarii Giriigooriyaan)\n
+          - Haala Gaa'elaa\n
+          - Sadarkaa Barnootaa\n
+          - Maqaa Quunnamtii Haadha warraa/Haadha warraa/Atattamaa\n
+          - Lakkoofsa Bilbilaa Quunnamtii Haadha warraa/Haadha warraa/Atattamaa\n
+          - Maqaa Quunnamtii Haadha warraa/Haadha warraa/Atattamaa\n
+          - Lakkoofsa Bilbilaa Quunnamtii Haadha warraa/Haadha Manaa.\n
+
+          2.2 Teessoo Dhuunfaa:\n
+          - Naannoo\n
+          - Magaalaa\n
+          - Zoonii/Magaalaa Xiqqaa\n
+          - Woreeda\n
+          - Lakkoofsa Manaa\n
+          - Gosa ID\n
+          - Lakkoofsa ID.\n
+
+          2.3 Odeeffannoo Daldalaa:\n
+          - Lakkoofsa Eenyummaa Gibiraa (TIN)\n
+          - Lakkoofsa Herregaa\n
+          - Damee Daldalaa\n
+          - Sarara Daldalaa\n
+          - Bara Hundeeffama\n
+          - Baay'ina Hojjetaa Jalqabaa\n
+          - Baay'ina Hojjettoota Ammaa\n
+          - Kaappitaala Jalqabaa\n
+          - Madda Kaappitaala Jalqabaa\n
+          - Gurgurtaa Waggaa\n
+          - Kaappitaala Ammaa\n
+          - Bu'aa Waggaa\n
+          - Naannoo\n
+          - Magaalaa\n
+          - Zoonii/Magaalaa Xiqqaa\n
+          - Woreeda\n
+          - Lakkoofsa Manaa\n
+          - Gosa Waldaa Daldalaa\n
+          - ID\n
+          - Hayyama Daldalaa\n
+          - Kanneen biroo (dirqama).\n
+
+          Odeeffannoowwan ibsaman kun yeroo liqii Michu iyyatan barbaachisoodha."
+
+  utter_branch_support:
+  - text: "Qaaman damee osoo hin deemin liiqaa gaafachuu,kaffalttii rawwaachuu,galma'uu ykn deemsa mirkaneessaf, 
+          tajaajila  liqaa argachuuf salphuumatti mosajjii michuu palyii stoorii  irraa buufachuun qajeelfama jiruu hordofuudha.
+          Akkasumas,yoo deegarsa  teeknikaa feetan ,bilbila bilisa keenya  609 fayyadama  yookaan 
+          Oddeefannoo fi gorsa argachuuf  qaaman damee  keenya ittsintti dhihoo jiruu dubbisuu dandeessu."
+  
+  utter_loan_complain:
+  - text: "Erga deemsi mirkaneessa siiyistama waliin  haalan xumurame , jecha darbii malee wantootni barbaachisoo mosajjii irraati guutaman 
+            sirreefamuu/foyyeessun rakkisaadha.
+            haa tahu malee,haaloota muraasa ala:\n
+            1.Yoo mirkaneessa jalqabaa irraatti, dogoogora itti galchinen yoo kufe , moosaajjin eeyama odeeffannoo guutuu galchinu ni eeyyama.\n
+            2. Dookument yeroon itti darbef, moosajjin  akka irraa deebiin dookumentii galchiinu ni eeyyama \n
+            3. Deegarsa  kaamifiyyuu , maaloo yeroo biraas akkasuma gargaarsa keenya yoo barbaaddan 609tti nuuf bilbiluu hin dagatiinaa."
+
+  utter_iamabot:
+  - text: "Ani chatbot garee michuutiin qoopha'e.Gaaffii qabdan kamiyyuu Sodaa tokko malee  gaafadha, ani yeroo hunda gargaarsa kennuufin as jira! "
+
+  utter_thanks:
+  - text: "Hayyee ,isiin gargaaruu danda'uu kiyyaan nan gammada."
+  - text: "Hayyee,natti tola ,baga nagaan dhuftan! yeroo gargaarsa barbaadan hunda isiin gargaaruf qophiidha."
+  - text: "Hooma rakkoo hin qabu, ani yeroo hunda gargaarsa kennuufin as jira .Isiin gargaaruu kiyyaan gammadeera."
+  - text: "Maaloo yeroo biraas  akkasuma gargaarsa keenya yoo barbaaddan irraa deeb'uun  dhuftanii  nu dubbisuuf  hooma hin mamiinaa."
+  - text: "Isiin gargaaruufin as jira. yaada kessaanif  Baay'ée galatooma!"
+
+
+
+
+
+  utter_change_language:
+  - text: "Afaan jijjiiruuf, qaree kiiboordii golee mirgaa jala jiru cuqaasi, itti aansuudhaan qaree afaanii cuqaasi."
+
+  utter_FAQ:
+    - buttons:
+      - title: "Liqiin michu maali?"
+        payload: "/michu"
+      - title: "Liqiin Wabii maali?"
+        payload: "/wabbii_loan"
+      - title: "Liqiin Guyyaa maali?"
+        payload: "/guyya_loan"
+      - title: "Ulaagaalee Michuu?"
+        payload: "/eligibility"
+      - title: "Kaffaltii qaqqabummaa Michu?"
+        payload: "/michu_accessfee"
+      - title: "Limit michu"
+        payload: "/michu_limit"
+      - title: "adabbii michu"
+        payload: "/michu_penality"
+      - title: "yeroon liqii michu meeqa?"
+        payload: "/michu_duration"
+      - title: "dhala liqii michu meeqa"
+        payload: "/michu_interest"
+      button_type: vertical
+      text: "Gaaffiin baay'inaan gaafatamu kunooti:"
+    
+
+
+
+
+
+
+
+
+
+# entities:
+# - michu
+# - guyya
+# - wabii
+
+actions:
+- action_show_time
+- actionor_default_fallback
+# - action_show_image
+# - action_show_keyboard
+# - action_show_buttons
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

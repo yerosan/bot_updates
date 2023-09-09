@@ -1,0 +1,1 @@
+# 3. If you could choose 1 ALX CHAIIR value (courage, humility, adventure, initiative, integrity, resilience), which would you choose and why?

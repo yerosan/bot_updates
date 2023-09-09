@@ -1,0 +1,1284 @@
+version: "3.0"
+
+nlu:
+- intent: start
+  examples: |
+    - /start
+    - start
+    - satrt
+    - strat
+    - welcome
+    - lets begin
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - What's up
+    - hi
+    - hii
+    - hiii
+    - hello there
+    - how are you
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Greetings!
+- intent: goodbye
+  examples: |
+    - cu
+    - goodby
+    - good night
+    - bye
+    - chew
+    - by
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Thank you for your help. Goodbye!
+    - I got the information I needed. Bye for now!
+    - Alright, I'm done here. Goodbye!
+    - I appreciate your support. Farewell!
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - ok
+    - okay
+    - yeap
+    - of course
+    - that sounds good
+    - correct
+    - yeah
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - fine
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - CLEAR
+
+- intent: support
+  examples: |
+    - I'm having trouble applying for a loan. Can you assist me?
+    - I need assistance with a technical issue.
+    - I need help
+    - Assist me with the application process
+    - I need support
+    - please help me
+    - support me
+    - give me a hand
+    - help me
+    - I require aid
+    - I'd appreciate it if you could assist me
+
+- intent: cbo
+  examples: |
+    - cbo
+    - coopbank
+    - coop
+    - cooperative bank of oromia
+    - bank
+    - Tell me about the bank
+
+- intent: provider
+  examples: |
+    - From which bank can I get michu loan
+    - owner of michu
+    - provider of michu loan
+    - who gives michu service 
+    - who renders service to michu 
+    - Where can I receive a michu loan?
+
+- intent: digital_Loan
+  examples: |
+    - What is loan?
+    - loan
+    - what is digital lending		
+    - digital lending means	
+    - digital lending
+    - Digital lending refers to
+    
+- intent: digital_product
+  examples: |
+    - Digital products?
+    - products
+    - Digital products of coopbank
+    - cbo digital lending
+    - Digital service
+    - list out digital product
+    - available services
+    - Mchu loan product
+    - Loan type
+    - does michu have a categories?  
+    - Kind of loan exist
+    - What kind of service you provide
+    - Digital goods?
+    - What services do you offer?
+
+
+- intent: michu
+  examples: |
+    - What is [Michu] (michu)?
+    - [Michuu] (michu)
+    - [Michuu] (michu)loan
+    - Lexical Definition of the [Term Michu] (michu)		
+    - [Michu] (michu) means		
+    - [Michu] (michu) digital lending		
+    - Rational behind the name [Michu] (michu)	
+    - I want to know about michu
+    - Tell me what is michu		
+    - pls explain me about michu service?
+    - I am well, Could you tell me what is michu?
+    - Justification for the name Michu
+
+- intent: why_michu
+  examples: |
+    - advantage of michu
+    - why michu
+    - basis of michu
+    - Purpose of michu
+    - Is collateral is mandatory to get michu loan
+    - benefit
+    - IMPORTANT OF MICHU FOR CUSTOMER OR ADIVANTAGE OF MICHU
+    - use of michu
+    - what bank takes as a grantee
+    - what is the grantee for loan
+    - Why do I need Michu loan?
+    - grantee to take loan
+    - michuu is collateral or uncollateral
+    - What advantages do michu has from other same products offered by other banks
+
+- intent: guyya_loan
+  examples: |
+    - What is guyya?
+    - what is michu guyya loan?
+    - guyyaa loan		
+    - guyya means 
+    - guyya digital lending
+    - what is Guyya Loan?
+    - Guyya Loan overview?
+    - Quick info on Guyya Loan?
+    - What's Guyya Loan?
+    - About Guyya Loan?
+    - what is the meaning of Guyya?
+    - guyyaa?
+    - Definition of guyya?
+    - guyya: What does it mean? 
+    - Interpreting guyya?
+    - guyya's symbolic meaning?
+    - What's Guyya loan for?
+    - How does Guyya loan help?
+    - Guyya loan: What's it used for?
+
+- intent: wabbii_loan
+  examples: |
+    - What is wabbii?
+    - what is michu wabi loan?
+    - wabii 
+    - wabbii loan		
+    - waabbii means		 
+    - wabbii digital lending
+    - what is Michu Wabbii Loan?
+    - What's Michu Wabbii Loan?
+    - Michu Wabbii Loan: Meaning?
+    - About Michu Wabbii Loan?
+    - Michu Wabbii Loan overview?
+    - Understanding Michu Wabbii Loan?
+    - Michu Wabbii Loan definition?
+    - What does Michu Wabbii Loan offer?
+    - Michu Wabbii Loan in brief?
+    - Michu Wabbii Loan: What is it?
+    - Brief on Michu Wabbii Loan?
+    - what is the meaning of  Wabbii?
+    - What does "Wabbii" mean?
+    - Definition of "Wabbii"?
+    - Wabi: What's the meaning?
+    - Understanding "Wabbii"?
+    - What's Wabbii Loan used for?
+    - Michu Wabbii Loan intent?
+
+- intent: eligibility
+  examples: |
+    - Am I eligible for a loan?
+    - What are the eligibility criteria for michu loan ?
+    - Criteria to take michu loans
+    - michu requirements
+    - requirements
+    - michuu criteria
+    - How to get loan via michu
+    - criteria
+    - with out coop account
+    - if I dont have coop account can i get loan
+    - Michuu eligibility
+    - eligibility
+    - What criteria need to be met to use the Michu App?
+    - Michu usage prerequisites?
+    - Criteria for Michu access?
+    - Michu requirements?
+    - Using Michu: Conditions?
+    - Michu usability rules?
+    - How to qualify for Michu? 
+    - Michu usage criteria?
+    - Michu access essentials?
+    - Michu use criteria?
+    - What documents do I need to provide for a loan application?
+    - CAN I BORROW WITH OUT TRADE LICENSE ?
+    - CAN I BORROW WITH OUT TIN NO ?
+    - TIN required for borrowing?
+    - Need TIN for borrowing?
+    - Can I borrow without TIN?
+    - Michu specifications
+    - standards
+    - Michu access to necessities?
+    - I dont have trade license can i use michu loan
+    - without trade license
+    - loan without trade licese
+    - Is TIN mandatory for borrowing?
+    - Borrowing possible sans TIN?
+    - Formal business eligibility
+    - Formal business qualification?
+    - Is Renewed Id card is necessary to get michu loan
+    - Can you tell me the requirement to get the loan?
+
+- intent: foreigner
+  examples: |
+    - Can foreign citizen or those who don't have Ethiopian citizen can use Michu App?
+    - Michu App for foreigners?
+    - Michu App eligibility for non-Ethiopians?
+    - Is michu loan available internationally?
+    - Michu App usage for non-citizens?
+    - Using Michu App as a foreigner?
+    - Michu App availability for non-Ethiopians?
+    - nationality
+
+- intent: age_limit
+  examples: |
+    - Is there any age limit to use a Michu loan?
+    - michu loan age limit?
+    - Loan: Michu age cap?
+    - Michu loan age restriction?
+    - Age requirement for Michu loan?
+    - Age limit?
+    - age
+
+- intent: guyyaa_Requirements
+  examples: |
+    - eligibility of guyyaa loan 
+    - Criteria of guyyaa loan 
+    - what is the requirement for guyya loan
+    - Requirements of michuu guyyaa loan
+    - guyyaa requirements
+    - guyyaa criteria for indvidual 
+    - guyyaa eligibility
+    - who can apply for guyyaa loan ?
+    - can I apply for guyyaa loan ?
+    - documents required to take guyyaa loan?
+    - What are the criteria for a MICHU  GUYYA  LOAN?
+    - MICHU GUYYA criteria?
+    - Qualifications for MICHU GUYYA?
+    - MICHU GUYYA Loan prerequisites?
+    - Getting MICHU GUYYA Loan?
+    - Is trade license necessary for michu guya
+
+- intent: wabii_Requirements
+  examples: |
+    - eligibility of wabii loan  
+    - Criteria of wabii loan 
+    - Requirements of michuu wabii loan
+    - michu wabii requirements
+    - wabbii criteria
+    - wabii eligibility
+    - who can apply for wabii loan ?
+    - can I apply for wabbii loan ?
+    - documents required to take wabii loan ?
+    - What are the criteria for a Michu Wabbii Loan?
+    - Michu Wabbii Loan requirements?
+    - Eligibility for Michu Wabbii?
+    - What's needed for Wabbii Loan?
+    - Michu Wabbii Loan qualifications?
+    - Criteria for Michu Wabbii?
+    - Michu Wabbii Loan conditions?
+    - Who can get Wabbii Loan?
+    - Michu Wabbii Loan prerequisites?
+    - How to qualify for Wabbii?
+    - Wabbii Loan: What's required?
+    - Is formal businesses are eligible for Michu Wabbii Loan?
+    - Michu Wabbii eligibility for formal businesses?
+    - Michu Wabbii Loan: Formal business qualification?
+    - Michu Wabbii Loan availability for formal businesses?
+    - Michu Wabbii: Formal business eligibility?
+
+- intent: michu_limit
+  examples: |
+    - what is the limit of michuu loan
+    - what is the maximum credit limit of michu
+    - minimum limit of michu loan
+    - credit limit
+    - limit
+    - Loan limit scope?
+    - amount of loan
+    - loan range?
+    - michu range
+    - what is maximum amount of michu loan
+    - how can I now the limit of michu loan
+    - Maximum loan amount? 
+    - Minimum loan limit?
+    - Top loan limit?
+    - Lowest loan cap?
+    - Maximum & minimum amounts?
+    - Loan ceiling & floor?
+    - Highest & lowest limits?
+    - Michu Loan extents?
+    - loan limit for michu
+    - minimum limit for michu
+    - maximum limit for michu
+    - highest money that michu provide
+    - highest possible loan amount by michu
+    - what is maximum loan amount i can obtain in one request
+    - is there a limit to loan amount
+    - can you tell me the maximum amount of money you can provide
+    - how much is the amount offered by michuu loan ?
+    - Top and bottom loan limits?
+    - michu curb
+    - How much may I borrow from Michu?
+    - Maximum allowed for Michu
+    
+
+- intent: max_limit
+  examples: |
+    - how much money does michu can give me
+    - The biggest loan amount achievable from Michu
+    - What is the maximum amount of loan I can have in a single request?
+    - how can I get maximum amount
+    - how to increase my loan limit
+    - how can I reach maximum amount
+    - How I  can get Above Loan approved?
+    - How to get big loan by michu
+    - get highest loan
+    - What is the maximum amount I can borrow with Michu as new customer?
+    - high amount
+    - maximizing loan amount
+    - By what percentage michu loan will increase?
+    - how to get high score
+    - max score
+    - What are the criteria to have a larger loan limit
+
+- intent: guyyaa_limit
+  examples: |
+    - what is the limit of guyya loan
+    - what is the maximum credit limit of guyyaa
+    - minimum limit of michu guyyaa loan
+    - michu guyyaa loan limt
+    - what is maximum amount of guyyaa loan
+    - guyyaa limit
+    - how much is the amount offered by guyyaa loan ?
+    - what is the maximum and minimum loan limit of Guyya loan?
+    - Guyya loan range?
+    - Guyya loan extents?
+    - Guyya loan range details?
+    - How big is the Guyya loan?
+    
+- intent: wabii_limit
+  examples: |
+    - what is the limit of wabii loan
+    - what is the maximum credit limit of wabii
+    - minimum limit of michu wabii loan
+    - michu wabii loan limt
+    - what is maximum amount of wabii loan
+    - wabii limit
+    - how much is the amount offered by wabii loan ?
+    - what is the maximum and minimum loan limit of Michu Wabbii Loan?
+    - Michu Wabbii Loan range?
+    - Wabbii Top and bottom loan limits?
+    - Michu Wabbii Loan range details?
+    - Wabbii Loan ceiling and floor?
+    - Michu Wabbii Loan limit scope?
+    - how much do i borrow fromn Wabii loan
+    - What loan amount should I take out from Wabii?
+
+- intent: michu_duration
+  examples: |
+    - what is the duration of michu
+    - what is the period of michu
+    - what is the maximum period of michu loan
+    - duration of michuu loan 
+    - period
+    - duration
+    - time of michu
+    - the length of the Michuu loan 
+    - tenure
+    - Why your loan period is too short
+
+- intent: guyyaa_duration
+  examples: |
+    - what is the duration of guyyaa loan
+    - what is the maximum period of guyyaa loan
+    - duration of guyyaa
+    - period of guyyaa loan
+    - loan duration of guyyaa loan ?
+    - length of the guyyaa
+    - How long is the Guyyaa loan?
+
+- intent: wabii_duration
+  examples: |
+    - what is the duration of wabii loan
+    - what is the maximum period of wabii loan
+    - wabii duration
+    - period of wabii loan
+    - length of the wabii
+    - How long is the wabii loan?
+    - loan duration of wabii loan ? 
+    - How long can a wabii loan be outstanding for?
+    - What is the term of the wabii loan?
+    - The wabii's length
+
+- intent: michu_accessfee
+  examples: |
+    - access fee of michuu loan
+    - what is access fee
+    - what is service fee of michu
+    - access fee
+    - price
+    - service fee
+    - Entrance charge
+    - What is the borrowing fee? 
+    - facility fee of michu
+    - facility fee
+    - how much I pay to get michu loan
+    - what is fee for loan 
+    - required fee
+    - what is the access fee of Michu michu Loan?
+    - Fee for michu loan access?
+    - michu loan's access cost?
+    - michu loan: Access fee?
+    - What's the access charge of michu?
+    - michu loan access expense?
+    - How much for michu loan access?
+    - michu loan: Access fee amount?
+    - Access fee of michu loan?
+    - michu loan: Cost to access?
+    - michu loan: Access fee details?
+    - cost for loan
+    - Service charge of michu loan
+    - What are pricing of michu loan
+    - Please tell me michu pricing
+
+- intent: guyyaa_fee
+  examples: |
+    - access fee of guyyaa loan
+    - guyyaa fee
+    - guyyaa facility fee
+    - guyyaa cost
+    - service fee of guyyaa
+    - how much I pay for guyyaa
+    - what is guyyaa access fee
+    - required fee for guyyaa loan
+    - guyyaa charge
+    - cost for guyyaa
+
+- intent: wabii_fee
+  examples: |
+    - access fee of wabii loan
+    - wabii fee
+    - wabii facility fee
+    - wabii service fee
+    - how much I pay for wabii
+    - what is wabii access fee
+    - required fee for wabii loan
+    - cost for wabii
+    - required price of wabii
+
+- intent: michu_interest
+  examples: |
+    - what is interest rate of michu
+    - interest rate
+    - rate of michu
+    - interest
+    - rate
+    - anual percentage rate(APR)
+    - %
+    - loan interset
+    - percentage
+    - interest amount
+    - interest fee
+
+- intent: guyyaa_interest
+  examples: |
+    - what is interest rate of guyyaa
+    - guyyaa interest
+    - rate of guyyaa
+    - what is the interset rate of Guyya loan?
+    - Guyya loan's interest?
+    - Interest rate for Guyya loan?
+    - Guyya loan: What's the rate?
+    - Guyya loan's APR?
+    - anual percentage rate of guyyaa loan
+    - Guyya loan interest percent?
+    - How much is Guyya loan's interest?
+    - Interest rate on Guyya loan?
+    - Rate of interest guyyaa loan?
+    - What's the interest for Guyya loan?
+    - Guyya loan: How much interest?
+
+- intent: wabii_interest
+  examples: |
+    - what is interest rate of wabii
+    - wabii interest
+    - rate of wabii
+    - what is the interset rate of Michu Wabbii Loan?
+    - Michu Wabbii Loan APR?
+    - Interest rate for Wabbii Loan?
+    - What's Wabbii interest?
+    - How much interest for Wabbii Loan?
+    - Wabbii  Interest percent?
+    - Interest on Michu Wabbii Loan?
+    - What's the rate of Wabbii ?
+    - Michu Wabbii  Cost of interest?
+    - Michu Wabbii Loan Interest details?
+
+- intent: michu_penality
+  examples: |
+    - penality of michu loan
+    - penality
+    - Non-payment penalty
+    - default charge?
+    - what actions of customers lead to penality?
+    - loan penalty triggers?
+    - Penalties from customer actions?
+    - Customer behaviors and penalties?
+    - Penality-inducing actions?
+    - Customer actions that incur penalties?
+    - What's the penalty amount?
+    - Do you have penality ?
+    - is there penality interest in michu and how much is it
+    - do michu calculate penality interest and how much is it
+    - Do you charge any additional interest as a penalty and how much is it
+    - Are there any extra interest charges or penalties
+    - is there penality interest rate for late payment
+    - Will I face a penalty interest rate if I exceed the loan repayment deadline
+    - is there penality calculation for late repayment
+    - how much is penality interest
+    - What if I miss Repayment date
+    - Loan repayment date missed
+    - If you have a penalty interest rate how much do you levy it?
+    - Punishment
+    - Which consumer behaviours result in punishment?
+    - Sanctions for client behaviour?
+    - Conduct deserving of punishment?
+    - michu loan repercussions?
+    
+- intent: late_payment
+  examples: | 
+    - late payment
+    - late payment consequences
+    - loan delay?  
+    - What causes late payment?
+    - does late repayment leads to penalities
+    - disandvantage of late payment
+    - effect of late payment
+    - bad payment
+    - Is it possible to repay after due date
+    - a tardy payment
+    - Repercussions for late payments
+    - Loan backlog?  
+    - A poor payout
+
+- intent: refuse_payment
+  examples: |
+    - not paid 
+    - refuse to pay
+    - deny to pay
+    - what happens if I donot pay
+    - what if I don't pay
+    - what action you take if i am not paying my loan regularly
+    - what will be your decision if i am unable to pay the loan ontime
+    - What you do if I failed to repay as per our agreement?
+    - If somebody doesnt wanted to pay what is going happen
+    - What will you decide if I can't make the loan payment on time?
+
+- intent: early_payment
+  examples: |
+    - advantages of ealy payment
+    - early payment
+    - Benefits of prompt payment
+
+- intent: guyyaa_penality
+  examples: |
+    - penality of guyyaa loan
+    - guyyaa penality 
+    - Penality reasons for Guyya loan?
+    - Guyya loan: Penalties for what actions?
+    - Guyya loan penality triggers?
+    - Guyya loan: What causes penalties?
+    - What prompts Guyya loan penalties?
+    - what is the penality of a Guyya loan?
+    - Guyya loan late fee?
+    - Penalties for Guyya loan?
+    - Guyya loan consequences?
+    - Late payment on Guyya loan?
+    - Guyya loan: Any penalties?
+    - Penalty for Guyya loan delay?
+    - Guyya loan default charge?
+    - Guyya loan: Non-payment penalty?
+    - What happens if Guyya loan is late?
+    - What are the ramifications of the Guyya loan?
+    - guyyaa loan repercussions?
+
+- intent: wabii_penality
+  examples: |
+    - penality of wabii loan
+    - wabii penality
+    - what is the penality of a Michu Wabbii Loan?
+    - Wabbii loan late fee?
+    - wabii late payment
+    - Penalties for  Wabbii loan?
+    - Wabbii loan consequences?
+    - Late payment on  Wabbii loan?
+    - Wabbii loan: Any penalties?
+    - Penalty for  Wabbiiloan delay?
+    - Wabbii loan default charge?
+    - Wabbii loan: Non-payment penalty?
+    - What happens if  Wabbii loan is late?
+    - Wabbii loan penalty triggers?
+    - Wabbii loan: What causes penalties?
+    - Actions leading to Wabbii loan fees?
+    - Wabbii loan: Penalty-inducing actions?
+    - What prompts Wabbii loan penalties?
+    - Wabbii loan: Penalties for what actions?
+    - Penalty reasons for Wabbii loan?
+    - Wabbii loan repercussions?
+    - Why was the Wabbii loan sanctioned?
+    - Wabbii loan repercussions?
+
+
+
+
+
+- intent: ID_Type
+  examples: |
+    - Which type of IDs are acceptable for Michu Loan 
+    - Valid IDs for Michu Loan?
+    - Suitable ID types?
+    - Which ID work for Michu Loan?
+    - Michu Loan ID requirements?
+    - Eligible ID formats?
+
+- intent: gender
+  examples: |
+    - Does gender have an advantage in processing Michu Loan?
+    - Gender impact on Michu Loan?
+    - Gender advantage?
+    - Does gender affect Michu Loan?
+    - Gender role in Michu Loan?
+    - Does being female have an advantage over Michu?
+    - Is there a benefit to being a woman in processing Michu Loans?
+    - Does Michu have an advantage since she is female?
+
+- intent: norms
+  examples: |
+    - Does Michu loan Discourage business activities that go against the Norms and valyues of our society
+    - Michu Loan and values?
+    - Norms
+    - Social values and Michu Loan?
+    - Michu Loan and cultural alignment?
+    - Impact on societal norm: Michu Loan?
+
+- intent: w_vs_g
+  examples: |
+    - What differentiates Wabbii Loan from the Guyya loan?
+    - Wabbii vs Guyya?
+    - what is the different b/n wabii and guyyaa loan
+    - How's Wabbii Loan unique?
+    - What sets apart Wabbii Loan?
+    - Wabbii Loan contrast with Guyya?
+    - Key variations: Wabbii vs. Guyya?
+    - Guyya Loan vs. Wabbii Loan: Compare?
+    - In what ways does Wabbii differ from Guyya?
+    - What distinguishes Wabbii Loan?
+
+- intent: uploaddoccument
+  examples: |
+    - Does Michu loan app support multiple file uploads ?
+    - can I upload all documents at once
+    - does michu app allow multiple document upload
+    - does michu app has multiple file upload feature
+    - can i upload multiple files
+    - does michu loan app accept multiple file attachment
+    - how many files can i upload at once
+    - should i upload my files one at a time or what
+    - what will document uploading stage looks like 
+    - how to upload my document
+
+- intent: phone_number
+  examples: |
+    - In what way does Michu accept phone numbers?
+    - how does michu accept phone numbers
+    - phone numbers input format
+    - does michu accept both format
+    - which format is allowed
+    - which phone number format is valid
+    - phone number field input requirement
+    - how to enter phone number in michu app
+    - which phone formats are permitted
+
+- intent: why_michu_notwork
+  examples: |
+    - What are the possible reasons the App might not working?
+    - why michu doesn't work
+    - why michu is non functional
+    - michu is not functioning what is the reason
+    - why michu app not working
+    - possible reason for michu app malfunction
+    - what couse michu app to stop
+    - common issues of michu app not working
+    - cause of michu app to stop
+    - michu is not working
+    - What should I do if michu is stack in the middle of my Application
+    - what should i do if michu stop working while i am applying
+    - michu stop working while i am applying what can i do
+    - Michu app stuck during Application: What to do
+    - Michu app stuck in the middle of Application how to fix
+    - michu stucked what can i do
+    - Michu app not responding during Application: What should I do
+    - How to fix if it's stuck during Application
+    - How to start again michu Application if it's stuck
+    - Does michu app support vpn
+
+- intent: late_disbursment
+  examples: |
+    - WHY loan officers are too Late to disburse my loan request?
+    - what causes late disbursment
+    - why loans are late to get disbursed
+    - why you don't disburse my loan on time
+    - what is the reason behind late disbursment
+    - late disbursement
+    - Why is my loan not processed on time
+    - I am not getting the loan ontime why?
+    - i am waiting the loan but still didn't get it
+    - i couldn't get the loan it is too late
+    - reasons why late disbursment
+    - too late to get loan
+    - how much times it takes for a loan to get approved?
+    - how long it takes for approval
+    - duration for approval
+    - duration for disbursal
+    - i have applied michu how long it takes to get the money
+    - time needed to get approval
+    - waiting period for loan approval
+    - how long can i expect the loan approval process to takes
+    - How long does it usually take for a loan to receive approval
+    - how much time i have to wait for approval
+    - Why approval is delay
+    - Why is my loan not processed on time
+    - the timing 
+
+- intent: reversal
+  examples: |
+    - why disbursed loan is reversed?
+    - you have taken already given out loan why
+    - why the loan already given out reversed
+    - reasons behind reversal of disbursed loan
+    - why my loan reversed
+    - why reversal of disbursed loan
+    - why you take the money already disbursed from my account
+    - i didn't use the loan you took it already why
+    - why you take the loan you gave me
+    - why reversal
+    - my loan taken back
+
+- intent: NPL
+  examples: |
+    - Can the bank reschedule the Michu loan for the NPL, as per the customer's request?
+    - what favor can the bank made for its customer with NPL
+    - is there loan rescheduling of NPL 
+    - would the bank be willing to reschedule NPL
+    - is there any possibility to rearrange payment duration of NPL
+    - do michu's payment plan changed for NPL
+    - can you set up a reschedule for my NPL
+    - does michu have a feature for NPL that the original arrangement for repayments are altered
+    - rescheduling for NPL?
+    - nonperforming loan
+
+- intent: know_deadline
+  examples: |
+    - how could i know my deadline
+    - how can i know my repayment date
+    - who can tell me my last repayment day
+    - how can i get necssary informations regarding michu
+    - how do i know my repayment duration 
+    - who tell me my repayment duration 
+    - where can i get all my necessary informations
+    - what can i do to know my repayment duration
+    - repayment information
+    - loan detail information
+    - how many time can I have to repay michu
+    - When is the right time for repay
+
+- intent: repayment_option
+  examples: |
+    - Do you collect repayment from my CBO account when I pass repayment time?
+    - did michu support manual repayment at your end
+    - is there manual account debiting
+    - would you debit my loan from my account
+    - who has an access to debit from my account on late repayment
+    - how would you manage to settle my loan from my account
+    - is loan settlement from my acount possible
+    - What is the alternative repayment option if My app Is not working on the due date?
+    - How branches can help me to settle my payment before the due date?
+    - If I miss my payback deadline, do you take money from my CBO account?
+    - How can branches assist me in settling my payment ahead of schedule?
+    - What other payment method is available if my app is down on the due date?
+
+- intent: who_debit
+  examples: |
+    - who can made loan settlement from my account
+    - why you take my money from my account
+    - Why are you withdrawing funds from my account?
+    - Who can make loan payments from my account?
+    
+
+- intent: payment_type
+  examples: |
+    - how can I pay
+    - unable to pay
+    - loan payment
+    - how to repay
+    - Can I pay the loan from another account
+    - Loan repayment
+    - how to make payment
+    - means of payment
+    - can I pay my loan
+    - would you help me to pay my loan 
+    - guide me to pay a loan
+    - how to make repayment on michu
+    - repayment of wabii loan?
+    - direct me in paying a debt
+
+- intent: reminder
+  examples: |
+    - Do you notify me for my michu loan due laons?
+    - Do you send notifications for my Michu loan payment deadlines
+    - is there any notification for my repayment date
+    - will i recieve a notification on my due date
+    - do you remind me my repayment date
+    - is there michu repayment reminder
+    - repayment reminder
+    - due date
+    - When did I repay the loan
+    - Who is responsible for notifying borrowers about the length of the repayment period
+    - Can I expect to receive notifications for my Michu loan due dates
+    - are there any notification services for repayment date
+    - will you tell me when i have to pay my loan
+    
+- intent: rejection
+  examples: |
+    - What are the potential reasons for rejection of loan application
+    - why rejection happened
+    - Why applicant can't get the loan requested?
+    - factors that leads to rejection
+    - What causes a loan application to be rejected
+    - Why do loan applications get rejected
+    - common reasons for loan application denials or rejection
+    - Why might a loan application not be approved
+    - why you reject loans
+    - possible means for loan rejection
+    - what mistake results for rejection
+    - rejection
+    - Sometimes your rejection reason is general not clearly understandable?
+    - What could have caused the loan application to be denied
+    - what causes a loan application to be refused
+
+
+- intent: document_rejection
+  examples: |
+    - How My Documents be areason for rejection of the Loan I have applied
+    - how documents can leads to rejection
+    - How can my documents impact the approval of my loan application
+    - rejection reason due to my document
+    - what my document might not fill to be approved
+    - how documents be a reason for rejection
+    - in what ways can documents lead to loan application rejection
+    - document-related reasons for loan application rejection
+    - you reject my loan due to my document why
+    
+
+- intent: incorect
+  examples: |
+    - what does it  mean incorrect information please specify it?
+    - my rejection reason said incorrect information what does it mean
+    - what does it mean by you provide incorrect information 
+    - meaning of incorrect information
+    - i didn't understand what "you provide incorrect information " really means
+    - what are specific reasons for you provide incorrect information reason
+    - How would you define "incorrect information" in relation to my application
+    - What are the criteria for information to be considered "incorrect"
+    - Can you specify what type of information is considered "incorrect"
+    - what is "you provide incorrect information"
+
+- intent: Features
+  examples: |
+    - what is the features of michu?
+    - Is michu application is easy to use?
+    - Michu App: Easy to navigate?
+    - Is Michu App user-friendly?
+    - Michu: Simple to operate?
+    - Ease of use: Michu App?
+    - Is Michu App intuitive?
+    - User-friendliness of Michu App?
+    - Michu App: User ease?
+    - Is Michu App easy to use?
+    - Michu: User-friendly interface?
+    - Michu App: Smooth user experience?
+    - is michu as its name
+    - is michu app attractive
+    - what makes michu unique
+    - What makes michu different
+    - What distinguishes Michu?
+    - What sets Michu apart
+
+- intent: language
+  examples: |
+    - What language do you speak?
+    - Do you only handle english?
+    - language
+    - bot language 
+    - Ahmaric
+    - Afaan Oromo
+    - bot dialect
+
+- intent: michu_language
+  examples: |
+    - What language do michu support?
+    - Do michu only handle english?
+    - michu language
+    - michu wabii language
+    - michu guyyaa language
+    - in how much language michu work
+    - language michu support
+    - are michu support Amharic
+    - are michu support Afaan oromo
+    - michu dialect
+
+- intent: install_michu
+  examples: |
+    - How to install Michu?
+    - how to download michu?
+    - michu Android application download
+    - how to get michu app?
+    - where can I get michu app ?
+    - michu apk
+    - how can i get application
+    - where can i get app
+    - installing application
+    - please send me link to playstore
+    - predownload condition
+    - How do I set up Michu?
+    - How can I acquire the Michu app?
+    - How can I obtain an application?
+    - setting up the application
+   
+
+- intent: michu_availablity
+  examples: |
+    - is michu app available on app store ?
+    - is michu app available on play store ?
+    - playstore
+    - In which type of Phones is Michu app functional		
+    - Can Michuu functional on USSD Applications?		
+    - Can I access Michu Loan on Iphone system (IOS)?
+    - android 
+    - button phone
+    - do you support iphone
+    - phone type
+    - SOURCE OF APP
+    - michu app  availabilty
+    - Can I borrow a loan manualy
+    - does michu work on Apple
+    - is michu operate on smart  phone only
+    - is Michu compatible with Apple?
+    - Can I get a loan manually?
+    - Google Play
+    - phone model
+    
+
+- intent: application
+  examples: |
+    - can I apply for a loan?
+    - how can I apply for michu loan?
+    - how can I apply ?
+    - How to get a new loan on michu
+    - application
+    - the step of application proccess
+    - Step to apply on michu loan
+    - how to apply michu ?
+    - how can a customer can get a loan?
+    - Can You tell me about Michu loan application process?
+    - What procedure should i follow up to use michu?
+    - How can i get loan
+    - what is the name of the application
+    - how to use michuu loan?
+    - how does a client obtain a loan?
+    - Could you please explain the loan application process for Michu?
+
+- intent: guyyaa_application
+  examples: |
+    - what is guyyaa application proccess
+    - steps of guyyaa proccess 
+    - tell me step by step proccess of guyya loan
+
+- intent: wabii_application
+  examples: |
+    - what is wabii application proccess
+    - steps of wabii proccess 
+    - tell me step by step proccess of wabii loan
+
+- intent: reapplication
+  examples: |
+    - Re application for loan
+    - how can i apply again
+    - reapplication of wabii loan
+    - reapplication of guyyaa loan
+    - reapplying 
+
+- intent: reaplication_times
+  examples: |
+    - How many times may I reapply for a loan? 
+    - how many times can i borrow
+
+- intent: renewingd
+  examples: |
+    - how to renew doccument
+    - renewing
+    - renewed document
+
+- intent: approval_status
+  examples: |
+    - What is the status of my loan application ?
+    - Getting loan approval status?
+    - How can I know that My weather my loan application is accepted or rejected
+    - how can i determine the status of my loan application
+    - how you notify me about the acceptance or rejection of my loan application
+    - Is there a way to check the status of my loan application
+    - how to check my loan application status
+    - how to know wether you accept or reject my application
+    - what can i do to know my loan status
+    - i want to know my application status what can i do
+    - how you got inform me while you accept or reject my loan application
+    - how can i follow my daily status on the app
+    - How can i know  the disbursed amount
+    - How is my loan application progressing?
+    - How can I find out if my loan has been approved?
+
+- intent: app_version
+  examples: |
+    - how to update an app
+    - what shall I do it ask me update
+    - how do i update michu application
+    - What should I do when it prompts me to update
+
+
+- intent: payment_doubt
+  examples: |
+    - I haven't paid my debt, but the system indicating the remaining amount zero
+    - the system shows incorrect amount
+    - I paid but app shows loan is not paid
+    - app doesn't update loan amount
+    - When I want to pay my debt the system shows offer expired
+    - Why the system shows remaining amount zero?
+    - Why not update on my phone?
+    - The system displays an inaccurate amount
+    - The app fails to update the loan amount
+    - When I try to settle my debt, the system says the deal has expired.
+
+- intent: credit_score
+  examples: |
+    - What is credit score
+    - AI
+    - what is michu model
+    - scoring
+    - What are the basis of the Artifiial intelegence credit scoring machine
+
+- intent: work_time
+  examples: |
+    - Is michu loan available any time
+    - are michu work all time
+    - when michu stop it is service 
+    - What is the right time to apply
+    - When should I submit an application?
+    - do michu work continuously? If not, it's a service 
+
+- intent: otp
+  examples: |
+    - Why not send me otp code?
+    - otp not work
+    - OTP isn't generated
+    - OTP isn't produced; it doesn't work
+
+
+- intent: forbedin
+  examples: |
+    - Can I get a loan by another number if I already have a loan
+    - what is not allowed on michu
+    - what is not legal on michu
+    - Can I apply for a loan using two (2) numbers
+    - What happen to me if i did no pay the loan at all?
+    - what is next if i didn't cover a loan fully
+    - What is prohibited on Michu?
+    - What would happen to me if I never paid back the loan?
+    - what is not permitted on michu
+    - What happens if I don't fully repay a loan?
+
+- intent: password
+  examples: |
+    - I processed michu loan and I couldn't remember my password,how can I get it ?
+    - I forgot password
+    - I lost my password
+    - How can i change my password?
+    - How to recover my password
+    - What to do if I forget my password
+    - Michu password forget
+    - account password
+
+
+- intent: double_taken
+  examples: |
+    - I paid twice due to problem of michu application,how can I get my money back?
+    - amount deducted two times from my account
+    - Amount debited from my account twice
+    - I paid twice because of a glitch with the Michu application; how can I get my money back?
+
+- intent: get_support
+  examples: |
+    - Where did i can get any support about michu?
+    - how can get call support
+    - Where can I find assistance with Michu?
+ 
+- intent: double_loan
+  examples: |
+    - Can I borrow both wabii and guyya at the same time?
+    - Can I apply for both loans at once
+
+
+- intent: kyc
+  examples: |
+    - Is there any Kyc issue
+    - kyc
+    - what is the know your customer of michu
+    - tell me the kyc of michu
+    - Please explain the kyc for Michu.
+
+- intent: branch_support
+  examples: |
+    - It needs to visit branch
+    - what support can i get from branch
+    - why i should go to branch
+    - how branch can help me
+    - should visiting branch is mondatory
+
+- intent: loan_complain
+  examples: |
+    - my loan is decreased after I edit data on michu
+    - why my loan amount reduce
+    - dicrease loan amount 
+    - Why is my loan amount decreasing?
+
+- intent: bot_challenge
+  examples: |
+    - who are you a bot?
+    - are you a human?
+    - who you are
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Are you a robot or a real person?
+    - Can you prove that you're not a bot?
+    - Tell me a joke if you're a human!
+    - Are I conversing with a robot?
+    - Am I speaking with a person?
+    - Can you provide evidence that you are not a robot?
+    - u
+    - you 
+
+- intent: thanks
+  examples: |
+    - Thank you so much for your help!
+    - I really appreciate your assistance. Thanks!
+    - Thanks a lot for guiding me through this.
+    - I'm grateful for your support. Thank you!
+    - Many thanks for your time and help.
+    - tnxs
+    - galatoomi
+    - Thank you again
+    - Appreciate
+
+- intent: FAQ
+  examples: |
+    - FAQ
+    - What is the most frequently asked question?
+    - reaptedeally ask queation
+
+- intent: change_language
+  examples: |
+    - change language
+    - change
+    - language
+    - how can I change lang
+
+- intent: give_time
+  examples: |
+    - can you tell me what time it is
+    - tell me the time
+    - get the time
+    - what time is it
+    - time
+
+- intent: fallback
+  examples: |
+    - I'm not sure what you mean
+    - Can you repeat that?
+    - Sorry, I didn't understand
+    - I don't know what to say
