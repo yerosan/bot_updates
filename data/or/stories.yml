@@ -126,7 +126,6 @@ stories:
   - action: utter_refuse_payment
   - intent: early_payment
   - action: utter_early_payment
-
   - intent: wabii_penality
   - action: utter_wabii_penality
   - intent: guyyaa_penality
