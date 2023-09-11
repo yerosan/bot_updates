@@ -503,7 +503,7 @@ responses:
           payload: "/guyyaa_interest"
 
   utter_wabii_fee:
-    - text: "የምቹ ዋቢ ብድር አገልግሎትን ለማግኘት መከፈል ያለበት የአገልግሎት ክፍያ ከተፈቀደው ብድር መጠን 5% በመቶ ሲሆን ይህም ገንዘብ ብድሩ ከመሰጠቱ በፊት 
+    - text: "የምቹ ዋቢ ብድር አገልግሎትን ለማግኘት መከፈል ያለበት የአገልግሎት ክፍያ ከተፈቀደው ብድር መጠን 2% በመቶ ሲሆን ይህም ገንዘብ ብድሩ ከመሰጠቱ በፊት 
             ለባንኩ መከፈል አለበት።"
       buttons:
         - title: "የጉያ አገልግሎት ክፍያ"
@@ -520,7 +520,7 @@ responses:
           payload: "/wabii_interest"
 
   utter_guyyaa_interest:
-    - text: "ለጉያ ብድር የሚከፈለው የወለድ መጠን ባዶ (0%) ነው፣ የሚከፈለው የአገልግሎት ክፍያ ብቻ ነው።"
+    - text: "ጉያ ብድር የወለድ የለውም (0%)፣ የሚከፈለው የአገልግሎት ክፍያ ብቻ ነው።"
       buttons:
         - title: "የዋቢ ወለድ ተመን"
           payload: "/wabii_interest"
@@ -1094,7 +1094,7 @@ responses:
     - buttons:
         - title: "ሚቹ ብድር ምንድን ነው?"
           payload: "/michu"
-        - title: "ዋቢ ላኦን ምንድን ነው?"
+        - title: "ዋቢ ብድር ምንድን ነው?"
           payload: "/wabbii_loan"
         - title: "ጉያ ብድር ምንድን ነው?"
           payload: "/guyya_loan"

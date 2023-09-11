@@ -1170,7 +1170,7 @@ responses:
             3. Deegarsa  kaamifiyyuu , maaloo yeroo biraas akkasuma gargaarsa keenya yoo barbaaddan 609tti nuuf bilbiluu hin dagatiinaa."
 
   utter_iamabot:
-  - text: "Ani chatbot garee michuutiin qoopha'e.Gaaffii qabdan kamiyyuu Sodaa tokko malee  gaafadha, ani yeroo hunda gargaarsa kennuufin as jira! "
+  - text: "Ani gurmuu Michuutiin kan angeeffame Chatbot Al dha. Isin gargaaruuf qophaa'aa waanin ta'eef, gaaffii qabdan kamuu na gaafachuuf biliisummaan isinitti haa dhaga'amu. "
 
   utter_thanks:
   - text: "Hayyee ,isiin gargaaruu danda'uu kiyyaan nan gammada."
