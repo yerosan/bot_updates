@@ -344,7 +344,7 @@ responses:
 
   - text: "Guyyaan fedhii kaappitaala hojii yeroo gabaabaa dhaabbilee daldalaa daran xixiqqoo guutuuf tajaajila liqii 
           pilatfoormii Michuu irratti argaman keessaa isa tokkodha. Liqiin Guyyaa hojiiwwan daldalaa sababa dhabiisa 
-          wabii fi sanadootaatiin dhaabbilee faayinaansii irraa faayinaansii argachuu hin dandeenyeef kan qophaa’e ture.\n\n
+          wabii fi sanadootaatiin dhaabbilee faayinaansii irraa faayinaansii argachuu hin dandeenyeef kan qophaa’e dha.\n\n
           Jechi ijoo 'Guyyaa' jedhu hiika lama qaba. Guyyaa jechuun Afaan Oromootiin 'Guyyaa ykn Guyyuu' jechuudha, liqiin 
           kun akkaataa idileetti dhaabbilee kaappitaala hojii guyyuu barbaadaniif, kan akka daldaloota gulliitii, mana bunaa 
           xixiqqoo hojjettoota al-idilee daldaltoota daandii cinaa, abbootii suuqii xixiqqaa fi kkf ta'uu cimsee ibsa. In 
@@ -403,7 +403,7 @@ responses:
   utter_eligibility:
   - text: "Ofii  michutti galmeessuuf ulaagaaleen muraasni jiru. Tokkoffaa, fayyadamaan lammii Itoophiyaa ta’uu fi sochii daldalaa 
           keessatti hirmaachuu qaba, maamila Baankii Hojii Gamtaa Oromiyaa ta’uu qaba kana irraa kan ka’e oomisha herregaa baankii tokkoo 
-          fi isaa ol qabaachuu fi maallaqa gahaa kaffaltii uwwisu qabaachuu barbaada adeemsa iyyannoo, abbaa bilbila ismaartii ta’uu kan 
+          fi isaa ol qabaachuu fi maallaqa gahaa kaffaltiitajaajila uwwisu qabaachuu barbaada adeemsa iyyannoo, abbaa bilbila ismaartii ta’uu kan 
           qabuu fi sanadoota barbaachisoo baankichi barbaadu dhiyeessuu qaba. Tokkoon tokkoon barbaachisummaa oomisha Michu tokkoof 
           dabalataan. Qabduu armaan gadii irraa oomisha barbaadde filadhu:"
     buttons:
@@ -857,9 +857,9 @@ responses:
 
 # till this
   utter_Features:
-  - text: "Amalooni michuu akka armaan gadiitti:\n Adeemsa iyyannoo salphaa \nxiinxala liqii saffisaa\n yeroo adeemsa liqii gabaabaa\n argamuun 
-          maallaqa xiqqaa\n murtii liqii ofumaan\n liqiin yeroo baayyee\n liqii dijitaalaa kaffaluu fi walitti qabuu\n CRM fagoo(Customer 
-          Relation Managment)\n online sanada olkaa’uu\n qabxii liqii\n muuxannoo fayyadamaa fi murtii liqii kaayyoo qabu.\n Garmalee salphaa 
+  - text: "Amalooni michuu akka armaan gadiitti:\n ~ Adeemsa iyyannoo salphaa\n ~ xiinxala liqii saffisaa\n ~ yeroo adeemsa liqii gabaabaa\n ~ argamuun 
+          maallaqa xiqqaa\n ~ murtii liqii ofumaan\n ~ liqiin yeroo baayyee\n ~ liqii dijitaalaa kaffaluu fi walitti qabuu\n ~ CRM fagoo(Customer 
+          Relation Managment)\n ~ online sanada olkaa’uu\n ~ qabxii liqii\n ~ muuxannoo fayyadamaa fi murtii liqii kaayyoo qabu.\n ~ Garmalee salphaa 
           yoo ta'u, salphaatti hojiirra oolchuun isaas amaloota michu keessaa isa tokkodha."
     buttons:
       - title: "LIQII GUYYAA"
