@@ -985,7 +985,6 @@ nlu:
   examples: |
     - What language do you speak?
     - Do you only handle english?
-    - language
     - bot language 
     - Ahmaric
     - Afaan Oromo
@@ -1266,6 +1265,8 @@ nlu:
     - change language
     - change
     - language
+    - show me how to change language
+    - how to change language 
     - how can I change lang
 
 - intent: give_time
