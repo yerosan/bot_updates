@@ -12,13 +12,13 @@ nlu:
 - intent: greet
   examples: |
     - Akkam jirta
-    - Akkam
+    - Akkam 8994
     - hi
     - hiii
     - akkam jirtu
     - akkam ooltan
     - Nagaa!
-    - naguuma
+    - naguuma 
     - hey
     - hello
     - nagaa oolte
