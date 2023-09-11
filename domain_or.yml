@@ -99,7 +99,7 @@ intents:
 
 responses:
   utter_start:
-  - text: "Chaatbootiin Michuu Baankii Hojii Gamtaa Oromiyaa nagaa isiniin jedha! Akkamittan isin gargaaruu danda’a? 
+  - text: "Chaatbootiin Michu Baankii Hojii Gamtaa Oromiyaa nagaa isiniin jedha! Akkamittan isin gargaaruu danda’a? 
           Waa’ee tajaajila liqii Michuu odeeffannoo maal barbaaddu? Akkamittan isin gargaaruu danda’a? Adeemsa iyyannoo 
           liqii michuu ilaalchisee gaaffii ni qabduu? Ani isinan gargaaraatii gaaffii barreessaa."
     buttons:
@@ -109,7 +109,7 @@ responses:
         payload: "/michu"
       - title: "FAQ"
         payload: "/FAQ"
-  - text: "Gara Chaatbootii CoopBank MIchuu baga nagaadhaan dhuftan! Akkamittan isin gargaaruu danda’a? Waa’ee tajaajila 
+  - text: "Gara Chaatbootii CoopBank Michu baga nagaadhaan dhuftan! Akkamittan isin gargaaruu danda’a? Waa’ee tajaajila 
           liqii  Michuu maal beekuu barbaaddu? Waa’ee adeemsa liqii Michuu gaaffii qabduu? Ani isinan gargaaraatii 
           gaaffii ana gaafadhaa."
     buttons:
