@@ -1362,6 +1362,5 @@ nlu:
 - intent: fallback
   examples: |
     - Maal jechuu akka barbaadde hin beeku
-    - Sana irra deebi'uu dandeessaa?
     - Dhiifama, naaf hin galle
     - Waan jedhu hin beeku
