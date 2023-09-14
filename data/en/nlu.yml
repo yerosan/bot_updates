@@ -16,6 +16,7 @@ nlu:
     - hello
     - What's up
     - hi
+    - Hyi
     - hii
     - hiii
     - hello there
@@ -82,6 +83,7 @@ nlu:
     - I don't think so
     - don't like that
     - no way
+    - I hate you
     - not really
 - intent: mood_great
   examples: |
@@ -165,6 +167,7 @@ nlu:
   examples: |
     - What is [Michu] (michu)?
     - [Michuu] (michu)
+    - Detail information about michu
     - [Michuu] (michu)loan
     - Lexical Definition of the [Term Michu] (michu)		
     - [Michu] (michu) means		
@@ -248,7 +251,10 @@ nlu:
     - What are the eligibility criteria for michu loan ?
     - Criteria to take michu loans
     - michu requirements
+    - what should i do to be michu customer
     - requirements
+    - I need loans
+    - Who can use michu
     - michuu criteria
     - How to get loan via michu
     - criteria
@@ -422,10 +428,12 @@ nlu:
     - Guyya loan extents?
     - Guyya loan range details?
     - How big is the Guyya loan?
+    - How much can i take with guyyaa?
     
 - intent: wabii_limit
   examples: |
     - what is the limit of wabii loan
+    - How much can i take with wabii?
     - what is the maximum credit limit of wabii
     - minimum limit of michu wabii loan
     - michu wabii loan limt
@@ -1007,6 +1015,7 @@ nlu:
   examples: |
     - How to install Michu?
     - how to download michu?
+    - how can i down load from play store
     - michu Android application download
     - how to get michu app?
     - where can I get michu app ?
@@ -1027,6 +1036,10 @@ nlu:
     - is michu app available on app store ?
     - is michu app available on play store ?
     - playstore
+    - How can I get the application in a AppStore
+    - App
+    - Michu application
+    - I need michu new app
     - In which type of Phones is Michu app functional		
     - Can Michuu functional on USSD Applications?		
     - Can I access Michu Loan on Iphone system (IOS)?
@@ -1059,6 +1072,7 @@ nlu:
     - Can You tell me about Michu loan application process?
     - What procedure should i follow up to use michu?
     - How can i get loan
+    - would you send me michu guidelines!
     - what is the name of the application
     - how to use michuu loan?
     - how does a client obtain a loan?
@@ -1068,6 +1082,7 @@ nlu:
   examples: |
     - what is guyyaa application proccess
     - steps of guyyaa proccess 
+    - can u send me the name of the aplication in playstore
     - tell me step by step proccess of guyya loan
 
 - intent: wabii_application
@@ -1155,6 +1170,7 @@ nlu:
   examples: |
     - Why not send me otp code?
     - otp not work
+    - Not send otp five digit by this time
     - OTP isn't generated
     - OTP isn't produced; it doesn't work
 
@@ -1195,12 +1211,14 @@ nlu:
   examples: |
     - Where did i can get any support about michu?
     - how can get call support
+    - Where should I go to get help
     - Where can I find assistance with Michu?
  
 - intent: double_loan
   examples: |
     - Can I borrow both wabii and guyya at the same time?
     - Can I apply for both loans at once
+    - I didnt pay the previous loan. Can I apply for another loan by the new application?
 
 
 - intent: kyc
@@ -1251,6 +1269,7 @@ nlu:
     - Many thanks for your time and help.
     - tnxs
     - galatoomi
+    - a great bot that have seen ever
     - Thank you again
     - Appreciate
 

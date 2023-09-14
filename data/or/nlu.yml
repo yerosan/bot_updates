@@ -15,6 +15,7 @@ nlu:
     - Akkam 8994
     - hi
     - hiii
+    - Akkami
     - akkam jirtu
     - akkam ooltan
     - Nagaa!
@@ -117,6 +118,7 @@ nlu:
     - cbo
     - baankii hojii gamtaa Oromia
     - coop
+    - cbo jechun mal jechudha
     - coopbank
     - baankii hojii gamtaa oromiyaa
     - baankii
@@ -161,6 +163,7 @@ nlu:
   examples: |
     - Michu maali?
     - Michu
+    - Michuu malidha
     - Liqii Michuu
     - Hiika Jechootaa Jecha Michuu
     - Michuu jechuun
@@ -246,8 +249,13 @@ nlu:
     - Ulaagaaleen ulaagaa liqii michu maali ?
     - Ulaagaalee liqii michu fudhachuuf
     - michu barbaachisu
+    - Tajaajila liqii karaa michuutiin haala kaamiin argachuu danda,aa?
+    - wantoonni  liiqiif barbaachisaan
+    - Liqii akkamiin argachu
     - ulaagaalee barbaachisan
     - ulaagaa michuu
+    - Liqii fudhachuuf maal gochuun qaba
+    - Liqii barbaaden
     - ulaagaa
     - Requirements
     - herrega coop ala ta'een
@@ -592,6 +600,7 @@ nlu:
     - dhala
     - saffisa michuu
     - fedhii
+    - dhalli isaa hoo
     - interest rate
     - safartuu dhibbeentaa waggaa(APR) .
     - % .
@@ -834,6 +843,7 @@ nlu:
   examples: |
     - Sababoonni Appichi hojjechuu dhiisuu danda'u maali?
     - maaliif michu hin hojjatu
+    - Na didee
     - maaliif michu non functional ta'a
     - michu dalagaa hin jiru sababni isaa maali
     - app michu maaliif hin hojjenne
@@ -1091,6 +1101,7 @@ nlu:
     - akkamittan application argachuu danda'a
     - app eessaa argachuu danda'a
     - application fe'uu
+    - Akkamiti galmuu
     - mee link playstore naaf ergaa
     - haala dursee buufachuu
     - Michuu akkamittan dhaaba?
@@ -1137,6 +1148,7 @@ nlu:
     - akkamittan liqii michu iyyachuu danda'a?
     - akkamittan iyyachuu danda'a ?
     - iyyata
+    - Adeemsa liqa
     - tarkaanfii adeemsa iyyannoo
     - Tarkaanfii liqii michu irratti iyyachuuf
     - akkamitti michu dibachuu dandeenya ?

@@ -271,7 +271,7 @@ responses:
           Guyyaa, Michu caters to both formal line business traders such as micro retailers, coffee houses, and fast 
           food corners, as well as informal line business traders like roadside traders and informal coffee houses.\n
           Experience hassle-free access to non-collateralized loans by engaging in trading operations through Michu\n 
-          look here for more: (https://coopbankoromia.com.et/michu/)"
+          look here for more: (https://michu.com.et/)"
     buttons:
       - title: "GUYYAA LOAN"
         payload: "/guyya_loan"
@@ -281,7 +281,7 @@ responses:
   - text: "Michu is one of the Cooperative Bank of Oromia's pioneering digital financing platforms in Ethiopia, aimed towards MSMEs and mass 
           populations.\n- It is an AI-powered smartphone application that provides an online loan application\n- digital offer analysis using a 
           credit assessment algorithm that goes beyond belief, and online debt collection procedures\n- Customers can use non-collateralized loans 
-          through Michu with the sole requirement of engaging in trading operations. look here for more: (https://coopbankoromia.com.et/michu/)"
+          through Michu with the sole requirement of engaging in trading operations. look here for more: (https://michu.com.et/)"
     buttons:
       - title: "GUYYAA LOAN"
         payload: "/guyya_loan"
@@ -842,7 +842,7 @@ responses:
 
   utter_install_michu:
   - text: "To get and install Michu you can simply search it on the Play Store and download the app and install it on your mobile 
-          device. here is the link [comming soon!]" 
+          device. here is the link [https://michu.com.et/dl]" 
     buttons:
       - title: "MICHU AVAILABLITY"
         payload: "/michu_availablity"
@@ -851,7 +851,7 @@ responses:
 
   utter_michu_availablity:
   - text: "For now, Michu's application is available only on the Play Store and is only functional on Android phones. 
-          And also, the loan process is only applicable to Android phones."
+          And also, the loan process is only applicable to Android phones. you can get the link here [https://michu.com.et/dl]"
     buttons:
       - title: "HOW TO INSTALL"
         payload: "/install_michu"
@@ -872,7 +872,7 @@ responses:
           2. Complete the application installation on your mobile device.\n
           3. Select your preferred language for usage.\n
           4. open Michu application \n
-          For more Select the product from the folowing button to know the application proccess of your desired loan"
+          For more Select the product from the folowing button to know the application proccess of your desired loan. you can get the link here [https://michu.com.et/dl]"
     buttons:
       - title: "GUYYAA APP-PROCCESS"
         payload: "/guyyaa_application"

@@ -277,7 +277,7 @@ responses:
           - Kenni liqii dijitaalawaa moodeela madaallii ga'umsa liqii irratti hundaa'e fi tooftaa kaffaltii liqii 
           kallattiin raawwatamu hojiirra - oolcheera.\n
           - Karaa Michuutiin, maamiloonni hojiilee daldaala keessa jiran liqii isaaniif barbaachisaa ta'e wabummaa 
-          malee akka fayyadaman kan gargaaruudha. Odeeffannoo dabalataaf  asi ilaalaa.  (https://coopbankoromia.com.et/michu/)"
+          malee akka fayyadaman kan gargaaruudha. Odeeffannoo dabalataaf  asi ilaalaa.  (https://michu.com.et/)"
     buttons:
       - title: "LIQII GUYYAA"
         payload: "/guyya_loan"
@@ -292,7 +292,7 @@ responses:
           - xiinxalli kenniinsa dijitaalaa madaallii inii algorizimii tilmaama namaa irraa ala ta'e fi sirnaalee 
           kaffaltii liqii  toora kallattiin intarneeta irraa taasifamuuf haala mijeessa.\n
           - maamiloonni karaa michuudhaa liqii wabummaa malee ulaagaa hojii daldalaa of harkaa qabaachuu qofaan 
-          fayyadamuu dandaa’aniidha. odeeffannoo dabalataaf asi ilaalaa: (https://coopbankoromia.com.et/michu/)"
+          fayyadamuu dandaa’aniidha. odeeffannoo dabalataaf asi ilaalaa: (https://michu.com.et/)"
     buttons:
       - title: "LIQII GUYYAA"
         payload: "/guyya_loan"
@@ -892,7 +892,7 @@ responses:
 
   utter_install_michu:
   - text: "Michu argachuu fi install gochuuf Play Store irratti search gochuun appicha download gochuun mobile device keessan irratti install 
-          gochuu dandeessu. kunoo linkiin [yeroo dhiyootti dhufa!]" 
+          gochuu dandeessu. kunoo linkiin [https://michu.com.et/dl]" 
     buttons:
       - title: "ARGAMA MICHU"
         payload: "/michu_availablity"
@@ -901,7 +901,7 @@ responses:
 
   utter_michu_availablity:
   - text: "Ammaaf application Michu Play Store qofa irratti kan argamu yoo ta'u bilbiloota Android qofa irratti kan hojjetudha. Akkasumas, 
-          adeemsi liqii kun bilbiloota Andirooyidii qofa irratti kan hojjetudha"
+          adeemsi liqii kun bilbiloota Andirooyidii qofa irratti kan hojjetudha. linkii kan irra argachuu danddeessa [https://michu.com.et/dl]"
     buttons:
       - title: "FE'UUMSA APPILIKEESHINI"
         payload: "/install_michu"
@@ -922,7 +922,7 @@ responses:
           2. Appilikeeshinii meeshaa moobaayilaa keessan irratti fe'uu xumuruu.\n
           3. Fayyadamaaf afaan filatte filadhu.\n
           4. application Michu banachuu \n
-          Dabalataaf Adeemsa iyyannoo liqii barbaadde beekuuf button armaan gadii irraa oomisha filadhu"
+          Dabalataaf Adeemsa iyyannoo liqii barbaadde beekuuf button armaan gadii irraa oomisha filadhu. kunoo linkiin [https://michu.com.et/dl]"
     buttons:
       - title: "ADEEMSA IYYANNOO GUYYAA"
         payload: "/guyyaa_application"
