@@ -121,7 +121,7 @@ responses:
         payload: "/FAQ"
 
   utter_greet:
-  - text: "Harka fuune ykn Ashamaa akkam fayyaa keessanii?Chaatbootiin Michuu Baankii Hojii Gamtaa Oromiyaa nagaa 
+  - text: "Harka fuune; Ashamaa akkam fayyaa keessanii?Chaatbootiin Michuu Baankii Hojii Gamtaa Oromiyaa nagaa 
           isiniin  jedha Akkamittan isin gargaaruu danda’a? Waa’ee tajaajila liqii dijitaalawaa michuu odeeffannoo 
           maal barbaadduAkkamittan isin gargaaruu danda’a? Adeemsa iyyannoo liqii michuu ilaalchisee gaaffii ni qabduu? 
           Ani isinan gargaaraatii gaaffii barreessaa."
