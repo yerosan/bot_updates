@@ -14,6 +14,7 @@ nlu:
   examples: |
     - hey
     - hello
+    - heloo
     - What's up
     - hi
     - Hyi
@@ -37,6 +38,7 @@ nlu:
     - good night
     - bye
     - chew
+    - Ok I will try it
     - by
     - goodbye
     - have a nice day
@@ -53,6 +55,7 @@ nlu:
     - y
     - indeed
     - ok
+    - well
     - okay
     - yeap
     - of course
@@ -132,47 +135,42 @@ nlu:
     - From which bank can I get michu loan
     - owner of michu
     - provider of michu loan
-    - who gives michu service 
-    - who renders service to michu 
-    - Where can I receive a michu loan?
+    - who gives michu service
+    - who renders service to michu
+    
 
 - intent: digital_Loan
   examples: |
     - What is loan?
     - loan
+    - digital
     - what is digital lending		
     - digital lending means	
     - digital lending
     - Digital lending refers to
+    - cbo digital lending
     
 - intent: digital_product
   examples: |
     - Digital products?
     - products
     - Digital products of coopbank
-    - cbo digital lending
     - Digital service
-    - list out digital product
-    - available services
-    - Mchu loan product
-    - Loan type
-    - does michu have a categories?  
-    - Kind of loan exist
-    - What kind of service you provide
-    - Digital goods?
-    - What services do you offer?
-
+    - cbo digital 
+    - cbo digital product
+    - list out digital product of cooperative bank of oromia
+    
 
 - intent: michu
   examples: |
-    - What is [Michu] (michu)?
-    - [Michuu] (michu)
-    - Detail information about michu
-    - [Michuu] (michu)loan
-    - Lexical Definition of the [Term Michu] (michu)		
-    - [Michu] (michu) means		
-    - [Michu] (michu) digital lending		
-    - Rational behind the name [Michu] (michu)	
+    - What is Michu
+    - Michuu
+    - about michu loan
+    - Michu loan
+    - Lexical Definition of the Term Michu	
+    - Michu means		
+    - Michu digital lending		
+    - Rational behind the name Michu	
     - I want to know about michu
     - Tell me what is michu		
     - pls explain me about michu service?
@@ -184,6 +182,7 @@ nlu:
     - advantage of michu
     - why michu
     - basis of michu
+    - Why
     - Purpose of michu
     - Is collateral is mandatory to get michu loan
     - benefit
@@ -248,15 +247,16 @@ nlu:
 - intent: eligibility
   examples: |
     - Am I eligible for a loan?
+    - To get michu loan what shall I do
     - What are the eligibility criteria for michu loan ?
     - Criteria to take michu loans
     - michu requirements
     - what should i do to be michu customer
     - requirements
-    - I need loans
     - Who can use michu
+    - My business license are plc it is accepted ?
     - michuu criteria
-    - How to get loan via michu
+    - What do i have to do to get loan
     - criteria
     - with out coop account
     - if I dont have coop account can i get loan
@@ -299,7 +299,7 @@ nlu:
     - Is michu loan available internationally?
     - Michu App usage for non-citizens?
     - Using Michu App as a foreigner?
-    - Michu App availability for non-Ethiopians?
+    - Michu App for non-Ethiopians?
     - nationality
 
 - intent: age_limit
@@ -321,14 +321,11 @@ nlu:
     - guyyaa requirements
     - guyyaa criteria for indvidual 
     - guyyaa eligibility
-    - who can apply for guyyaa loan ?
-    - can I apply for guyyaa loan ?
     - documents required to take guyyaa loan?
     - What are the criteria for a MICHU  GUYYA  LOAN?
     - MICHU GUYYA criteria?
     - Qualifications for MICHU GUYYA?
     - MICHU GUYYA Loan prerequisites?
-    - Getting MICHU GUYYA Loan?
     - Is trade license necessary for michu guya
 
 - intent: wabii_Requirements
@@ -337,10 +334,9 @@ nlu:
     - Criteria of wabii loan 
     - Requirements of michuu wabii loan
     - michu wabii requirements
+    - What is the craterial of Wabii loan?
     - wabbii criteria
     - wabii eligibility
-    - who can apply for wabii loan ?
-    - can I apply for wabbii loan ?
     - documents required to take wabii loan ?
     - What are the criteria for a Michu Wabbii Loan?
     - Michu Wabbii Loan requirements?
@@ -366,9 +362,12 @@ nlu:
     - minimum limit of michu loan
     - credit limit
     - limit
+    - If i apply today how much can i borrow
+    - How much I can lend ?
     - Loan limit scope?
     - amount of loan
     - loan range?
+    - how much can I borrow
     - michu range
     - what is maximum amount of michu loan
     - how can I now the limit of michu loan
@@ -393,20 +392,21 @@ nlu:
     - michu curb
     - How much may I borrow from Michu?
     - Maximum allowed for Michu
-    
-
-- intent: max_limit
-  examples: |
     - how much money does michu can give me
     - The biggest loan amount achievable from Michu
     - What is the maximum amount of loan I can have in a single request?
+    - What is the maximum amount I can borrow with Michu as new customer?
+
+
+- intent: max_limit
+  examples: |
+    - I have already been customer of michu....but my lending limit is not increasing that much
     - how can I get maximum amount
     - how to increase my loan limit
     - how can I reach maximum amount
     - How I  can get Above Loan approved?
     - How to get big loan by michu
     - get highest loan
-    - What is the maximum amount I can borrow with Michu as new customer?
     - high amount
     - maximizing loan amount
     - By what percentage michu loan will increase?
@@ -446,20 +446,26 @@ nlu:
     - Michu Wabbii Loan range details?
     - Wabbii Loan ceiling and floor?
     - Michu Wabbii Loan limit scope?
-    - how much do i borrow fromn Wabii loan
+    - how much do i borrow from Wabii loan
     - What loan amount should I take out from Wabii?
 
 - intent: michu_duration
   examples: |
     - what is the duration of michu
     - what is the period of michu
+    - How many months to pay for credit?
+    - Validation date of credit
     - what is the maximum period of michu loan
     - duration of michuu loan 
     - period
+    - michu terms of payment
+    - How many months to pay for credit?
     - duration
+    - How many day take to repayment loan
     - time of michu
     - the length of the Michuu loan 
     - tenure
+    - Terms
     - Why your loan period is too short
 
 - intent: guyyaa_duration
@@ -470,6 +476,8 @@ nlu:
     - period of guyyaa loan
     - loan duration of guyyaa loan ?
     - length of the guyyaa
+    - guyyaa terms of payment
+    - How many day take to repayment for guyyaa
     - How long is the Guyyaa loan?
 
 - intent: wabii_duration
@@ -477,7 +485,9 @@ nlu:
     - what is the duration of wabii loan
     - what is the maximum period of wabii loan
     - wabii duration
+    - Wabi terms of payment
     - period of wabii loan
+    - How many day take to repayment for wabii
     - length of the wabii
     - How long is the wabii loan?
     - loan duration of wabii loan ? 
@@ -521,6 +531,7 @@ nlu:
     - access fee of guyyaa loan
     - guyyaa fee
     - guyyaa facility fee
+    - Facility fee of michu guyya
     - guyyaa cost
     - service fee of guyyaa
     - how much I pay for guyyaa
@@ -528,6 +539,7 @@ nlu:
     - required fee for guyyaa loan
     - guyyaa charge
     - cost for guyyaa
+    - How much guyaa facility fee
 
 - intent: wabii_fee
   examples: |
@@ -535,6 +547,7 @@ nlu:
     - wabii fee
     - wabii facility fee
     - wabii service fee
+    - Facility fee of wabii
     - how much I pay for wabii
     - what is wabii access fee
     - required fee for wabii loan
@@ -565,7 +578,7 @@ nlu:
     - Interest rate for Guyya loan?
     - Guyya loan: What's the rate?
     - Guyya loan's APR?
-    - anual percentage rate of guyyaa loan
+    - annual  percentage rate of guyyaa loan
     - Guyya loan interest percent?
     - How much is Guyya loan's interest?
     - Interest rate on Guyya loan?
@@ -620,6 +633,8 @@ nlu:
     - Conduct deserving of punishment?
     - michu loan repercussions?
     
+# start from here
+
 - intent: late_payment
   examples: | 
     - late payment
@@ -642,6 +657,11 @@ nlu:
     - refuse to pay
     - deny to pay
     - what happens if I donot pay
+    - what will be the consequence if i did not pay the loan
+    - What happens if I don't fully repay a loan?
+    - What happen to me if i did no pay the loan at all?
+    - what is next if i didn't cover a loan fully
+    - What would happen to me if I never paid back the loan?
     - what if I don't pay
     - what action you take if i am not paying my loan regularly
     - what will be your decision if i am unable to pay the loan ontime
@@ -653,7 +673,7 @@ nlu:
   examples: |
     - advantages of ealy payment
     - early payment
-    - Benefits of prompt payment
+    - Benefits of prompt payment 
 
 - intent: guyyaa_penality
   examples: |
@@ -702,9 +722,6 @@ nlu:
     - Wabbii loan repercussions?
     - Why was the Wabbii loan sanctioned?
     - Wabbii loan repercussions?
-
-
-
 
 
 - intent: ID_Type
@@ -778,6 +795,15 @@ nlu:
   examples: |
     - What are the possible reasons the App might not working?
     - why michu doesn't work
+    - i can't login
+    - it's Not work
+    - It is not work for new customers what happens
+    - Mich app has also stopped itself but Why?
+    - I can't login into my account please help
+    - loan doesn't send OTP code 
+    - Michu app says error
+    - Why it says error
+    - After I already downloaded it.Its not working it responds saying you're disconnected but I'm currently connected.
     - why michu is non functional
     - michu is not functioning what is the reason
     - why michu app not working
@@ -801,6 +827,7 @@ nlu:
   examples: |
     - WHY loan officers are too Late to disburse my loan request?
     - what causes late disbursment
+    - Not disbursing an offered loan
     - why loans are late to get disbursed
     - why you don't disburse my loan on time
     - what is the reason behind late disbursment
@@ -811,19 +838,9 @@ nlu:
     - i couldn't get the loan it is too late
     - reasons why late disbursment
     - too late to get loan
-    - how much times it takes for a loan to get approved?
-    - how long it takes for approval
-    - duration for approval
-    - duration for disbursal
-    - i have applied michu how long it takes to get the money
-    - time needed to get approval
-    - waiting period for loan approval
-    - how long can i expect the loan approval process to takes
-    - How long does it usually take for a loan to receive approval
-    - how much time i have to wait for approval
     - Why approval is delay
     - Why is my loan not processed on time
-    - the timing 
+    
 
 - intent: reversal
   examples: |
@@ -863,11 +880,14 @@ nlu:
     - where can i get all my necessary informations
     - what can i do to know my repayment duration
     - repayment information
-    - loan detail information
     - how many time can I have to repay michu
     - When is the right time for repay
+    - due date
+    - When did I repay the loan
 
-- intent: repayment_option
+# stoped here
+
+- intent: repayment_option  
   examples: |
     - Do you collect repayment from my CBO account when I pass repayment time?
     - did michu support manual repayment at your end
@@ -889,14 +909,16 @@ nlu:
     - Why are you withdrawing funds from my account?
     - Who can make loan payments from my account?
     
+# add vedio here if possible 
 
 - intent: payment_type
   examples: |
     - how can I pay
     - unable to pay
+    - Loan with unsettled loan
     - loan payment
+    - how to settle loan
     - how to repay
-    - Can I pay the loan from another account
     - Loan repayment
     - how to make payment
     - means of payment
@@ -916,8 +938,6 @@ nlu:
     - do you remind me my repayment date
     - is there michu repayment reminder
     - repayment reminder
-    - due date
-    - When did I repay the loan
     - Who is responsible for notifying borrowers about the length of the repayment period
     - Can I expect to receive notifications for my Michu loan due dates
     - are there any notification services for repayment date
@@ -954,6 +974,7 @@ nlu:
     - document-related reasons for loan application rejection
     - you reject my loan due to my document why
     
+#  come back for detail later
 
 - intent: incorect
   examples: |
@@ -978,7 +999,7 @@ nlu:
     - Ease of use: Michu App?
     - Is Michu App intuitive?
     - User-friendliness of Michu App?
-    - Michu App: User ease?
+    - User ease?
     - Is Michu App easy to use?
     - Michu: User-friendly interface?
     - Michu App: Smooth user experience?
@@ -996,6 +1017,7 @@ nlu:
     - bot language 
     - Ahmaric
     - Afaan Oromo
+    - English
     - bot dialect
 
 - intent: michu_language
@@ -1014,6 +1036,24 @@ nlu:
 - intent: install_michu
   examples: |
     - How to install Michu?
+    - Where I get michu
+    - how can i access michu
+    - How I get michu loan?
+    - Michu app
+    - How to get michu
+    - pls send me michu application
+    - How I can get michu loan?
+    - can u send me the name of the aplication in playstore
+    - I can't access michu app
+    - Where can I receive a michu loan?
+    - Pleas attache me michu app
+    - Orginal michu apps have not get
+    - Can you send me new version michu app.?
+    - The latest michu application?
+    - The site is not reached in downloading michu applications
+    - Please send new michu app
+    - Can I download the michu application on my device android version 5
+    - Where can I found michu
     - how to download michu?
     - how can i down load from play store
     - michu Android application download
@@ -1025,10 +1065,16 @@ nlu:
     - installing application
     - please send me link to playstore
     - predownload condition
-    - How do I set up Michu?
     - How can I acquire the Michu app?
     - How can I obtain an application?
-    - setting up the application
+    - I need michu new app
+    - Michu application
+    - App
+    - Application
+    - SOURCE OF APP
+    - I have tried to download the new app but I am not able to do
+    - what is the name of the application
+    
    
 
 - intent: michu_availablity
@@ -1036,18 +1082,18 @@ nlu:
     - is michu app available on app store ?
     - is michu app available on play store ?
     - playstore
+    - Link for iPhone
     - How can I get the application in a AppStore
-    - App
-    - Michu application
-    - I need michu new app
+    - How can I get the application in a AppStore
     - In which type of Phones is Michu app functional		
     - Can Michuu functional on USSD Applications?		
     - Can I access Michu Loan on Iphone system (IOS)?
     - android 
+    - Still the application is not available on play store
+    - Own android
     - button phone
     - do you support iphone
     - phone type
-    - SOURCE OF APP
     - michu app  availabilty
     - Can I borrow a loan manualy
     - does michu work on Apple
@@ -1062,42 +1108,73 @@ nlu:
   examples: |
     - can I apply for a loan?
     - how can I apply for michu loan?
+    - setting up the application
+    - How do I set up Michu?
     - how can I apply ?
+    - Michu loan form
+    - I need a loan please. How can I apply with the new version app?
+    - Ok now I want to get a loan
+    - How does it process?
+    - process
+    - How can i borrow  it
+    - guya was not available on michu app right now
     - How to get a new loan on michu
-    - application
     - the step of application proccess
+    - guyyaa was not available on michu app right now
     - Step to apply on michu loan
+    - Tell us about michu platform systems and the processes
+    - How to get loan via michu
+    - How can i get michu lending process?
     - how to apply michu ?
+    - I want loan
+    - Please I can't use the application
+    - I don't know how to use
+    - how I operate michu
+    - I need a loan
+    - apply
+    - How do i register
+    - setting up the application
+    - the step of application proccess
     - how can a customer can get a loan?
     - Can You tell me about Michu loan application process?
     - What procedure should i follow up to use michu?
     - How can i get loan
-    - would you send me michu guidelines!
-    - what is the name of the application
+    - guidelines
+    - steps
+    - can you tell me the guidelines of michu application
     - how to use michuu loan?
     - how does a client obtain a loan?
     - Could you please explain the loan application process for Michu?
+    - How can we take michu loan?
+    - steps of michu loan process
 
 - intent: guyyaa_application
   examples: |
     - what is guyyaa application proccess
     - steps of guyyaa proccess 
-    - can u send me the name of the aplication in playstore
     - tell me step by step proccess of guyya loan
+    - guyyaa loan application form
+    - process of guyyaa loan
+    - steps of guyyaa
 
 - intent: wabii_application
   examples: |
     - what is wabii application proccess
+    - process of wabii loan
     - steps of wabii proccess 
+    - Wabii loan application form
+    - steps of wabii loan process
     - tell me step by step proccess of wabii loan
 
 - intent: reapplication
   examples: |
     - Re application for loan
-    - how can i apply again
+    - reapply process
+    - how can i reapply again
     - reapplication of wabii loan
     - reapplication of guyyaa loan
     - reapplying 
+    - reapply steps
 
 - intent: reaplication_times
   examples: |
@@ -1134,6 +1211,10 @@ nlu:
     - what shall I do it ask me update
     - how do i update michu application
     - What should I do when it prompts me to update
+    - How should I pay back the loan I took with previous apps and use the updated michu up?
+    - previous application 
+    - how to update
+    - how to update michu application
 
 
 - intent: payment_doubt
@@ -1166,27 +1247,56 @@ nlu:
     - When should I submit an application?
     - do michu work continuously? If not, it's a service 
 
+# don't forget come back here 
+
 - intent: otp
   examples: |
     - Why not send me otp code?
     - otp not work
+    - Stop sending verification code from michu app
+    - Please how can I get activation code it have delayed to send me by  SMS
+    - Didin't receive a code help me
+    - I didn't recive the code
+    - Didn't send code to the message why?
+    - Verification
+    - No verification code sent to me
+    - Activate my account
+    - I try to login in michu but it doesn't send the code
+    - Did not get verification code what the reason
+    - I can't get the verification code to activate my account into your new app
+    - Code
+    - I can't get the verification code as an sms
+    - I can not get verification code
+    - I can't get confirmation number
+    - how can I get confirmation number
+    - Activation
     - Not send otp five digit by this time
     - OTP isn't generated
     - OTP isn't produced; it doesn't work
+    - Didn't receive code
+    - Five digit code
+    - Phone number verification was continuously sent to me but not accepted.
 
 
 - intent: forbedin
   examples: |
-    - Can I get a loan by another number if I already have a loan
     - what is not allowed on michu
     - what is not legal on michu
+    - What are the things that can prevent the loan?
     - Can I apply for a loan using two (2) numbers
-    - What happen to me if i did no pay the loan at all?
-    - what is next if i didn't cover a loan fully
     - What is prohibited on Michu?
-    - What would happen to me if I never paid back the loan?
+    - policies
     - what is not permitted on michu
-    - What happens if I don't fully repay a loan?
+    - the person who have two account can take michu?
+
+- intent: double_loan
+  examples: |
+    - Can I borrow both wabii and guyya at the same time?
+    - Can I apply for both loans at once
+    - Can I borrowed both guyyaa and wabi at one time
+    - I didnt pay the previous loan. Can I apply for another loan by the new application?
+    - Can I get a loan by another number if I already have a loan
+    - how many times can I borrowed in one tin number
 
 - intent: password
   examples: |
@@ -1211,14 +1321,10 @@ nlu:
   examples: |
     - Where did i can get any support about michu?
     - how can get call support
+    - WHERE CAN I GET SUPPORT
+    - WHERE CAN I GET FULL SUPPPORT FOR MICHU LOAN PROCEESS
     - Where should I go to get help
     - Where can I find assistance with Michu?
- 
-- intent: double_loan
-  examples: |
-    - Can I borrow both wabii and guyya at the same time?
-    - Can I apply for both loans at once
-    - I didnt pay the previous loan. Can I apply for another loan by the new application?
 
 
 - intent: kyc
@@ -1259,6 +1365,8 @@ nlu:
     - Can you provide evidence that you are not a robot?
     - u
     - you 
+    - What do you do?
+    - what is your job
 
 - intent: thanks
   examples: |
@@ -1267,11 +1375,16 @@ nlu:
     - Thanks a lot for guiding me through this.
     - I'm grateful for your support. Thank you!
     - Many thanks for your time and help.
+    - Txs for your commitment
     - tnxs
     - galatoomi
+    - I understand what you can say
+    - Thanks coop really concern for community
+    - wow
     - a great bot that have seen ever
     - Thank you again
     - Appreciate
+    - Wow.it is good
 
 - intent: FAQ
   examples: |
@@ -1302,3 +1415,126 @@ nlu:
     - Can you repeat that?
     - Sorry, I didn't understand
     - I don't know what to say
+
+
+#  a new intent 
+
+- intent: about_michu
+  examples: |
+    - Types of Michu loan
+    - Whats is new
+    - loan detail information
+    - Detail information about michu
+    - How many types of michu loan
+    - What new with the application
+    - For how many type of michu loan is categorised
+    - High light explanation of Michu Guyya,Wabi,Interest rate,facility rate and requirements
+    - available services
+    - Mchu loan product
+    - Loan type
+    - does michu have a categories?  
+    - Kind of loan exist
+    - What kind of service you provide
+    - Digital goods?
+    - What services do you offer?
+
+# - intent: michu_update
+#   examples: |
+#     - How are you next friend we were standing in the middle of the past now how do we prosecute
+#     - How can we continue those who have already accepted?
+#     - how to apply for early recipients
+#     - how people who have previously used partners continue
+#     - how people who used to use partners will continue
+#     - how to pass friend 1 to friend
+#     - There is a friend who used the previous phase and wants to take it now.
+#     - Can I pay off an existing loan with a new application?
+#     - how can i borrow they are lost in the middle of what i have borrowed before
+#     - eyeen beka I borrowed this before
+#     - I used to use Michu but now it is disconnected because
+#     - other friend used to use it now how can we use it
+
+- intent: michu_status
+  examples: |
+    - Does Michu two start Loan process?
+    - Is it functional right now
+    
+
+- intent: not_help
+  examples: |
+    - you didn't help me
+    - you don't know anything 
+    - Dadab
+
+- intent: personal_loan
+  examples: |
+    - Is there personal loan?
+    - is there consumer loan 
+    - Is there a personal non business loan?
+
+- intent: staff
+  examples: |
+    - Cbo staff can access michu wabii
+    - staff can get loan
+    - Is there possible to borrow banks staff
+    - Shall coop bank staff take michu?
+    - Shall government employee to take michu?
+
+
+
+
+- intent: IFB
+  examples: |
+    - Can IFB use michu ?
+    - are michu available for muslim people
+    - IFB
+    - muslim 
+    - is there digital lending service for IFB user
+    - interest free banking
+
+
+- intent: want_change
+  examples: |
+    - I want to change my account number what shall I do
+    - how to change my phone number
+    - how to change account for my michu loan 
+    - want to change my phone number what shall I do
+    - can I change my phone number and account on michu loan process
+    - I'd like to update my account number. So, what should I do?
+    - How Do I Modify My Phone Number?
+    - How do I alter my Michu loan account?
+    - I'd like to update my phone number. So, what should I do?
+    - Can I alter my phone number and account number while the Michu loan is being processed?
+
+
+- intent: approval_time
+  examples: |
+    - how much times it takes for a loan to get approved?
+    - how long it takes for approval
+    - duration for approval
+    - duration for disbursal
+    - period for disbursal
+    - time for approval
+    - i have applied michu how long it takes to get the money
+    - time needed to get approval
+    - waiting period for loan approval
+    - how long can i expect the loan approval process to takes
+    - How long does it usually take for a loan to receive approval
+    - how much time i have to wait for approval
+ 
+
+
+- intent: pay_from_another
+  examples: |
+    - Can I pay the loan from another account
+    - is it possible to pay from my another cbo account
+    - are possible to pay from another bank account
+    - can I pay from CBE acount
+
+# - intent: our_members
+#   examples: |
+    
+    
+
+# - intent: about_response
+#   examples: |
+#     - I can't  open the app   it says    there is an issue from our side    what can i do please?

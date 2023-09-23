@@ -24,6 +24,8 @@ stories:
   - action: utter_happy
   - intent: thanks
   - action: utter_thanks
+  - intent: not_help
+  - action: utter_not_help
 
 - story: sad path 2
   steps:
@@ -54,6 +56,8 @@ stories:
   steps:
   - intent: michu
   - action: utter_michu
+  - intent: about_michu
+  - action: utter_about_michu
   - intent: guyya_loan
   - action: utter_guyya_loan
   - intent: wabbii_loan
@@ -62,6 +66,7 @@ stories:
   - action: utter_why_michu
   - intent: Features
   - action: utter_Features
+  
 
 - story: about Requirments
   steps:
@@ -126,7 +131,6 @@ stories:
   - action: utter_refuse_payment
   - intent: early_payment
   - action: utter_early_payment
-
   - intent: wabii_penality
   - action: utter_wabii_penality
   - intent: guyyaa_penality
@@ -140,6 +144,8 @@ stories:
   - action: utter_phone_number
   - intent: why_michu_notwork
   - action: utter_why_michu_notwork
+  - intent: renewingd
+  - action: utter_renewingd
 
 
 
@@ -169,8 +175,6 @@ stories:
   - action: utter_wabii_application
   - intent: reapplication
   - action: utter_reapplication
-  - intent: renewingd
-  - action: utter_renewingd
   - intent: reaplication_times
   - action: utter_reaplication_times
 
@@ -181,6 +185,8 @@ stories:
   - action: utter_approval_status
   - intent: late_disbursment
   - action: utter_late_disbursment
+  - intent: approval_time
+  - action: utter_approval_time
   - intent: reversal
   - action: utter_reversal
   - intent: NPL
@@ -193,7 +199,6 @@ stories:
   - action: utter_who_debit
   - intent: payment_type
   - action: utter_payment_type
-  - action: utter_repayment_option
   - intent: reminder
   - action: utter_reminder
   - intent: incorect
@@ -221,10 +226,6 @@ stories:
   - action: utter_loan_complain
   - intent: get_support
   - action: utter_get_support
-  - intent: double_taken
-  - action: utter_double_taken
-  - intent: forbedin
-  - action: utter_forbedin
   - intent: work_time
   - action: utter_work_time
   - intent: credit_score
@@ -233,13 +234,30 @@ stories:
   - action: utter_otp
   - intent: payment_doubt
   - action: utter_payment_doubt
-  - intent: double_loan
-  - action: utter_double_loan
   - intent: password
   - action: utter_password
 
+- story: forbidn habit
+  steps:
+  - intent: double_loan
+  - action: utter_double_loan
+  - intent: double_taken
+  - action: utter_double_taken
+  - intent: forbedin
+  - action: utter_forbedin
+  - intent: pay_from_another
+  - action: utter_pay_from_another
 
-
+- story: for whom michu loan
+  steps:
+  - intent: personal_loan
+  - action: utter_personal_loan
+  - intent: staff
+  - action: utter_staff
+  - intent: IFB
+  - action: utter_IFB
+  - intent: michu_status
+  - action: utter_michu_status
 
 
 - story: about gender and norms
@@ -255,6 +273,8 @@ stories:
   - action: utter_w_vs_g
   - intent: FAQ
   - action: utter_FAQ
+  - intent: want_change
+  - action: utter_want_change
 
 
 

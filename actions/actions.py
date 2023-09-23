@@ -14,6 +14,7 @@ from typing import Any, Text, Dict, List, Union
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+import base64
 # from telegram import Update 
 # from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
 # from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
@@ -33,29 +34,31 @@ class actiontime(Action):
         return []
 
 
-# class ActionShowImage(Action):
-#     def name(self) -> Text:
+# # class ImageAction(Action):
+# #     def name(self):
+# #         return "action_show_image"
+
+# #     def run(self, dispatcher, tracker, domain):
+# #         image_path = "imagee/guyyaa_proccess.png"  # Replace with the actual image file name and extension
+# #         image_url = f"file://{image_path}"
+        
+# #         dispatcher.utter_message(image=image_url)
+
+# #         return []
+    
+# class ImageAction(Action):
+#     def name(self):
 #         return "action_show_image"
 
-#     def run(
-#         self,
-#         dispatcher: CollectingDispatcher,
-#         tracker: Tracker,
-#         domain: Dict[Text, Any],
-#     ) -> List[Dict[Text, Any]]:
-#         image_path = "imagee/guyyaa_proccess.png"  # Replace with the actual path to your image
+#     def run(self, dispatcher, tracker, domain):
+#         image_path = "imagee/guyyaa_proccess.png"  # Replace with the actual image file path and name
 
-#         # Generate the HTML code to display the image
-#         image_html = f"<img src='{image_path}' alt='Image' width='300'>"
+#         with open(image_path, "rb") as image_file:
+#             encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
 
-#         # Send the HTML code as a message to the user
-#         dispatcher.utter_message(text=image_html, parse_mode="HTML")
+#         dispatcher.utter_message(text=f"![image](data:image/jpeg;base64,{encoded_string})")
 
 #         return []
-
-
-
-
 
 
 

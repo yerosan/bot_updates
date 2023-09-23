@@ -198,7 +198,7 @@ if mydb:
                     [
                         InlineKeyboardButton("Afaan Oromo", callback_data="Afaan oromoo filatame jira"),
                         InlineKeyboardButton("Ahmaric", callback_data="አማርኛ ቋንቋ ተመርጧል"),
-                    ],
+                        ],
                     [InlineKeyboardButton("English", callback_data="English language is activated")],
                     ]
 
