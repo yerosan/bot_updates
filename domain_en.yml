@@ -1293,7 +1293,13 @@ responses:
           we'll be able to fulfil all of your requests shortly."
 
   utter_want_change:
-  - text: ""
+  - text: "You can change your account and phone number in Michu loan process. Here is how you can change: \n
+          ~ To change your account number, go to your Michu application and find the account field, then replace your 
+          desired account number.\n
+          ~ To change your phone number, you can only do so by going to a coopbank branch.\n
+          Note: You can only alter your phone number and account number on the loan offer page. Once you accept the 
+          loan offer, you can't alter your phone number or account. It should have to be a decision! (rejection or 
+          verification)"
 
   utter_approval_time:
   - text: "After you apply for the loan, the first approval can take up to 5 days, but the second and subsequent approvals
