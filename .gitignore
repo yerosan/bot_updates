@@ -4,6 +4,7 @@ Dockerfile
 *.dockerignore
 tests/
 results/
+covertSQL.py
 .rasa/
 domianfile.py
 export.py
