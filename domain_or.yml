@@ -97,6 +97,23 @@ intents:
 - approval_status
 - change_language
 
+# new intent
+- about_michu
+- not_help
+- personal_loan
+- staff
+- michu_status
+- IFB
+- want_change
+- approval_time
+- pay_from_another
+
+- acc_duration
+- product_switch
+- onbehalf
+- lost_phone
+
+
 responses:
   utter_start:
   - text: "Chaatbootiin Michu Baankii Hojii Gamtaa Oromiyaa nagaa isiniin jedha! Akkamittan isin gargaaruu danda’a? 
@@ -177,7 +194,7 @@ responses:
 
 
   utter_support:
-  - text: "Eyyee, dhimma keessan irratti isin gargaaruu koof gammachuutu natti dhagaa’ama. mee wantan isin gargaaru naaf ibsuu dandeessu?"
+  - text: "hayyee, dhimma keessan irratti isin gargaaruu koof gammachuutu natti dhagaa’ama. mee wantan isin gargaaru naaf ibsuu dandeessu?"
     buttons:
       - title: "LIQII GUYYAA"
         payload: "/guyya_loan"
@@ -381,16 +398,6 @@ responses:
   #     - title: "LIQII GUYYAA"
   #       payload: "/guyya_loan"
  
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -694,22 +701,28 @@ responses:
 # come latter
 
   utter_why_michu_notwork:
-  - text: "Appiin Michu sababoota addaddaattin dhaabbachuu danda'a:\n appicha haala sarara ala ta'een fayyadamuuf yaalaa jirtu ta'a ykn 
-          VPN dhamsuu keessan mirkaneeffadha \n herreega bankii adda addaa bilbila tokko irratti galmeessuuf hin yaalina.\n kan duraa herreega bankii 
-          biraa galmeessu dhiisu keessan mirkaneeffadha \n appichi karaa wiirtuu tajaajilaa sababa dogoggora ykn walsimsiisuun dhabuu sirnichaan aplikeeshiniin yeroodhaaf 
-          akka hin argamne taasisu irraa kan ka'e hojiirraa oolfamuu danda'a.\n bililla keessan
-          irratti kuufamni gahaan jiraachu mirkaneeffadha.\n Appicha cufuu qofaan bakka muraasa
-          bilisa baasuuf yaalaa. \n VPN keessan cufuu hin dagatinaa"
+  - text: "Appiin Michu sababoota muraasaaf dhaabbachuu danda'a:\n
+          1. Appicha offline fayyadamuuf yaalii gochaa jirtu ta'a.\n
+          2. Bilibilaa tokko irratti akkaawuntii hedduu galmeessuuf yaalaa jirta ta'a, ykn duraan bilbilla biraa keessa seentee jirta ta'a.\n
+          3. Bilbilla keessan irratti bakki kuusaa gahaa ta'uu dhabuun hojii humna guutuudhaan xumuruu irraa kan ka'e ta'uu danda'a.\n
+          4. Yoo kanaan dura Michu fayyadamaa turtan ta'e Michu haaraa Play Store irraa argachuun Michu durii guutummaatti smartphone keessan irraa haquu.\n
+          5. VPN akka hin ibsamne mirkaneessi.\n
+          6. Hanga danda'ametti Android version 5 gadi ta'uu hin qabu.\n
+          Maaloo 609 bilbilaa yoo kana keessaa tokkollee hin taane itti himaa."
     buttons:
       - title: "SAB. TURUMAATA LIQII"
         payload: "/late_disbursment"
       - title: "REVERSAL"
         payload: "/reversal"
 
-  - text: "Appiin Michu sababoota hedduudhaan dhorkamuu danda'a:\n - appicha haala sarara ala ta'een fayyadamuuf yaalaa jirta ta'a ykn 
-          VPN ibsiteeta ta'a\n - Bilbila tokko irratti herrega adda addaa galmeessuuf hin yaalina \n - Adeemsa dandeettii guutuudhaan xumuruuf bilbila keessan irra kuufama 
-          gahaa dhabuun kan ka'e ta'uu danda'a. Salphumatti appicha cufuun bakka muraasa bilisa baasuuf yaali.\n - Hidhamiinsa networkii 
-          kee ilaali, VPN kamiyyuu cufuu hin dagatin."
+  - text: "Appiin Michu sababoota muraasaaf dhaabbachuu danda'a:\n
+          1. Appicha offline fayyadamuuf yaalii gochaa jirtu ta'a.\n
+          2. Bilibilaa tokko irratti akkaawuntii hedduu galmeessuuf yaalaa jirta ta'a, ykn duraan bilbilla biraa keessa seentee jirta ta'a.\n
+          3. Bilbilla keessan irratti bakki kuusaa gahaa ta'uu dhabuun hojii humna guutuudhaan xumuruu irraa kan ka'e ta'uu danda'a.\n
+          4. Yoo kanaan dura Michu fayyadamaa turtan ta'e Michu haaraa Play Store irraa argachuun Michu durii guutummaatti smartphone keessan irraa haquu.\n
+          5. VPN akka hin ibsamne mirkaneessi.\n
+          6. Hanga danda'ametti Android version 5 gadi ta'uu hin qabu.\n
+          Maaloo 609 bilbilaa yoo kana keessaa tokkollee hin taane itti himaa."
     buttons:
       - title: "SAB. TURUMAATA LIQII"
         payload: "/late_disbursment"
@@ -721,15 +734,6 @@ responses:
           ykn dhimma KYC (Maamila Keessan Beekuu) fi TIN tajaajila socha'aa kan hin jirre yoo ta'e, kanaaf hojii irra oolchuuf guyyoota 
           muraasa barbaachisa; iyyataan maallaqa kaffaltii tajaajilaaf ta'u yoo qabaachuu baate; kunis yeroon booda akka kaffalamu taasisa; 
           akkasumas gama fuulduraa fi gama sarvarii irraas dhimmi teeknikaa jiraachuu mala."
-    buttons:
-      - title: "DIDDAA MICHU"
-        payload: "/why_michu_notwork"
-      - title: "REVERSAL"
-        payload: "/reversal"
-
-  - text: "Kaffaltiin yeroon booda kaffalamu sababoota adda addaatiin uumamuu danda’a, isaanis: lakkoofsi herrega iyyataa sochii dhabuu ykn 
-          dhimma KYC (Maamila Keessan Beekuu) qabaachuu fi TIN sochii hin qabne, kan hojiirra oolchuuf guyyoota muraasa barbaadu; iyyataan maallaqa 
-          kaffaltii tajaajilaaf ta'u yoo hin qabaatin akkasumas dhimmootni teeknikaa gama fuulduraa fi gama sarvariitiin jiraachu malu."
     buttons:
       - title: "DIDDAA MICHU"
         payload: "/why_michu_notwork"
@@ -796,7 +800,7 @@ responses:
   utter_reminder:
   - text: "yoo liqii guyya fayyadamaa jirtan, guyyaa kaffaltii guyyaa lama dura fi guyyaa itti kaffalamu irrattis beeksisa 
           akeekkachiisaa kaffaltii ni argattu. Yoo liqii wabii fayyadamaa jirtan,guyyaa itti kaffalamuu fi guyyaa itti 
-          kaffalamu irraa eegalee si’a sadii, shanii fi guyyaa tokko isin beeksifna. for more app michu keessan banadhaa, bal'ina isaa 
+          kaffalamu irraa eegalee si’a sadii, shanii fi guyyaa tokko isin beeksifna. Dabalataan app michu keessan banadhaa, bal'ina isaa 
           achirraa argachuu dandeessu"
     buttons:
       - title: "GOOSA KAFFALTI"
@@ -805,15 +809,27 @@ responses:
         payload: "/rejection"
 
   utter_rejection:
-  - text: "yoo liqii guyyaa fayyadamaa jirtan ta’e, guyyaa kaffaltii guyyaa lama dura fi guyyaa itti kaffalamu irrattis beeksisa 
-          akeekkachiisaa guyyaa kaffaltii ni argattu. Yoo liqii wabii fayyadamaa jirtan ta’e guyyaa itti kaffalamuu fi guyyaa itti kaffalamu 
-          irraa eegalee si’a sadii, shanii fi guyyaa tokko isin beeksifna. for more app michu keessan banadhaa, bal'ina isaa achirraa argachuu 
-          dandeessu"
+  - text: "Sababoota adda addaatiin liqaan keessan kuufatii mudachuu danda’a, kanneen akka:\n
+          1. Herrega Coopbank isin fayyadamaa jirtan kan keessan yoo hin taane.\n
+          2. Waraqaan eenyummaa (Kebele ID, hayyama konkolaachisummaa, ykn paaspoortiin) kan kee yoo hin taane.\n
+          3. Hayyamni daldalaa maqaa keessaniin yoo hin taane.\n
+          4. Lakkoofsi Eenyummaa Gibiraa (TIN) maqaa keessan keessa kan hin jirre yoo ta’e (PLC/Group’f, TIN maqaa PLC/Group ykn miseensota isaa keessaa tokkoon ta’uu qaba).\n
+          5. Yaadannoo Waliigaltee (MoU) fi Dambii Waldaa (AoA) fuula sanada jalqabaa hunda dabalatee, yoo PLC ta’e, kooppii lallaafaadhaan yoo hin argamne.\n
+          6. Yoo ati nama dhuunfaa hayyamame hin taane, liqeessaan aangoo abbaa seerummaa dhaabbata mootummaa dhimmi ilaallatu irraa argateen PLC/Gareen bakka bu’ee liqeessuuf aangoo qabaachuu qaba.\n
+          7. Maddi galii kee daldala irraa yoo hin taane ykn daldala seera qabeessa irratti hin bobbaane yoo ta’e.\n
+          8. Yoo bilbila ismaartii Android version 5 fi isaa ol qabu hin qabne ta'e, SIM card waliin.\n
+          9. Yoo sanadoota barbaachisoo ta’an dijiitaalaan walitti qabsiisuu dadhabde.\n
+          10. Herregni keessan kaffaltii/kaffaltii tajaajilaa uwwisuuf hafnaan gahaa yoo hin qabaanne, akkasumas hafnaan xiqqaan Birrii 50 yoo qabaate.\n
+          11. Sanadoota ykn odeeffannoo baankichi gaafate karaa dijitaalaa dhiyeessuu yoo dadhabde.\n
+          12. Yoo sanadoonni barbaaddan akka kooppii lallaafaa sanadoota jalqabaatti hin olkaa'amne.\n
+          13. Sanadoonni kan akka hayyama daldalaa yoo hin haaromfamne (Kaalaandarii Giriigooriyaan fayyadamuun kan sakatta’aman).\n
+          14. Odeeffannoon kenname odeeffannoo daldalaa fi odeeffannoo dhuunfaa sanadoota olkaa’aman waliin kan wal hin simne yoo ta’e. Fakkeenyaaf, lakkoofsi quunnamtii hatattamaa waraqaa eenyummaa Kebele irratti argamu kan waraqaa eenyummaa irratti argamu waliin tokko ta’uu qaba, guyyaan hundeeffama daldalaa kalaandarii Giriigooriyaanitti ta’uu qaba, kaappitaalli jalqabaa kan hayyama daldalaa irratti argamu waliin walsimuu qaba.\n
+          15. Seenaa liqii kanaan dura hin kaffalle ykn galmee negaatiivii baankota biroo waliin yoo qabaatte."
     buttons:
       - title: "FUDHATAMA DHABU RAGAALE"
         payload: "/document_rejection"
-      - title: "REJECTION"
-        payload: "/rejection"
+      - title: "YAADACHIIFTUU"
+        payload: "/reminder"
 
   utter_document_rejection:
   - text: "Sanadoonni mirkaneessuuf olkaa'an haaromfamuu, guutuu, ykn adeemsa mirkaneessuuf barbaachisoo ta'uu dhiisuu akka danda'an yaada 
@@ -873,8 +889,8 @@ responses:
         payload: "/install_michu"
 
   utter_install_michu:
-  - text: "Michu argachuu fi install gochuuf Play Store irratti search gochuun appicha download gochuun mobile device keessan irratti install 
-          gochuu dandeessu. kunoo linkiin [https://play.google.com/store/apps/details?id=com.kifiya.digital.lending]" 
+  - text: "Michu argachuu fi install gochuuf Play Store irratti search gochuun appicha buufaatanii bilbilaa keessan irratti fe'uun faayadamuu 
+          dandeessu. linkii kaan faayaadaamuun buufaachuu dandeessu [https://play.google.com/store/apps/details?id=com.kifiya.digital.lending]" 
     buttons:
       - title: "ARGAMA MICHU"
         payload: "/michu_availablity"
@@ -898,12 +914,12 @@ responses:
         payload: "/application"
 
   utter_application:
-  - text: "Adeemsi iyyannoo liqii salphaa fi salphaadha. Jalqaba appicha playstore irraa buufadhaa sana booda odeeffannoo dhuunfaa fi 
-          odeeffannoo daldalaa hunda akka barbaachisummaa isaatti application irratti kenni. Asitti adeemsi:\n Tarkaanfiiwwan Dhaabbii:\n
-          1. Appicha Play Store irraa fudhachuu.\n
-          2. Appilikeeshinii meeshaa moobaayilaa keessan irratti fe'uu xumuruu.\n
-          3. Fayyadamaaf afaan filatte filadhu.\n
-          4. application Michu banachuu \n
+  - text: "Adeemsi iyyannoo liqii baayyee salphaadha. Jalqaba appicha playstore irraa buufadhaa sana booda odeeffannoo dhuunfaa fi 
+          odeeffannoo daldalaa hunda akka barbaachisummaa isaatti application irratti kenni. Asitti adeemsi:\n Tarkaanfiiwwan armaan gadi fayadamii:\n
+          1. Appicha Play Store irraa buufadhuu.\n
+          2. Appilikeeshinii bilbila keessan irratti fe'ii.\n
+          3. applicationi Michu banadhuu \n
+          4. Fayyadamaaf afaan filatte filadhu.\n
           Dabalataaf Adeemsa iyyannoo liqii barbaadde beekuuf button armaan gadii irraa oomisha filadhu. kunoo linkiin [https://play.google.com/store/apps/details?id=com.kifiya.digital.lending]"
     buttons:
       - title: "ADEEMSA IYYANNOO GUYYAA"
@@ -912,7 +928,7 @@ responses:
         payload: "/wabii_application"
 
   utter_guyyaa_application:
-  - text: "Adeemsi iyyannoo liqii Guyyaa salphaa fi salphaadha. Adeemsi guutuun isaa kunooti:\n Yeroo jalqabaaf Liqii Michuu Guyyaa iyyachuu:\n
+  - text: "Adeemsi iyyannoo liqii Guyyaa salphaadha. Adeemsi guutuun isaa kunooti:\n Yeroo jalqabaaf Liqii Michuu Guyyaa iyyachuu:\n
           1. Appii Michuu banuun filannoo liqii Guyya filadhaa.\n
           2. Lakkoofsa bilbilaa keessan galchaa.\n
           3. Hidhaa kenname fayyadamuun haalawwanii fi dambiiwwan argachuu.\n
@@ -933,7 +949,7 @@ responses:
       - title: "ADEEMSA IYYANNOO WABII"
         payload: "/wabii_application"
   utter_wabii_application:
-  - text: "Adeemsi iyyannoo liqii liqii Wabii salphaa fi salphaadha. Adeemsi guutuun isaa kunooti:\n Yeroo jalqabaaf Liqii Michu Wabbii Iyyachuu :\n
+  - text: "Adeemsi iyyannoo liqii Wabii salphaadha. Adeemsi guutuun isaa kunooti:\n Yeroo jalqabaaf Liqii Michu Wabbii Iyyachuu :\n
           1. Appii Michuu banuun filannoo liqii Wabbi filadhaa.\n
           2. Lakkoofsa bilbilaa keessan galchaa.\n
           3. Hidhaa kenname fayyadamuun haalawwanii fi dambiiwwan argachuu.\n
@@ -1010,8 +1026,10 @@ responses:
   
 
   utter_app_version:
-  - text: "Siisteemni  hanga liqii deebifamuu qofa hir’isa. Haa ta’u malee, dogongorri teeknikaan hirifamuu kan  uumamuu yoo ta'ee giddugala 
-          bilbilaa keenyaa 609 irratti bilbilaan hatattamaan dhimmicha beeksisuu fi sirreessuu ni danda'ama."
+  - text: "Yoo app Michu version 1.0 irraa gara 2.0tti update gochuuf yaalaa jirtan, app adda ta'e waan ta'eef, jalqaba 
+          version duraanii uninstall gochuu qabdu. Sana booda, gara Play Store seenuun appii Michu buufadhaa, install 
+          godhaa.\n Kunoo linkin yoo version haaraa michu
+            app buufachuu barbaaddan.[https://play.google.com/store/apps/details?id=com.kifiya.digital.lending]"
   utter_payment_doubt:
   - text: "Siisteemni haalawwan mudachuu danda’an ilaalcha keessa galchuun, yeroon liiqiin gaafatamuu sirritti agarsiisuu qaba.\n
           1.yeroon liqiin  deebifamuu yoo  darbe,  Baankiin  lakkoofsaa herregaa nama mallaqaa deebisuu  sanaa   irraa hiri'suu ni danda’a.\n
@@ -1163,10 +1181,112 @@ responses:
 
 
 
-
-
   utter_change_language:
   - text: "Afaan jijjiiruuf, qaree kiiboordii golee mirgaa jala jiru cuqaasi, itti aansuudhaan qaree afaanii cuqaasi."
+
+  utter_about_michu:
+  - text: "Odeeffannoo bal'aa waa'ee michu kunooti.\n Michun oomisha lama qaba\n\n
+          MICHU WABII LIQAA\n
+          LIIQNI MICHU WABII kun daldala maayikirootiif kaappitaala hojii ariifataa akka argatu kan qophaa’edha.\n
+          Bal'ina Omishaa:\n
+          - Daangaa Liqii: Birrii 50,000 - 100,000\n
+          - Yeroo Liqii: guyyoota 30\n
+          - Kaffaltii tajjajilaa: 2%\n
+          - Dhala: 8%\n
+          - Kaffaltii Adabbii: Ji'atti %5\n\n
+          Ulaagaalee:\n
+          - Herrega baankii waldaa hojii gamtaa\n
+          - ID Kebele idilee\n
+          - Hayyama Daldalaa fi TIN\n
+          - Yaadannoo Waliigaltee (MoU) fi Dambii Waldaa (AOA) & TIN Manaajara Waliigalaa (yoo PLC ta’e)\n
+          - Hojii daldalaa (madda galii) irratti bobba’uu.\n
+          - Abbummaa bilbila ismaartii (Android).\n\n
+
+          Sarara Daldalaa: \n
+          - Daldaltoota maayikiroo (souk) .\n
+          - Manneen bunaa\n
+          - Manneen nyaataa xiqqaa (Shiro Bet) .\n
+          - Manneen juice fi fuduraalee\n
+          - Golee nyaata saffisaa\n
+          - Manneen daldalaa jimaa\n
+          - Konkolaachiftoota tajaajila jajjabina konkolaataa sadii fi taaksii fi kkf.\n\n
+
+          MICHUU GUYYAA LIQAA\n
+          LIIQNI MICHU GUYYAa daldala naannootiif kaappitaala hojii ariifataa dhiyeessuuf kan kaayyeffatedha.\n
+
+          Bal'ina Omishaa:\n
+          - Daangaa Liqii: Birrii 2,000 - 15,000\n
+          - Yeroo Liqii: Guyyaa 7\n
+          - Kaffaltii Dhaqqabummaa: 12%\n
+          - Adabbii: Torbanitti %5\n\n
+
+          Ulaagaalee: \n
+          - Herrega baankii waldaa hojii gamtaa\n
+          - ID Kebele idilee\n
+          - Hojii daldalaa (madda galii) irratti bobba’uu .\n
+          - Abbummaa bilbila ismaartii (Android) .\n\n
+
+          Sarara Daldalaa: \n
+          - Daldaltoota Gulit\n
+          - Manneen bunaa al-seerummaa\n
+          - Hojjetoota al-seerummaa\n
+          - Daldaltoota Daandii Cinaa\n
+          - Daldaltoota Xixiqqaa\n\n
+          odeeffannoo dabalataaf as ilaalaa [https://michu.com.et/]"
+
+  utter_not_help:
+  - text: "Bot kana irraa oddeffaanoo barbadan argachuuf gaaffii keessan gagabaabsaa, sirrii fi gara yaadaatti akka dhiyaatu taasisaa. Gaaffii kee 
+          dogoggoraan yoo hubadhe dhiifama jechuun barbaada. Yeroo dhiyootti dandeettii koo fooyyessuu akkan danda'u abdii guddaan qaba."
+
+  utter_personal_loan:
+  - text: "Ammaaf Michu oomisha lama qofa of keessaa qaba:\n1. LIQII WABII (liqii fedhii kaappitaala hojii saffisaa daldala maayikiroo 
+          'Fedhii kaappitaala hojii ji'aa' uwwisuuf kennamudha).\n 2. LIQII GUYYAA (Liqii fedhii kaappitaala hojii ariifataa naannoo 
+          daldalaaf guyyaa guyyaan/torbanitti daldala kaappitaala hojii barbaadu uwwisuuf kennamudha.)\n Liqiin personal yeroo dhiyootti 
+          dhufuu danda’a."
+
+  utter_staff:
+  - text: "Namoota dhuunfaa ykn dhaabbilee daldala keessa jiranii fi haal-duree Michu guutan qofatu liqii argachuuf ulaagaa guutuu qaba.Yoo 
+          ulaagaa Michu guutte, hojjetta bankicha taattanis, ta'u battanisi liqaa liqeeffachu nidandeessu.  Isaan ala namni ulaagaa Michu 
+          hin guunne kaamiyuu liqaa fuudhaachuu hin danda'u "
+
+  utter_michu_status:
+  - text: "Eeyyee, Miichuun amma hojjechaa jira. Liqii filattan amma adeemsisuu dandeessu."
+
+  utter_IFB:
+  - text: "Michu yeroo ammaa oomisha IFB hin qabu. Haa ta’u malee, dhala waliin 
+          liqeefachuu yoo barbaaddan, liqeefachuu ni dandeessu. Yeroo gabaabaa keessatti gaaffii keessan hunda akka raawwannu abdii qabna."
+
+  utter_want_change:
+  - text: "Adeemsa liqii Michu keessatti herrega fi lakkoofsa bilbilaa keessan jijjiiruu dandeessu. Akkaataa itti jijjiiruu dandeessan kunooti:\n
+          ~ Lakkoofsa herrega keessanii jijjiiruuf gara application Michu keessanii deemuun dirree herregaa barbaadaa, sana booda lakkoofsa 
+          herregaa barbaaddan bakka buusaa.\n
+          ~ Lakkoofsa bilbilaa jijjiiruuf damee coopbank dhaquudhaan qofa jijjiiruu danda'ama.\n
+          Hubachiisa: Lakkoofsa bilbilaa fi lakkoofsa herrega keessanii fuula dhiyeessii liqii irratti qofa jijjiiruu dandeessu. Dhiyeessii 
+          liqii erga fudhattee booda lakkoofsa bilbilaa ykn herrega kee jijjiiruu hin dandeessu."
+
+  utter_approval_time:
+  - text: "Erga liqii kanaaf iyyattee booda, hayyamni jalqabaa hanga guyyoota 5 fudhachuu danda’a, garuu hayyamni 
+          lammaffaa fi kan itti aanu battalumatti."
+
+  utter_pay_from_another:
+  - text: "Yeroodhaaf iyyanni Michuu kaffaltii CBO ykn herrega baankii biroo irraa fudhachuu hin danda'u. 
+          Kaffaltii herrega ati adeemsa iyyannoo liqii keessatti fayyadamte irraa qofa fudhata."
+
+  utter_acc_duration:
+  - text: "Michu irratti liqii argachuuf ulaagaa guutuuf herregni keessan guyyaa baname irraa eegalee yoo xiqqaate ji’a sadii ta’uu qaba."
+
+  utter_product_switch:
+  - text: "Dhiifama, yeroo ammaa garuu, oomisha tokko irraa gara oomisha biraatti jijjiiruu hin hayyamnu. Jalqaba filannoo erga gootee booda, 
+          filannoo jijjiiruu malee filannoo sana itti fufuun si irraa eegama."
+
+  utter_onbehalf:
+  - text: "Eeyyee, filannoo dabarsuu fi bakka buuma'an liqeefaaachu danda'am, garuu itti fufuuf sanadoota seeraa barbaachisoo ta’an hunda dhiyeessu qabda."
+
+  utter_lost_phone:
+  - text: "Michu bilbila haaraa keessan irratti argachuuf tarkaanfiiwwan kana hordofaa: Appicha Play Store irraa buufadhaa, install godhaa, 
+          lakkoofsa bilbila keessanii galcha. OTP (One Time Password) gara lakkoofsa bilbilaa keessaniitti ni ergama. Erga OTP galchiitani 
+          booda tajaajila Michun kennu bilbila haaraa keessan irratti itti fufuu dandeessu."
+
 
   utter_FAQ:
     - buttons:

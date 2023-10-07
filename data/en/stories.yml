@@ -278,6 +278,16 @@ stories:
 
 
 
+- story: about change
+  steps:
+  - intent: acc_duration
+  - action: utter_acc_duration
+  - intent: product_switch
+  - action: utter_product_switch
+  - intent: onbehalf
+  - action: utter_onbehalf
+  - intent: lost_phone
+  - action: utter_lost_phone
 
 - story: about time
   steps:

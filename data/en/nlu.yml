@@ -874,10 +874,8 @@ nlu:
     - how could i know my deadline
     - how can i know my repayment date
     - who can tell me my last repayment day
-    - how can i get necssary informations regarding michu
     - how do i know my repayment duration 
     - who tell me my repayment duration 
-    - where can i get all my necessary informations
     - what can i do to know my repayment duration
     - repayment information
     - how many time can I have to repay michu
@@ -885,7 +883,7 @@ nlu:
     - due date
     - When did I repay the loan
 
-# stoped here
+# comee here here back
 
 - intent: repayment_option  
   examples: |
@@ -897,9 +895,7 @@ nlu:
     - how would you manage to settle my loan from my account
     - is loan settlement from my acount possible
     - What is the alternative repayment option if My app Is not working on the due date?
-    - How branches can help me to settle my payment before the due date?
     - If I miss my payback deadline, do you take money from my CBO account?
-    - How can branches assist me in settling my payment ahead of schedule?
     - What other payment method is available if my app is down on the due date?
 
 - intent: who_debit
@@ -964,7 +960,7 @@ nlu:
 
 - intent: document_rejection
   examples: |
-    - How My Documents be areason for rejection of the Loan I have applied
+    - How My Documents be a reason for rejection of the Loan I have applied
     - how documents can leads to rejection
     - How can my documents impact the approval of my loan application
     - rejection reason due to my document
@@ -1038,8 +1034,9 @@ nlu:
     - How to install Michu?
     - Where I get michu
     - how can i access michu
-    - How I get michu loan?
+    - How I get michu app?
     - Michu app
+    - link
     - How to get michu
     - pls send me michu application
     - How I can get michu loan?
@@ -1431,6 +1428,8 @@ nlu:
     - High light explanation of Michu Guyya,Wabi,Interest rate,facility rate and requirements
     - available services
     - Mchu loan product
+    - where can i get all my necessary informations
+    - how can i get necssary informations regarding michu
     - Loan type
     - does michu have a categories?  
     - Kind of loan exist
@@ -1479,9 +1478,6 @@ nlu:
     - Shall coop bank staff take michu?
     - Shall government employee to take michu?
 
-
-
-
 - intent: IFB
   examples: |
     - Can IFB use michu ?
@@ -1529,6 +1525,29 @@ nlu:
     - is it possible to pay from my another cbo account
     - are possible to pay from another bank account
     - can I pay from CBE acount
+
+- intent: acc_duration
+  examples: |
+    - How long should the bank account stay?
+    - Bank accounts must stay how long to borrow
+
+- intent: product_switch
+  examples: |
+    - How to switch from 'Wabii' to 'Guyyaa'?
+    - Steps to transition from 'Wabii' to 'Guyyaa'?
+    - switching from 'Wabii' to 'Guyyaa' - how?
+    - The move from 'Wabii' to 'Guyyaa' - How?
+
+- intent: onbehalf
+  examples: |  
+    - Can it be taken by proxy?
+    - Representation
+
+- intent: lost_phone 
+  examples: |
+    - What if I lose the application as a user?
+    - What should I do if my phone is lost
+    - what if my app is lost,
 
 # - intent: our_members
 #   examples: |

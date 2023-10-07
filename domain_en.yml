@@ -105,6 +105,11 @@ intents:
 - approval_time
 - pay_from_another
 
+- acc_duration
+- product_switch
+- onbehalf
+- lost_phone
+
 responses:
   utter_start:
   - text: "Michu's CoopBank chatbot greets you! How can I help you? What information do you need about the Michu digital 
@@ -338,7 +343,7 @@ responses:
           to collateral and document requirements.\n\n The keyword 'Guyyaa' has a couple of meanings. In Afaan Oromo, Guyyaa has the meaning of 
           'Day or Daily 'to emphasise that the loan tends to be provided for businesses that have daily working capital needs, such as gulit 
           traders, Informal Coffee Houses, Informal Workers, Roadside Traders, Petty Traders, and so on. In From an Amharic perspective, guyyaa 
-          has the meaning of 'lap' which is a dialect or a particular form of language that emphasises the traditional unrevealed pocket for 
+          has the meaning of 'A safe hiding place' which is a dialect or a particular form of language that emphasises the traditional unrevealed pocket for 
           grandmothers, where they put down their instant income in trading."
     buttons:
       - title: "MICHU FEATURES"
@@ -351,7 +356,7 @@ responses:
           due to collateral and documentation restrictions. \n\nThe keyword 'Guyyaa' has two meanings. Guyyaa means 'Day or Daily' in Afaan 
           Oromo, emphasising that the loan is typically offered to enterprises with daily working capital needs, such as gulit traders, informal 
           coffee houses, informal workers, roadside traders, petty shopkeepers, and so on. In From an Amharic perspective, guyyaa 
-          has the meaning of 'lap' which is a dialect or a particular form of language that emphasises the traditional unrevealed pocket for 
+          has the meaning of 'A safe hiding place' which is a dialect or a particular form of language that emphasises the traditional unrevealed pocket for 
           grandmothers, where they put down their instant income in trading."
     buttons:
       - title: "MICHU FEATURES"
@@ -680,24 +685,28 @@ responses:
         payload: "/wabii_Requirements"
 
   utter_why_michu_notwork:
-  - text: "The Michu app might be stagnated for a couple of reasons:\n you may be trying to use the app in offline mode 
-          or you may be turning on a VPN\n you may be trying to log different accounts on a single device while you have 
-          already logged another account\n the app might be disabled via the service centre due to bugs or system 
-          incompatibilities that make the application temporarily unavailable.\n It might be due to insufficient storage 
-          on your device to carry out the process at optimal capacity.\n Just close the app and try to free your storage.
-          \n your network connection, and don't forget to turn off your VPN if any"
+  - text: "The Michu app might be stagnated for a couple of reasons:\n
+          1. You may be trying to use the app in offline mode.\n
+          2. You may be trying to log different accounts on a singl device while you have already logged another account.\n
+          3. It might be due to insufficient storage on your device to carry out the process at optimal capacity.\n
+          4. Download the new Michu from the Play Store if you were an earlier user of Michu, and entirely uninstall the old Michu from your device.\n
+          5. Ensure that the VPN is not activated.\n
+          6. The Android version shouldn't be any lower than 5, as much as possible.\n
+          Please call 609 and inform them if any of this is not the issue."
     buttons:
       - title: "LATE DISBURSMENT"
         payload: "/late_disbursment"
       - title: "REVERSAL"
         payload: "/reversal"
 
-  - text: "The Michu app may be frozen for several reasons:\n - you may be attempting to use the app in offline mode or 
-          turning on a VPN\n - you may be attempting to log different accounts on a single device while you have already 
-          logged another accountn the app may be disabled via the service centre due to bugs or system incompatibilities 
-          that make the application temporarily unavailable\n - It could be due to insufficient storage on your device to 
-          complete the process at full capacity. Simply close the app and try to free up some space.\n - Check your 
-          network connection, and don't forget to turn off any VPNs you may have."
+  - text: "The Michu app could be stalled for a few reasons:\n
+          1. You may be attempting to use the app offline.\n
+          2. You may be attempting to log several accounts on a single device while already logged into another.\n
+          3. It could be due to insufficient storage space on your device to complete the operation at full capacity.\n
+          4. If you were a previous user of Michu, get the new Michu from the Play Store and completely delete the old Michu from your smartphone.\n
+          5. Check that the VPN is not turned on.\n
+          6. As much as possible, the Android version should not be lower than 5.\n
+          Please call 609 and let them know if any of this is not the case."
     buttons:
       - title: "LATE DISBURSMENT"
         payload: "/late_disbursment"
@@ -705,21 +714,30 @@ responses:
         payload: "/reversal"
 
   utter_late_disbursment:
-  - text: "Late disbursement may result for a couple of reasons: the applicant's account number might be inactive or may 
-          have a KYC (Know Your Customer) issue and an inactive TIN, so it needs a few days to be activated; the applicant
-           might not have enough money to cover the facility fee; the officer might have a lot of pending applications, 
-           which leads to late disbursement; and there might be technical issues from the front side and server side as 
-           well."
+  - text: "The disbursement Payment may be delayed for various reasons, that is, it happens on your first application, 
+          and for the next loan application you will receive automatic processing in less than 1 minute until the deadline 
+          expires for your documents. But for the first application, it may be delayed for these reasons:\n
+          1. If your TIN number is not active, you'll need to wait 24 hours.\n
+          2. Verify that the information you provided on the application matches the supporting documentation 
+          (ID, business license, etc.).\n
+          3. If it's your first loan application and the day you apply is not a working day, you should wait 
+          until the employees are available to work for you on a working day.\n
+          If you are running behind for any other reason, call 609 and report."
     buttons:
       - title: "WHY MICHU NOT WORK"
         payload: "/why_michu_notwork"
       - title: "REVERSAL"
         payload: "/reversal"
 
-  - text: "Late disbursement can occur for a variety of reasons, including: the applicant's account number being inactive 
-          or having a KYC (Know Your Customer) issue and an inactive TIN, which requires a few days to be activated; the 
-          applicant not having enough money to cover the facility fee; the officer having a large number of pending 
-          applications, which leads to late disbursement; and technical issues on both the front and server sides."
+  - text: "The disbursement Payment may be delayed for various reasons, that is, it happens on your first application, 
+          and for the next loan application you will receive automatic processing in less than 1 minute until the deadline 
+          expires for your documents. But for the first application, it may be delayed for these reasons:\n
+          1. If your TIN number is not active, you'll need to wait 24 hours.\n
+          2. Verify that the information you provided on the application matches the supporting documentation 
+          (ID, business license, etc.).\n
+          3. If it's your first loan application and the day you apply is not a working day, you should wait 
+          until the employees are available to work for you on a working day.\n
+          If you are running behind for any other reason, call 609 and report."
     buttons:
       - title: "WHY MICHU NOT WORK"
         payload: "/why_michu_notwork"
@@ -728,7 +746,7 @@ responses:
 
   utter_reversal:
   - text: "Reversal will be made if there is an error transactions by the system so visit your nearest branch for further 
-          information."
+          information. or dail to our call center at 609"
     buttons:
       - title: "HOW CAN I KNOW DEADLINE"
         payload: "/know_deadline"
@@ -796,9 +814,23 @@ responses:
         payload: "/rejection"
 
   utter_rejection:
-  - text: "Here is a closer look at the factors that may lead to loan rejection. Your loan application might be rejected if your overall 
-          information is erronneous, your business is not among selected line of business, your attached documents are dispensable or not 
-          updated and so on. "
+  - text: "You may face rejection for various reasons, such as:\n
+          1. If the Coopbank account you are using does not belong to you.\n
+          2. If the identification card (Kebele ID, driving license, or passport) does not belong to you.\n
+          3. If the trade license is not in your name.\n
+          4. If the Tax Identification Number (TIN) is not in your name (for PLC/Group, the TIN should be in the name of the PLC/Group or one of its members).\n
+          5. If the Memorandum of Understanding (MoU) and Articles of Association (AoA) are not available in soft copy, including all pages of the original document in the case of a PLC.\n
+          6. If you are not the authorized individual, the borrower should have the authority to borrow on behalf of the PLC/Group through a power of attorney obtained from the relevant government organization.\n
+          7. If your source of income is not from trading or if you are not engaged in a legal business.\n
+          8. If you do not have an Android smartphone with version 5 or above, along with a SIM card.\n
+          9. If you fail to attach the necessary documents digitally.\n
+          10. If your account does not have sufficient balance to cover the service fee/charge, as well as a minimum balance of 50 Birr.\n
+          11. If you are unable to present the documents or information requested by the bank digitally.\n
+          12. If your required documents are not uploaded as soft copies of the original documents.\n
+          13. If the documents, such as trade licenses, are not renewed (checked using the Gregorian Calendar).\n
+          14. If the information provided does not match the business information and personal details against the uploaded documents. For example, the emergency contact number on the Kebele ID should be the same as the one on the ID card, the business establishment date should be in the Gregorian calendar, and the initial capital should match the one on the trade license.\n
+          15. If you have a history of previous loan defaults or negative records with other banks.\n
+          If one of these problems occurred with your application, your loan would be denied."
     buttons:
       - title: "DOCUMENT REJECTION"
         payload: "/document_rejection"
@@ -891,9 +923,9 @@ responses:
           personal information and business information as needed on the application. Here the proccess:\n Installation Steps:\n
           1. Retrieve the app from the Play Store.\n
           2. Complete the application installation on your mobile device.\n
-          3. Select your preferred language for usage.\n
-          4. open Michu application \n
-          you can get the link here [https://play.google.com/store/apps/details?id=com.kifiya.digital.lending]\n\n
+          3. open Michu application \n
+          4. Select your preferred language for usage.\n 
+          you can get the app on this link here [https://play.google.com/store/apps/details?id=com.kifiya.digital.lending]\n\n
           For more Select the product from the folowing button to know the application proccess of your desired loan"
     buttons:
       - title: "GUYYAA APP-PROCCESS"
@@ -996,8 +1028,9 @@ responses:
 
 
   utter_approval_status:
-  - text: "If your account status is ACTIVE, SMS will congratulate you or you can simply check your account balance. 
-          Rejection reason will be notified to you via SMS as well."
+  - text: "SMS will congratulate you if your account status is active, or you can simply check your account amount. In addition, if your 
+          application is rejected, you will be alerted through SMS of the reason for the denial. Please visit your michu app for additional 
+          details on your loan status. All status information is available there."
     buttons:
       - title: "REAPPLICATION PROCCESS"
         payload: "/reapplication"
@@ -1220,7 +1253,7 @@ responses:
       - title: "BRANCH SUPPORT"
         payload: "/branch_support"
       - title: "WHO AM I"
-        payload: "/iamabot"
+        payload: "/bot_challenge"
 
   utter_iamabot:
   - text: I'm an AI chatbot powered by Michu team, here to assist you! Feel free to ask any questions you have
@@ -1234,31 +1267,31 @@ responses:
   - text: "You're welcome! I'm glad I could assist you."
     buttons:
       - title: "WHO AM I"
-        payload: "/iamabot"
+        payload: "/bot_challenge"
       - title: "GOOD BYE"
         payload: "/goodbye"
   - text: "You're very welcome! I'm here to help whenever you need."
     buttons:
       - title: "WHO AM I"
-        payload: "/iamabot"
+        payload: "/bot_challenge"
       - title: "GOOD BYE"
         payload: "/goodbye"
   - text: "No problem at all! I'm always here to provide guidance."
     buttons:
       - title: "WHO AM I"
-        payload: "/iamabot"
+        payload: "/bot_challenge"
       - title: "GOOD BYE"
         payload: "/goodbye"
   - text: "It's my pleasure to help. Don't hesitate to reach out again if you need anything else."
     buttons:
       - title: "WHO AM I"
-        payload: "/iamabot"
+        payload: "/bot_challenge"
       - title: "GOOD BYE"
         payload: "/goodbye"
   - text: "Thank you for your kind words! Helping you is what I'm here for."
     buttons:
       - title: "WHO AM I"
-        payload: "/iamabot"
+        payload: "/bot_challenge"
       - title: "GOOD BYE"
         payload: "/goodbye"
 
@@ -1267,8 +1300,54 @@ responses:
           If the language button does not appear on your inline keyboard, type /start and submit it to the bot to obtain it."
 
   utter_about_michu:
-  - text: "Michu's New Products (Michu 2.0) include a variety of products, limits, durations, interest rates, and so on. 
-          Look here for product information [https://michu.com.et/]."
+  - text: "Here is the detail information about michu.\n Michu has two products under it\n 
+          MICHU WABII LOAN\n
+          The MICHU WABII LOAN is designed to provide quick working capital for micro businesses.\n\n
+          Product Details:\n
+          - Credit Limit: 50,000 - 100,000 Birr\n
+          - Credit Period: 30 days\n
+          - Access Fee: 2%\n
+          - Interest Rate: 8%\n
+          - Penalty Fee: 5% per month\n\n
+          Requirements:\n
+          - Cooperative bank Account\n
+          - Formal Kebele ID\n
+          - Trade License and TIN\n
+          - Memorandum of Understanding (MoU) and Articles of Association (AOA) & General Manager's TIN (in case of PLC)\n
+          - Engaged in trading activity (source of income)\n
+          - Ownership of a smartphone (Android)\n\n
+
+          Line of Business:\n
+          - Micro retailers (souk)\n
+          - Coffee houses\n
+          - Mini restaurants (Shiro Bet)\n
+          - Juice and fruit shops\n
+          - Fast food corners\n
+          - Khat shops\n
+          - Three-wheel and taxi hailing service drivers, etc.\n\n
+
+          MICHU GUYYA LOAN\n
+          The MICHU GUYYA LOAN is aimed at providing quick working capital for nano businesses.\n\n
+
+          Product Details:\n
+          - Credit Limit: 2,000 - 15,000 Birr\n
+          - Credit Period: 7 days\n
+          - Access Fee: 12%\n
+          - Penalty: 5% per week\n\n
+
+          Requirements:\n
+          - Cooperative bank Account\n
+          - Formal Kebele ID\n
+          - Engaged in trading activity (source of income)\n
+          - Ownership of a smartphone (Android)\n\n
+
+          Line of Business:\n
+          - Gulit Traders\n
+          - Informal coffee houses\n
+          - Informal workers\n
+          - Roadside Traders\n
+          - Petty Traders\n\n
+          for additional information look here [https://michu.com.et/]"
 
   utter_not_help:
   - text: "To get the most out of this bot, keep your inquiry short, accurate, and to the point. Please accept my apologies 
@@ -1308,6 +1387,22 @@ responses:
   utter_pay_from_another:
   - text: "For the time being, the Michu application cannot accept payments from other CBO or bank accounts. It only 
           accepts payments from the account you used throughout the loan application procedure."
+
+  utter_acc_duration:
+  - text: "To be eligible for a loan on Michu, the account must be at least three months old from the date of opening."
+
+  utter_product_switch:
+  - text: "Sorry, but at the moment, we don 't allow to switch from one product to another. You 're expected to continue with that election 
+          without having the choice to change after you first made an election."
+
+  utter_onbehalf:
+  - text: "Yes, you have the option of representation and use, but you have to provide all the necessary legal documents to continue."
+
+  utter_lost_phone:
+  - text: "Follow these steps to get the Mitch on your new phone. Download the Apu from the Plain Store, install it and offer your phone number. Otp (one-time password) will be sent to your phone number. Once
+          Once you 've entered the OTP, you can continue to enjoy the services you 've been offered on your new device."
+
+
 
   utter_FAQ:
     - buttons:

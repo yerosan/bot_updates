@@ -13,6 +13,7 @@ nlu:
   examples: |
     - Akkam jirta
     - Akkam
+    - Akaamii
     - hi
     - hiii
     - Akkami
@@ -65,16 +66,13 @@ nlu:
     - ee
     - haaya
 
-
 - intent: mood_unhappy
   examples: |
-    - guyyaan koo suukaneessaa ture
     - Gaddeen jira
     - Baay'ee natti hin dhaga'amu
     - Mufadheera
-    - super gaddisiisaa
-    - Baay'een gadde
     - gaddisiisaa
+    - Baay'een gadde
     - baay'ee nama gaddisiisa
     - gammachuu dhabuu
     - gaarii miti
@@ -103,7 +101,6 @@ nlu:
     - Miirri baay'ee gaariin natti dhaga'amaa jira
     - Ani guddaadha
     - Ani ajaa'iba
-    - Addunyaa baraaruuf deema
     - super stoked ta'e
     - garmalee gaarii dha
     - so so perfect
@@ -116,9 +113,9 @@ nlu:
     - Liqii gaafachuuf rakkachaa jira. Na gargaaruu dandeessaa?
     - Dhimma teeknikaa tokko irratti gargaarsi na barbaachisa.
     - Gargaarsa na barbaachisa
-    - Adeemsa iyyannoo irratti na gargaaraa
     - Deeggarsa na barbaachisa
     - mee na gargaaraa
+    - Gaaffin qaba
     - na deeggaraa
     - harka naaf kenni
     - na gargaaraa
@@ -144,6 +141,7 @@ nlu:
     - dhiyeessaa liqii michu
     - kan tajaajila michu kennu eenyu
     - kan michuf tajaajila kennu
+    - michun kaan eenyuuti
 
 - intent: digital_Loan
   examples: |
@@ -152,29 +150,22 @@ nlu:
     - liqiin dijitaalaa maali
     - liqii dijitaalaa jechuun maal jechuudhaa
     - liqii dijitaalaa
-    - Liqiin michu maali?
     - liqii
-    
+   
 - intent: digital_product
   examples: |
     - Oomishaalee dijitaalaa coopbank
-    - oomishaalee dijitaalaa bankii hoji gamta oromia
-    - Oomishaalee dijitaalaa coopbank
+    - oomishaalee dijitaalaa baankii hoji gamta oromia
     - cbo liqii dijitaalaa
     - Tajaajila dijitaalaa
-    - oomisha dijitaalaa tarreessuun
-    - tajaajila argamu
-    - Oomisha liqii Michu
-    - Gosa liqii
-    - Tajaajila akkamii kennitu
-    - Meeshaalee dijitaalaa?
-    - Tajaajila akkamii kennitu?
     - Oomishaalee dijitaalaa?
 
 
 - intent: michu
   examples: |
     - Michu maali?
+    - Liqiin michu maali?
+    - Oomisha liqii Michu
     - Michu
     - Michuu malidha
     - Liqii Michuu
@@ -182,7 +173,6 @@ nlu:
     - Michuu jechuun
     - Michu digital lending 
     - Liqii dijitaalaa Michu
-    - Rational maqaa Michuu jedhu duuba
     - Waa'ee michuu beekuu barbaada
     - Michuu maal akka ta'e natti himi
     - pls waa'ee tajaajila michu naaf ibsaa?
@@ -192,26 +182,24 @@ nlu:
     - odeeffanno michuu naaf keenni mee
     - wa'ee michuu natti himi mee
     - michuu naaf ibsi mee
+    - Ibsa tokko tokko waa'ee michuu?
+    - Mee wayee miichuu naatti hima.
+    - Michu 2 maali 
 
 
 - intent: why_michu
   examples: |
     - faayidaa michuu
     - maaliif michu barbaachisee
-    - bu'uura michuu
-    - liqii michu argachuuf wabii dirqama 
+    - bu'uura michuu 
+    - michu maaltu adda godha
     - bu'aa
+    - bu'aa liqii michu?
     - BARBAACHISAA MICHU MAAMILII YKN FAAYIDAA MICHUUF
-    - maal baankii akka gargaarsa kennaatti fudhata
-    - liqiidhaaf kan kennamu maali
     - Liqiin Michuu maaliif na barbaachisa?
     - grantee liqii fudhachuuf
     - Michu oomisha walfakkaataa biroo baankota birootiin dhiyeessan irraa faayidaa akkamii qaba
-    - baankiin maal akka wabiiti qabataa
     - maaliif liqii michu na barbaachisa
-    - michuun wabii qaba moo hin qaba
-    - Ibsa tokko tokko waa'ee michuu?
-    - wabiin ni barbaachisa michuudhaf
 
 - intent: guyya_loan
   examples: |
@@ -223,12 +211,11 @@ nlu:
     - Liqiin Guyyaa maali?
     - Haala waliigalaa Liqii Guyyaa?
     - Liqii Guyyaa irratti odeeffannoo ariifachiisaa?
-    - Liqiin Guyyaa Maali?
     - Waa'ee Liqii Guyyaa?
     - hiikni Guyyaa maali?
     - guyyaa?
     - Hiika guyya jedhu?
-    - guyya: Maal jechuudha?
+    - guyya jechuun maal jechuudha?
     - Hiikuu guyya?
     - guyya hiika fakkeenyaa?
     - Liqiin Guyyaa maali?
@@ -244,12 +231,12 @@ nlu:
     - waabbii jechuun
     - wabbii liqii dijiitaalaa
     - Liqiin Michuu Wabbii Maali?
-    - liqiin michuu Wabbii: Hiikaa?
-    - Waa'ee Liqii Michuu Wabbii?
-    - Michu Wabbii Haala waliigalaa liqii?
+    - Hiikaa liqiin Wabbii?
+    - Waa'ee Liqii Wabbii?
+    - Wabbii Haala waliigalaa liqii?
     - liqaa Wabbii na hubachiisi?
-    - Hiika liqii Michu Wabbii?
-    - liqaa Michuu Wabbii gabaabumatti?
+    - Hiika liqii Wabbii?
+    - liqaa Wabbii gabaabumatti?
     - maalumma liqii wabii
     - odeeffannoo liqii wabii
     - hiikni Wabbii maali?
@@ -258,44 +245,41 @@ nlu:
     - Wabii: Hiikni isaa maali?
     - "Wabbii" na hubachiisi?
     - Liqiin Wabbii maaliif oola?
-    - Akeeka liqii Michu Wabbii?
+    - Akeeka liqii Wabbii?
 
 - intent: eligibility
   examples: |
     - Liqii argachuuf ulaagaa guutuu qabaan?
-    - Ulaagaaleen ulaagaa liqii michu maali ?
+    - michu liqeefachuuf wabiin ni barbaachisa moo
+    - baankiin maal akka wabiiti qabataa
+    - michuun wabii qaba moo hin qabu
+    - liqii michu argachuuf wabii dirqama
+    - Ulaagaaleen liqii michu maali ?
     - Ulaagaalee liqii michu fudhachuuf guutamuu qaban
     - wantoota michuu liqeefachuuf barbaachisan
-    - Tajaajila liqii karaa michuutiin haala kaamiin argachuu danda'aa?
     - wantoonni  liiqiif barbaachisaan
-    - Liqii akkamiin argachu danda'aa
     - ulaagaalee barbaachisan
     - ulaagaa michuu
     - ulaagaa
+    - Qarshii liqeeffachun barbade
     - Requirements
     - herrega coop ala ta'een
     - yoo ani coop account hin qabne ta'e liqii argachuu nan danda'aa
-    - Michuu ulaagaa guutuu qaabu maali
+    - Michuu argachuuf ulaagaa guutuu qaabu maali
     - ulaagaa guutuu
     - Appii Michu fayyadamuuf ulaagaalee akkamii guutamuu qabu?
     - Haala itti fayyadama Michu?
     - Ulaagaalee qaqqabummaa Michuu?
     - Ulaagaalee Michuu?
-    - Michu fayyadamuu: Haala?
-    - Seera itti fayyadamummaa Michu?
-    - Akkamitti Michuuf ulaagaa guutuu dandeenya?
-    - Ulaagaalee itti fayyadama Michuu?
-    - Michu qaqqabummaa barbaachisoo?
-    - Ulaagaalee itti fayyadama Michuu?
+    - Michu fayyadamuuf maaltu naa barbaachisa?
+    - Michuf qaqqabummaa barbaachisan?
     - Iyyata liqiidhaaf sanadoota akkamii dhiyeessuun na barbaachisa?
-    - HEEYYAMA DALDALAA ALAAN LIQEESSUU DANDA'AA ?
-    - OUT TIN NO MALEE LIQEESSUU DANDA'AA ?
+    - HEEYYAMA DALDALAA ALAAN LIQEEFACHUUN DANDA'AA ?
     - Liqiidhaaf TIN barbaachisa?
-    - Michu meeshaalee barbaachisoo argachuu?
+    - Michu argachuu meeshaalee barbaachisan?
     - Ani hayyama daldalaa hin qabu liqii michu fayyadamuu danda'aa
     - liqii hayyama daldalaa malee
     - Liqiidhaaf TIN dirqamaa?
-    - Liqii fudhachuun ni danda'ama sans TIN?
     - Ulaagaa daldalaa idilee?
     - Liqii argachuuf ulaagaa barbaachisu natti himuu dandeessaa?
     - Ani liqii fudachuu danda'aa?
@@ -306,31 +290,28 @@ nlu:
     - Michuu fudhachuuf maaltu na gahoommsaa 
     - Applikeeshinii michuu fayyadamuuf maaltu na gahoomsaa? 
     - Michuu fayyadamuuf jalqaba maaltu barbaachisaa?
-    - Haalota michuu fayyadamuuf 
+    - Haalota michuu fayyadamuuf barbachisaan
     - Ulaagaalee michuu fayyadamsiisan? 
     - Liqaa michuu gaafachuuf dookumentii maal maal na gaafataa?
     - Eeyyama daldalaa malee michuu liqeeffachuu nan danda'aa? 
     - TIN malee liqeeffachuu nan danda'aa?
     - Ani liqeeffachuu nan danda'aa?
-    - Maal maal dhiyeessen fudhadha
-    - herreega baanki qaashuun dirqamaa mo
+    - Maal maal dhiyeessun qaba michuu fudhachuuf
+    - herreega baanki qaabachuun dirqamaa moo
     - account baanki hojii gamtaa oromiyaa qabachun dirqama ?
-    - sanadoota bara 2012?
+    - sanadoota barabachisaan
+    - Amma ani mali godhun qaba
+    - sanadoota liqii wabii
 
 - intent: foreigner
   examples: |
     - Lammiin biyya alaa ykn warri lammii Itoophiyaa hin qabne Michu App fayyadamuu ni danda'aa?
-    - Appii Michuu ormaaf?
     - Michu App lammiilee Itoophiyaa hin taaneef ulaagaa guutuu?
     - Liqiin michu sadarkaa idil-addunyaatti ni argamaa?
     - Michu App itti fayyadama lammiilee hin taaneef?
-    - Michu App akka ormaatti fayyadamuu?
-    - Michu App lammiilee Itoophiyaa hin taaneef argamuu?
     - lammummaa
-    - Lammiin biyya alaa yookiin warri lammummaa Itoophiyaa hin qabne Applikeeshinii michuu fayyadamuu ni danda'aa?, 
     - Applikeeshinii michuu lammii biyya alaaf? 
-    - Liqaan michuu akka addunyaatti argachuu dandeenyaa?, 
-    - Applikeeshiniin michuu lammii Ithoophiyaa warra hin taanee ni fayyadaa?, 
+    - Liqaan michuu akka addunyaatti argachuu dandeenyaa?,  
     - Akka lammii biyya alaatti michuu applikeeshiinii ni fayyadamuu?, 
     - Namoota  Itoophiyaa hin taane applikeeshinii michuu ni fayyadamuu?
 
@@ -338,123 +319,110 @@ nlu:
   examples: |
     - liqii Michuu fayyadamuuf daangaa umurii jiraa?
     - michu liqii umuriin ni daangeffame?
-    - liqii: Michu age cap?
     - umurii liqii Michu daangessuu?
-    - umurii liqii Michuu?
+    - umurii liqii Michuu aragachuuf barbachisuu?
     - daangaa umurii?
     - umurii
     - liqaa michuu fayyadamuuf umuriin ni daangessaa? 
     - daangaan umurii liqaa michuu meeqaa? 
-    - ulaagaaleen umurii liqaa michuu? 
     - daangaa umurii?
 
 - intent: guyyaa_Requirements
   examples: |
     - guyyaa liqeefachuuf ulaaga guutamuu qabaan
     - liqii guyyaa gaafachuu nan danda'aa ?
-    - Ulaagaaleen LIQAA MICHU GUYYAA maal fa'a?
+    - Ulaagaaleen LIQAA GUYYAA maal fa'a?
     - Ulaagaalee MICHU GUYYAA?
-    - Ulaagaa MICHU GUYYAA?
+    - Ulaagaa GUYYAA?
     - MICHU GUYYA Haala dursaa liqii?
-    - Liqii MICHU GUYYAA Argachuu?
-    - Hayyamni daldalaa michu guyaafdhaa
+    - Liqii MICHU GUYYAA Argachuuf maaltuu barbachisaa?
     - ulaagaa liqii guyyaa
     - liqii guyyaf maaltu barbaachisa
     - Ulaagaalee liqii guyyaa michuu
     - ulaagaalee guyyaa
-    - ulaagaa guyyaa dhuunfaaf barbaachu
+    - ulaagaa guyyaa argaachuuf barbaachisaan
     - guyyaaf ulaagaa guutamuu qaban
     - eenyutu liqii guyyaa gaafachuu danda'a ?
     - liqii guyyaa gaafachuu nan danda'aa ?
     - sanadoota liqii guyyaa fudhachuuf barbaachisan?
     - Ulaagaaleen LIQAA MICHU GUYYAA maal fa'a?
     - Ulaagaalee MICHU GUYYA?
-    - Ulaagaa MICHU GUYYA?
-    - MICHU GUYYA Haala dursaa liqii?
-    - Liqii MICHU GUYYA Argachuu?
+    - Liqii GUYYA Argachuu?
 
 - intent: wabii_Requirements
   examples: |
     - Ulaagaalee liqii wabii
     - Ulaagaalee liqii michuu wabii
-    - michu wabii ulaagaalee
+    - ulaagaalee wabii 
     - ulaagaa wabii
     - wabiif ulaagaa guutamu qabu
     - eenyutu liqii wabii iyyachuu danda'a ?
     - liqii wabii iyyachuu nan danda'aa ?
     - sanadoota liqii wabii fudhachuuf barbaachisan ?
-    - Ulaagaaleen Liqii Michuu Wabbii maali?
+    - Ulaagaaleen Liqii Wabbii maali?
     - Michu Wabii Ulaagaalee liqii?
     - Michuu Wabiif ulaagaa guutamu?
-    - Liqii Wabii maaltu barbaachisa?
-    - Michu Wabii Ulaagaa Liqii?
+    - Liqii Wabii argaachuuf maaltu barbaachisa?
+    - Wabii Ulaagaa Liqii?
     - Ulaagaalee Michuu Wabbii?
-    - Michu Wabbii Haala liqii?
     - Eenyuutu Liqii Wabbii argachuu danda'a?
     - Michu Wabii Haal-duree Liqii?
     - Akkamitti Wabiif ulaagaa guutuu dandeenya?
     - Wabbii Liqii: Maaltu barbaachisa?
     - Daldaltoonni idilee Liqii Michu Wabbii argachuuf ulaagaa guutuu qabuu?
-    - Michu Wabbii hojii daldalaa idileef ulaagaa guutuu?
     - Michu Wabbii Liqii: Ulaagaa daldalaa idilee?
-    - Michu Wabbii Liqiin daldala idileef argamuu?
-    - Michu Wabbii: Ulaagaa daldalaa idilee?
+    - Wabbii Liqiin daldala idileef argamuu?
+    - Wabbii: Ulaagaa daldalaa idilee?
 
 - intent: michu_limit
   examples: |
-    - daangaa liqii michuu maali
-    - daangaa liqii guddaan michu maali
+    - daangaa liqii michuu meeqa
+    - daangaa guddaan liqii michu meeqa
     - daangaa xiqqaa liqii michu
     - daangaa liqii
     - baay'ina maallaqaa
     - limit
+    - Liqii meeqan argaachu danda'a?
     - daangaa liqii?
     - hanga liqii
-    - daangaa liqii?
-    - michu range
-    - hanga liqii michu ol’aanaa maali
-    - akkamittan amma daangaa liqii michu
+    - hanga liqii michu ol’aanaa meeqa
     - Hanga liqii guddaa?
     - Daangaa liqii xiqqaa?
     - Daangaa liqii olaanaa?
     - Haalli liqii gadi aanaa?
-    - Hanga guddaa & xiqqaa?
-    - Liqii sillaasee & lafa?
-    - Daangaa ol'aanaa & gadi aanaa?
+    - Hanga guddaa fi xiqqaa?
+    - Daangaa ol'aanaa fi gadi aanaa?
     - Michu Bal'ina liqii?
     - liqii michu meeqa
     - liqii hangaman argachuu danda'a
     - daangaa guddaa michu
     - qarshii ol'aanaa michu dhiyeessu
-    - hanga liqii ol'aanaa ta'uu danda'u michu
     - maallaqni liqii guddaan gaaffii tokko keessatti argachuu danda'a
-    - hanga liqii daangaa qabaa
+    - hanga liqii daangaa meeqa
     - maallaqa guddaa kennuu dandeessan natti himuu dandeessu
-    - maallaqni liqii michuu dhiyaatu meeqa ?
-    - Daangaa liqii gubbaa fi xiqaa ?
-    - michu curb
-    - Michuu irraa hangam liqeessuu danda'a?
-    - Maximum kan hayyamame Michu
+    - maallaqni liqii michuun dhiyaatu meeqa ?
+    - Daangaa liqii guddaa fi xiqaa ?
+    - Michuun hangam liqeessuu danda'a?
+    - michuun maximum meeqa liqeessuu danada'a
     - Qarshii hammam liqeesitu
     - liqii hammaman argachuu danda'a
-    - bayy'ina liqii natti himi
     - maallaqa hangamm liqeessitu
-    - Meeqa liqessa
+    - Meeqa liqessitu
     - qarshiin ka'umsa liqii meeqa
     - Haga meqattii liqesittuu
     - Haga qarshi meeqa liqeessa dhabbanni kun?
     - Qarshii liqii michu kennu hagam ta'aa?
     - Liqii guddaa michuu irraa argamuu hagamii?
     - Altokkotti liqii olaanaa hagaamii argachuu danda'aa?
+    - birri meqa liqesu danda'a
 
-
-    
 
 - intent: max_limit
   examples: |
     - Akkammiin liqii isaa olaanaa argachuu danda'aa?
     - Akkamiin liqii koo dabaluu danda'aa
     - Liqii guddaa isaa murta'ee akkamiin dhaqabuu danda'aa?
+    - akkammiin liqii koo guddisuu danda'a
     - Liqii isaa oolaana argachuuf maal gochuun qaba
     - Maamillii haaraan liqii michuu oolaanan argachuu danda'aa?
     - Hanga guddaa argachuuf toooftaale akkami fayyadamu dandeenya
@@ -468,50 +436,43 @@ nlu:
 
 - intent: guyyaa_limit
   examples: |
-    - daangaa liqii guyya maali
-    - daangaa liqii guddaan guyyaa maali
-    - daangaa xiqqaa liqii guyyaa michu
-    - michu guyyaa liqii limt
-    - hanga liqii guyyaa ol’aanaa maali
+    - daangaa liqii guyya meeqa
+    - daangaa liqii guddaan guyyaa meeqa
+    - daangaa xiqqaa liqii guyyaa meeqa
+    - hanga liqii guyyaa ol’aanaa meeqa
     - daangaa guyyaa
     - maallaqni liqii guyyaatiin dhiyaatu meeqa ?
-    - daangaa liqii guddaa fi xiqqaan liqii Guyyaa maali?
-    - Guyyaa liqii daangaa?
-    - Bal'ina liqii Guyyaa?
+    - daangaa liqii guddaa fi xiqqaan liqii Guyyaa meeqa?
     - Bal'ina daangaa liqii Guyyaa?
     - Liqiin Guyyaa hangam guddaadha?
     - Daangaan/Hangi liqii guyyaa meeqa?
     - Daangaan/Hangi liqii guyyaa oolaanan meeqa?
     - Daangaa/ Hangi liqii michuu guyyaa gad-anaan meeqa?
-    - Daangaa/Hanga liqii michuu guyyaa
+    - Daangaa/Hanga liqii guyyaa
     - Hangi liqii  guyyaa guddaan meeqa?
-    - DaangaaHanga liqii guyyaa
+    - Daangaan liqii guyyaa meeqa
     - Liqiin guyyaa dhiyeessuu hagami?
     - Daangaa/Hangi liqii guyyaa inni guddaa fi xiqqaa meeqa?
-    - Hangi liqii guyyaa meeqa hanga meeqatti?
-    - Qabiyyeen liqii guyyaa
+    - Hangi liqii guyyaa hanga meeqatti?
     - Hanga liqii guyyaa gadifageenyaan
     - Liqii guyyaa hagam guddaa dha?
     
 - intent: wabii_limit
   examples: |
-    - daangaa liqii wabii maali
-    - daangaa liqii guddaa wabii maali
-    - daangaa xiqqaa liqii michu wabii
-    - michu wabii liqii limt
-    - hanga liqii wabii ol’aanaa maali
+    - daangaa liqii wabii meeqa
+    - daangaa liqii guddaa wabii meeqa
+    - daangaa xiqqaa liqii wabii
+    - hanga liqii wabii ol’aanaa meeqa
     - maallaqni liqii wabii dhiyaatu meeqa ?
-    - daangaa liqii guddaa fi xiqqaan Liqii Michu Wabbii maali?
-    - Michu Wabbii Daangaa liqii?
+    - daangaa liqii guddaa fi xiqqaan Liqii Wabbii meeqa?
     - Wabbii Daangaa liqii gubbaa fi jalaa?
-    - Michu Wabbii Bal'ina daangaa liqii?
-    - Michu Wabbii Daangaa liqii?
-    - meeqa liqii Wabii irraan fudhadha
-    - Wabii irraa maallaqa liqii akkamii fudhachuu qaba?
+    - Wabbii Bal'ina daangaa liqii?
+    - liqii wabii irraa meeqa argachuun danda'a
+    - Wabii irraa maallaqa liqii hagamii fudhachuu danda'a?
     - Hangi liqii wabii meeqan danga'aa?
     - Daangaa oolaanan liqii wabii meeqa?
     - Daangaa gadi anaan liqii wabii meeqa?
-    - Daangaa  liqii michuu wabii
+    - Daangaa  liqii wabii
     - Liqiin michuu wabii oolaanan meeqa?
     - Daangaa Wabii
     - Hangi liqii wabiin dhiyeessuu meeqa?
@@ -519,97 +480,89 @@ nlu:
     - Michuu wabiin meeqa hanga meeqatti?
     - Daangaa liqii michu wabii oolaana fi gadi anaa meeqa?
     - Daangaa wabii guddaa fi xiqqaa
-    - Liqii wabii irraa olii fi gadi
     - Daangaa Liqiin michuu wabii 
-    - Akkamiin liqii wabii liqeeffachuu danda'aa?
     - Hangi liqii wabii irraa liqeeffachuu danda'uu hagamii?
-    - Liqiin guddate jiraa
-
-
-
-
-
 
 - intent: michu_duration
   examples: |
-    - yeroon michu maali
-    - yeroon liqii michu ol’aanaa meeqa
+    - yeroon michu meeqa
+    - yeroon turti liqii michu ol’aanaa meeqa
     - turtii liqii michuu
     - turtii
+    - kaffaltii durtii?
     - duration
     - turtii murtaa'e
     - yeroo michuu
     - dheerina liqii Michuu
     - yeroo turtii liqii michuu hangami
-    - Yeroon liqii keessanii maaliif baay'ee gabaabaa ta'a
     - Michu baatii meeqaaf liqeesa
     - Baati meeqaf
     - liqiin michuu yeroon turtii isaa hammami
     - liqiin hangamii turuu danda'a
     - turtiin liqii hammami 
     - liqicha hammamifan itti fayyadamuu danda'a
-    - haalli turtuu isaa hoo
+    - haalli turtii isaa hoo
+    - Fkn yeroon kafaltii isaa Jia tokko qofatti moo Jia sadi ykn Kan quarter jira
+    - Kan Jia qofa moo Jia sadii ni jira?
+    - guyyaa meqatii liqii kanaa debisun danda'amaa
+    - Ji'a meeqaf kenama?
 
 - intent: guyyaa_duration
   examples: |
-    - yeroon liqii guyyaa maali
-    - yeroon liqii guyyaa guddaan maali
+    - yeroon turtii liqii guyyaa meeqa
+    - yeroon liqii guyyaa guddaan meeqa
     - turtii guyyaa
     - yeroo liqii guyyaa
-    - yeroon liqii guyyaa liqii ?
     - dheerina guyyaa
-    - Liqiin Guyyaa hangam dheerata?
+    - Liqiin Guyyaa hangam tura?
     - liqiin guyya turtiin isaa hammami
-    - liqii guyya hammamiif itti fayyadamna
+    - liqii guyya hammamiif itti tura
     - odeeffanno haala turti liqii guyya naaf himu ni dandeessa
     - turtiin liqii guyya guyyaa meeqaaf ykn ji'i meeqaafi ta'a
     - kaffaltiin liqii guyya baati ykn ji'a meeqaafi
 
 - intent: wabii_duration
   examples: |
-    - yeroon liqii wabii maali
+    - yeroon turti liqii wabii meeqa
     - yeroon liqii wabii ol’aanaa meeqa
-    - wabii turtii
+    - turtii wabii
     - yeroo liqii wabii
     - dheerina wabii
     - Liqiin wabii hangam dheerata?
     - liqii yeroo liqii wabii ?
     - Liqiin wabii hanga yoomiif kan hin kaffalamiin ta’uu danda’a?
-    - Yeroon liqii wabii maali?
-    - Dheerinni wabii
+    - Yeroon liqii wabii meeqa?
+    - Dheerinni wabii meeqa
     - turtiin liqii wabii ji'a meeqafi
 
 - intent: michu_accessfee
   examples: |
     - kaffaltii qaqqabummaa liqii michuu
-    - kaffaltiin qaqqabummaa maali
-    - kaffaltiin tajaajilaa michuu maali
+    - kaffaltiin qaqqabummaa meeqa
+    - kaffaltiin tajaajilaa michuu meeqa
     - kaffaltii qaqqabummaa
     - gatii
-    - Herregini bankii  hagam qabachu qaba
+    - qaqqabummaa
+    - Herregini bankii hagam qabachu qaba
     - access fee
     - kaffaltii tajaajilaa
     - Kaffaltii seensaa
-    - Kaffaltiin liqii maali?
+    - Kaffaltiin liqii meeqa?
     - kaffaltii mijaa'ina michu
     - kaffaltii dhaabbataa
     - liqii michu argachuuf meeqa kaffala
-    - kaffaltiin liqii maali
     - kaffaltii barbaachisu
-    - kaffaltiin qaqqabummaa Liqii Michu michu maali?
-    - Kaffaltii liqii michu argachuuf?
+    - kaffaltiin qaqqabummaa Liqii Michu haamami?
+    - Kaffaltii liqii michu argachuuf barbaachisuu hagamii?
     - baasii qaqqabummaa liqii michu?
     - liqii michu: Kaffaltii qaqqabummaa?
-    - Kaffaltiin qaqqabummaa michu maali?
-    - baasii qaqqabummaa liqii michu?
+    - Kaffaltiin qaqqabummaa michu meeqa?
     - Michu liqii argachuuf meeqa kaffalla?
     - liqii michu: Hanga kaffaltii qaqqabummaa?
     - Kaffaltii tajaajila liqii michu?
-    - liqii michu: Baasii argachuuf?
-    - liqii michu: Bal'ina kaffaltii argachuu?
     - baasii liqiidhaaf
     - Kaffaltii tajaajilaa liqii michu
-    - Gatiin liqii michu maali
+    - Gatiin liqii michu meeqa
     - Mee gatii michu natti himaa
     - Herrega bankii irra qarshii qusadhee qabaachu qaba dirqama
     - liqii fudhachuuf kaffaltii maaltu barbaachisa
@@ -621,11 +574,10 @@ nlu:
     - kaffaltii dhaabbata guyyaa
     - baasii guyyaa
     - kaffaltii tajaajilaa guyyaa
-    - guyyaa meeqa kaffala
+    - liqii guyyaa argaachuuf meeqan kaffala
     - kaffaltiin qaqqabummaa guyyaa maali
     - liqii guyyaa tokkoof kaffaltii barbaachisu
     - kaffaltii guyyaa
-    - baasii guyyaa tokkoof
 
 - intent: wabii_fee
   examples: |
@@ -633,18 +585,17 @@ nlu:
     - kaffaltii wabii
     - kaffaltii mijaa'ina wabii
     - kaffaltii tajaajila wabii
-    - wabii meeqa kaffala
-    - kaffaltiin qaqqabummaa wabii maali
+    - wabii argaachuuf meeqan kaffala
+    - kaffaltiin qaqqabummaa wabii meeqa
     - liqii wabiitiif kaffaltii barbaachisu
     - baasii wabiif
-    - gatii wabii barbaadamu
+    - gatii wabiif barbaadamu
 
 - intent: michu_interest
   examples: |
-    - dhala michu maali
+    - dhali michu meeqa
     - dhala
-    - saffisa michuu
-    - fedhii
+    - interestii
     - dhalli isaa hoo
     - interest rate
     - safartuu dhibbeentaa waggaa(APR) .
@@ -653,81 +604,70 @@ nlu:
     - dhibbeentaa
     - maallaqa dhala
     - kaffaltii dhala
+    - interset reetii
 
 - intent: guyyaa_interest
   examples: |
-    - dhala guyyaa maali
+    - dhalii guyyaa meeqa
     - dhala guyyaa
-    - saffisa guyyaa
-    - interset reetiin liqii Guyyaa maali?
-    - Dhala liqii Guyyaa?
-    - Dhala liqii Guyyaa?
-    - Liqii Guyyaa: Sadarkaan maali?
+    - interset reetiin liqii Guyyaa hagamii?
     - APR liqii Guyyaa?
-    - waggaa waggaan dhibbeentaa liqii guyyaa
+    - dhibbeentaa liqii guyyaa
     - Dhibbeentaa dhala liqii Guyyaa?
     - Dhala liqii Guyyaa meeqa?
     - Dhala liqii Guyyaa?
-    - Sadarkaa dhala liqii guyyaa?
-    - Dhala liqii Guyya maali?
-    - Liqii Guyyaa: Dhala meeqa?
+    - Dhala liqii Guyya meeqa?
+    - Liqii Guyyaa: Dhala meeqa qaba?
 
 - intent: wabii_interest
   examples: |
-    - dhala wabii maali
+    - dhali wabii meeqa
     - dhala wabii
-    - saffisa wabii
-    - interset rate Liqii Michuu Wabbii maali?
-    - Michuu Wabbii Liqii APR?
+    - interset rate Liqii Michuu Wabbii meeqa?
+    - APR Wabbii Liqii ?
     - Dhala Liqii Wabbii?
-    - Fedhiin Wabbii maali?
+    - dhali Wabbii meeqa?
     - Liqii Wabbiif dhala meeqa?
     - Wabbii Dhibbeentaa Dhala?
     - Dhala Liqii Michuu Wabbii irratti?
-    - Sadarkaan Wabbii maali ?
     - Michu Wabbii Baasii dhalaa?
-    - Michu Wabbii Liqii Bal'ina Dhala?
+    - Wabbii Liqii Bal'ina Dhala?
 
 - intent: michu_penality
   examples: |
     - adabbii liqii michu
     - adabbii adabbii
     - penality
-    - Adabbii kaffaltii malee
-    - kaffaltii durtii?
-    - gochi maamiltootaa maaltu adabbii fida?
+    - Adabbii kaffaltii meeqa
     - adabbii liqii kan kakaasu?
     - Adabbii gocha maamilaa irraa?
     - Amala fi adabbii maamiltootaa? 
     - Gochoota adabbii namatti fidan?
     - Gocha maamiltootaa adabbii fidu?
-    - Hanga adabbii maali?
+    - Hanga adabbii meeqa?
     - Adabbii qabdaa ?
     - michu keessatti dantaan adabbii jiraa fi meeqa akka ta'e
-    - do michu shallaguu dhala adabbii fi meeqa akka ta'e
     - Dhala dabalataa akka adabbiitti kaffaltuu fi meeqa akka ta'e
     - Kaffaltiin dhala dabalataa ykn adabbiin ni jiraa
     - kaffaltii yeroon booda kaffalamuuf dhala adabbii jiraa
     - Yeroo liqii kaffaluuf murtaa’e yoo darbe dhala adabbii na mudataa
     - kaffaltii yeroon booda kaffalamuu irratti shallaggiin adabbii jiraa
-    - dhala adabbii meeqa
+    - dhali adabbii meeqa
     - Guyyaa Deebi'uu yoo darbe hoo
     - Guyyaan liqii deebisuu darbe
     - Yoo dhala adabbii qabaatte meeqa irraa kaffalta?
     - Adabbii
     - Amaloonni fayyadamtootaa adabbii fida kamfa’i?
-    - Amala maamilaa irratti qoqqobbii?
-    - Gocha adabbii malu?
-    - bu'aa liqii michu?
+    - Gocha adabbii ?
+    - Adabiin isaa hoo yoo yeroon hin deebifne
     
 - intent: late_payment
   examples: | 
     - kaffaltii yeroon booda kaffalu
     - diibaa kaffaltii yeroon booda dhufu
     - harkifannaa liqii?
-    - yeroon booda deebi'uun adabbii fida
     - miidhaa kaffaltii yeroon booda kaffalamuu
-    - bu’aa kaffaltii harkifannaa
+    - dhiibbaa kaffaltii harkifannaa
     - kaffaltii badaa
     - Guyyaa xumurame booda deebisuun ni danda'amaa
     - kaffaltii yeroon booda kaffalamu
@@ -742,14 +682,14 @@ nlu:
 - intent: refuse_payment
   examples: |
     - Hin kaffaluu
-    - michuun hin kafallu maal fiddu
+    - liqa michuun hin kafallu maal fiddu
     - liqii michuu isinif hin kaffalu 
     - maallaqa keessan isiniif hin deebisu
     - birri kessan ani fudhadhee tan bada
     - yoon birri keessan kaffalu didee akkamitti deefachuu dandeessu
     - goonkumaa ani liqii keessan isinif deebisu hin barbaadu
     - yoon kaffalu baadhe maal na gootu
-    - Yoo i liqii sana tasumaa hin kaffalle maaltu na mudata?
+    - Yoo liqii sana tasumaa hin kaffalle maaltu na mudata?
     - liqii guutummaatti yoo hin uwwifne maaltu itti aanu
     - Osoon liqii sana gonkumaa hin deebisne maaltu na mudata?
     - Liqii guutummaatti yoo hin deebisne maaltu ta'a?
@@ -769,24 +709,17 @@ nlu:
     - adabbii liqii guyyaa
     - adabbii guyyaa
     - Sababa adabbii liqii Guyyaa?
-    - Liqii Guyyaa: Adabbiin gocha maalii?
+    - Liqii Guyyaa: Adabbiin gocha meeqa?
     - Liqii Guyyaa: Adabbii maaltu fida?
-    - Adabbii liqii Guyyaa maaltu kakaasa?
-    - adabbiin liqii Guyyaa maali?
-    - Guyya liqii late fee?
-    - Bu'aa liqii Guyyaa?
-    - Liqii Guyyaa irratti yeroon booda kaffalamuu?
-    - Liqii Guyyaa: Adabbii kamii?
+    - adabbiin liqii Guyyaa meeqa?
+    - Liqii Guyyaa: Adabbii meeqa?
     - Adabbii harkifannaa liqii Guyyaa?
     - Kaffaltii liqii Guyyaa hin kaffalle?
-    - Liqii Guyyaa: Adabbii kaffaltii malee?
+    - Liqii Guyyaa: Adabbii kaffaltii meeqa?
     - Liqiin Guyyaa yoo harkifate maaltu ta'a?
-    - Liqiin Guyyaa maal qaba?
-    - bu'aa liqii guyyaa?
     - Adabbiin liqii guyyaa
     - Adabbii guyyaa
     - Sababa Adabbii liqii guyyaa
-    - Liqiin guyyaa maalif Adabaa
     - Yoo maal ta'eedha liqiin guyyaa kan nu adabuu danda'uu
     - Adabbiin liqii guyyaa maalidha
     - guyyaan maal nuu adabuu danda'aa
@@ -799,31 +732,21 @@ nlu:
   examples: |
     - adabbii liqii wabii
     - adabbii wabii
-    - Adabbiin Liqii Michuu Wabbii maali?
-    - Wabii liqii late fee?
+    - Adabbiin Liqii Michuu Wabbii meeqa?
     - wabii kaffaltii harkifate
     - Adabbii liqii Wabbii?
-    - Wabii liqii bu'aa?
     - Liqii Wabii irratti yeroon booda kaffalamuu?
     - Liqii Wabii: Adabbii kamiyyuu?
-    - Adabbiin Wabiiloan harkifachuu?
-    - Kaffaltii liqii hin kaffalle Wabbii?
-    - Liqii Wabii: Adabbii kaffaltii malee?
+    - Adabbiin liiqa Wabii meeqa?
+    - Liqii Wabii: Adabbii kaffaltii meeqa?
     - Liqiin Wabii yoo harkifate maaltu ta'a?
-    - Wabbii liqii adabbii kakaasa?
     - Liqii Wabii: Adabbii maaltu fida?
     - Tarkaanfiiwwan kaffaltii liqii Wabbiitti geessan?
     - Liqii Wabii: Gocha adabbii namatti fidu?
     - Adabbii liqii Wabbii maaltu kakaasa?
-    - Liqii Wabii: Adabbiin gocha maalii?
+    - Liqii Wabii: Adabbiin gocha meeqa?
     - Sababa adabii liqii Wabbii?
-    - Wabbii liqiin bu'aa?
     - Liqiin Wabii maaliif qoqqobbii irra kaa'ame?
-    - Wabbii liqiin bu'aa?
-
-
-
-
 
 - intent: ID_Type
   examples: |
@@ -831,7 +754,7 @@ nlu:
     - Liqii Michu'f ID sirrii ta'e?
     - Gosoota ID mijatoo ta'an?
     - Liqii Michu'f ID kamtu hojjeta?
-    - Ulaagaalee eenyummaa Liqii Michu?
+    - waraqaa eenyummaa Liqii Michu?
     - Bifa ID ulaagaa guutuu qabu?
 
 - intent: gender
@@ -843,41 +766,40 @@ nlu:
     - Gahee saalaa Liqii Michuu keessatti?
     - Dubartii ta'uun Michuu irra faayidaa qabaa?
     - Liqii Michuu adeemsisuu keessatti dubartii ta'uun faayidaa qabaa?
-    - Miichuun dubartii waan taateef faayidaa qabdii?
+    - garaagruummaa saalaa irratti hundaa'e liqiin michu garaagaruumma qaba
+    
 - intent: norms
   examples: |
-    - Liqiin Michu Sochii daldalaa faallaa Norms fi ilies hawaasa keenyaa deemu abdii kutachiisaa
     - Norms
+    - duudhaa
     - Duudhaalee hawaasummaa fi Liqii Michuu?
     - Michu Liqii fi walsimsiisa aadaa?
     - Dhiibbaa seera hawaasaa irratti qabu: Liqii Michu?
+    - aadaa fi michu
+    - duudhaa ummatta fi michu
 
 - intent: w_vs_g
   examples: |
-    - Liqii Wabbii fi liqii Guyyaa maaltu adda?
-    - Wabbii fi Guyyaa?
+    - Liqii Wabbii fi liqii Guyyaa maaltu adda godha?
+    - garaagaruumma Wabbii fi Guyyaa?
     - garaagarummaan liqii wabii fi guyyaa maali
-    - Liqiin Wabii Akkamitti adda?
     - Liqii Wabbii maaltu adda godha?
     - Wabii Liqii Guyyattin maaltu gargar taasisa?
     - Garaagarummaa ijoo: Wabbii fi Guyyaa?
     - Liqii Guyyaa fi Liqii Wabbii: Wal bira qabaa?
     - Wabbiin Guyya irraa karaa kamiin adda?
-    - Liqii Wabbii maaltu adda godha?
+    - Liqii guyyaa maaltu adda godha?
 
 - intent: uploaddoccument
   examples: |
     - Appiin liqii Michu faayiloota hedduu olkaa'uu ni danda'a ?
     - sanadoota hunda al tokkotti olkaa'uu nan danda'aa
     - michu app sanada hedduu olkaa'uu ni hayyamaa
-    - does michu app amala faayiloota hedduu olkaa'uu qaba
     - faayiloota hedduu olkaa'uu danda'aa
-    - appiin liqii michu faayilii dachaa attachment fudhata
     - yeroo tokkotti faayiloota meeqa ol kaa'uu danda'a
     - faayiloota koo tokko tokkoon olkaa'uu qaba moo maal
-    - sadarkaan olkaa'uu maal fakkaata
     - akkaataa sanada koo olkaa'uu danda'u
-    - Michu apply godhetan ture docmenti kiyya akamitan apload gochu danda'a
+    - Michu apply goochuuf docmenti kiyya akamitan apload gochu danda'a
     - Akkamittan documantii ko erguu danda'aa
     - sanado akkamitti erguun danda'ama
     - documantii upload gochuuf maal gochuun qaba
@@ -889,10 +811,11 @@ nlu:
     - bifa galtee lakkoofsa bilbilaa
     - michu bifa lamaan fudhata
     - koodiin lakkofsa bilbila akkam ta'u qaba 
-    - code lakkoofsa bilbilaa kamtu sirrii ta'a
+    - koodiin lakkoofsa bilbilaa kamtu sirrii ta'a
     - galmee dirree lakkoofsa bilbilaa barbaachisu
     - akkaataa lakkoofsa bilbilaa app michu keessatti galchuu dandeenyu
     - gosa koodi bilbilaa kamtu hayyamama
+    - michun lakkoofsa bilbilaa formati kaamin fudhata
 
 - intent: why_michu_notwork
   examples: |
@@ -903,14 +826,12 @@ nlu:
     - michu dalagaa hin jiru sababni isaa maali
     - app michu maaliif hin hojjenne
     - sababa michu app hojjachuu diduuf maali
-    - maaltu michuun michu app akka dhaabbatu dhabatu goodha
-    - dhimmoota waliigalaa app michu hojjechuu dhabuu
-    - sababni michu app akka dhaabbatu
+    - maaltu michuun appii akka dhaabbatu goodha
+    - sababni michu app akka dhaabbatu taasiisuu
     - michu hin hojjetu
     - Yoo michu Application koo gidduutti stack ta'e maal gochuu qaba
     - osoon iyyachaa jiruu michu hojii yoo dhiise maal gochuu qaba
     - michu osoon hojiirra oolchu hojii dhiisi maal gochuu danda'a
-    - Michu app yeroo Appilikeeshiniitti qabame: Maal gochuu qabna
     - Michu app Appilikeeshinii gidduutti qabamee akkamitti akka sirreessinu
     - michu stucked maal gochuu danda'a
     - Michu app yeroo Appilikeeshinii deebii kennuu dhabuu: Maal gochuu qaba
@@ -918,35 +839,20 @@ nlu:
     - Akkaataa irra deebi'anii jalqabnu michu Appilikeeshinii yoo qabame
     - app michu vpn ni deeggaraa
     - Api michudha naf hojachu dide
-    - Moosaajii haaraan hin fe'amu maaliif
-
+    - App michuu naaf hojechuu dide
+    - Anni mamila michuti ammaf garuu naaf banaa hin jiru Maal gochuun qaba?
+    - michun hin hojeetuu
 
 - intent: late_disbursment
   examples: |
-    - Qondaaltonni liqii gaaffii liqii koo baasuuf MAALIIF Harkifatu?
-    - maaltu maallaqa booda kaffalamuu fida
-    - liqiin maaliif akka kaffalamu harkifata
+    - Qondaaltonni liqii gaaffii liqii koo keenuuf MAALIIF Harkifatu?
     - maaliif liqii koo yeroon hin kennitu
-    - sababni maallaqa yeroon booda kaffalamuu duuba jiru maali
-    - yeroon booda kaffalamuu
     - Liqiin koo maaliif yeroon hin adeemsifamu
     - Liqii yeroon argachaa hin jiru maaliif?
     - liqii eegaa jira garuu ammallee hin arganne
-    - liqii argachuu hin dandeenye yeroon isaa darbeera
-    - sababoota yeroon booda kaffalamuu
-    - liqii argachuuf yeroon isaa darbeera
-    - liqiin tokko raggaasifamuuf yeroo meeqa fudhata?
-    - raggaasifamuuf yeroo hangamii akka fudhatu
-    - yeroo raggaasifamuuf turu
-    - yeroo kaffaltii itti kaffalamu maaf tura
-    - michuu iyyadheen ture, qarshii argachuuf yeroo meeqa akka fudhatu
-    - yeroo hayyama argachuuf barbaachisu
-    - yeroo eegaa liqiin akka mirkanaa’uuf
-    - adeemsi hayyama liqii yeroo hangamii akka fudhatu eeguu danda'a
-    - Yeroo baayyee liqiin tokko hayyama argachuuf yeroo hangamii fudhata
-    - yeroo meeqa akkan raggaasifamuu eeguu qabu
+    - liqii argachuu hin dandeenye egaan gaafadhee ture jira
+    - yeroo liqiin itti gadhiifamu maaf tura
     - Raggaasifamuun maaliif harkifata
-    - Liqiin koo maaliif yeroon hin adeemsifamu
     - liqiin koo naaf galakifamuu dide maalif
     - michu iyyadheen ture maalif gadi naaf hin lakkiftan liqii koo
     - liqii koo malif gaddi naaf hin lakkiftani ree
@@ -957,12 +863,9 @@ nlu:
   examples: |
     - liqiin kenname maaliif deebi’a?
     - liqii duraan kenname maaliif fudhattee
-    - liqiin duraan kenname maaliif fudhatte
     - sababoota liqiin kenname deebitani fudhataniif maalinni
     - maaliif liqiin koo deebite fudhatte
     - maaliif liqiin kenname duubatti deebisuu
-    - maaliif maallaqa duraan baafame herrega koo irraa fudhatta
-    - liqii ati fudhatte duraan hin fayyadamne maaliif
     - liqii naaf kennite maaliif fudhatta
     - maaliif duubatti deebi'a liqiin dura kenname
     - maalaqi naaf kenname na jalaa fudhatame jira maalif
@@ -972,14 +875,13 @@ nlu:
 - intent: NPL
   examples: |
     - Baankichi liqii Michu hin kaffalame irra deebi'ee saganteessuu danda'aa, akka gaaffii maamilaatti?
-    - baanchi maamila liqiin isani bade akkamitti kunuunsa
+    - baankin maamila liqiin isani bade akkamitti kunuunsa
     - liqii badeef bankiin tarkaanfii akkamii fudhataa
     - baankichi liqii bade irra deebiin saganteessuuf fedhii qabaa
     - yeroo kaffaltii liqii badee irra deebi’anii sagantessuf carraan jiraa
     - karoorri kaffaltii liqii badee ni jijjiirame
     - liqii badeef sagantaa irra deebiin qopheessuu dandeessu
     - liqii badee irra deebiin saganteessuu?
-    - liqii raawwii hin qabne
     - liqii hin raaww'atamin tarkaanfii akkami fudhattu
 
 - intent: know_deadline
@@ -988,33 +890,27 @@ nlu:
     - akkamittan guyyaa kaffaltii koo beekuu danda'a
     - guyyaa kaffaltii koo isa dhumaa eenyutu natti himuu danda'a
     - yeroon kaffaltii koo akkamittan beeka
-    - kanneen yeroo kaffaltii koo natti himan
-    - odeeffannoo barbaachisaa ta'e hunda eessaa argachuu danda'a
+    - yeroo kaffaltii koo eenyuutu nati himu danda'a
     - yeroo kaffaltii deebisuu koo beekuuf maal gochuu danda'a
-    - odeeffannoo kaffaltii deebisuu
-    - odeeffannoo bal’aa liqii
     - yeroo meeqa michu deebisuu danda'a
     - Yeroon kaffaltii deebisuuf sirrii yoom
-    - akkamitti michu ilaalchisee odeeffannoo barbaachisaa argachuu danda'a
 
 - intent: repayment_option
   examples: |
-    - Yeroon kaffaltii deebisuu yeroon darbu herrega CBO koo irraa kaffaltii deebisuu ni dandeessu?
-    - michu dhuma keessan irratti kaffaltii harkaan deebisuu deeggareera
-    - liqii ofii keessaniif kaffaluun ni dandeessu
-    - liqii koo akkaawuntii koo irraa ni deebiftuu
-    - kan kaffaltii yeroon booda deebisuu irratti herrega koo irraa hir'isu ni jira
-    - akkamitti liqii koo herrega koo irraa qulqulleessuu dandeessa
+    - Yeroon kaffaltii deebisuu yoo darbe herrega CBO koo irraa kaffaltii deebisuu ni dandeessu?
+    - liqii ofii keessaniif fuudhachuu ni dandeessu
+    - liqii koo akkaawuntii koo irraa fuudhachuu ni dandeessu
+    - kaffaltii herrega koo irraa hir'isu ni dandeessu
     - herrega koo irraa liqii qulqulleessuun ni danda'ama
-    - Yoo appiin koo guyyaa murtaa'etti hin hojjenne ta'e filannoo kaffaltii deebisuu filannoo maali ta'a?
+    - Yoo appiin koo guyyaa murtaa'etti hin hojjenne ta'e filannoo kaffaltii deebisuu filannoo bira maaltu jira?
     - Dameen kaffaltii koo guyyaan kaffaltii isaa durbee akkan xumuruuf akkamitti na gargaaruu danda’a?
     - Yeroon kaffaltii deebisuu koo yoo darbe, herrega CBO koo irraa maallaqa fudhattuu?
-    - Dameen kaffaltii koo dursee akkan xumuru akkamitti na gargaaruu danda’a?
-    - Yoo appiin koo guyyaa itti kaffalamutti kufe mala kaffaltii biraa maaltu jira?
+    - Yoo appiin koo guyyaa itti kaffalamutti naa diide mala kaffaltii biraa maaltu jira?
 
 - intent: who_debit
   examples: |
-    - kan herrega koo irraa liqii qulqulleesse eenyu
+    - kan herrega koo irraa liqii fuudhaate eenyu
+    - maaliif maallaqa herrega koo irraa fudhattan
     - maaliif maallaqa koo akkaawuntii koo irraa fudhattan
     - Eenyutu maallaqa herrega koo keessaa baafte?
     - Eenyuutu herrega koo irraa kaffaltii liqii raawwachuu danda'a?
@@ -1024,6 +920,7 @@ nlu:
   examples: |
     - akkamittan kaffala
     - kaffaluu dadhabuu
+    - odeeffannoo kaffaltii deebisuu
     - kaffaltii liqii akkaataa itti deebisan
     - Kaffaltii liqii
     - akkaataa kaffaltii itti raawwatan
@@ -1047,24 +944,19 @@ nlu:
     - Liqii michu akkamiin deebisuu danda'aa?
     - Kanfaltii liqii wabii
     - Akkataan itti liqii narra jiru kanfaluu na agarsiisi
-    - Haftee kafaltii liqaa duraa baruu barbaade?!
     - Qarshii liqii narra jiru kaffaluuf
     - kaffaluun barbaada
 
 - intent: reminder
   examples: |
-    - Liqii michu koo yeroon laons naaf beeksiftuu?
-    - Yeroo xumuraa kaffaltii liqii Michuu kootiif beeksisa ni ergituu
     - guyyaa kaffaltii kootiif beeksisni jiraa
     - guyyaa yeroon itti murtaa'etti beeksisa naaf kennaa
     - guyyaa kaffaltii koo na yaadachiiftuu
     - yaadachiisa kaffaltii deebisuu michu jiraa
     - yaadachiisa kaffaltii deebisuu
-    - guyyaa xumuramuu qabu
-    - Liqii yoom deebisee
+    - guyyaa xumuramuu qabu beekuu danda'a
+    - Liqii yooman deebisaa
     - Dheerinni yeroo kaffaltii deebisuu liqeeffattoota beeksisuuf itti gaafatamummaa kan qabu eenyu
-    - Guyyoota liqii Michu koo yeroon itti xumuramu beeksisa naaf kenna jedhee eeguu danda'aa
-    - guyyaa kaffaltii deebisuuf tajaajilli beeksisa ni jiraa
     - yeroon liqii koo kaffaluu qabu natti himtaa
     
 - intent: rejection
@@ -1075,13 +967,11 @@ nlu:
     - Sababnii iyyaannoo liqii akka kufu taasiisan maalii?
     - Iyyaannoon liqii maaliif kufa ta'a?
     - Sababoota baratamoo kufati iyyaannoo liqii maalii?
-    - Sabaabni liqii gadhi hin lakkifamneef maal ta'uu malaa?
     - Maaliif iyyaannoo liqii kufa taasiistuu
     - Mala itti liqii kufisuun danda'amu
     - Yeroo tokko tokko sababni kufatii liqii ifa miti
     - Akka iyyaannoo liqii hin galfannee maaltu dhorka?
     - Maaltuu iyyaannoo liqii fudhatama dhabsisaa?
-
 
 - intent: document_rejection
   examples: |
@@ -1089,12 +979,11 @@ nlu:
     - akkamitti sanadoonni gara diduutti nama geessuu danda’u
     - Sanadoonni koo akkamitti raggaasifamuu iyyata liqii koo irratti dhiibbaa uumuu danda’u
     - sababa sanada kootiin diduu
-    - waan sanadni koo guutuu dhiisuu danda’u akka mirkanaa’uuf
     - akkamitti sanadoonni sababa diduu akka ta’an
     - sanadoonni karaa kamiin iyyata liqii diduutti geessuu danda’u
     - sababoota sanada waliin walqabatan iyyanni liqii diduu
     - sababa sanada kootiin liqii koo didde maaliif
-    
+    - akkaamittii doccumantiin koo kuffatti liiqaatiif sababa ta'a
 
 - intent: incorect
   examples: |
@@ -1114,19 +1003,18 @@ nlu:
     - amaloonni michu maali?
     - Appilikeeshiniin michu fayyadamuun salphaadhaa?
     - Michu App: Naanna'uuf salphaadha?
+    - feature michuu maalii
     - Michu App fayyadamaadhaaf mijataadhaa?
-    - Michu: Hojiirra oolchuuf salphaadha?
     - Fayyadama salphaa: Michu App?
     - Michu App kan namatti toludhaa?
-    - Fayyadamtootaaf mijaawaa ta'uu Michu App?
     - Michu App: Fayyadamaa salphaa?
     - Michu App fayyadamuun salphaadhaa?
-    - Michu: Interfeesii fayyadamaadhaaf mijatu?
     - Michu App: Muuxannoo fayyadamaa sirriidha?
     - akka maqaa isaatti michu dha
     - michu app hawwataadha
     - maaltu michu adda godha
     - Michuu maaltu adda godha?
+
 - intent: language
   examples: |
     - Afaan akkamii dubbatta?
@@ -1142,7 +1030,8 @@ nlu:
     - afaan oromo hin beektuu
     - Oromiffa hin dandeessu
     - oromiffaan natti haasa'i
-    - Afanumakoon Barbadaa
+    - Afanuma koon Barbadaa
+    - Afaan Kamiin dandeessa ati
 
 - intent: michu_language
   examples: |
@@ -1152,9 +1041,9 @@ nlu:
     - afaan michu wabii
     - afaan michu guyyaa
     - afaan michu hangam akka hojjetu keessatti
-    - afaan michuu deeggarsa
-    - are michu deggersa Amaaraa
-    - are michu deeggarsa Afaan oromo
+    - afaan michuu deeggaruu
+    - michuun affaan Amaaraa ni deegara
+    - michuun affaan oromoo ni deegara
     - loqoda michu
     - qooqa meeqaan michu fayyadamuu dandenya
     - michuun qooqa meeqa qaba
@@ -1164,6 +1053,7 @@ nlu:
     - Afaanoota michu irra jiran?
     - Afaan oromoodhaan michuu fayyadamuun ni danda'aamaa??
     - Afaan Amaaraadhaan michuu fayyadamuun ni danda'aamaa??
+
 - intent: install_michu
   examples: |
     - Michu akkamitti install gochuu dandeenya?
@@ -1173,12 +1063,10 @@ nlu:
     - akkamittan application argachuu danda'a
     - app eessaa argachuu danda'a
     - application fe'uu
+    - Link  naaf erga
+    - linkii michuu naaf ergi
     - mee link playstore naaf ergaa
-    - haala dursee buufachuu
-    - Michuu akkamittan dhaaba?
     - Akkamittan appii Michu argachuu danda'a?
-    - Akkamitti iyyata argachuu danda’a?
-    - application sana diriirsuu
     - Akkamiin michuu buusuu dandeenya
     - Applikeeshinii michuu akkamiin argachuu dandenya
     - Moosaajii michuu eessaa argachuu dandenya
@@ -1187,64 +1075,63 @@ nlu:
     - linkii ittiin moosaaji michuu argadhuu naa laachu dandessaa??
     - michuu maal irraa arganna
     - michuu argachuuf maal godhuu
-    - Akkamitti michu lammaffaa app issa bufaatu dandeena
+    - Akkamitti michu lammaffaa app issa bufaatu dandeenya
     - Appilication isa haara akkamiin bufatu
     - Apilikeshini miichu buusuuf
     - Applikeshini maal irraa buha
-    - Google Play jedhu
 
-
-   
 
 - intent: michu_availablity
   examples: |
     - app michu app store irratti argamaa ?
     - app michu play store irratti argamaa ?
-    - mana taphaa
-    - Gosa Bilbilaa kam keessatti Michu app functional ta'a
+    - Gosa Bilbilaa kam keessatti Michu app hoojjetaa
     - Michuu Appilikeeshinii USSD irratti hojjechuu danda'aa?
     - Michu Loan sirna Iphone (IOS) irratti argachuu nan danda'aa?
     - android
     - bilbila buttooni
     - iphone ni deeggartuu
     - gosa bilbilaa
-    - MADDA APP
     - michu app availabilty
-    - Maanuwaalii liqii liqeessuu nan danda'aa
+    - Maanuwaalii liqii liqeefachuu nan danda'aa
     - michu Apple irratti hojjeta
-    - is michu bilbila ismaartii qofa irratti hojjechuudha
+    - michuun bilbila ismaartii qofa irratti hojjetta
     - Michu Apple waliin walsimaa?
     - Liqii harkaan argachuu nan danda'aa?
     - moodeela bilbilaa
     - kiyyas andiroid version 5 oli
-    
+    - michuu bilbila akkami irrata hojjata
+  
+# start from here
 
 - intent: application
   examples: |
     - liqii argachuuf iyyachuu nan danda’aa?
     - akkamittan liqii michu iyyachuu danda'a?
+    - Akkamiin liqii wabii liqeeffachuu danda'aa?
     - akkamittan iyyachuu danda'a ?
+    - Adeemsa iyyannoo irratti na gargaaraa
     - iyyata
+    - Haala kamiinan liqaa argachuu danda'a?
+    - how to apply
+    - Akkamitti iyyata argachuu danda’a?
     - Adeemsa liqa
     - tarkaanfii adeemsa iyyannoo
     - Tarkaanfii liqii michu irratti iyyachuuf
-    - akkamitti michu dibachuu dandeenya ?
+    - akkamitti michu liqeefachuu dandeenya ?
     - maamiltoonni akkamitti liqii argachuu danda’u?
     - Waa'ee adeemsa iyyannoo liqii Michu natti himuu dandeessaa?
-    - Michu fayyadamuuf hojimaata akkamii hordofuu qaba?
+    - Michu fayyadamuuf step akkamii hordofuu qaba?
     - Akkamitti liqii argachuu danda'a
-    - maqaan iyyannoo maali
     - liqii michuu akkamitti fayyadamna?
     - maamiltoonni akkamitti liqii argatu?
     - Adeemsa iyyannoo liqii Michuu ibsuu dandeessu?
     - ademesaa issaa barruu barbada
-    - qarshi nuff liqesa
     - Waa'ee  adeemsa  liqii  michuu  naaf ibsaa mee
     - akkamitti liqeefachu dandeenya
     - Akkamittiin liqeeffachuu danda'aa?
     - Liqii kara kaminin liqefadha
     - Akkamiitin leqefachuu danda aa
-    - Ni qaba ulaaga kana hunda
     - Galamayuuf na dide
     - Akkamiti liqeefachuun danda'ama
     - Liqii barbaaden
@@ -1252,17 +1139,21 @@ nlu:
     - Liqii akkamiin argachuu danda'a
     - Akkamiti galmuu
     - Liqii michu eessaa argachuu danda'amaa?
-
-
-
-
-
+    - Tajaajila liqii karaa michuutiin haala kaamiin argachuu danda'aa?
+    - Liqii akkamiin argachu danda'aa
+    - Mee akkamiin galmahuu danda'aa?
+    - Akkam jirtaan Tajaajilaa Liqii michuu barbaadinee turee.
+    - Liqii barbadaa
+    - Qajeelfama michu
+    - Online irratti galmee galamafuu adeemas akkami barbaachis?
+    - Michuu kana haala  akkaamitin fuudhatama?
 
 
 - intent: guyyaa_application
   examples: |
     - adeemsi iyyannoo guyyaa maali
     - tarkaanfiiwwan adeemsa guyyaa
+    - akkamittan liqii guyyaa liqefaachuu danda'a
     - adeemsa liqii guyya tartiiba tartiiba natti himaa
 
 - intent: wabii_application
@@ -1295,7 +1186,6 @@ nlu:
 - intent: approval_status
   examples: |
     - Iyyanni liqii koo haala akkamii irra jira ?
-    - Haala hayyama liqii argachuu?
     - iyyanni liqii koo fudhatamuufi fudhatamu dhabuu isaa akkamittan beekuu danda'a 
     - haala iyyata liqii koo akkamitti baruu danda'a
     - odeeffannoo iyyannoo liqii kooti naaf himi mee
@@ -1304,7 +1194,7 @@ nlu:
     - akkamitti iyyata koo akka fudhattan ykn akka didan beeka
     - haala liqii koo beekuuf maal gochuu danda'a
     - iyyanni koo maalirra akka ga'e baruun barbaada
-    - fudhatamuu fi fudhatamuu dabuu liqii kooti natti himi
+    - fudhatamuu fi fudhatamuu dhabuu liqii kooti natti himi
     - akkamittan haala liqii koo app irratti hordofuu danda'a
     - Akkamitti maallaqa naaf gale beekuu danda'a
     - Iyyanni liqii koo akkamitti deemaa jira?
@@ -1317,21 +1207,21 @@ nlu:
 - intent: app_version
   examples: |
     - akkaataa app tokko update itti goonu
-    - maal godha na gaafadhu update
+    - akkamittan update godha
     - akkamitti application michu update gochuu danda'a
     - Yeroo update akkan godhu na kakaasu maal gochuu qaba
+    - Bilbila koo irratti maaliif update hin godhu?
 
 
 
 - intent: payment_doubt
   examples: |
-    - Liqaa koo hin kaffalle, garuu sirni maallaqa hafe agarsiisu zeeroo
-    - sirnichi hamma sirrii hin taane agarsiisa
+    - Liqaa koo kaffalle, garuu sirni maallaqa hafe agarsiisu zeeroo
+    - application hamma sirrii hin taane agarsiisa
     - Ani kaffaleera garuu app liqiin akka hin kaffalamne agarsiisa
     - appiin hanga liqii hin haaromsu
-    - Yeroon liqaa koo kaffaluu barbaadu sirnichi dhiyeessichi yeroon isaa akka darbe agarsiisa
+    - Yeroon liqaa koo kaffaluu barbaadu appin dhiyeessichi yeroon isaa akka darbe agarsiisa
     - Sirnichi maaliif hanga hafe zeeroo agarsiisa?
-    - Bilbila koo irratti maaliif update hin godhu?
     - Sirnichi hamma sirrii hin taane agarsiisa
     - Appichi maallaqa liqii haaromsuu dadhabe
     - Liqaa koo xumuruuf yeroon yaalu sirnichi walii galteen sun yeroon isaa darbe jedha.
@@ -1342,15 +1232,13 @@ nlu:
     - AI
     - credit score
     - moodeela michu maali
-    - qabxii galchuu
     - Bu’uurri maashinii qabxii liqii Artifiial intelegence maali
 
 - intent: work_time
   examples: |
     - Liqiin michu yeroo kamiyyuu ni argamaa
     - yeroo hunda michu ni hojjata
-    - gaafa michu dhaabbatu tajaajila
-    - Iyyachuuf yeroon sirrii ta'e maali
+    - Iyyachuuf yeroon sirrii ta'e yoomi
     - Iyyata yoom dhiyeessu qaba?
     - michu walitti fufiinsaan ni hojjataa? Yoo hin taane tajaajila isaa haala kamiin arganna
 
@@ -1358,12 +1246,11 @@ nlu:
   examples: |
     - Maaliif koodii otp naaf hin ergin?
     - otp hin hojjenne
-    - OTPn hin uumamu
-    - OTPn hin oomishamu; hin hojjetu
+    - OTPn hin naa ergu didee
+    - OTPn hin hojjetu
     - Verification naaf ergu dide
     - Varifikashiin 
     - Fayyadamuuf yeroon jedhu Mirkanneessa naaf erguu dide
-    - Lakkoofsa mirkanneessaa
     - App harra iraatii verification code, na dhufu dide ?
     - Confirmation code kan michu naaf ergu dide
     - Tole codi abba dijiti 5 naaf erguu dide
@@ -1371,9 +1258,6 @@ nlu:
     - Akkamin otp argadha
     - Koodii naaf erguu dide michun
     - Lakkofsaa icciti koon dhaabe
-
-
-
 
 
 - intent: forbedin
@@ -1407,11 +1291,13 @@ nlu:
     - Waa'ee michu deeggarsa eessaa argachuu danda'a?
     - akkamitti deeggarsa bilbilaa argachuu danda'a
     - Michuu waliin gargaarsa eessaa argachuu danda'a?
+    - Yadaa dabalatafi torraa bibilaa michuu barbadaa
  
 - intent: double_loan
   examples: |
     - Wabii fi guyya yeroo tokkotti liqeessuu danda'aa?
     - Liqii lamaan al tokkotti iyyachuu nan danda'aa
+    - Yeroo tokkotti liqa lamanuu fudhachuu nan danda'aa?
 
 
 - intent: kyc
@@ -1444,12 +1330,11 @@ nlu:
     - eenyu akka taate
     - ani bot tokko waliin haasa'aa jiraa?
     - nama waliin haasa'aa jiraa?
-    - Ati roobootii moo nama dhugaa?
+    - Ati roobootii moo nama ?
     - Ati bot akka hin taane mirkaneessuu dandeessaa?
     - Yoo nama taate qoosaa natti himi!
     - Roobootii waliin haasa'aa jiraa?
     - Nama waliin haasa'aa jiraa?
-    - Roobootii akka hin taane ragaa dhiheessuu dandeessaa?
     - u
     - ati
 
@@ -1468,6 +1353,10 @@ nlu:
     - eebbifamaa
     - Waan baay'ee bareedadha
     - asii irraattii isin argachu kotif baay'ee gamade
+    - Gaaltoma❤️
+    - Fayyadaman jiraa baay,ee namatii tola
+    - Isinii jaladhaa
+    - isin ilee galtoma
 
 - intent: FAQ
   examples: |
@@ -1500,25 +1389,29 @@ nlu:
     - Dhiifama, naaf hin galle
     - Waan jedhu hin beeku
 
-# - intent: about_michu
-#   examples: |
-#     - gosota liqii michu maal faadha'a
-#     - Gosoota liqii Michuu
-#     - Waan haaraa
-#     - odeeffannoo bal’aa liqii
-#     - Odeeffannoo bal'aa waa'ee michu
-#     - Liqiin michuu gosa meeqa
-#     - Maal haaraa application waliin
-#     - Gosa liqii michu meeqaaf ramadama
-#     - Ibsa ifaa olaanaa Michuu Guyyaa,Wabii,Dhala,safartuu mijaa'inaafi ulaagaalee
-#     - tajaajila argamu
-#     - Oomisha liqii Mchu
-#     - Gosa liqii
-#     - michu gosoota qabaa?
-#     - Gosa liqii ni jira
-#     - Tajaajila akkamii kennitu
-#     - Meeshaalee dijitaalaa?
-#     - Tajaajila akkamii kennitu?
+# new intent begins
+
+- intent: about_michu
+  examples: |
+    - gosota liqii michu maal faadha'a
+    - Gosoota liqii Michuu
+    - Waan haaraa
+    - odeeffannoo barbaachisaa ta'e hunda eessaa argachuu danda'a
+    - odeeffannoo bal’aa liqii
+    - akkamitti michu ilaalchisee odeeffannoo barbaachisaa argachuu danda'a
+    - odeeffannoo bal’aa liqii
+    - Odeeffannoo bal'aa waa'ee michu
+    - Liqiin michuu gosa meeqa
+    - Maal haaraa application waliin
+    - Ibsa ifaa olaanaa Michuu Guyyaa,Wabii,Dhala,safartuu mijaa'inaafi ulaagaalee
+    - tajaajila argamu
+    - Oomisha liqii Mchu
+    - Gosa liqii
+    - michu gosoota qabaa?
+    - Gosa liqii ni jira
+    - Wa'ee michuu siin gafaachuun barbaafa
+    - Wa'ee michuu
+
 # - intent: michu_update
 #   examples: |
 #     - Akkamii  jirtuu ittii ansun michun durraa  jidun dhabatee turree amma akkamitti porosossii gonaa
@@ -1534,29 +1427,123 @@ nlu:
 #     - Michu fayyadamaan ture amma garuu addaan cite sababa
 #     - michu kaan duraa fayyadama turee ammaa halaa kamin fayyadamuu dandenyaa
 
-# - intent: michu_status
-#   examples: |
-#     - Michuun sadarka maali irraa jira
-#     - michuun maalirra ga'e jira
-#     - michuun haala maali keessa jira 
-#     - michuun maal ta'e
-# - intent: not_help
-#   examples: |
-#     - Jaanjoo
-#     - cacaabaa
-#     - odu
-#     - ilma haadhara'u
-#     - galabaxami
-#     - of hudhi
-#     - bool'a lixi
-#     - raatoftuu wa'i
-#     - goowaa akka teeti tan hin jaaladhu
+
+- intent: not_help
+  examples: |
+    - ati na hin gargaarre
+    - homaa hin beektu
+    - naa gargaaruu hin dandeenye
+
+- intent: personal_loan
+  examples: |
+    - Liqiin dhuunfaa jiraa?
+    - liqiin personal jiraa
+    - Liqiin dhuunfaa daldala hin taane jiraa?
+
+- intent: staff
+  examples: |
+    - Hojjettoonni Cbo michu wabii argachuu ni danda'u
+    - hojjettoonni liqii argachuu danda'u
+    - Hojjettoota baankii liqeessuun ni danda'amaa
+    - Hojjettoonni baankii coop michu ni fudhatuu?
+    - Hojjetaan mootummaa michu fudhachuu?
+    - Hojjataan CBO Michuu liqeeffachuu danda'aa?
+    - Staff
+    - Hojjetan liqeefachuu ni danda’a
+    - Michu guyyaa nama staff coop ta,eef ni kennamaa?
+
+- intent: michu_status
+  examples: |
+    - Michuun sadarka maali irraa jira
+    - michuun maalirra ga'e jira
+    - michuun haala maali keessa jira 
+    - michuun amma hojeecha jira
+    - Yoomirraa eegalee hojiirra oola
+    - Amma hojii eegalee Jira?
 
 
+- intent: IFB
+  examples: |
+    - IFB michu fayyadamuu danda'aa ?
+    - michu namoota muslimaaf ni argamu
+    - IFB
+    - muslimaa
+    - fayyadamaa IFB tajaajilli liqii dijitaalaa jiraa
+    - baankii dhala irraa bilisa ta’e
 
 
-    
-    
+- intent: want_change
+  examples: |
+    - Lakkoofsa herrega koo jijjiiruu barbaada maal godha
+    - akkaataa lakkoofsa bilbila koo itti jijjiiru
+    - liqii michu koo akkamitti akkaawuntii jijjiiru
+    - lakkoofsa bilbila koo jijjiiruu barbaada maal godha
+    - adeemsa liqii michu irratti lakkoofsa bilbilaa fi herrega koo jijjiiruu nan danda'aa
+    - Lakkoofsa herrega koo update gochuu barbaada. Kanaafuu, maal gochuu qaba?
+    - Lakkoofsa Bilbilaa Koo Akkamitti Fooyyessuun Danda'ama?
+    - Akkamitti herrega liqii Michu koo jijjiiruu danda'a?
+    - Lakkoofsa bilbilaa koo update gochuu barbaada. Kanaafuu, maal gochuu qaba?
+
+- intent: approval_time
+  examples: |
+    - liqiin tokko raggaasifamuuf yeroo meeqa fudhata?
+    - raggaasifamuuf yeroo hangamii akka fudhatu
+    - yeroo raggaasifamuuf turu
+    - yeroo raggaasifamuu
+    - Guyyaa meeqa keessatti argadha
+    - Qarshii fudhaachuuf hagam tura
+    - Erga applay tahee boda account irra nanna'uf yeroo turuu qaba?
+    - adeemsi hayyama liqii yeroo hangamii akka fudhatu eeguu danda'a
+    - Yeroo baayyee liqiin tokko hayyama argachuuf yeroo hangamii fudhata
+    - yeroo meeqa akkan raggaasifamuu eeguu qabu
+    - liqiin tokko raggaasifamuuf yeroo meeqa fudhata?
+    - michuu iyyadheen ture, qarshii argachuuf yeroo meeqa akka fudhatu
+    - adeemsi hayyama liqii yeroo hangamii akka fudhatu beekuun danda'a
+    - Yeroo baayyee liqiin tokko hayyama argachuuf yeroo hangamii fudhata
+    - yeroo meeqa akkan raggaasifamuu eeguu qabu
+    - liqiin keenya hamayyuu gadi nuf hin dhiifnem
+    - Qarshin hanga amma maf naf hin eyamamne?
+    - Qarshin anii gafadhee ergaa naf eyamame ture jira garu hanga amma accounti kiyyarra gallee, maliif?
+    - Michuu gaaffadhee yeroo hangamii keessatti naaf kennuu danda'a
+    - Guyyotaa meqati na qaqabba
+ 
+
+
+- intent: pay_from_another
+  examples: |
+    - Liqii herrega biraa irraa kaffaluu danda'aa
+    - akkaawuntii cbo koo isa biraa irraa kaffaluun ni danda'amaa
+    - herrega baankii biraa irraa kaffaluun ni danda’ama
+    - herrega CBE irraa kaffaluu danda'aa
+
+- intent: acc_duration
+  examples: |
+    - Herreega baankii hanga yoomiitti turuu qaba?
+    - Liqeessuuf herregni baankii hanga yoomiitti turuu qaba
+    - Liqeessuuf herregni baankii hanga yoomiitti turuu qaba
+    - accountin hagaam turu qaba 
+    - Akkaawuntichi hanga yoomiitti socho'uu qaba?
+
+- intent: product_switch
+  examples: |
+    - Akkamitti "Wabi" irraa gara "Guyaatti" jijjiiramuu dandeenya?
+    - Tarkaanfiiwwan "Wabi" irraa gara "Guyaatti" ce'uuf?
+    - "Wabii" irraa gara "Guyaatti" Jijjiirama - Akkamitti?
+    - "Wabii" irraa gara "Guyaatti" ce'uu - Akkamitti?
+    - Wabii irraa gara guyyaatti jijjiiruu
+    - Michuu Wbii irraa gara michuu guyyaati jijjiruun ni danda'ama?
+
+- intent: onbehalf
+  examples: |
+    - Bakka bu'ummaan fudhatamuu danda'aa?
+    - Bakka bu'ummaa
+
+- intent: lost_phone 
+  examples: |
+    - Akka fayyadamaatti application yoo dhabe hoo?
+    - Bilbilli koo yoo bade maal gochuu qaba
+    - appiin koo yoo bade maal gochuu qaba,
+
 # - intent: our_members
 #   examples: |
 #     - Ani miseensa keessani
@@ -1567,4 +1554,3 @@ nlu:
 #     - ani maamila keessani
 #     - ani maamila michuti
 #     - kanaan dura michu fayadamen ture
-
