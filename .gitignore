@@ -1,17 +1,4 @@
-graph.html
-requirements.txt
-Dockerfile
-*.dockerignore
-tests/
-results/
-covertSQL.py
-.rasa/
-domianfile.py
-export.py
-imagee/
-chat.py
-michuqrcode.py
-chatchat1.py
-admin.py
-[http]
-  http.version = HTTP/1.1
+__pycache__
+.rasa
+convertSQL.py
+excelfile.py

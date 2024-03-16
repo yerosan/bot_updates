@@ -213,7 +213,6 @@ stories:
   - action: utter_document_rejection
 
 
-
 - story: about FAQ
   steps:
   - intent: app_version
@@ -288,6 +287,8 @@ stories:
   - action: utter_onbehalf
   - intent: lost_phone
   - action: utter_lost_phone
+  - intent: call_center
+  - action: utter_call_center
 
 - story: about time
   steps:

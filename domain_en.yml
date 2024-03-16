@@ -110,6 +110,8 @@ intents:
 - onbehalf
 - lost_phone
 
+- call_center
+
 responses:
   utter_start:
   - text: "Michu's CoopBank chatbot greets you! How can I help you? What information do you need about the Michu digital 
@@ -267,7 +269,7 @@ responses:
           institution's digital strategy. They also analyze data, collaborate with various teams, and adapt offerings to 
           changing technology and customer needs. The department currently oversees 3 primary products and platforms:\n
           1. Michu Platform\n
-          2. Furtuu Agricultural Platform\n
+          2. Farm pass Platform\n
           3. Sacco Link Platform \n
           In the near future, the department's focus will expand to include the integration of additional new products. 
           The primary objective of the department centers around the continual addition of new products."
@@ -1403,6 +1405,10 @@ responses:
           Once you 've entered the OTP, you can continue to enjoy the services you 've been offered on your new device."
 
 
+  utter_call_center:
+  - text: "Here is our call center Phone number: 609"
+
+
 
   utter_FAQ:
     - buttons:
@@ -1427,12 +1433,6 @@ responses:
       button_type: vertical
       text: "Here is the most frequently asked question:"
     
-
-
-
-
-
-
 
 
 

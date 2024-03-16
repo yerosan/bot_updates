@@ -290,6 +290,7 @@ nlu:
     - Formal business qualification?
     - Is Renewed Id card is necessary to get michu loan
     - Can you tell me the requirement to get the loan?
+    - doc riq
 
 - intent: foreigner
   examples: |
@@ -413,6 +414,7 @@ nlu:
     - how to get high score
     - max score
     - What are the criteria to have a larger loan limit
+    - How can I upgrade my credit score
 
 - intent: guyyaa_limit
   examples: |
@@ -1079,6 +1081,7 @@ nlu:
     - is michu app available on app store ?
     - is michu app available on play store ?
     - playstore
+    - What about ios
     - Link for iPhone
     - How can I get the application in a AppStore
     - How can I get the application in a AppStore
@@ -1549,8 +1552,13 @@ nlu:
     - What should I do if my phone is lost
     - what if my app is lost,
 
-# - intent: our_members
-#   examples: |
+- intent: call_center
+  examples: |
+    - call center number pls
+    - phone number
+    - tell me call center number
+    - office number
+    - how to get biro phone number
     
     
 

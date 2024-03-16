@@ -1,3 +1,7 @@
+# rasa run --model models/english.tar.gz --enable-api --cors "*" --port 4020
+
+# rasa train --data data/en --config config.yml --domain domain_en.yml --out models --fixed-model-name model_en
+
 import subprocess
 import mysql.connector
 import telegram
