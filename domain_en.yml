@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 
 intents:
 - start
@@ -111,6 +111,32 @@ intents:
 - lost_phone
 
 - call_center
+
+# new product
+- dureati
+- dureati_Requirements
+- dureati_informal_Requirements
+- dureati_formal_Requirements
+- dureati_limit
+- dureati_informal_limit
+- dureati_formal_limit
+- dureati_duration
+- dureati_informal_duration
+- dureati_formal_duration
+- dureati_access_fee
+- dureati_informal_access_fee
+- dureati_formal_access_fee
+- dureati_interest_rate
+- dureati_informal_interest_rate
+- dureati_formal_interest_rate
+- dureati_penalty 
+- dureati_informal_penalty
+- dureati_formal_penalty 
+
+- formal_vs_informalDureti  
+- dureti_feature 
+- durati_availablity  
+- dureti_application
 
 responses:
   utter_start:
@@ -1408,6 +1434,166 @@ responses:
   utter_call_center:
   - text: "Here is our call center Phone number: 609"
 
+
+# new product
+  utter_dureati:
+  - text: "The third Michu Product (New Michu product) targeted to young women entrepreneurs aimed at giving Women MSMEs the credit facility too boost their business growth in order to turn their dreams into reality was introduced.
+          \nThe objective of the product; \n  to unlock women, access to finance \n 
+          empower them to grow their businesses \n 
+          help them achieve their business goals \n and contribute to a more inclusive financial system."
+
+  utter_dureati_Requirements:
+  - text: "Eligibility Criteria: \n
+          Smart Phone and Sim Card \n
+          Coop bank Account Holder \n
+          Engaged on trading activity \n
+          Able to present document/information demanded by the bank digitally \n\n
+          for more Click from the following button for your interested product"
+    buttons:
+      - title: "Informal Loan Requirement"
+        payload: "/dureati_informal_Requirements"
+      - title: "Formal Loan Requirement"
+        payload: "/dureati_formal_Requirements"
+
+  utter_dureati_informal_Requirements:
+  - text: "Here is the Requirements for Michu Informal Loan: \n 
+          Gender- Female \n
+          Coop bank Account \n
+          Renewed ID card (kebele, Passport, Driving license, national ID)\n
+          Should be engaged in trading activity (Source of Income)\n
+          Should Own a smart phone (Android Version 5 and above)"
+
+    buttons:
+      - title: "Formal Loan Requirement"
+        payload: "/dureati_formal_Requirements"
+      - title: "Michu Women product Limit"
+        payload: "/dureati_limit"
+
+  utter_dureati_formal_Requirements:
+  - text: "Here is the Requirements for Michu Formal Loan: \n
+          Gender- Female \n
+          Coop bank Account \n
+          Formal ID (Kebele, Passport, Driving license, National ID)\n
+          Trade License and TIN \n
+          MoU and AOA (In case of PLC) \n
+          Should be engaged in trading activity (Source of Income) \n
+          Should Own a smart phone (Android Version 5 and above)"
+    buttons:
+      - title: "Informal Loan Requirement"
+        payload: "/dureati_informal_Requirements"
+      - title: "Michu Women product Limit"
+        payload: "/dureati_limit"
+
+  utter_dureati_limit:
+  - text: "Depend on the product you chose the limit is differ kindly click from the following button you preferred product"
+    buttons:
+      - title: "Informal Loan Limit"
+        payload: "/dureati_informal_limit"
+      - title: "Formal Loan Limit"
+        payload: "/dureati_formal_limit"
+
+  utter_dureati_informal_limit:
+  - text: "The Credit Limit for Michu Informal laon: 3K- 5KBirr"
+    buttons:
+      - title: "Formal Loan Limit"
+        payload: "/dureati_formal_limit"
+      - title: "Women's Loan Duration"
+        payload: "/dureati_duration"
+
+  utter_dureati_formal_limit:
+  - text: "The Credit Limit for Michu formal laon: 10K- 30KBirr"
+    buttons:
+      - title: "Informal Loan Limit"
+        payload: "/dureati_informal_limit"
+      - title: "Women's Loan Duration"
+        payload: "/dureati_duration"
+
+  utter_dureati_duration:
+  - text: "Depend on the product you chose the duration is differ kindly click from the following button you preferred product"
+    buttons:
+      - title: "Informal Loan Duration"
+        payload: "/dureati_informal_duration"
+      - title: "Formal Loan Duration"
+        payload: "/dureati_formal_duration"
+
+  utter_dureati_informal_duration:
+  - text: "The Credit Period for Michu Informal laon is: 14 Days"
+    buttons:
+      - title: "Formal Loan Duration"
+        payload: "/dureati_formal_duration"
+      - title: "Women's Loan Access Fee"
+        payload: "/dureati_access_fee"
+
+  utter_dureati_formal_duration:
+  - text: "The Credit Period for Michu formal laon is: 30 Days"
+    buttons:
+      - title: "Informal Loan Duration"
+        payload: "/dureati_informal_duration"
+      - title: "Women's Loan Access Fee"
+        payload: "/dureati_access_fee"
+
+  utter_dureati_access_fee:
+  - text: "The new Women's targeted product have no access fee"
+    buttons:
+      - title: "Women's Loan Interst Rate"
+        payload: "/dureati_interest_rate"
+      - title: "Women's Loan Penality"
+        payload: "/dureati_penalty"
+
+  utter_dureati_interest_rate:
+  - text: "Depend on the product you chose the interest rate is differ kindly click from the following button you preferred product"
+    buttons:
+      - title: "Informal Interest Rate"
+        payload: "/dureati_informal_interest_rate"
+      - title: "Formal Interest Rate"
+        payload: "/dureati_formal_interest_rate"
+  
+  utter_dureati_informal_interest_rate:
+  - text: "The Interest Rate for Michu Informal laon is: 3.75%"
+    buttons:
+      - title: "Formal Interest Rate"
+        payload: "/dureati_formal_interest_rate"
+      - title: "Women's Loan Penality"
+        payload: "/dureati_penalty"
+
+
+  utter_dureati_formal_interest_rate:
+  - text: "The Interest Rate for Michu formal loan is: 3.75%"
+    buttons:
+      - title: "Informal Interest Rate"
+        payload: "/dureati_informal_interest_rate"
+      - title: "Women's Loan Penality"
+        payload: "/dureati_penalty"
+
+  utter_dureati_penalty:
+  - text: "The penality for Women's Targeted Product is 5% (for both Informal and Formal product)"
+    buttons:
+      - title: "Women's Loan Interst Rate"
+        payload: "/dureati_interest_rate"
+      - title: "Women's Loan Penality"
+        payload: "/dureati_penalty"
+
+
+
+  utter_formal_vs_informalDureti:
+  - text: "Both loan products provide quick capital for women-owned businesses but cater to different scales.
+          The informal product targets nano businesses like Gulit traders and roadside vendors, offering 3,000 to 5,000 Birr for 14 days at a 3.75% interest rate with no access fee but a 5% penalty.
+          Requirements include being female, having a Coop bank account, a renewed ID, trading activity as a source of income, and owning a smartphone (Android 5 or above).
+
+          The formal product targets micro businesses such as micro retailers and juice shops, providing 10,000 to 30,000 Birr for 30 days at the same interest rate. 
+          It also has no access fee and a 5% penalty. Requirements include being female, having a Coop bank account, a formal ID, trade license, TIN, MoU and AOA (for PLCs), 
+          trading activity, and a smartphone (Android 5 or above)."
+
+  utter_dureti_feature:
+  - text: "Targeted Audience are Women entrepreneurs.\n
+           Provide quick working capital for women-owned businesses. \n
+           Support women's businesses in various trading activities."
+
+  utter_dureti_application:
+  - text: "To apply for loan the customers are omboarded by our partner's agent or by branch so that they can get link for loan application"
+
+  utter_durati_availablity:
+  - text: "Women's targeted product is available on michu's platform but to get access to the women targeted product customer should first onboard to our plaform then link will be send to them"
 
 
   utter_FAQ:

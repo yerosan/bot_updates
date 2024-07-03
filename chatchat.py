@@ -13,6 +13,8 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from telegram import ReplyKeyboardMarkup
 from mysql.connector import OperationalError
 
+
+
 def mysql_server_enabling():
     try:
         subprocess.run(['sudo','systemctl','enable','mysql'],check=True)

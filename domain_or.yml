@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 
 intents:
 - start
@@ -112,6 +112,33 @@ intents:
 - product_switch
 - onbehalf
 - lost_phone
+
+# new product
+- dureati
+- dureati_Requirements
+- dureati_informal_Requirements
+- dureati_formal_Requirements
+- dureati_limit
+- dureati_informal_limit
+- dureati_formal_limit
+- dureati_duration
+- dureati_informal_duration
+- dureati_formal_duration
+- dureati_access_fee
+- dureati_informal_access_fee
+- dureati_formal_access_fee
+- dureati_interest_rate
+- dureati_informal_interest_rate
+- dureati_formal_interest_rate
+- dureati_penalty 
+- dureati_informal_penalty
+- dureati_formal_penalty 
+
+
+- formal_vs_informalDureti  
+- dureti_feature 
+- durati_availablity  
+- dureti_application
 
 
 responses:
@@ -1286,6 +1313,164 @@ responses:
   - text: "Michu bilbila haaraa keessan irratti argachuuf tarkaanfiiwwan kana hordofaa: Appicha Play Store irraa buufadhaa, install godhaa, 
           lakkoofsa bilbila keessanii galcha. OTP (One Time Password) gara lakkoofsa bilbilaa keessaniitti ni ergama. Erga OTP galchiitani 
           booda tajaajila Michun kennu bilbila haaraa keessan irratti itti fufuu dandeessu."
+
+
+  # new product
+  utter_dureati:
+  - text: "Omishni Michu sadaffaan (Oomisha Michu haaraa) dubartoota dargaggoota abbootii qabeenyaa irratti xiyyeeffate kan Dubartoota MSME'f liqii kennuu too guddina daldala isaanii guddisuuf abjuu isaanii gara dhugaatti jijjiiruuf kaayyeffate dhiyaateera.
+          \nKaayyoo oomishaa; \n dubartoota hiikuuf, faayinaansii argachuu \n
+          daldala isaanii akka guddisan humna isaaniif kennuu \n
+          galma daldalaa isaanii akka galmaan gahan gargaaruu \n fi sirna faayinaansii hunda hammate gumaachuu."
+
+  utter_dureati_Requirements:
+  - text: "Ulaagaalee Ulaagaa: \n
+          Bilbila Ismaartii fi Siim Kaardii \n
+          Abbaa Herrega baankii Coop \n
+          Sochii daldalaa irratti bobba'e \n
+          Sanada/odeeffannoo baankichi gaafatu karaa dijitaalaa dhiyeessuu danda'a \n\n
+          for more Oomisha fedhii keessaniif button armaan gadii irraa cuqaasaa"
+    buttons:
+      - title: "Ulaagaalee Liqii Al-Idilee"
+        payload: "/dureati_informal_Requirements"
+      - title: "Ulaagaalee Liqii Idilee"
+        payload: "/dureati_formal_Requirements"
+
+  utter_dureati_informal_Requirements:
+  - text: "Ulaagaalee Liqii Al-Idilee Michuu kunooti: \n 
+          Saala- Dubartii \n
+          Herrega baankii Coop \n
+          Waraqaa eenyummaa haaromfame (kebele, Paaspoortii, Hayyama konkolaachisummaa, eenyummaa biyyaalessaa)\n
+          Hojii daldalaa irratti bobba'uu qaba (Madda Galii)\n
+          Bilbila ismaartii (Android Version 5 fi isaa ol) qabaachuu Qaba"
+
+    buttons:
+      - title: "Ulaagaalee Liqii Idilee"
+        payload: "/dureati_formal_Requirements"
+      - title: "Michu oomisha Dubartoota Daangaa"
+        payload: "/dureati_limit"
+
+  utter_dureati_formal_Requirements:
+  - text: "Ulaagaaleen Liqii Sirna Michu Kunooti: \n
+          Saala- Dubartii \n
+          Herrega baankii Coop \n
+          Eenyummaa idilee (Kebele, Paaspoortii, Hayyama konkolaachisummaa, Eenyummaa Biyyaalessaa)\n
+          Hayyama Daldalaa fi TIN \n
+          MoU fi AOA (Yoo PLC ta'e) \n
+          Hojii daldalaa irratti bobba'uu qaba (Madda Galii) \n
+          Bilbila ismaartii (Android Version 5 fi isaa ol) qabaachuu Qaba"
+    buttons:
+      - title: "Ulaagaalee Liqii Al-Idilee"
+        payload: "/dureati_informal_Requirements"
+      - title: "Michu oomisha Dubartoota  Daangaa"
+        payload: "/dureati_limit"
+
+  utter_dureati_limit:
+  - text: "Oomisha filatte irratti hundaa'uun daangaa garaagarummaa qaba button armaan gadii irraa cuqaasaa oomisha filatte"
+    buttons:
+      - title: "Daangaa Liqii Al-Idilee"
+        payload: "/dureati_informal_limit"
+      - title: "Daangaa Liqii Idilee"
+        payload: "/dureati_formal_limit"
+
+  utter_dureati_informal_limit:
+  - text: "Daangaa Liqii Michuu Liqii Al-Idilee: 3K- 5KBirr"
+    buttons:
+      - title: "Daangaa Liqii Idilee"
+        payload: "/dureati_formal_limit"
+      - title: "Turtii Liqii Dubartootaa"
+        payload: "/dureati_duration"
+
+  utter_dureati_formal_limit:
+  - text: "Daangaan Liqii idilee Michu: 10K- 30KBirr"
+    buttons:
+      - title: "Daangaa Liqii Al-Idilee"
+        payload: "/dureati_informal_limit"
+      - title: "Turtii Liqii Dubartootaa"
+        payload: "/dureati_duration"
+
+  utter_dureati_duration:
+  - text: "Oomisha filatte irratti hundaa'uun yeroon isaa garaagarummaa qaba  button armaan gadii irraa cuqaasaa oomisha filatte"
+    buttons:
+      - title: "Yeroo Liqii Al-Idilee"
+        payload: "/dureati_informal_duration"
+      - title: "Yeroo Liqii Idilee"
+        payload: "/dureati_formal_duration"
+
+  utter_dureati_informal_duration:
+  - text: "Yeroon Liqii Liqii Al-Idilee Michuu: Guyyoota 14 dha"
+    buttons:
+      - title: "Yeroo Liqii Al-Idilee"
+        payload: "/dureati_formal_duration"
+      - title: "Kaffaltii Tajjajilla Liqii Dubartootaa"
+        payload: "/dureati_access_fee"
+
+  utter_dureati_formal_duration:
+  - text: "Yeroon Liqii  idilee Michu: Guyyoota 30 dha"
+    buttons:
+      - title: "Yeroo Liqii Al-idilee"
+        payload: "/dureati_informal_duration"
+      - title: "Kaffaltii Tajjajilla Liqii Dubartootaa"
+        payload: "/dureati_access_fee"
+
+  utter_dureati_access_fee:
+  - text: "Omishni haaraan Dubartootaa irratti xiyyeeffate kaffaltii Tajjajilla hin qabu"
+    buttons:
+      - title: "Dhala Liqii Dubartootaa"
+        payload: "/dureati_interest_rate"
+      - title: "Adabbii Liqii Dubartootaa"
+        payload: "/dureati_penalty"
+
+  utter_dureati_interest_rate:
+  - text: "Oomisha filatte irratti hundaa'uun dhala garaagarummaa qaba  button armaan gadii irraa cuqaasaa oomisha filatte"
+    buttons:
+      - title: "Dhala Al-idilee"
+        payload: "/dureati_informal_interest_rate"
+      - title: "Dhala Idilee"
+        payload: "/dureati_formal_interest_rate"
+  
+  utter_dureati_informal_interest_rate:
+  - text: "Dhala Liqii Al-idilee Michuu: 3.75% dha."
+    buttons:
+      - title: "Dhala Idilee"
+        payload: "/dureati_formal_interest_rate"
+      - title: "Adabbii Liqii Dubartootaa"
+        payload: "/dureati_penalty"
+
+
+  utter_dureati_formal_interest_rate:
+  - text: "Dhala Liqii Al-Idilee Michuu: 3.75% dha."
+    buttons:
+      - title: "Dhala Al-Idilee"
+        payload: "/dureati_informal_interest_rate"
+      - title: "Adabbii Liqii Dubartootaa"
+        payload: "/dureati_penalty"
+
+  utter_dureati_penalty:
+  - text: "Adabbiin Oomisha Dubartootaa irratti xiyyeeffate %5 (oomisha Al-Idilee fi Idilee lamaaniifu)"
+    buttons:
+      - title: "Dhala Liqii Dubartootaa"
+        payload: "/dureati_interest_rate"
+      - title: "Adabbii Liqii Dubartootaa"
+        payload: "/dureati_penalty"
+
+  utter_formal_vs_informalDureti:
+  - text: "Oomishaaleen liqii lamaanu daldala dubartootaan qabamaniif kaappitaala ariifataa kan kennan yoo ta’u, garuu iskeelii adda addaaf kan tajaajiludha.
+          Omishni al-idile kun daldala naannoo akka daldaltoota Gulit fi daldaltoota daandii cinaa irratti kan xiyyeeffate yoo ta’u, guyyoota 14f Birrii kuma 3 hanga kuma 5 dhala %3.75n kaffaltii qaqqabummaa tokko malee adabbii %5 kan dhiyeessudha.
+          Ulaagaaleen:- dubartoota ta'uu, herrega baankii Coop qabaachuu, ID haaromfame, sochii daldalaa akka madda galii, fi bilbila ismaartii (Android 5 fi isaa ol) qabaachuu dabalata.
+          Omishni idilee kun daldala maayikiroo kanneen akka daldaltoota maayikiroo fi manneen juice irratti kan xiyyeeffate yoo ta’u, dhala walfakkaatuun guyyoota 30f Birrii kuma 10 hanga kuma 30 kan kennudha. 
+          Akkasumas kaffaltii qaqqabummaa kan hin qabu fi  adabbii %5. Ulaagaaleen:- dubartoota ta’uu, herrega baankii Coop, ID idilee, hayyama daldalaa, TIN, MoU fi AOA (PLC’f), . 
+          sochii daldalaa, fi bilbila ismaartii (Android 5 fi isaa ol) ta’e."
+
+  utter_dureti_feature:
+  - text: "liqiin dubartoota kan xiyyeffate dubartoota carra hojji uumanirratti jajjabessuf.\n
+           Daldala dubartootaaf kaappitaala hojii ariifataa kennuu. \n
+           daldalaa adda addaa irratti daldala dubartootaa ni deeggara."
+
+  utter_dureti_application:
+  - text: "Liqii dubartoota irrati xiyyefate iyyachuuf maamiltoonni bakka bu'aa michuu keenyaan ykn damee deemudhaan gaafachun akka isaan iyyatan liqiidhaaf link argachuu ni danda'anii"
+
+  utter_durati_availablity:
+  - text: "Omishni dubartoota irratti xiyyeeffate waltajjii michu irratti argama garuu oomisha dubartoota irratti xiyyeeffate argachuuf maamiltoonni jalqaba plaform keenya irratti onboard ta'uu qabu sana booda link isaaniif ergama"
 
 
   utter_FAQ:

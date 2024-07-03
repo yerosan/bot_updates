@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 
 nlu:
 - intent: start
@@ -244,6 +244,20 @@ nlu:
     - What's Wabbii Loan used for?
     - Michu Wabbii Loan intent?
 
+
+# new product
+- intent: dureati
+  examples: |
+    - what is the new product of michu
+    - Michu – Women Targeted  Product 
+    - Dureati 
+    - The third Michu Product 
+    - what does women targeted product
+    - what is women product
+    - what is dureati
+
+
+
 - intent: eligibility
   examples: |
     - Am I eligible for a loan?
@@ -356,6 +370,33 @@ nlu:
     - Michu Wabbii Loan availability for formal businesses?
     - Michu Wabbii: Formal business eligibility?
 
+# new product
+- intent: dureati_Requirements
+  examples: |
+    - what is the requirements of Women Focused Product
+    - requirements of dureati
+    - requirements of new product
+    - Eligibility of dureati
+    - Eligibility of women product
+    - Criteria of women product
+    - Criteria of dureati
+
+- intent: dureati_informal_Requirements
+  examples: |
+    - Informal Loan of requirements
+    - dureati informal Eligibility
+    - Women informal requirements
+    - informal loan Criteria
+
+- intent: dureati_formal_Requirements
+  examples: |
+    - formal Loan of requirements
+    - dureati formal Eligibility
+    - Women formal requirements
+    - formal loan Criteria
+
+# end
+
 - intent: michu_limit
   examples: |
     - what is the limit of michuu loan
@@ -451,6 +492,42 @@ nlu:
     - how much do i borrow from Wabii loan
     - What loan amount should I take out from Wabii?
 
+
+# new product
+- intent: dureati_limit
+  examples: |
+    - What is the credit limit of Michu New Women Focused Product?
+    - What is the loan limit of the Women product?
+    - What is the minimum credit limit for the Women product?
+    - What is the loan limit for the Michu New Women Focused Product?
+    - What is the limit of Dureati?
+    - What is the maximum loan amount for the Women product?
+    - What is the minimum loan amount for the Women product?
+    - What is the highest loan limit for the Women product?
+    - What is the lowest loan limit for the Women product?
+    - What is the top loan limit for the Women product?
+
+- intent: dureati_informal_limit
+  examples: |
+    - What is the credit limit for the Informal Loan?
+    - How much can I take with the Informal women product?
+    - What is the maximum credit limit for the Informal women product?
+    - What is the minimum limit for the Michu New Informal Women product?
+    - What is the Michu Dureati Informal Loan limit?
+    - What is the limit for the Michu Informal Loan?
+
+- intent: dureati_formal_limit
+  examples: |
+    - What is the credit limit for the Formal Women Loan?
+    - How much can I take with the Formal women product?
+    - What is the maximum credit limit for the Formal women product?
+    - What is the minimum limit for the Michu New Formal Women product?
+    - What is the Michu Dureati Formal Loan limit?
+    - What is the limit for the Michu Formal Loan?
+
+
+# end
+
 - intent: michu_duration
   examples: |
     - what is the duration of michu
@@ -496,6 +573,48 @@ nlu:
     - How long can a wabii loan be outstanding for?
     - What is the term of the wabii loan?
     - The wabii's length
+
+# new product
+- intent: dureati_duration
+  examples: |
+    - michu Women's product duration
+    - Women's loan duration
+    - Women's product time limit
+    - Max duration for women's loan
+    - Min duration for women's loan
+    - Loan period for women
+    - Women's product loan term
+    - Time limit for women's product
+    - Duration of Dureati loan
+    - Women's product loan duration
+
+- intent: dureati_informal_duration
+  examples: |
+    - michu Informal loan duration
+    - Max informal loan duration
+    - Min informal loan duration
+    - Informal women's loan duration
+    - Informal women's product duration
+    - Loan period for informal product
+    - Time limit for informal loan
+    - Duration of informal loan
+    - Informal product loan term
+
+- intent: dureati_formal_duration
+  examples: |
+    - michu Formal loan duration
+    - Max formal loan duration
+    - Min formal loan duration
+    - Formal women's loan duration
+    - Formal women's product duration
+    - Loan period for formal product
+    - Time limit for formal loan
+    - Duration of formal loan
+    - Formal product loan term
+
+
+# end
+
 
 - intent: michu_accessfee
   examples: |
@@ -556,6 +675,48 @@ nlu:
     - cost for wabii
     - required price of wabii
 
+
+# new product
+- intent: dureati_access_fee
+  examples: |
+    - michu new Women's product access fee
+    - Women's target loan access fee
+    - Access fee for women's product
+    - Max access fee for women's loan
+    - Min access fee for women's loan
+    - Access fee for women
+    - Women's product fee
+    - Fee for women's loan
+    - Women's product service fee
+    - Dureati loan access fee
+
+- intent: dureati_informal_access_fee
+  examples: |
+    - Informal loan access fee
+    - Max informal loan access fee
+    - Min informal loan access fee
+    - Access fee for informal loan
+    - Informal women's product access fee
+    - Informal product fee
+    - Informal loan service fee
+    - Fee for informal loan
+    - Informal product access fee
+
+- intent: dureati_formal_access_fee
+  examples: |
+    - Formal loan access fee
+    - Max formal loan access fee
+    - Min formal loan access fee
+    - Access fee for formal loan
+    - Formal women's product access fee
+    - Formal product fee
+    - Formal loan service fee
+    - Fee for formal loan
+    - Formal product access fee
+
+# end
+
+
 - intent: michu_interest
   examples: |
     - what is interest rate of michu
@@ -603,6 +764,55 @@ nlu:
     - What's the rate of Wabbii ?
     - Michu Wabbii  Cost of interest?
     - Michu Wabbii Loan Interest details?
+
+# new product
+- intent: dureati_interest_rate
+  examples: |
+    - Women's product interest rate
+    - Women's loan interest rate
+    - Interest rate for women's product
+    - Max interest rate for women's loan
+    - Min interest rate for women's loan
+    - Interest rate for women
+    - Women's product rate
+    - Rate for women's loan
+    - Women's product loan interest
+    - Dureati loan interest rate
+    - What's the interest rate for women's product?
+    - How much interest for women's product?
+    - Interest charges for women's loan
+
+- intent: dureati_informal_interest_rate
+  examples: |
+    - Informal loan interest rate
+    - Max informal loan interest rate
+    - Min informal loan interest rate
+    - Interest rate for informal loan
+    - Informal women's product interest rate
+    - Informal product rate
+    - Informal loan interest
+    - Rate for informal loan
+    - Informal product loan interest
+    - What's the interest rate for informal product?
+    - How much interest for informal product?
+    - Interest charges for informal loan
+
+- intent: dureati_formal_interest_rate
+  examples: |
+    - Formal loan interest rate
+    - Max formal loan interest rate
+    - Min formal loan interest rate
+    - Interest rate for formal loan
+    - Formal women's product interest rate
+    - Formal product rate
+    - Formal loan interest
+    - Rate for formal loan
+    - Formal product loan interest
+    - What's the interest rate for formal product?
+    - How much interest for formal product?
+    - Interest charges for formal loan
+
+# end 
 
 - intent: michu_penality
   examples: |
@@ -724,6 +934,56 @@ nlu:
     - Wabbii loan repercussions?
     - Why was the Wabbii loan sanctioned?
     - Wabbii loan repercussions?
+
+
+# new product
+- intent: dureati_penalty
+  examples: |
+    - Women's product penalty
+    - Women's loan penalty
+    - Penalty for women's product
+    - Max penalty for women's loan
+    - Min penalty for women's loan
+    - Penalty for women
+    - Women's product late fee
+    - Late fee for women's loan
+    - Women's product loan penalty
+    - Dureati loan penalty
+    - What's the penalty for women's product?
+    - How much is the penalty for women's product?
+    - Penalty charges for women's loan
+
+- intent: dureati_informal_penalty
+  examples: |
+    - Informal loan penalty
+    - Max informal loan penalty
+    - Min informal loan penalty
+    - Penalty for informal loan
+    - Informal women's product penalty
+    - Informal product late fee
+    - Informal loan late fee
+    - Penalty charges for informal loan
+    - Informal product loan penalty
+    - What's the penalty for informal product?
+    - How much is the penalty for informal product?
+    - Penalty charges for informal loan
+
+- intent: dureati_formal_penalty
+  examples: |
+    - Formal loan penalty
+    - Max formal loan penalty
+    - Min formal loan penalty
+    - Penalty for formal loan
+    - Formal women's product penalty
+    - Formal product late fee
+    - Formal loan late fee
+    - Penalty charges for formal loan
+    - Formal product loan penalty
+    - What's the penalty for formal product?
+    - How much is the penalty for formal product?
+    - Penalty charges for formal loan
+
+# end
 
 
 - intent: ID_Type
@@ -1559,6 +1819,68 @@ nlu:
     - tell me call center number
     - office number
     - how to get biro phone number
+
+
+# new product
+# Dureti
+- intent: formal_vs_informalDureti
+  examples: |
+    - What differentiates durati formal Loan from the informal loan?
+    - formal vs informal?
+    - women's targeted formal vs informal loan
+    - what is the different b/n formal and informal loan woman's loan
+    - dureti formal loan contrast with informal loan?
+    - dureti formal vs informal
+    - In what ways does dureti formal differ from dureti informal?
+    - What distinguishes woman's formal Loan?
+
+
+# Dureti
+- intent: dureti_feature
+  examples: |
+    - what is the features of dureti?
+    - what is the difference between women targeted loan and mcihu loan
+    - why dureti
+    - what makes dureti differ from michu
+    - can you tell me unique behaviour of women targeted loan
+    - why women targeted loan
+    - what makes dureti unique
+    - What makes women targeted loan different
+    - What distinguishes women targeted product
+    - What sets dureti apart
+
+# Dureti
+- intent: durati_availablity
+  examples: |
+    - how can i get dureti application ?
+    - does woment targeted loan availble ?
+    - how an a get access to dureti loan
+    - who an i get link of dureti loan
+    - is dureti loan availbale to every body
+    - how to claim for dureti application
+    - who help me to get link to duret application loan
+    - does women targeted  loan available publicaly
+    - how can i get link of woment targeted laon ?  
+    - pls send me women targeted application link
+    - i need dureti link
+    - send me dureti link 
+    - allow me an access to dureti loan
+    - how can i find women targeted loan access
+
+# Dureti
+- intent: dureti_application
+  examples: |
+    - what is durati application proccess
+    - can you tell me women targeted loan application process
+    - process of dureti loan
+    - how can i get women targeted loan
+    - steps of dureti proccess 
+    - steps to apply for women targeted loan
+    - dureti loan application form
+    - steps of dureti loan process
+    - tell me step by step proccess of dureti loan
+    - women targeted application process
+    - women target loan application detail
     
     
 

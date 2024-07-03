@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 
 intents:
 - start
@@ -109,6 +109,32 @@ intents:
 - product_switch
 - onbehalf
 - lost_phone
+
+# new product
+- dureati
+- dureati_Requirements
+- dureati_informal_Requirements
+- dureati_formal_Requirements
+- dureati_limit
+- dureati_informal_limit
+- dureati_formal_limit
+- dureati_duration
+- dureati_informal_duration
+- dureati_formal_duration
+- dureati_access_fee
+- dureati_informal_access_fee
+- dureati_formal_access_fee
+- dureati_interest_rate
+- dureati_informal_interest_rate
+- dureati_formal_interest_rate
+- dureati_penalty 
+- dureati_informal_penalty
+- dureati_formal_penalty 
+
+- formal_vs_informalDureti  
+- dureti_feature 
+- durati_availablity  
+- dureti_application
 
 responses:
   utter_start:
@@ -1233,6 +1259,165 @@ responses:
           ኦቲፒ ከገቡ በኋላ በአዲሱ መሳሪያዎ ላይ በሚቹ በሚሰጡት አገልግሎቶች ለመደሰት መቀጠል ይችላሉ።"
 
 
+  # new product
+  utter_dureati:
+  - text: "ሦስተኛው የሚቹ ምርት  በወጣት ሴት ሥራ ፈጣሪዎች ላይ ያቶኮረ ለሴቶች ኤም.ኤስ.ኤም.ኢ(MSME) የብድር አገልግሎት ለመስጠት ያለመ ሲሆን ሕልማቸውን ወደ እውን ለማድረግ የንግድ እድገታቸውን ያሳድጋል።
+          \nየምርቱ ዓላማ; \n ሴቶችን ለመክፈት ፣ የፋይናንስ ተደራሽነት \n 
+          ንግዳቸውን እንዲያሳድጉ ማስቻል \n 
+          የንግድ ግባቸውን እንዲያሳኩ እርዷቸው \n እና የበለጠ አካታች የፋይናንሺያል ሥርዓት እንዲኖር አስተዋፅዖ ያድርጉ።"
+
+  utter_dureati_Requirements:
+  - text: "የብቃት መስፈርት፡ \n
+          ስማርት ስልክ እና ሲም ካርድ \n
+          Coop የባንክ ሂሳብ ያዥ \n
+          በንግድ እንቅስቃሴ ላይ ተሰማርቷል \n
+          በባንኩ የተጠየቀውን ሰነድ/መረጃ በዲጂታል መንገድ ማቅረብ የሚችል \n\n
+          ለበለጠ ፍላጎት ለሚፈልጉ ምርቶች ከሚከተለው አዝራር ጠቅ ያድርጉ"
+    buttons:
+      - title: "መደበኛ ያልሆነ የብድር መስፈርት"
+        payload: "/dureati_informal_Requirements"
+      - title: "መደበኛ የብድር መስፈርቶች"
+        payload: "/dureati_formal_Requirements"
+
+  utter_dureati_informal_Requirements:
+  - text: "ለሚቹ መደበኛ ያልሆነ ብድር መስፈርቶቹ እነሆ፡ \n 
+          ጾታ- ሴት \n
+          Coop የባንክ ሂሳብ \n
+          የታደሰ መታወቂያ (ቀበሌ፣ ፓስፖርት፣ መንጃ ፈቃድ፣ ብሄራዊ መታወቂያ)\n
+          በንግድ እንቅስቃሴ (የገቢ ምንጭ) ላይ መሰማራት አለበት\n
+          ስማርት ስልክ (አንድሮይድ ስሪት 5 እና ከዚያ በላይ) ባለቤት መሆን አለበት"
+
+    buttons:
+      - title: "መደበኛ የብድር መስፈርቶች"
+        payload: "/dureati_formal_Requirements"
+      - title: "ሚቹ የሴቶች ምርት ገደብ"
+        payload: "/dureati_limit"
+
+  utter_dureati_formal_Requirements:
+  - text: "ለሚቹ መደበኛ ብድር የሚያስፈልጉ መስፈርቶች እነሆ፡ \n
+          ጾታ- ሴት \n
+          Coop የባንክ ሂሳብ \n
+          መደበኛ መታወቂያ (ቀበሌ፣ ፓስፖርት፣ መንጃ ፈቃድ፣ ብሄራዊ መታወቂያ)\n
+          የንግድ ፍቃድ እና TIN \n
+          የመግባቢያ ሰነዱ እና አኦአ (ከኃላፊዎች) \n
+          በንግድ እንቅስቃሴ (የገቢ ምንጭ) መሰማራት አለበት \n
+          ስማርት ስልክ (አንድሮይድ ስሪት 5 እና ከዚያ በላይ) ባለቤት መሆን አለበት"
+    buttons:
+      - title: "መደበኛ ያልሆነ የብድር መስፈርት"
+        payload: "/dureati_informal_Requirements"
+      - title: "ሚቹ የሴቶች ምርት ገደብ"
+        payload: "/dureati_limit"
+
+  utter_dureati_limit:
+  - text: "በመረጡት የምቹ ብድር ዓይነት ላይ በመመርኮዝ ገደብ መጠን የተለያየ ነው፣ ከዚህ በታች ካለው ዝርዝር አንዱን ይምረጡ።"
+    buttons:
+      - title: "መደበኛ ያልሆነ የብድር ገደብ"
+        payload: "/dureati_informal_limit"
+      - title: "መደበኛ የብድር ገደብ"
+        payload: "/dureati_formal_limit"
+
+  utter_dureati_informal_limit:
+  - text: "ለሚቹ መደበኛ ያልሆነ የብድር ገደብ፡ 3k- 5k ቢር"
+    buttons:
+      - title: "መደበኛ የብድር ገደብ"
+        payload: "/dureati_formal_limit"
+      - title: "የሴቶች ብድር ቆይታ"
+        payload: "/dureati_duration"
+
+  utter_dureati_formal_limit:
+  - text: "ለሚቹ መደበኛ  የብድር ገደብ፡ 10k- 30k ቢር"
+    buttons:
+      - title: "መደበኛ ያልሆነ የብድር ገደብ"
+        payload: "/dureati_informal_limit"
+      - title: "የሴቶች ብድር ቆይታ"
+        payload: "/dureati_duration"
+
+  utter_dureati_duration:
+  - text: "በመረጡት የምቹ ብድር ዓይነት ላይ በመመርኮዝ ገደብ ቆይታ የተለያየ ነው፣ ከዚህ በታች ካለው ዝርዝር አንዱን ይምረጡ።"
+    buttons:
+      - title: "መደበኛ ያልሆነ የብድር ቆይታ"
+        payload: "/dureati_informal_duration"
+      - title: "መደበኛ የብድር ቆይታ"
+        payload: "/dureati_formal_duration"
+
+  utter_dureati_informal_duration:
+  - text: "ለሚቹ መደበኛ ያልሆነ ብድር የክሬዲት ጊዜ፡ 14 ቀናት ነው።"
+    buttons:
+      - title: "መደበኛ የብድር ቆይታ"
+        payload: "/dureati_formal_duration"
+      - title: "የሴቶች ብድር ያግልግሎት ክፍያ"
+        payload: "/dureati_access_fee"
+
+  utter_dureati_formal_duration:
+  - text: "ለሚቹ መደበኛ  ብድር የክሬዲት ጊዜ፡ 14 ቀናት ነው"
+    buttons:
+      - title: "መደበኛ ያልሆነ የብድር ገደብ"
+        payload: "/dureati_informal_duration"
+      - title: "የሴቶች ብድር ያግልግሎት ክፍያ"
+        payload: "/dureati_access_fee"
+
+  utter_dureati_access_fee:
+  - text: "አዲሱ የሴቶች የታለመ ምርት ምንም ያግልግሎት ክፍያ የለውም"
+    buttons:
+      - title: "የሴቶች ብድር ወለድ ተመን"
+        payload: "/dureati_interest_rate"
+      - title: "የሴቶች ብድር ቅጣት"
+        payload: "/dureati_penalty"
+
+  utter_dureati_interest_rate: 
+  - text: "በመረጡት ምርት ላይ በመመስረት የወለድ መጠኑ ይለያያል እርስዎ ከመረጡት ከዚህ በታች ካለው ዝርዝር አንዱን ይምረጡ"
+    buttons:
+      - title: "መደበኛ ያልሆነ የወለድ ተመን"
+        payload: "/dureati_informal_interest_rate"
+      - title: "መደበኛ የወለድ ተመን"
+        payload: "/dureati_formal_interest_rate"
+  
+  utter_dureati_informal_interest_rate:
+  - text: "ለሚቹ መደበኛ ያልሆነ ብድር የወለድ መጠን፡ 3.75% ነው።"
+    buttons:
+      - title: "መደበኛ የወለድ ተመን"
+        payload: "/dureati_formal_interest_rate"
+      - title: "የሴቶች ብድር ቅጣት"
+        payload: "/dureati_penalty"
+
+
+  utter_dureati_formal_interest_rate:
+  - text: "ለሚቹ መደበኛ ብድር የወለድ መጠን፡ 3.75% ነው።"
+    buttons:
+      - title: "መደበኛ ያልሆነ የወለድ ተመን"
+        payload: "/dureati_informal_interest_rate"
+      - title: "የሴቶች ብድር ቅጣት"
+        payload: "/dureati_penalty"
+
+  utter_dureati_penalty:
+  - text: "የክፍያ ቅን ካልፍ ቅጣቱ 5% ነው (ለሁለቱም መደበኛ ያልሆነ እና መደበኛ ምርት)"
+    buttons:
+      - title: "የሴቶች ብድር ወለድ ተመን"
+        payload: "/dureati_interest_rate"
+      - title: "የሴቶች ብድር ቅጣት"
+        payload: "/dureati_penalty"
+
+
+
+  utter_formal_vs_informalDureti:
+  - text: "ሁለቱም የብድር ምርቶች በሴቶች ባለቤትነት ለተያዙ የንግድ ሥራዎች ፈጣን ካፒታል ይሰጣሉ ነገር ግን ለተለያዩ ሚዛኖች ያሟላሉ።
+          መደበኛ ያልሆነው ምርት እንደ ጉሊት ነጋዴዎች እና የመንገድ ዳር ነጋዴዎች ናኖ የንግድ ድርጅቶችን ኢላማ ያደረገ ሲሆን ከ3,000 እስከ 5,000 ብር ለ14 ቀናት በ3.75% የወለድ ተመን ያለ ምንም የመድረሻ ክፍያ ግን 5% ቅጣት ይሰጣል።
+          መስፈርቶቹ ሴት መሆን፣ Coop የባንክ ሂሳብ መያዝ፣ የታደሰ መታወቂያ፣ የንግድ እንቅስቃሴ እንደ ገቢ ምንጭ እና የስማርትፎን (አንድሮይድ 5 ወይም ከዚያ በላይ) ባለቤት መሆንን ያካትታሉ።
+
+          መደበኛው ምርት እንደ ማይክሮ ቸርቻሪ እና ጭማቂ መሸጫ ሱቅ ያሉ ጥቃቅን ቢዝነሶችን ኢላማ ያደረገ ሲሆን ከ10,000 እስከ 30,000 ብር ለ30 ቀናት በተመሳሳይ ወለድ ይሰጣል። 
+          እንዲሁም ምንም የመዳረሻ ክፍያ እና 5% ቅጣት የለውም. መስፈርቶቹ ሴት መሆን፣ Coop የባንክ አካውንት መኖር፣ መደበኛ መታወቂያ፣ የንግድ ፈቃድ፣ TIN፣ የመግባቢያ ሰነድ እና AOA (ለ PLCs) ያካትታሉ። 
+          የንግድ እንቅስቃሴ፣ እና ስማርትፎን (አንድሮይድ 5 ወይም ከዚያ በላይ)።."
+
+  utter_dureti_feature:
+  - text: "የታለሙ ታዳሚዎች ሴት ሥራ ፈጣሪዎች ናቸው።\n
+           ፈጣን የስራ ካፒታል በሴቶች ባለቤትነት ለተያዙ ንግዶች ያቅርቡ። \n
+           በተለያዩ የግብይት እንቅስቃሴዎች የሴቶችን ንግድ ሥራ መደገፍ።"
+
+  utter_dureti_application:
+  - text: "ብድር ለማግኘት ደንበኞቻችን በብድር ማመልከቻ አገናኝ ማግኘት እንዲችሉ በአጋር ወኪል ወይም በቅርንጫፍ ታዝዘዋል"
+
+  utter_durati_availablity:
+  - text: "የሴቶች ያነጣጠረ ምርት በሚቹ መድረክ ላይ ይገኛል ነገር ግን ወደ ሴቶች የታለመውን ምርት ለማግኘት ደንበኛ በመጀመሪያ ወደ መድረክችን መግባት አለቦት ከዚያም ሊንክ ይላክላቸዋል"
 
 
 

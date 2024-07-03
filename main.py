@@ -5,17 +5,19 @@ from typing import Final
 import re
 import bot_db as db
 
-RASA_API_ENDPOINT_en = 'http://63.34.199.220:4020/webhooks/rest/webhook'
-INTENT_ENDPOINT_en = 'http://63.34.199.220:4020/model/parse'
+RASA_API_ENDPOINT_en = 'http://localhost:4020/webhooks/rest/webhook'
+INTENT_ENDPOINT_en = 'http://localhost:4020/model/parse'
 
-RASA_API_ENDPOINT_am = 'http://63.34.199.220:4030/webhooks/rest/webhook'
-INTENT_ENDPOINT_am = 'http://63.34.199.220:4030/model/parse'
+RASA_API_ENDPOINT_am = 'http://localhost:4030/webhooks/rest/webhook'
+INTENT_ENDPOINT_am = 'http://localhost:4030/model/parse'
 
-RASA_API_ENDPOINT_or = 'http://63.34.199.220:4040/webhooks/rest/webhook'
-INTENT_ENDPOINT_or = 'http://63.34.199.220:4040/model/parse'
+RASA_API_ENDPOINT_or = 'http://localhost:4040/webhooks/rest/webhook'
+INTENT_ENDPOINT_or = 'http://localhost:4040/model/parse'
 
-TOKEN: Final = '6320973861:AAECM0Kp2BKT6Ak7s7ERBRzJNCrfDooPvAQ'
-BOT_USERNAME: Final = '@MichuCoopBot'
+# TOKEN: Final = '6320973861:AAECM0Kp2BKT6Ak7s7ERBRzJNCrfDooPvAQ'
+# BOT_USERNAME: Final = '@MichuCoopBot'
+TOKEN: Final = '6668668594:AAGLR1z8OUHtQ2Tc5ZFOgwEaH2n1D3vf4ZY'
+BOT_USERNAME: Final = '@Shewanekbot:'
 
 
 keyboard = [['🔠 English  ||  Afaan Oromo  ||  አማርኛ'],
@@ -211,6 +213,15 @@ ab_about_am: str = """
 lang_button = {}
 lang_id  = {}
 
+if not lang_button:
+    lang_id = db.fetch_user_lang()
+    lang_map = {1: 'English', 2: 'Afaan Oromo', 3: 'አማርኛ'}
+    if lang_id:
+        lang_button = {user_id: lang_map.get(lang_id, 'Unknown') for user_id, lang_id in lang_id.items()}
+
+
+    
+
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # global lang_button
     fristName = update.message.from_user.first_name
@@ -260,6 +271,9 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # message_type: str = update.message.chat.type
     text: str = update.message.text
+    # print(f'User ID: {user_id}')
+    # print(f'Message text: "{lang_button}"')
+    # print(lang_id)
 
     # print(f'User ({user_id}) {username} {fristName} in {message_type}: "{text}"')
     if user_id in lang_button:
@@ -474,8 +488,7 @@ async def handle_button_click(update: Update, context: ContextTypes.DEFAULT_TYPE
     firstName = query.from_user.first_name
     # lastName = query.from_user.last_name
     
-    # store to data base
-    db.userInfo(user_id, userName, firstName)
+    
     
     inline_keyboard = query.message.reply_markup.inline_keyboard
 
@@ -501,7 +514,9 @@ async def handle_button_click(update: Update, context: ContextTypes.DEFAULT_TYPE
             else:
                 lang_id[user_id] = 1
             # store to db
+            db.userInfo(user_id, userName, firstName, lang_id[user_id])
             db.userlanguage(lang_id[user_id], clicked_button_text)
+            db.update_lang_id(user_id, lang_id[user_id])
             
             if lang_button[user_id] == "አማርኛ": 
                 # if data == 'subscribe':
@@ -801,9 +816,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     # Check if query exists and has data attribute
 
                     # print(data)
-                elif text == "📷🧏 Na Madaala":
+                elif text == '📷🧏 Na Madaala':
                     # print('BOT:', text)
                     await update.message.reply_text("mee sadarkaa naaf kenni", reply_markup=reply_rank_or)
+                
 
                 # come back here
                 elif text == '💬 Yaada':

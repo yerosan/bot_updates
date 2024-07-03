@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 
 nlu:
 - intent: start
@@ -1543,6 +1543,329 @@ nlu:
     - Akka fayyadamaatti application yoo dhabe hoo?
     - Bilbilli koo yoo bade maal gochuu qaba
     - appiin koo yoo bade maal gochuu qaba,
+
+
+
+# new product
+- intent: dureati
+  examples: |
+    - oomishni haaraan michuu maali
+    - Michu – Oomisha Dubartootaa irratti Xiyyeeffate 
+    - Dureati jedhamuun beekama 
+    - Oomisha Michuu sadaffaa 
+    - maal hojjeta dubartoota irratti xiyyeeffate product
+    - oomisha dubartootaa maali
+    - maaltu dureati
+
+# new product
+- intent: dureati_Requirements
+  examples: |
+    - ulaagaaleen Oomisha Dubartootaa Xiyyeeffate maali
+    - ulaagaalee dureati
+    - ulaagaalee oomisha haaraa
+    - Ulaagaa dureati
+    - Ulaagaa guutuu oomisha dubartootaa
+    - Ulaagaalee oomisha dubartootaa
+    - Ulaagaalee dureati
+
+- intent: dureati_informal_Requirements
+  examples: |
+    - Liqii Al-seerummaa kan barbaachisummaa
+    - dureati informal Ulaagaa guutuu
+    - Dubartoota ulaagaalee al-seerummaa
+    - Ulaagaalee liqii al-seerummaa
+
+- intent: dureati_formal_Requirements
+  examples: |
+    - Liqii idilee ulaagaalee barbaachisan
+    - dureati formal Ulaagaa guutuu
+    - Dubartoota ulaagaalee idilee
+    - Ulaagaalee liqii idilee
+
+# end
+
+# new product
+- intent: dureati_limit
+  examples: |
+    - Daangaan liqii Michu New Women Focused Product maali?
+    - Daangaan liqii oomisha Dubartootaa maali?
+    - Daangaan liqii xiqqaan oomisha Dubartootaa maali?
+    - Oomisha Dubartoota Xiyyeeffannoo Haaraa Michuu maali?
+    - Daangaan Dureati maali?
+    - Oomisha Dubartootaaf hanga liqii guddaan maali?
+    - Oomisha Dubartootaaf hanga liqii xiqqaan maali?
+    - Daangaan liqii olaanaa oomisha Dubartootaa maali?
+    - Daangaan liqii gadi aanaan oomisha Dubartootaa maali?
+    - Daangaan liqii olaanaa oomisha Dubartootaa maali?
+
+- intent: dureati_informal_limit
+  examples: |
+    - Daangaan liqii Liqii Al-seerummaa meeqa?
+    - Oomisha dubartoota Al-seerummaatiin hangam fudhachuu danda'a?
+    - Daangaan liqii guddaan oomisha dubartoota Al-seerummaa maali?
+    - Daangaan xiqqaan oomisha Dubartoota Al-seerummaa Haaraa Michu maali?
+    - Daangaan Liqii Al-seerummaa Michu Dureati maali?
+    - Daangaan Liqii Al-seerummaa Michuu maali?
+
+- intent: dureati_formal_limit
+  examples: |
+    - Daangaan Liqii Dubartoota Idilee Meeqa?
+    - Oomisha dubartoota Foormaalaa waliin hangam fudhachuu danda'a?
+    - Daangaan liqii guddaan oomisha dubartoota Foormaalii maali?
+    - Daangaan xiqqaan oomisha Michu New Formal Women maali?
+    - Daangaan Liqii Sirna Michu Dureati maali?
+    - Daangaan Liqii Sirna Michuu maali?
+
+
+# end
+
+# new product
+- intent: dureati_duration
+  examples: |
+    - michu Turtii oomisha dubartootaa
+    - Turtii liqii dubartootaa
+    - Yeroo oomisha dubartootaa daangeffame
+    - Max duration liqii dubartootaaf
+    - Liqii dubartootaaf yeroo xiqqaa
+    - Yeroo liqii dubartootaaf
+    - Yeroo liqii oomisha dubartootaa
+    - Yeroo oomisha dubartootaaf daangeffame
+    - Turtii liqii Dureati
+    - Turtii liqii oomisha dubartootaa
+
+- intent: dureati_informal_duration
+  examples: |
+    - michu Yeroo liqii al-seerummaa
+    - Yeroo liqii al-seerummaa ol’aanaa
+    - Yeroo liqii al-seerummaa xiqqaa
+    - Yeroo liqii dubartootaa al-seerummaa
+    - Turtii oomisha dubartootaa al-seerummaa
+    - Yeroo liqii oomisha al-seerummaaf
+    - Yeroo liqii al-seerummaaf daangeffame
+    - Yeroo liqiin al-seerummaa
+    - Yeroo liqii oomishaa al-seerummaa
+
+- intent: dureati_formal_duration
+  examples: |
+    - michu Yeroo liqii idilee
+    - Yeroo liqii idilee ol'aanaa
+    - Yeroo liqii idilee xiqqaa
+    - Yeroo liqii dubartootaa idilee
+    - Turtii oomisha dubartootaa idilee
+    - Yeroo liqii oomisha idileef
+    - Yeroo liqii idileef daangeffame
+    - Yeroo liqiin idilee
+    - Yeroo liqii oomishaa idilee
+
+
+# end
+
+# new product
+- intent: dureati_access_fee
+  examples: |
+    - michu new Kaffaltii qaqqabummaa oomisha Dubartootaa
+    - Kaffaltii argachuu liqii dubartootaa irratti xiyyeeffate
+    - Kaffaltii qaqqabummaa oomisha dubartootaa
+    - Liqii dubartootaaf kaffaltii qaqqabummaa ol'aanaa
+    - Liqii dubartootaaf kaffaltii qaqqabummaa xiqqaa
+    - Kaffaltii qaqqabummaa dubartootaaf
+    - Kaffaltii oomisha dubartootaa
+    - Kaffaltii liqii dubartootaa
+    - Kaffaltii tajaajila oomishaa dubartootaa
+    - Kaffaltii qaqqabummaa liqii Dureati
+
+- intent: dureati_informal_access_fee
+  examples: |
+    - Kaffaltii argachuu liqii al-seerummaa
+    - Kaffaltii qaqqabummaa liqii al-seerummaa ol’aanaa
+    - Kaffaltii argachuuf liqii al-seerummaa xiqqaa
+    - Kaffaltii qaqqabummaa liqii al-seerummaa
+    - Kaffaltii argachuuf oomisha dubartootaa al-seerummaa
+    - Kaffaltii oomishaa al-seerummaa
+    - Kaffaltii tajaajila liqii al-seerummaa
+    - Kaffaltii liqii al-seerummaa
+    - Kaffaltii qaqqabummaa oomishaa al-kallatti
+
+- intent: dureati_formal_access_fee
+  examples: |
+    - Kaffaltii argachuu liqii idilee
+    - Kaffaltii qaqqabummaa liqii idilee ol’aanaa
+    - Kaffaltii qaqqabummaa liqii idilee xiqqaa
+    - Kaffaltii qaqqabummaa liqii idilee
+    - Kaffaltii argachuu oomisha dubartootaa idilee
+    - Kaffaltii oomishaa idilee
+    - Kaffaltii tajaajila liqii idilee
+    - Kaffaltii liqii idilee
+    - Kaffaltii argachuu oomishaa idilee
+
+# end
+
+# new product
+- intent: dureati_interest_rate
+  examples: |
+    - Dhala oomisha dubartootaa
+    - Dhala liqii dubartootaa
+    - Dhala oomisha dubartootaa
+    - Liqii dubartootaaf dhala guddaa
+    - Liqii dubartootaaf dhala xiqqaa
+    - Dhala dubartootaaf
+    - Sadarkaa oomisha dubartootaa
+    - Sadarkaa liqii dubartootaa
+    - Dhala liqii oomisha dubartootaa
+    - Dhala liqii Dureati
+    - Dhala oomisha dubartootaa maali?
+    - Oomisha dubartootaaf fedhii hangamii?
+    - Kaffaltii dhala liqii dubartootaa
+
+- intent: dureati_informal_interest_rate
+  examples: |
+    - Dhala liqii al-seerummaa
+    - Max dhala liqii al-seerummaa
+    - Dhala liqii al-seerummaa xiqqaa
+    - Dhala liqii al-seerummaa
+    - Dhala oomisha dubartootaa al-seerummaa
+    - Sadarkaa oomishaa al-seerummaa
+    - Dhala liqii al-seerummaa
+    - Sadarkaa liqii al-seerummaa
+    - Dhala liqii oomishaa al-seerummaa
+    - Dhala oomisha al-seerummaa maali?
+    - Oomisha al-seerummaaf fedhii hangamii?
+    - Kaffaltii dhala liqii al-seerummaa
+
+- intent: dureati_formal_interest_rate
+  examples: |
+    - Dhala liqii idilee
+    - Dhala liqii idilee ol’aanaa
+    - Dhala liqii idilee xiqqaa
+    - Dhala liqii idilee
+    - Dhala oomisha dubartootaa idilee
+    - Sadarkaa oomishaa idilee
+    - Dhala liqii idilee
+    - Sadarkaa liqii idilee
+    - Dhala liqii oomishaa idilee
+    - Dhala oomisha idilee maali?
+    - Oomisha idileedhaaf fedhii hangamii?
+    - Kaffaltii dhala liqii idilee
+
+# end 
+
+# new product
+- intent: dureati_penalty
+  examples: |
+    - Adabbii oomisha dubartootaa
+    - Adabbii liqii dubartootaa
+    - Adabbii oomisha dubartootaa
+    - Liqii dubartootaa irratti adabbii ol'aanaa
+    - Liqii dubartootaa irratti adabbii xiqqaa
+    - Adabbii dubartootaaf
+    - Kaffaltii yeroon booda oomisha dubartootaa
+    - Kaffaltii yeroon booda liqii dubartootaa
+    - Adabbii liqii oomisha dubartootaa
+    - Adabbii liqii Dureati
+    - Adabbiin oomisha dubartootaa maali?
+    - Adabbiin oomisha dubartootaa hangam?
+    - Kaffaltii adabbii liqii dubartootaa
+
+- intent: dureati_informal_penalty
+  examples: |
+    - Adabbii liqii al-idillee
+    - Adabbii liqii al-seerummaa ol'aanaa
+    - Adabbii liqii al-seerummaa xiqqaa
+    - Adabbii liqii al-seerummaa
+    - Adabbii oomisha dubartootaa al-seerummaa
+    - Kaffaltii yeroon booda oomishaa al-kallatti
+    - Kaffaltii yeroon booda liqii al-seerummaa
+    - Liqii al-seerummaa irratti kaffaltii adabbii
+    - Adabbii liqii oomishaa al-seerummaa
+    - Adabbiin oomisha al-seerummaa maali?
+    - Adabbiin oomisha al-seerummaa meeqa?
+    - Liqii al-seerummaa irratti kaffaltii adabbii
+
+- intent: dureati_formal_penalty
+  examples: |
+    - Adabbii liqii idilee
+    - Adabbii liqii idilee ol'aanaa
+    - Adabbii liqii idilee xiqqaa
+    - Adabbii liqii idilee
+    - Adabbii oomisha dubartootaa idilee
+    - Kaffaltii yeroon booda oomisha idilee
+    - Kaffaltii yeroon booda liqii idilee
+    - Liqii idilee irratti kaffaltii adabbii
+    - Adabbii liqii oomishaa idilee
+    - Adabbiin oomisha idilee maali?
+    - Adabbiin oomisha idilee meeqa?
+    - Liqii idilee irratti kaffaltii adabbii
+
+# end
+
+
+# Dureti
+- intent: formal_vs_informalDureti
+  examples: |
+    - Liqii idilee durati liqii al-seerummaa irraa maaltu adda godha?
+    - sirnaa vs al-seerummaa?
+    - liqii dubartootaa kan idilee vs al-seerummaa irratti xiyyeeffate
+    - garaagarummaan  liqii idilee fi al-seerummaa liqii dubartii maali
+    - dureti liqii idilee liqii al-seerummaa wajjin wal faallaa?
+    - dureti sirnaa vs al-seerummaa
+    - Dureti formal dureti informal irraa karaa kamiin adda?
+    - Liqii idilee dubartii maaltu adda godha?
+
+# Dureti
+- intent: dureti_feature
+  examples: |
+    - amala dureetii maali?
+    - garaagarummaan liqii dubartoota irratti xiyyeeffate fi liqii mcihu gidduu jiru maali
+    - maaliif dureti
+    - dureti michu irraa maaltu adda godha
+    - amala addaa liqii dubartoota irratti xiyyeeffate natti himuu dandeessu
+    - dubartoonni maaliif liqii irratti xiyyeeffatan
+    - app liqii dubartoota fayyadamuun salphaadhaa?
+    - dureetii maaltu adda isa godhu
+    - Liqii dubartoota irratti xiyyeeffate maaltu adda isa godha
+    - Oomisha dubartoota irratti xiyyeeffate maaltu adda godha
+    - Dureti maaltu adda godha
+
+
+# Dureti
+- intent: durati_availablity
+  examples: |
+    - akkamitti dureti application argachuu danda'a ?
+    - liqiin woment irratti xiyyeeffate ni argama ?
+    - akkamitti an a liqii dureti argachuu
+    - eenyu an i argadhu link of dureti liqii
+    - qaama hundaaf liqii dureti availbale dha
+    - akkaataa iyyannoo dureetii gaafachuu dandeessan
+    - kanneen link to duret application loan akkan argadhu na gargaaran
+    - liqii dubartoota irratti xiyyeeffate ifatti ni argama
+    - akkamitti link of woment targeted laon argachuu danda'a ?  
+    - pls dubartoota irratti xiyyeeffate link application naaf ergaa
+    - dureti link na barbaachisa
+    - dureti link naaf ergaa 
+    - liqii dureti akkan argadhu naaf hayyami
+    - akkamitti dubartoota irratti xiyyeeffate liqii argachuu danda'a
+
+# Dureti
+- intent: dureti_application
+  examples: |
+    - adeemsi iyyannoo durati maali
+    - adeemsa iyyannoo liqii dubartoota irratti xiyyeeffate natti himuu dandeessu
+    - adeemsa liqii dureetii
+    - akkamittan liqii dubartoota irratti xiyyeeffate argachuu danda'a
+    - tarkaanfiiwwan adeemsa dureetii 
+    - tarkaanfiiwwan liqii dubartoota irratti xiyyeeffate iyyachuuf fudhataman
+    - unka iyyannoo liqii dureti
+    - tarkaanfiiwwan adeemsa liqii dureetii
+    - adeemsa liqii dureti tartiiba tartiiba natti himaa
+    - adeemsa iyyannoo dubartoota irratti xiyyeeffate
+    - dubartoota target liqii iyyata bal'inaan
+
+
+
+
+
+
+
 
 # - intent: our_members
 #   examples: |

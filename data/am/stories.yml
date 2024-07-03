@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 
 stories:
 
@@ -295,7 +295,57 @@ stories:
   - intent: give_time
   - action: action_show_time
   
-
+- story: about michu women's targeted product
+  steps:
+  - intent: dureati
+  - action: utter_dureati
+  - intent: dureati_Requirements
+  - action: utter_dureati_Requirements
+  - intent: dureati_informal_Requirements
+  - action: utter_dureati_informal_Requirements
+  - intent: dureati_formal_Requirements
+  - action: utter_dureati_formal_Requirements
+  - intent: dureati_limit
+  - action: utter_dureati_limit
+  - intent: dureati_informal_limit
+  - action: utter_dureati_informal_limit
+  - intent: dureati_formal_limit
+  - action: utter_dureati_formal_limit
+  - intent: dureati_duration
+  - action: utter_dureati_duration
+  - intent: dureati_informal_duration
+  - action: utter_dureati_informal_duration
+  - intent: dureati_formal_duration
+  - action: utter_dureati_formal_duration
+  - intent: dureati_access_fee
+  - action: utter_dureati_access_fee
+  - intent: dureati_informal_access_fee
+  - action: utter_dureati_access_fee
+  - intent: dureati_formal_access_fee
+  - action: utter_dureati_access_fee
+  - intent: dureati_interest_rate
+  - action: utter_dureati_interest_rate
+  - intent: dureati_informal_interest_rate
+  - action: utter_dureati_informal_interest_rate
+  - intent: dureati_formal_interest_rate
+  - action: utter_dureati_formal_interest_rate
+  - intent: dureati_penalty 
+  - action: utter_dureati_penalty
+  - intent: dureati_informal_penalty
+  - action: utter_dureati_penalty
+  - intent: dureati_formal_penalty 
+  - action: utter_dureati_penalty
+# from yero
+- story: dureti
+  steps:
+  - intent: formal_vs_informalDureti
+  - action: utter_formal_vs_informalDureti
+  - intent: dureti_feature
+  - action: utter_dureti_feature
+  - intent: dureti_application
+  - action: utter_dureti_application
+  - intent: durati_availablity
+  - action: utter_durati_availablity
 
 - story: fallback
   steps:
