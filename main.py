@@ -14,10 +14,8 @@ INTENT_ENDPOINT_am = 'http://localhost:4030/model/parse'
 RASA_API_ENDPOINT_or = 'http://localhost:4040/webhooks/rest/webhook'
 INTENT_ENDPOINT_or = 'http://localhost:4040/model/parse'
 
-# TOKEN: Final = '6320973861:AAECM0Kp2BKT6Ak7s7ERBRzJNCrfDooPvAQ'
-# BOT_USERNAME: Final = '@MichuCoopBot'
-TOKEN: Final = '6668668594:AAGLR1z8OUHtQ2Tc5ZFOgwEaH2n1D3vf4ZY'
-BOT_USERNAME: Final = '@Shewanekbot:'
+TOKEN: Final = '6320973861:AAECM0Kp2BKT6Ak7s7ERBRzJNCrfDooPvAQ'
+BOT_USERNAME: Final = '@MichuCoopBot'
 
 
 keyboard = [['🔠 English  ||  Afaan Oromo  ||  አማርኛ'],
