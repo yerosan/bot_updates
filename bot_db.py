@@ -3,16 +3,10 @@ import uuid
 try:
     # Establish a connection to MySQL
     mydb = mysql.connector.connect(
-        # host="63.34.199.220",
-        # port="3306",
-        # user="sane",
-        # password="sanemysql!2244",
-        # database="michuBot_db"
-
-        host="localhost",
+        host="63.34.199.220",
         port="3306",
-        user="root",
-        password="SH36@jit",
+        user="sane",
+        password="sanemysql!2244",
         database="michuBot_db"
     )
     mycursor = mydb.cursor()
