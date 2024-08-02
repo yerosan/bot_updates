@@ -141,6 +141,44 @@ intents:
 - dureti_application
 
 
+
+# error message
+
+- Not_owner
+- invalidAccount
+- incompleteAccounts
+- accountUseError
+- bankAccountInactive
+- business_Exists
+- logIn_error
+- connectivity_error
+- customer_blocked
+- telephoneNotLinked
+- systemDisconnected
+- repaymentIssue
+- smsNotification
+
+- invalidInput
+- customerNotExist
+- businessDoesnotExist
+- bankAccountAdded
+- multipleOwners
+- EmployeeInformation
+- OrganisationFound
+- Customerinformation
+- passwordReset
+- phoneVerification
+- manyRequests
+- otpRequests
+- UnableToCheckAccount
+- informationIncomplete
+- phoneNumberNotFound
+- PleaseWait
+- ContractLanguage
+- processingYourApplication
+- desiredAmount
+
+
 responses:
   utter_start:
   - text: "Chaatbootiin Michu Baankii Hojii Gamtaa Oromiyaa nagaa isiniin jedha! Akkamittan isin gargaaruu danda’a? 
@@ -1472,6 +1510,139 @@ responses:
   utter_durati_availablity:
   - text: "Omishni dubartoota irratti xiyyeeffate waltajjii michu irratti argama garuu oomisha dubartoota irratti xiyyeeffate argachuuf maamiltoonni jalqaba plaform keenya irratti onboard ta'uu qabu sana booda link isaaniif ergama"
 
+
+  utter_Not_owner:
+  - text: "Kun kan ta'u yeroo maqaan lakkoofsi herregaa galfame maqaa guutuu CBS waliin wal hin simnedha. \n.
+             Karaalee itti sirreessan \n
+            1. maqaa akka CBS irra jiruuti galchuu \n
+            2. Waldaa yoo ta'e akka CBS irratti maqaa guutuu galchuu fi arfiilee tokko tokko dhuma irraa hanga walsimutti haquu \n
+            3. Maqaan akkaawuntii galchite irratti argamu maqaa appii irratti galchite waliin wal hin simne, maqaan wal fakkaataa ta'uu isaa mirkaneessi
+          "
+
+  utter_invalidAccount:
+  - text: "Kun kan ta'u yeroo fayyadamaan lakkoofsa herregaa man'eewwan maqaa guutuu CBS irratti sirritti hin guutamne galche \n.
+           Kana sirreessuuf KYC maamilaa CBS irratti fooyyessuu fi man'eewwan maqaa hunda bakka lamaa fi arfiilee addaa malee sirritti guutamuu isaanii sakatta'uu qofa.
+          "
+
+  utter_incompleteAccounts:
+  - text: "Kun kan ta'u yeroo herregni amma galfame KYC hin sochoone ykn guutuu hin taane \n.
+          Kana furuuf jecha ..\n
+          Herrega hojiitti hiikuu (alaabaa hin sochoone haquu) CBS irratti \n
+          KYC guutuu fi odeeffannoo KYC eegamaa jiru hayyamuu
+          "
+
+  utter_bankAccountInactive:
+  - text: "Kun kan ta'u yeroo herregni amma galfame odeeffannoo KYC hin sochoone ykn guutuu hin taane \n.
+          Kana furuuf jecha ..\n
+          damee akkaawuntii sana banatte, qaamaan  daawwachuun hojiitti hiikuu qabda \n
+          Herrega hojiitti hiikuu (alaabaa hin sochoone haquu) CBS irratti \n
+          KYC xumuruu fi odeeffannoo KYC eegamaa jiru hayyamuu \n
+          "
+
+  utter_accountUseError:
+  - text: "Kun herrega duraan fayyadamaa ture ykn maamilaan (kan biraa) lakkoofsa bilbilaa biraa waliin dabale agarsiisaa fi galmeen dacha'aa hin hayyamamu.\n.
+           Kunis lakkoofsa bilbilaa jalqabaa herrega maamilaa wajjin walqabatee jiru fayyadamuun adeemsa liqii itti fufuun furmaata argachuu danda’a.  
+          "
+
+  utter_business_Exists:
+  - text: "Kun lakkoofsa bilbilaa adda addaa fayyadamuun TIN walfakkaatuun liqii argachuuf yaaliin akka dhiyaate agarsiisa, akkasumas TIN amma galfame lakkoofsa bilbilaa biraatiin daldalli galmaa'e jira jechuudha.\n.
+           Kunis kan furamu lakkoofsa bilbilaa duraan galmaa'e fayyadamuudhaan ykn TIN jijjiiruun qofa.
+          "
+
+  utter_logIn_error:
+  - text: "Kun kan ta’u yeroo fayyadamaan yeroo sadii ol jecha icciitii sirrii hin taane yaalu yoo ta’u herregni fayyadamaa akka hin seenne uggurame jechuudha.\n.
+           Karaalee itti sirreessan \n
+           daqiiqaa 5 eeguun irra deebi'aa yaali jecha icciitii jijjiiruun hidhaa jecha icciitii dagate cuqaasuun \n
+           2. yoo dogongorri sababa yaaliiwwan irra deddeebi'amaniin seenuuf itti fufe, guyyoota kennaman hanga lakkoofsi yeroo ugguraa xumuramutti eeguu
+          "
+
+  utter_connectivity_error:
+  - text: "Kun yeroo baay'ee kan ta'u yeroo walitti hidhamiinsi meeshaa hin hojjenne \n.
+           Kunis gosoota networkii gara 3G ykn 4G ykn Wifi illee jijjiiruun fi faallaa kanaatiin dhaloota networkii kam akka jalqaba hin hojjenne irratti hundaa’uun irra aanuun ni danda’ama \n
+           Hubadhaa CBO’s local Wifi irratti akka hin hojjenne 
+          "
+
+  utter_customer_blocked:
+  - text: "Kun kan ta'u sababa Sanada Sobaa, Appilikeeshinii hedduu, Qondaalota yeroo raggaasifamuu ilaalaman argachuudhaan appii irratti malaammaltummaa maamiltootaatiin \n.
+           Hogganaan Damee maamila mirkaneessuuf yoo gorse ni gadhiifna. Maamila KYC isaa mirkaneessuuf gara damee ni ergina
+          "
+
+  utter_telephoneNotLinked:
+  - text: "Iyyataa Michuu Guyyaatiif bilbilli inni/isheen ittiin iyyachaa ture kan Herrega isaa/ishee waliin walqabate waliin walfakkaachuu qaba. \n.
+           Furmaanni jiru lakkoofsa bilbilaa CBS irratti \n fooyyessuu qofa
+           Hubadhaa, gaaffiin maamilaa jijjiirraa bilbilaa kamiyyuu iyyataa Michuu Guyyaa ta'a
+
+          "
+
+  utter_systemDisconnected:
+  - text: "Sirnichi wiirtuu irraa dhimma furuuf fi ykn bobbii sirreessuuf ni addaan cita \n.
+           Deeggarsa quunnamtii yeroo dhiyootti kan beeksifamu yoo ta'u yeroo hunda isaan qunnamaa. Yoom akka sirreeffamu isin beeksisu
+          "
+
+  utter_repaymentIssue:
+  - text: "Yeroo tokko tokko sababa dhimma CBS irraa kan ka'e appichi gama CBS irraa kaffaltii ni raawwata malee apk irraa ifa hin ta'u fi ykn apk irratti hafnaan akka hin kaffalamiin agarsiisa. \n.
+            Kaffaltiin yaalamee wiirtuu irraa mirkaneessuun ni danda’ama. Haala kanaan contact call center fi battalumatti furmaata ni argata
+          "
+      
+  utter_smsNotification:
+  - text: "Maamiloonni beeksisa ergaa gabaabaa sanada mirkaneessuu fi ykn diduudhaaf ni ger. \n.
+            Haala kanaan, sanadni tokko ykn isaa ol yoo dide, isa dide irra deebi’ee dhiyeessu qaba
+          "
+
+  utter_invalidInput:
+  - text: "Dirree odeeffannoo man'eewwan barruu keessaa sirrii miti, .
+          mee waan galchitan ilaalaa akkaataa akeekkachiisa ibsame dirree jalatti sirreessaa ."
+    
+  utter_customerNotExist:
+  - text: "maamiltoonni lakkoofsa kennameen galmaa'an hin jiran ."
+
+  utter_businessDoesnotExist:
+  - text: "TIN kennameen daldalli galmaa'e hin jiru ."
+
+  utter_bankAccountAdded:
+  - text: "Lakkoofsi herregaa ati dabaluuf yaaltu duraanuu piroofaayilii kee irratti dabalameera, maaloo yookaan akkaawuntii biraa kan kee ta'e galchi yookaan kan dabalame itti fufi "
+
+  utter_multipleOwners:
+  - text: "Lakkoofsi herrega galchitan akka herrega AND ykn YKN kan nama 1 ol ta'e, lakkoofsa herrega biraa fayyadamaa"
+
+  utter_EmployeeInformation:
+  - text: "Iyyattoota liqii dhuunfaa bakka odeeffannoon hojjettootaa iyyata liqii dura galmaa'eef"
+
+  utter_OrganisationFound:
+  - text: "Iyyattoota liqii dhuunfaa bakka dhaabbati addaa isaan keessa hojjetan galmaa'eef"
+
+  utter_Customerinformation:
+  - text: "Maamilli lakkoofsa bilbilaa kanaan galmaa'e waan hin jirreef jalqabarraa galmaa'u qabda"
+
+  utter_passwordReset:
+  - text: "Yeroo 3 ol jecha icciitii kee deebisuuf yaaltee daangaa gaaffii ol'aanaa irra geessee jirta, maaloo yeroo muraasaaf yaaluu dhiisii ​​yoo itti fufe wiirtuu deeggarsa qunnami"
+
+  utter_phoneVerification:
+  - text: "Yeroo 3 ol galmaa'uuf yaaltee daangaa gaaffii ol'aanaa irra geessee jirta, maaloo yeroo muraasaaf yaaluu dhiistee yoo itti fufe wiirtuu deeggarsa qunnamaa"
+
+  utter_manyRequests:
+  - text: "OTP yeroo 3 ol irra deebitee erguuf yaaltee daangaa gaaffii ol'aanaa irra geessee jirta, maaloo yeroo muraasaaf yaaluun dhiisii ​​yoo itti fufe wiirtuu deeggarsa qunnami"
+
+  utter_otpRequests:
+  - text: "Yeroo ammaa tajaajilli OTP gadi bu'ee hojjechaa hin jiru yeroo muraasa booda yaalaa. obsa keessaniif galatoomaa"
+
+  utter_UnableToCheckAccount:
+  - text: "Yeroo ammaa tajaajilli sakatta'iinsa herregaa gadi bu'ee hojjechaa hin jiru yeroo muraasa booda yaalaa. obsa keessaniif galatoomaa"
+
+  utter_informationIncomplete:
+  - text: "Lakkoofsi herrega galchitan active waan hin taaneef damee account sana itti bantanii activate gochuu qabdu"
+            
+  utter_phoneNumberNotFound:
+  - text: "Lakkoofsi herrega galchitan lakkoofsa bilbilaa waliin wal hin hidhamne, damee keessan daawwachuun akkaawuntii keessan lakkoofsa bilbilaatiin walqabsiisaa"
+     
+  utter_PleaseWait:
+  - text: "Sirnichi adeemsa liqii kanaaf waliigaltee dijitaalaa mallattaa'uuf maddisiisaa waan jiruuf eegaa, yeroo eegame caalaa waan fudhatuf."
+  utter_ContractLanguage:
+  - text: "Afaan yeroo ammaa kana app irratti filattan hanga ammaatti waliigaltee hin qophoofne, mee yookaan afaan Ingiliffaatti ykn afaan loacal biraatti jijjiiraa"
+  utter_processingYourApplication:
+  - text: "Iyyanni liqii kanaan dura isiniif dhiyaate hojjetamaa jira, mee eegaa dhiyeessii biraa osoo hin gaafatin iyyaticha fudhachuun ykn diduun itti fufaa"
+  utter_desiredAmount:
+  - text: "Waan isiniif dhiyaate caalaa xiqqaa ykn guddaa galchitaniittu, maaloo hanga appii irratti ibsame ilaalaa daangaa sana keessa galchaa"
 
   utter_FAQ:
     - buttons:

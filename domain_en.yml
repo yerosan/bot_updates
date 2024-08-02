@@ -138,6 +138,43 @@ intents:
 - durati_availablity  
 - dureti_application
 
+# error message
+
+- Not_owner
+- invalidAccount
+- incompleteAccounts
+- accountUseError
+- bankAccountInactive
+- business_Exists
+- logIn_error
+- connectivity_error
+- customer_blocked
+- telephoneNotLinked
+- systemDisconnected
+- repaymentIssue
+- smsNotification
+
+- invalidInput
+- customerNotExist
+- businessDoesnotExist
+- bankAccountAdded
+- multipleOwners
+- EmployeeInformation
+- OrganisationFound
+- Customerinformation
+- passwordReset
+- phoneVerification
+- manyRequests
+- otpRequests
+- UnableToCheckAccount
+- informationIncomplete
+- phoneNumberNotFound
+- PleaseWait
+- ContractLanguage
+- processingYourApplication
+- desiredAmount
+
+
 responses:
   utter_start:
   - text: "Michu's CoopBank chatbot greets you! How can I help you? What information do you need about the Michu digital 
@@ -612,7 +649,7 @@ responses:
           2. The bank will proceed to report your case to the National Bank of Ethiopia for Non-Performing Loan (NPL) 
           registration. This registration will effectively bar you from obtaining any loans from any financial institution 
           in Ethiopia until you settle your outstanding debt with Michu.\n
-          3. if the situation remains unresolved, the bank will take legal action by pursuing a court case. This action 
+          # # 3. if the situation remains unresolved, the bank will take legal action by pursuing a court case. This action 
           is based on the agreement you initially signed during the application process, which serves as a digital 
           contract. The bank will seek legal enforcement through the court system.\n
           Starting from the due date of the missed payment, additional penalties and interest will accumulate over time. 
@@ -1594,7 +1631,142 @@ responses:
 
   utter_durati_availablity:
   - text: "Women's targeted product is available on michu's platform but to get access to the women targeted product customer should first onboard to our plaform then link will be send to them"
+  # Error Message
 
+  utter_Not_owner:
+  - text: "This happens when the entered account number name mismatches with the CBS full names. \n
+             Ways to fix it \n
+            1. entering the name as on CBS \n
+            2. For group entering the full name as on CBS and deleting some characters from the end until it matches \n
+            3. The name on the entered account name does not match the name you entered on the app, please make sure the names are the same
+          "
+
+  utter_invalidAccount:
+  - text: "This happens when the user has enter an account number that was not correctly filled on the full name fields on CBS \n
+           The only way to fix this is amending the KYC of the customer on CBS and checking all the name fields are correctly filled without double spaces and special characters.
+          "
+
+  utter_incompleteAccounts:
+  - text: "These happens when the currently entered account is either inactive or incomplete KYC \n
+          In order to solve this ..\n
+          Activating the account (remove inactive flag) on CBS \n
+          Completing the KYC and authorizing the pending KYC information
+          "
+
+  utter_bankAccountInactive:
+  - text: "These happens when the currently entered account is either inactive or incomplete KYC information \n
+          In order to solve this ..\n
+          you have to visit the branch where you opened the account in person to activate it \n
+          Activating the account (remove inactive flag) on CBS \n
+          Completing the KYC and authorizing the pending KYC information \n
+          "
+
+  utter_accountUseError:
+  - text: "This shows an account that was already in use or added by the customer (other) with another phone number and duplicate entries are no allowed.\n
+           This can be solved by using the first phone number associated with the customer's account and proceed the loan processing.  
+          "
+
+  utter_business_Exists:
+  - text: "This indicates a trial of application for loan by identical TIN using different phone number, and it means there is a registered business with the currently entered TIN by another phone number.\n
+           This is only solved by using the previously registered phone number or changing the TIN.
+          "
+
+  utter_logIn_error:
+  - text: "This happens when the user has tried incorrect password more than three times and it means the user’s account has been blocked from logging in.\n
+           Ways to fix it \n
+           waiting for 5 minutes and try again by changing the password by clicking the forgot password link \n
+           2. if the error persists due to repetitive trials to login, waiting for a given days until the countdown of block time finishes
+          "
+
+  utter_connectivity_error:
+  - text: "This usually happens when the connectivity of the device is not functioning \n
+           This can be overcome by changing the network types to either 3G or 4G  or even Wifi and vice versa based on which network generation it first didn’t work \n
+           Note that it will not work on CBO’s local Wifi 
+          "
+
+  utter_customer_blocked:
+  - text: "This will happened due to customer malpractice on the app due to Forged Document, Multiple applications, Finding the officers observed during approval \n
+           We will release if the Branch manager recommended to verify the customer. We will send the customer to branch to verify his KYC
+          "
+
+  utter_telephoneNotLinked:
+  - text: "For Michu Guyya applicant, the telephone he/she was applying with should have to the same with that linked with his/her Account. \n
+           The only solution is amending the telephone no on CBS \n
+           Note that, any customer request for telephone change will be Michu Guyya applicant
+
+          "
+
+  utter_systemDisconnected:
+  - text: "The system will be disconnected from the center to for critical issue resolve and or for fix deployment \n
+           The contact support will be informed soon and always contact them. They will inform you when will it get fix
+          "
+
+  utter_repaymentIssue:
+  - text: "Sometimes due to CBS issue, the app will make payment from CBS side and not clear from the apk and or shows balance on the apk as unpaid. \n
+            The tried payment can be confirmed from the center. Thus, contact call center and it will be resolved instantly
+          "
+      
+  utter_smsNotification:
+  - text: "The Customers will ger SMS notification for document verification and or rejection. \n
+            Thus, if one or more document rejected, he should have to re-submit the rejected one
+          "
+
+  utter_invalidInput:
+  - text: "The information field in the text fields are invalid,
+            please check what you have entered and correct it according to the specified hint under the fields"
+    
+  utter_customerNotExist:
+  - text: "there is no customer registered by the given number"
+
+  utter_businessDoesnotExist:
+  - text: "There is no registered business by the given TIN"
+
+  utter_bankAccountAdded:
+  - text: "The account number you are trying to add is already added to your profile, please either enter another account that belongs to you or continue with the added one "
+
+  utter_multipleOwners:
+  - text: "The account number you entered is owned by more than 1 person as an AND or OR account, please use another account number"
+
+  utter_EmployeeInformation:
+  - text: "For personal loan applicants where the employees information is recorded prior to loan application" 
+
+  utter_OrganisationFound:
+  - text: "For personal loan applicants where specific organization they work in is registered" 
+
+  utter_Customerinformation:
+  - text: "There is no customer registered with this phone number and you have to sign up from the beginning"
+
+  utter_passwordReset:
+  - text: "You have tried resetting your password more than 3 times and reached the maximum request limit, please stop trying it for some time and contact the support center if it persists"
+
+  utter_phoneVerification:
+  - text: "You have tried signing up more than 3 times and reached the maximum request limit, please stop trying it for some time and contact the support center if it persists"
+
+  utter_manyRequests:
+  - text: "You have tried resending OTP more than 3 times and reached the maximum request limit, please stop trying it for some time and contact the support center if it persists"
+
+  utter_otpRequests:
+  - text: "Currently OTP service is down and not functioning and please try it after a while. thanks for your patience"
+
+  utter_UnableToCheckAccount:
+  - text: "Currently account checking service is down and not functioning and please try it after a while. thanks for your patience"
+
+  utter_informationIncomplete:
+  - text: "The account number you entered is not active and you neeed to visit the branch at which you opened the account and activate it"
+            
+  utter_phoneNumberNotFound:
+  - text: "The account number you have entered is not linked with a phone number, please visit your branch to link your account with a phone number"
+     
+  utter_PleaseWait:
+  - text: "Please wait as the system is generating a digital contract to be signed for the loan processing and it took longer than expected."
+  utter_ContractLanguage:
+  - text: "The language you selected on the app right now has no contract prepared yet, please either change the language to English or another loacal language"
+
+  utter_processingYourApplication:
+  - text: "Your previously offered loan application is being processed, please wait and continue with the acceptance or rejection of the application without requesting another offer"
+
+  utter_desiredAmount:
+  - text: "You have entered either smaller or larger amount than what you have been offered, please check the range specified on the app and enter within that range"
 
   utter_FAQ:
     - buttons:

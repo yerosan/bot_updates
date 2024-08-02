@@ -1862,18 +1862,184 @@ nlu:
 
 
 
+- intent: Not_owner
+  examples: |
+    - Abbaa herrega baankii kanaa miti
+    - Lakkoofsi herrega baankii keessan miti fakkaata. Mee lakkoofsa herregaa ilaalaa ykn maqaan isiin galchitan kan kitaaba herregaa irratti barreeffame waliin wal fakkaata?
+
+- intent: invalidAccount
+  examples: |
+    - herrega baankii sirrii hin taane
+    - itti fufuuf lakkoofsa herrega baankii hojii gamtaa oromiyaa seera qabeessa ta'e galchaa 
+    - itti fufuuf lakkoofsa herrega coopbank sirrii ta'e galchaa
+
+- intent: incompleteAccounts
+  examples: |
+    - odeeffannoon herrega baankii keessanii guutuu waan hin taane fakkaata
+    - odeeffannoo barbaachisu hunda guutuuf baankii waldaa hojii gamtaa damee oromia dhiyoo jiru daawwadhaa
+    - odeeffannoon herrega baankii keessanii guutuu waan hin taane fakkaata. odeeffannoo barbaachisu hunda guutuuf baankii hojii gamtaa damee oromia dhiyoo jiru daawwadhaa
+
+- intent: accountUseError
+  examples: |
+    - Herrega baankii fayyadama irra jiru
+    - Herregni baankii galchitan maamila biraatiin qabameera. Mee lakkoofsa herregaa jijjiiraa
+
+- intent: bankAccountInactive
+  examples: |
+    - Herreega baankii hin sochoone
+    - Herreega baankii Baankii Hojii Gamtaa Oromiyaa galchitan hin socho'u. Maaloo dhimmicha furuuf damee dhiyoo jiru daawwadhaa
+
+- intent: business_Exists
+  examples: |
+    - Daldalli duruu jira
+    - Daldalli kun duraan galmaa'ee waan jiru fakkaata. Mee irra deebi'aa yaalaa
+
+- intent: logIn_error
+  examples: |
+    - wanti tokko dogoggora ta'e
+    - wanti tokko dogoggora ta'e mee booda yaalaa.
+    - garmalee baay'ee requiest
+    - too requiest gooteetta 
+    - maaloo yeroo tokko tokko resend otp ammas eegaa
+    - too requiest gooteetta, maaloo yeroo tokko tokko resend otp ammas eegi
 
 
+- intent: connectivity_error
+  examples: |
+    - Walitti hidhamiinsi osoo hin eegin addaan cite. Sarvarii bira gahuu hin dandeenye. Interneetii keessan ilaalaa, mee irra deebi'aa yaalaa.
+    - Walitti hidhamiinsi osoo hin eegin addaan cite. Sarvarii bira gahuu hin dandeenye.
+    - Interneetii keessan ilaalaa, mee irra deebi'aa yaalaa.
 
 
+- intent: customer_blocked
+  examples: |
+    - ugguramtee jirta
+    - michu akka hin fayyadamne ugguramee jirta. odeeffannoo dabalataaf baankii waldaa hojii gamtaa oromiyaa damee isinitti dhihoo jiru daawwadhaa.
+    - michu akka hin fayyadamne ugguramee jirta.
+    - michu akka hin fayyadamne ugguramee jirta. odeeffannoo dabalataaf damee coopbank keessan daawwadhaa.
 
-# - intent: our_members
-#   examples: |
-#     - Ani miseensa keessani
-#     - Anii miseensa michu app kessanittii asii irraattii isin argachu kotif baay'ee gamade
-#     - Ani app michuu nan fayyadama
-#     - liqiin keessan baay'ee nan gargaara jira
-#     - Maamila keessanan ture
-#     - ani maamila keessani
-#     - ani maamila michuti
-#     - kanaan dura michu fayadamen ture
+- intent: telephoneNotLinked
+  examples: |
+    - Lakkoofsi bilbilaa keessan herrega baankii galchitan wal hin fakkaatu",
+    - Lakkoofsi bilbilaa herrega baankii galchitan waliin walqabate lakkoofsa bilbilaa Michuu irratti galmoofte waliin tokko miti. Dhimma kana sirreessuuf damee Baankii Hojii Gamtaa Oromiyaa isinitti dhiyoo jiru daawwadhaa."
+
+
+- intent: systemDisconnected
+  examples: |
+    - Gama keenyaan dhimmi tokko jira
+    - Dhimma kana furuuf wiirtuu deeggarsa qunnamaa
+    - Dhimmi gama keenyaan yoo jiraate dhimmicha furuuf giddugala deeggarsa qunnamuu qunnamaa.
+
+- intent: repaymentIssue
+  examples: |
+    - my account has been dedicted but the app show me as unpaid
+    - the money is taken but the app does not deducte the amount
+    - my saving account is reduced but not from the app side
+    - i made payment and the money is taken but the app show me as unpaid
+    - the money withdraw from the account but not from the michu app
+
+- intent: smsNotification
+  examples: |
+    - verification failed mee document id check godhaa akka qajeelfamaatti irra deebi'aa galchaa. akka waan gargaarsa barbaadduutti qunnamaa
+    - mirkaneessuun hin milkoofne 
+    - Raga waraqaa eenyumessaa ilaalun gochuun akka qajeelfamaatti irra deebi'aa galchaa
+
+
+- intent: invalidInput
+  examples: |
+    - Galteewwan sirrii hin taane guuttan
+    - Maalo irra deebi'aa guutaa ykn giddugala deegarsaa qunnamaa
+  
+- intent: customerNotExist
+  examples: |
+    - Maamilli hin jiru
+    - Maamilchi hin jiru. Giddugala deegarsaa qunnamuu yaalaa.
+
+- intent: businessDoesnotExist
+  examples: |
+    - Daldalli Hin Jiru
+    - Daldalli Hin Jiru. Giddugala deegarsaa qunnamuu yaalaa"
+
+- intent: bankAccountAdded
+  examples: |
+    - Herregni Baankii kana dura dabalameera
+    - Herreegni baankii kun duraanuu ibsama keessan irratti dabalameera
+
+- intent: multipleOwners
+  examples: |
+    - Abbootii herrega baankii dachaa
+    - Herreegni baankii kun kan namoota dhuunfaa dachaa ta’eedha. Giddugala  deegarsaa qunnamuu yaalaa
+
+- intent: OrganisationFound
+  examples: |
+    - Dhaabbanni hin argamne
+    - Dhaabbaticha argachuu hin dandeenyu. Odeeffannoo dabalataaf dhaabbata keessan mariisisaa
+    
+
+- intent: EmployeeInformation
+  examples: |
+    - Odeeffannoon hojjetaa hin jiru
+    - Dhaabbatichi odeeffannoo hojjetaa kamiyyuu hin kennine, Odeeffannoo dabalataaf dhaabbata keessan mariisisaa
+
+- intent: Customerinformation
+  examples: |
+    - Maamilli hin jiru
+    - Imala keessan jalqabuudhaaf galmaa'uuf yaalaa
+
+- intent: passwordReset
+  examples: |
+    - Yaalii dachaa
+    - Guyyaa tokkotti jecha icciitii keessan yeroo hayyamame caalaa jijjiiruuf yaaltanii jirtu. Mee booda irra deebi'aa yaalaa
+
+- intent: phoneVerification
+  examples: |
+    - Gaaffiwwan Mirkaneessa Bilbilaa Baayyee
+    - Gaaffii mirkaneessaa baayyee dhiheessitanittu, mee yeroo muraasa eegaa deebi'aa mirkaneessaa.
+
+- intent: manyRequests
+  examples: |
+    - Gaaffiiwwan Baayyee OTP Irra Deebi'anii Ergu
+    - Gaaffii jecha icciitii yeroo tokkoo (OTP) irra deebitee erguu baayyee gootanittu. OTPn irra deebi'ee ergamuuf, yeroo muraasa eegaa
+
+- intent: otpRequests
+  examples: |
+    - OTP erguu hin dandeenye
+    - OTP ykn jecha icciitii yeroo tokkoo bilbila keessaniif erguu hin dandeenyu. Mee booda yaalaa
+
+- intent: UnableToCheckAccount
+  examples: |
+    - Herrega baankii keessan ilaaluu hin dandeenyu
+    - Herrega baankii keessan ilaaluu hin dandeenyu. Mee booda yaalaa
+
+- intent: informationIncomplete
+  examples: |
+    - Odeeffannoon herrega baankii guutuu miti",
+    - Odeeffannoon herrega baankii keessan guutuu waan hin ta'iniif, Odeeffannoo barbaachisu hunda guutuuf damee Baankii Hojii Gamtaa Oromiyaa isinitti dhihoo jiru daawwadhaa"
+
+
+- intent: phoneNumberNotFound
+  examples: |
+    - Lakkoofsa bilbilaa keessan argachuu hin dandeenye
+    - Odeeffannoo herrega baankii keessanii irraa lakkoofsa bilbilaa argachuu hin dandeenye. Dhimma kana sirreessuuf damee Baankii Hojii Gamtaa Oromiyaa isinitti dhiyoo jiru daawwadhaa
+
+
+- intent: PleaseWait
+  examples: |
+    - Mee eegaa
+    - Yeroo ammaa kana walii galtee isiniif qopheessaa jirra. Mee irra deebi'aa yaalaa
+
+- intent: ContractLanguage
+  examples: |
+    - Afaan waliigaltee hin jiru
+    - Afaan isin fayyadamtanin waliigalteen isiniif qophaa'e hin qabnu
+
+- intent: processingYourApplication
+  examples: |
+    - Liqiin adeemsa irra jira
+    - Gaaffiin iyyannoo liqii keessanii hojjechatamaa jira. Mee yeroo muraasa eegaa irra deebi'aa ilaalaa.
+
+- intent: desiredAmount
+  examples: |
+    - Hammi liqii daangaa ala galee
+    - Maaloo hanga dhiyeessaa barbaaddan giddu daangaa dhiyeessa liqii jalqaba jirun galchaa
+

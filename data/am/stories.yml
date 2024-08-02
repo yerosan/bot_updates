@@ -335,6 +335,80 @@ stories:
   - action: utter_dureati_penalty
   - intent: dureati_formal_penalty 
   - action: utter_dureati_penalty
+
+
+- story: error
+  steps:
+  - intent: Not_owner
+  - action: utter_Not_owner
+  - intent: invalidAccount
+  - action: utter_invalidAccount
+  - intent: incompleteAccounts
+  - action: utter_incompleteAccounts
+  - intent: accountUseError
+  - action: utter_accountUseError
+  - intent: bankAccountInactive
+  - action: utter_bankAccountInactive
+  - intent: business_Exists
+  - action: utter_business_Exists
+  - intent: logIn_error
+  - action: utter_logIn_error
+  - intent: connectivity_error
+  - action: utter_connectivity_error
+  - intent: customer_blocked
+  - action: utter_customer_blocked
+  - intent: telephoneNotLinked
+  - action: utter_telephoneNotLinked
+  - intent: systemDisconnected
+  - action: utter_systemDisconnected
+  - intent: repaymentIssue
+  - action: utter_repaymentIssue
+  - intent: smsNotification
+  - action: utter_smsNotification
+
+- story: errorMessage
+  steps:
+  - intent: invalidInput
+  - action: utter_invalidInput
+  - intent: customerNotExist
+  - action: utter_customerNotExist
+  - intent: businessDoesnotExist
+  - action: utter_businessDoesnotExist
+  - intent: bankAccountAdded
+  - action: utter_bankAccountAdded
+  - intent: multipleOwners
+  - action: utter_multipleOwners
+  # - intent: multipleOwners
+  # - action: utter_multipleOwners
+  - intent: EmployeeInformation
+  - action: utter_EmployeeInformation
+  - intent: OrganisationFound
+  - action: utter_OrganisationFound
+  - intent: Customerinformation
+  - action: utter_Customerinformation
+  - intent: passwordReset
+  - action: utter_passwordReset
+  - intent: phoneVerification
+  - action: utter_phoneVerification
+  - intent: manyRequests
+  - action: utter_manyRequests
+  - intent: otpRequests
+  - action: utter_otpRequests
+  - intent: UnableToCheckAccount
+  - action: utter_UnableToCheckAccount
+  - intent: informationIncomplete
+  - action: utter_informationIncomplete
+  - intent: phoneNumberNotFound
+  - action: utter_phoneNumberNotFound
+  - intent: PleaseWait
+  - action: utter_PleaseWait
+  - intent: ContractLanguage
+  - action: utter_ContractLanguage
+  - intent: processingYourApplication
+  - action: utter_processingYourApplication
+  - intent: desiredAmount
+  - action: utter_desiredAmount
+  
 # from yero
 - story: dureti
   steps:

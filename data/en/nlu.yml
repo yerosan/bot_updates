@@ -1881,9 +1881,194 @@ nlu:
     - tell me step by step proccess of dureti loan
     - women targeted application process
     - women target loan application detail
-    
+
+#  Erro Messages
+
+- intent: Not_owner
+  examples: |
+    - not owner of this bank account
+    - It seems like you are not an owner of this bank account
+    - please check the account number or your name is the same as written on account book
+    - not owner of this bank account,It seems like you are not an owner of this bank account. please check the account number or your name is the same as written on account book  
+
+- intent: invalidAccount
+  examples: |
+    - bank account invalid
+    - please enter valid cooperative bank of oromia account number to continue 
+    - please enter valid coopbank account number to continue 
+
+- intent: incompleteAccounts
+  examples: |
+    - it seems like your bank account information incomplete
+    - please visit the nearest coopreative bank of oromia branch to fill all the required information
+    - it seems like your bank account information incomplete. please visit the nearest coopreative bank of oromia branch to fill all the required information
+
+- intent: accountUseError
+  examples: |
+    - bank account you added is used by other customer. please change the account number.
+    - bank account you added is used by other customer.
+    - please change the account number.
+
+- intent: bankAccountInactive
+  examples: |
+    - Cooperative bank of oromia account you enterd is inacitve please visit the nearest branch to resolve the issue
+    - bank account inactive
+    - coopbank account you enterd is inacitve please visit the nearest branch to resolve the issue.
+
+- intent: business_Exists
+  examples: |
+    - business already registered
+    - it seems the business already registered. please try again
+    - business already registered, it seems the business already registered. please try again
+
+- intent: logIn_error
+  examples: |
+    - something went wrong error
+    - something went wrong please try later.
+    - too many requiest
+    - you have made too requiest 
+    - please wait for sometime resend otp again
+    - you have made too requiest, please wait for sometime resend otp again
+
+
+- intent: connectivity_error
+  examples: |
+    - The connection terminated unexpectedly. Counldn't reach the server. Check your internet connection, please try again.
+    - The connection terminated unexpectedly. Counldn't reach the server.
+    - Check your internet connection, please try again.
+
+
+- intent: customer_blocked
+  examples: |
+    - you are blocked
+    - you are blocked from using michu. please visit your nearest cooperative bank of oromia branch for further information.
+    - you are blocked from using michu.
+    - you are blocked from using michu. please visit your coopbank branch for further information.
+
+- intent: telephoneNotLinked
+  examples: |
+    - Your phone number not linked to the entered bank account
+    - The phone  number linked to the bank account you entered is not the same as the phone number that you registered on michu. please visit the nearest cooperarive bank of oromia branch to fix the issue.
+
+
+- intent: systemDisconnected
+  examples: |
+    - There is an issue from our side
+    - Please contact the support center to resolve the issue
+    - There is an issue from our side please contact contact the support center to resolve the issue.
+
+- intent: repaymentIssue
+  examples: |
+    - my account has been dedicted but the app show me as unpaid
+    - the money is taken but the app does not deducte the amount
+    - my saving account is reduced but not from the app side
+    - i made payment and the money is taken but the app show me as unpaid
+    - the money withdraw from the account but not from the michu app
+
+- intent: smsNotification
+  examples: |
+    - verification faild please check id document and resubmit as per instruction. contact as if you need help
+    - verification faild 
+    - Please check id document and resubmit as per instruction
+
+
+- intent: invalidInput
+  examples: |
+    - Invalid Inputs
+    - You enter invalid input. Please try to fill correct inputs or contact admin center
+  
+- intent: customerNotExist
+  examples: |
+    - Customer Doesn't Exist
+    - The customer doesn't exist. Please try to contact admin center
+
+- intent: businessDoesnotExist
+  examples: |
+    - Business Doesn't Exist
+    - The business doesn't exist. Please try to contact admin center
+
+- intent: bankAccountAdded
+  examples: |
+    - Bank Account Already Added
+    - This bank account is already added to your profile
+
+- intent: multipleOwners
+  examples: |
+    - Multiple owners for bank account
+    - The bank account is owned by multiple individuals. Please try to contact admin center
+
+- intent: OrganisationFound
+  examples: |
+    - Organisation not found
+    - We can not find the organization. Please consult with your company for further information
     
 
+- intent: EmployeeInformation
+  examples: |
+    - Employee information not found
+    - Organisation has not provided any employee information, Please consult with your company for further information
+
+- intent: Customerinformation
+  examples: |
+    - Customer not found
+    - Try to signup to start your journey
+
+- intent: passwordReset
+  examples: |
+    - Too many password reset requests
+    - You have requested too many password reset requests. Please try to contact admin center
+
+- intent: phoneVerification
+  examples: |
+    - Too many phone verification requests
+    - You have made too many verification requests. Please wait for some time verify again
+
+- intent: manyRequests
+  examples: |
+    - Too many requests",
+    - You have made too requests. Please wait for some time resend OTP again",
+
+- intent: otpRequests
+  examples: |
+    - Unable to send OTP
+    - We are unable to send OTP to your phone. Please try later
+
+- intent: UnableToCheckAccount
+  examples: |
+    - Unable to check your bank account
+    - We are unable to check your bank account. Please try later
+
+- intent: informationIncomplete
+  examples: |
+    - Account information incomplete",
+    - It seems like your bank account information is incomplete. Please visit the nearest Cooperative Bank of Oromia branch to fill all required information", 
+
+
+- intent: phoneNumberNotFound
+  examples: |
+    - Can't find your phone number
+    - We can't find a phone number from your bank account information. Please visit the nearest Cooperative Bank of Oromia branch to fix the issue
+
+
+- intent: PleaseWait
+  examples: |
+    - Please wait
+    - We are preparing a contract for you right now. Please retry again
+
+- intent: ContractLanguage
+  examples: |
+    - Contract language not available
+    - We don't have a contract prepared for you with the language you using.
+
+- intent: processingYourApplication
+  examples: |
+    - Loan under process
+    - We are processing your application, Please try again
+
+- intent: desiredAmount
+  examples: |
+    - Desired amount out of range",
+    - Please enter your desired offer amount with in the original loan offer range
 # - intent: about_response
 #   examples: |
 #     - I can't  open the app   it says    there is an issue from our side    what can i do please?
