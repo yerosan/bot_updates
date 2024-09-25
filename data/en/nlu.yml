@@ -246,15 +246,15 @@ nlu:
 
 
 # new product
-- intent: dureati
+- intent: kiyya
   examples: |
     - what is the new product of michu
     - Michu – Women Targeted  Product 
-    - Dureati 
+    - kiyya 
     - The third Michu Product 
     - what does women targeted product
     - what is women product
-    - what is dureati
+    - what is kiyya
 
 
 
@@ -371,27 +371,27 @@ nlu:
     - Michu Wabbii: Formal business eligibility?
 
 # new product
-- intent: dureati_Requirements
+- intent: kiyya_Requirements
   examples: |
     - what is the requirements of Women Focused Product
-    - requirements of dureati
+    - requirements of kiyya
     - requirements of new product
-    - Eligibility of dureati
+    - Eligibility of kiyya
     - Eligibility of women product
     - Criteria of women product
-    - Criteria of dureati
+    - Criteria of kiyya
 
-- intent: dureati_informal_Requirements
+- intent: kiyya_informal_Requirements
   examples: |
     - Informal Loan of requirements
-    - dureati informal Eligibility
+    - kiyya informal Eligibility
     - Women informal requirements
     - informal loan Criteria
 
-- intent: dureati_formal_Requirements
+- intent: kiyya_formal_Requirements
   examples: |
     - formal Loan of requirements
-    - dureati formal Eligibility
+    - kiyya formal Eligibility
     - Women formal requirements
     - formal loan Criteria
 
@@ -494,35 +494,35 @@ nlu:
 
 
 # new product
-- intent: dureati_limit
+- intent: kiyya_limit
   examples: |
     - What is the credit limit of Michu New Women Focused Product?
     - What is the loan limit of the Women product?
     - What is the minimum credit limit for the Women product?
     - What is the loan limit for the Michu New Women Focused Product?
-    - What is the limit of Dureati?
+    - What is the limit of kiyya?
     - What is the maximum loan amount for the Women product?
     - What is the minimum loan amount for the Women product?
     - What is the highest loan limit for the Women product?
     - What is the lowest loan limit for the Women product?
     - What is the top loan limit for the Women product?
 
-- intent: dureati_informal_limit
+- intent: kiyya_informal_limit
   examples: |
     - What is the credit limit for the Informal Loan?
     - How much can I take with the Informal women product?
     - What is the maximum credit limit for the Informal women product?
     - What is the minimum limit for the Michu New Informal Women product?
-    - What is the Michu Dureati Informal Loan limit?
+    - What is the Michu kiyya Informal Loan limit?
     - What is the limit for the Michu Informal Loan?
 
-- intent: dureati_formal_limit
+- intent: kiyya_formal_limit
   examples: |
     - What is the credit limit for the Formal Women Loan?
     - How much can I take with the Formal women product?
     - What is the maximum credit limit for the Formal women product?
     - What is the minimum limit for the Michu New Formal Women product?
-    - What is the Michu Dureati Formal Loan limit?
+    - What is the Michu kiyya Formal Loan limit?
     - What is the limit for the Michu Formal Loan?
 
 
@@ -575,7 +575,7 @@ nlu:
     - The wabii's length
 
 # new product
-- intent: dureati_duration
+- intent: kiyya_duration
   examples: |
     - michu Women's product duration
     - Women's loan duration
@@ -585,10 +585,10 @@ nlu:
     - Loan period for women
     - Women's product loan term
     - Time limit for women's product
-    - Duration of Dureati loan
+    - Duration of kiyya loan
     - Women's product loan duration
 
-- intent: dureati_informal_duration
+- intent: kiyya_informal_duration
   examples: |
     - michu Informal loan duration
     - Max informal loan duration
@@ -600,7 +600,7 @@ nlu:
     - Duration of informal loan
     - Informal product loan term
 
-- intent: dureati_formal_duration
+- intent: kiyya_formal_duration
   examples: |
     - michu Formal loan duration
     - Max formal loan duration
@@ -677,7 +677,7 @@ nlu:
 
 
 # new product
-- intent: dureati_access_fee
+- intent: kiyya_access_fee
   examples: |
     - michu new Women's product access fee
     - Women's target loan access fee
@@ -688,9 +688,9 @@ nlu:
     - Women's product fee
     - Fee for women's loan
     - Women's product service fee
-    - Dureati loan access fee
+    - kiyya loan access fee
 
-- intent: dureati_informal_access_fee
+- intent: kiyya_informal_access_fee
   examples: |
     - Informal loan access fee
     - Max informal loan access fee
@@ -702,7 +702,7 @@ nlu:
     - Fee for informal loan
     - Informal product access fee
 
-- intent: dureati_formal_access_fee
+- intent: kiyya_formal_access_fee
   examples: |
     - Formal loan access fee
     - Max formal loan access fee
@@ -766,7 +766,7 @@ nlu:
     - Michu Wabbii Loan Interest details?
 
 # new product
-- intent: dureati_interest_rate
+- intent: kiyya_interest_rate
   examples: |
     - Women's product interest rate
     - Women's loan interest rate
@@ -777,12 +777,12 @@ nlu:
     - Women's product rate
     - Rate for women's loan
     - Women's product loan interest
-    - Dureati loan interest rate
+    - kiyya loan interest rate
     - What's the interest rate for women's product?
     - How much interest for women's product?
     - Interest charges for women's loan
 
-- intent: dureati_informal_interest_rate
+- intent: kiyya_informal_interest_rate
   examples: |
     - Informal loan interest rate
     - Max informal loan interest rate
@@ -797,7 +797,7 @@ nlu:
     - How much interest for informal product?
     - Interest charges for informal loan
 
-- intent: dureati_formal_interest_rate
+- intent: kiyya_formal_interest_rate
   examples: |
     - Formal loan interest rate
     - Max formal loan interest rate
@@ -937,7 +937,7 @@ nlu:
 
 
 # new product
-- intent: dureati_penalty
+- intent: kiyya_penalty
   examples: |
     - Women's product penalty
     - Women's loan penalty
@@ -948,12 +948,12 @@ nlu:
     - Women's product late fee
     - Late fee for women's loan
     - Women's product loan penalty
-    - Dureati loan penalty
+    - kiyya loan penalty
     - What's the penalty for women's product?
     - How much is the penalty for women's product?
     - Penalty charges for women's loan
 
-- intent: dureati_informal_penalty
+- intent: kiyya_informal_penalty
   examples: |
     - Informal loan penalty
     - Max informal loan penalty
@@ -968,7 +968,7 @@ nlu:
     - How much is the penalty for informal product?
     - Penalty charges for informal loan
 
-- intent: dureati_formal_penalty
+- intent: kiyya_formal_penalty
   examples: |
     - Formal loan penalty
     - Max formal loan penalty
@@ -1822,63 +1822,63 @@ nlu:
 
 
 # new product
-# Dureti
-- intent: formal_vs_informalDureti
+# kiyya
+- intent: formal_vs_informalkiyya
   examples: |
-    - What differentiates durati formal Loan from the informal loan?
+    - What differentiates kiyya formal Loan from the informal loan?
     - formal vs informal?
     - women's targeted formal vs informal loan
     - what is the different b/n formal and informal loan woman's loan
-    - dureti formal loan contrast with informal loan?
-    - dureti formal vs informal
-    - In what ways does dureti formal differ from dureti informal?
+    - kiyya formal loan contrast with informal loan?
+    - kiyya formal vs informal
+    - In what ways does kiyya formal differ from kiyya informal?
     - What distinguishes woman's formal Loan?
 
 
-# Dureti
-- intent: dureti_feature
+# kiyya
+- intent: kiyya_feature
   examples: |
-    - what is the features of dureti?
+    - what is the features of kiyya?
     - what is the difference between women targeted loan and mcihu loan
-    - why dureti
-    - what makes dureti differ from michu
+    - why kiyya
+    - what makes kiyya differ from michu
     - can you tell me unique behaviour of women targeted loan
     - why women targeted loan
-    - what makes dureti unique
+    - what makes kiyya unique
     - What makes women targeted loan different
     - What distinguishes women targeted product
-    - What sets dureti apart
+    - What sets kiyya apart
 
-# Dureti
-- intent: durati_availablity
+# kiyya
+- intent: kiyya_availablity
   examples: |
-    - how can i get dureti application ?
+    - how can i get kiyya application ?
     - does woment targeted loan availble ?
-    - how an a get access to dureti loan
-    - who an i get link of dureti loan
-    - is dureti loan availbale to every body
-    - how to claim for dureti application
+    - how an a get access to kiyya loan
+    - who an i get link of kiyya loan
+    - is kiyya loan availbale to every body
+    - how to claim for kiyya application
     - who help me to get link to duret application loan
     - does women targeted  loan available publicaly
     - how can i get link of woment targeted laon ?  
     - pls send me women targeted application link
-    - i need dureti link
-    - send me dureti link 
-    - allow me an access to dureti loan
+    - i need kiyya link
+    - send me kiyya link 
+    - allow me an access to kiyya loan
     - how can i find women targeted loan access
 
-# Dureti
-- intent: dureti_application
+# kiyya
+- intent: kiyya_application
   examples: |
-    - what is durati application proccess
+    - what is kiyya application proccess
     - can you tell me women targeted loan application process
-    - process of dureti loan
+    - process of kiyya loan
     - how can i get women targeted loan
-    - steps of dureti proccess 
+    - steps of kiyya proccess 
     - steps to apply for women targeted loan
-    - dureti loan application form
-    - steps of dureti loan process
-    - tell me step by step proccess of dureti loan
+    - kiyya loan application form
+    - steps of kiyya loan process
+    - tell me step by step proccess of kiyya loan
     - women targeted application process
     - women target loan application detail
 

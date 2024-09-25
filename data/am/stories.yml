@@ -297,44 +297,44 @@ stories:
   
 - story: about michu women's targeted product
   steps:
-  - intent: dureati
-  - action: utter_dureati
-  - intent: dureati_Requirements
-  - action: utter_dureati_Requirements
-  - intent: dureati_informal_Requirements
-  - action: utter_dureati_informal_Requirements
-  - intent: dureati_formal_Requirements
-  - action: utter_dureati_formal_Requirements
-  - intent: dureati_limit
-  - action: utter_dureati_limit
-  - intent: dureati_informal_limit
-  - action: utter_dureati_informal_limit
-  - intent: dureati_formal_limit
-  - action: utter_dureati_formal_limit
-  - intent: dureati_duration
-  - action: utter_dureati_duration
-  - intent: dureati_informal_duration
-  - action: utter_dureati_informal_duration
-  - intent: dureati_formal_duration
-  - action: utter_dureati_formal_duration
-  - intent: dureati_access_fee
-  - action: utter_dureati_access_fee
-  - intent: dureati_informal_access_fee
-  - action: utter_dureati_access_fee
-  - intent: dureati_formal_access_fee
-  - action: utter_dureati_access_fee
-  - intent: dureati_interest_rate
-  - action: utter_dureati_interest_rate
-  - intent: dureati_informal_interest_rate
-  - action: utter_dureati_informal_interest_rate
-  - intent: dureati_formal_interest_rate
-  - action: utter_dureati_formal_interest_rate
-  - intent: dureati_penalty 
-  - action: utter_dureati_penalty
-  - intent: dureati_informal_penalty
-  - action: utter_dureati_penalty
-  - intent: dureati_formal_penalty 
-  - action: utter_dureati_penalty
+  - intent: kiyya
+  - action: utter_kiyya
+  - intent: kiyya_Requirements
+  - action: utter_kiyya_Requirements
+  - intent: kiyya_informal_Requirements
+  - action: utter_kiyya_informal_Requirements
+  - intent: kiyya_formal_Requirements
+  - action: utter_kiyya_formal_Requirements
+  - intent: kiyya_limit
+  - action: utter_kiyya_limit
+  - intent: kiyya_informal_limit
+  - action: utter_kiyya_informal_limit
+  - intent: kiyya_formal_limit
+  - action: utter_kiyya_formal_limit
+  - intent: kiyya_duration
+  - action: utter_kiyya_duration
+  - intent: kiyya_informal_duration
+  - action: utter_kiyya_informal_duration
+  - intent: kiyya_formal_duration
+  - action: utter_kiyya_formal_duration
+  - intent: kiyya_access_fee
+  - action: utter_kiyya_access_fee
+  - intent: kiyya_informal_access_fee
+  - action: utter_kiyya_access_fee
+  - intent: kiyya_formal_access_fee
+  - action: utter_kiyya_access_fee
+  - intent: kiyya_interest_rate
+  - action: utter_kiyya_interest_rate
+  - intent: kiyya_informal_interest_rate
+  - action: utter_kiyya_informal_interest_rate
+  - intent: kiyya_formal_interest_rate
+  - action: utter_kiyya_formal_interest_rate
+  - intent: kiyya_penalty 
+  - action: utter_kiyya_penalty
+  - intent: kiyya_informal_penalty
+  - action: utter_kiyya_penalty
+  - intent: kiyya_formal_penalty 
+  - action: utter_kiyya_penalty
 
 
 - story: error
@@ -410,16 +410,16 @@ stories:
   - action: utter_desiredAmount
   
 # from yero
-- story: dureti
+- story: kiyya
   steps:
-  - intent: formal_vs_informalDureti
-  - action: utter_formal_vs_informalDureti
-  - intent: dureti_feature
-  - action: utter_dureti_feature
-  - intent: dureti_application
-  - action: utter_dureti_application
-  - intent: durati_availablity
-  - action: utter_durati_availablity
+  - intent: formal_vs_informalkiyya
+  - action: utter_formal_vs_informalkiyya
+  - intent: kiyya_feature
+  - action: utter_kiyya_feature
+  - intent: kiyya_application
+  - action: utter_kiyya_application
+  - intent: kiyya_availablity
+  - action: utter_kiyya_availablity
 
 - story: fallback
   steps:

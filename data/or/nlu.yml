@@ -1547,80 +1547,84 @@ nlu:
 
 
 # new product
-- intent: dureati
+- intent: kiyya
   examples: |
     - oomishni haaraan michuu maali
     - Michu – Oomisha Dubartootaa irratti Xiyyeeffate 
-    - Dureati jedhamuun beekama 
+    - kiyya jedhamuun beekama 
     - Oomisha Michuu sadaffaa 
     - maal hojjeta dubartoota irratti xiyyeeffate product
     - oomisha dubartootaa maali
-    - maaltu dureati
+    - maaltu kiyya
+    - kiyya
+    - liqii kiyya
+    - omisha kiyya
+    - maalaqa kiyya
 
 # new product
-- intent: dureati_Requirements
+- intent: kiyya_Requirements
   examples: |
     - ulaagaaleen Oomisha Dubartootaa Xiyyeeffate maali
-    - ulaagaalee dureati
+    - ulaagaalee kiyya
     - ulaagaalee oomisha haaraa
-    - Ulaagaa dureati
+    - Ulaagaa kiyya
     - Ulaagaa guutuu oomisha dubartootaa
     - Ulaagaalee oomisha dubartootaa
-    - Ulaagaalee dureati
+    - Ulaagaalee kiyya
 
-- intent: dureati_informal_Requirements
+- intent: kiyya_informal_Requirements
   examples: |
     - Liqii Al-seerummaa kan barbaachisummaa
-    - dureati informal Ulaagaa guutuu
+    - kiyya informal Ulaagaa guutuu
     - Dubartoota ulaagaalee al-seerummaa
     - Ulaagaalee liqii al-seerummaa
 
-- intent: dureati_formal_Requirements
+- intent: kiyya_formal_Requirements
   examples: |
     - Liqii idilee ulaagaalee barbaachisan
-    - dureati formal Ulaagaa guutuu
+    - kiyya formal Ulaagaa guutuu
     - Dubartoota ulaagaalee idilee
     - Ulaagaalee liqii idilee
 
 # end
 
 # new product
-- intent: dureati_limit
+- intent: kiyya_limit
   examples: |
     - Daangaan liqii Michu New Women Focused Product maali?
     - Daangaan liqii oomisha Dubartootaa maali?
     - Daangaan liqii xiqqaan oomisha Dubartootaa maali?
     - Oomisha Dubartoota Xiyyeeffannoo Haaraa Michuu maali?
-    - Daangaan Dureati maali?
+    - Daangaan kiyya maali?
     - Oomisha Dubartootaaf hanga liqii guddaan maali?
     - Oomisha Dubartootaaf hanga liqii xiqqaan maali?
     - Daangaan liqii olaanaa oomisha Dubartootaa maali?
     - Daangaan liqii gadi aanaan oomisha Dubartootaa maali?
     - Daangaan liqii olaanaa oomisha Dubartootaa maali?
 
-- intent: dureati_informal_limit
+- intent: kiyya_informal_limit
   examples: |
     - Daangaan liqii Liqii Al-seerummaa meeqa?
     - Oomisha dubartoota Al-seerummaatiin hangam fudhachuu danda'a?
     - Daangaan liqii guddaan oomisha dubartoota Al-seerummaa maali?
     - Daangaan xiqqaan oomisha Dubartoota Al-seerummaa Haaraa Michu maali?
-    - Daangaan Liqii Al-seerummaa Michu Dureati maali?
+    - Daangaan Liqii Al-seerummaa Michu kiyya maali?
     - Daangaan Liqii Al-seerummaa Michuu maali?
 
-- intent: dureati_formal_limit
+- intent: kiyya_formal_limit
   examples: |
     - Daangaan Liqii Dubartoota Idilee Meeqa?
     - Oomisha dubartoota Foormaalaa waliin hangam fudhachuu danda'a?
     - Daangaan liqii guddaan oomisha dubartoota Foormaalii maali?
     - Daangaan xiqqaan oomisha Michu New Formal Women maali?
-    - Daangaan Liqii Sirna Michu Dureati maali?
+    - Daangaan Liqii Sirna Michu kiyya maali?
     - Daangaan Liqii Sirna Michuu maali?
 
 
 # end
 
 # new product
-- intent: dureati_duration
+- intent: kiyya_duration
   examples: |
     - michu Turtii oomisha dubartootaa
     - Turtii liqii dubartootaa
@@ -1630,10 +1634,10 @@ nlu:
     - Yeroo liqii dubartootaaf
     - Yeroo liqii oomisha dubartootaa
     - Yeroo oomisha dubartootaaf daangeffame
-    - Turtii liqii Dureati
+    - Turtii liqii kiyya
     - Turtii liqii oomisha dubartootaa
 
-- intent: dureati_informal_duration
+- intent: kiyya_informal_duration
   examples: |
     - michu Yeroo liqii al-seerummaa
     - Yeroo liqii al-seerummaa ol’aanaa
@@ -1645,7 +1649,7 @@ nlu:
     - Yeroo liqiin al-seerummaa
     - Yeroo liqii oomishaa al-seerummaa
 
-- intent: dureati_formal_duration
+- intent: kiyya_formal_duration
   examples: |
     - michu Yeroo liqii idilee
     - Yeroo liqii idilee ol'aanaa
@@ -1661,7 +1665,7 @@ nlu:
 # end
 
 # new product
-- intent: dureati_access_fee
+- intent: kiyya_access_fee
   examples: |
     - michu new Kaffaltii qaqqabummaa oomisha Dubartootaa
     - Kaffaltii argachuu liqii dubartootaa irratti xiyyeeffate
@@ -1672,9 +1676,9 @@ nlu:
     - Kaffaltii oomisha dubartootaa
     - Kaffaltii liqii dubartootaa
     - Kaffaltii tajaajila oomishaa dubartootaa
-    - Kaffaltii qaqqabummaa liqii Dureati
+    - Kaffaltii qaqqabummaa liqii kiyya
 
-- intent: dureati_informal_access_fee
+- intent: kiyya_informal_access_fee
   examples: |
     - Kaffaltii argachuu liqii al-seerummaa
     - Kaffaltii qaqqabummaa liqii al-seerummaa ol’aanaa
@@ -1686,7 +1690,7 @@ nlu:
     - Kaffaltii liqii al-seerummaa
     - Kaffaltii qaqqabummaa oomishaa al-kallatti
 
-- intent: dureati_formal_access_fee
+- intent: kiyya_formal_access_fee
   examples: |
     - Kaffaltii argachuu liqii idilee
     - Kaffaltii qaqqabummaa liqii idilee ol’aanaa
@@ -1701,7 +1705,7 @@ nlu:
 # end
 
 # new product
-- intent: dureati_interest_rate
+- intent: kiyya_interest_rate
   examples: |
     - Dhala oomisha dubartootaa
     - Dhala liqii dubartootaa
@@ -1712,12 +1716,12 @@ nlu:
     - Sadarkaa oomisha dubartootaa
     - Sadarkaa liqii dubartootaa
     - Dhala liqii oomisha dubartootaa
-    - Dhala liqii Dureati
+    - Dhala liqii kiyya
     - Dhala oomisha dubartootaa maali?
     - Oomisha dubartootaaf fedhii hangamii?
     - Kaffaltii dhala liqii dubartootaa
 
-- intent: dureati_informal_interest_rate
+- intent: kiyya_informal_interest_rate
   examples: |
     - Dhala liqii al-seerummaa
     - Max dhala liqii al-seerummaa
@@ -1732,7 +1736,7 @@ nlu:
     - Oomisha al-seerummaaf fedhii hangamii?
     - Kaffaltii dhala liqii al-seerummaa
 
-- intent: dureati_formal_interest_rate
+- intent: kiyya_formal_interest_rate
   examples: |
     - Dhala liqii idilee
     - Dhala liqii idilee ol’aanaa
@@ -1750,7 +1754,7 @@ nlu:
 # end 
 
 # new product
-- intent: dureati_penalty
+- intent: kiyya_penalty
   examples: |
     - Adabbii oomisha dubartootaa
     - Adabbii liqii dubartootaa
@@ -1761,12 +1765,12 @@ nlu:
     - Kaffaltii yeroon booda oomisha dubartootaa
     - Kaffaltii yeroon booda liqii dubartootaa
     - Adabbii liqii oomisha dubartootaa
-    - Adabbii liqii Dureati
+    - Adabbii liqii kiyya
     - Adabbiin oomisha dubartootaa maali?
     - Adabbiin oomisha dubartootaa hangam?
     - Kaffaltii adabbii liqii dubartootaa
 
-- intent: dureati_informal_penalty
+- intent: kiyya_informal_penalty
   examples: |
     - Adabbii liqii al-idillee
     - Adabbii liqii al-seerummaa ol'aanaa
@@ -1781,7 +1785,7 @@ nlu:
     - Adabbiin oomisha al-seerummaa meeqa?
     - Liqii al-seerummaa irratti kaffaltii adabbii
 
-- intent: dureati_formal_penalty
+- intent: kiyya_formal_penalty
   examples: |
     - Adabbii liqii idilee
     - Adabbii liqii idilee ol'aanaa
@@ -1799,64 +1803,64 @@ nlu:
 # end
 
 
-# Dureti
-- intent: formal_vs_informalDureti
+# kiyya
+- intent: formal_vs_informalkiyya
   examples: |
-    - Liqii idilee durati liqii al-seerummaa irraa maaltu adda godha?
+    - Liqii idilee kiyya liqii al-seerummaa irraa maaltu adda godha?
     - sirnaa vs al-seerummaa?
     - liqii dubartootaa kan idilee vs al-seerummaa irratti xiyyeeffate
     - garaagarummaan  liqii idilee fi al-seerummaa liqii dubartii maali
-    - dureti liqii idilee liqii al-seerummaa wajjin wal faallaa?
-    - dureti sirnaa vs al-seerummaa
-    - Dureti formal dureti informal irraa karaa kamiin adda?
+    - kiyya liqii idilee liqii al-seerummaa wajjin wal faallaa?
+    - kiyya sirnaa vs al-seerummaa
+    - kiyya formal kiyya informal irraa karaa kamiin adda?
     - Liqii idilee dubartii maaltu adda godha?
 
-# Dureti
-- intent: dureti_feature
+# kiyya
+- intent: kiyya_feature
   examples: |
-    - amala dureetii maali?
+    - amala kiyya maali?
     - garaagarummaan liqii dubartoota irratti xiyyeeffate fi liqii mcihu gidduu jiru maali
-    - maaliif dureti
-    - dureti michu irraa maaltu adda godha
+    - maaliif kiyya
+    - kiyya michu irraa maaltu adda godha
     - amala addaa liqii dubartoota irratti xiyyeeffate natti himuu dandeessu
     - dubartoonni maaliif liqii irratti xiyyeeffatan
     - app liqii dubartoota fayyadamuun salphaadhaa?
-    - dureetii maaltu adda isa godhu
+    - kiyya maaltu adda isa godhu
     - Liqii dubartoota irratti xiyyeeffate maaltu adda isa godha
     - Oomisha dubartoota irratti xiyyeeffate maaltu adda godha
-    - Dureti maaltu adda godha
+    - kiyya maaltu adda godha
 
 
-# Dureti
-- intent: durati_availablity
+# kiyya
+- intent: kiyya_availablity
   examples: |
-    - akkamitti dureti application argachuu danda'a ?
+    - akkamitti kiyya application argachuu danda'a ?
     - liqiin woment irratti xiyyeeffate ni argama ?
-    - akkamitti an a liqii dureti argachuu
-    - eenyu an i argadhu link of dureti liqii
-    - qaama hundaaf liqii dureti availbale dha
-    - akkaataa iyyannoo dureetii gaafachuu dandeessan
-    - kanneen link to duret application loan akkan argadhu na gargaaran
+    - akkamitti an a liqii kiyya argachuu
+    - eenyu an i argadhu link of kiyya liqii
+    - qaama hundaaf liqii kiyya availbale dha
+    - akkaataa iyyannoo kiyya gaafachuu dandeessan
+    - kanneen link to kiyya application loan akkan argadhu na gargaaran
     - liqii dubartoota irratti xiyyeeffate ifatti ni argama
     - akkamitti link of woment targeted laon argachuu danda'a ?  
     - pls dubartoota irratti xiyyeeffate link application naaf ergaa
-    - dureti link na barbaachisa
-    - dureti link naaf ergaa 
-    - liqii dureti akkan argadhu naaf hayyami
+    - kiyya link na barbaachisa
+    - kiyya link naaf ergaa 
+    - liqii kiyya akkan argadhu naaf hayyami
     - akkamitti dubartoota irratti xiyyeeffate liqii argachuu danda'a
 
-# Dureti
-- intent: dureti_application
+# kiyya
+- intent: kiyya_application
   examples: |
-    - adeemsi iyyannoo durati maali
+    - adeemsi iyyannoo kiyya maali
     - adeemsa iyyannoo liqii dubartoota irratti xiyyeeffate natti himuu dandeessu
-    - adeemsa liqii dureetii
+    - adeemsa liqii kiyya
     - akkamittan liqii dubartoota irratti xiyyeeffate argachuu danda'a
-    - tarkaanfiiwwan adeemsa dureetii 
+    - tarkaanfiiwwan adeemsa kiyya 
     - tarkaanfiiwwan liqii dubartoota irratti xiyyeeffate iyyachuuf fudhataman
-    - unka iyyannoo liqii dureti
-    - tarkaanfiiwwan adeemsa liqii dureetii
-    - adeemsa liqii dureti tartiiba tartiiba natti himaa
+    - unka iyyannoo liqii kiyya
+    - tarkaanfiiwwan adeemsa liqii kiyya
+    - adeemsa liqii kiyya tartiiba tartiiba natti himaa
     - adeemsa iyyannoo dubartoota irratti xiyyeeffate
     - dubartoota target liqii iyyata bal'inaan
 
